@@ -1,0 +1,90 @@
+﻿{
+  "service_coverage": {
+    "direct_answer": [
+      "{policy_answer}",
+      "{next_step}"
+    ],
+    "partial_with_clarify": [
+      "{partial_answer}",
+      "{follow_up_question}"
+    ],
+    "partial_with_next_step": [
+      "{partial_answer}",
+      "{next_step}"
+    ]
+  },
+  "medicines": {
+    "direct_answer": [
+      "{policy_answer}",
+      "{next_step}"
+    ],
+    "partial_with_clarify": [
+      "{partial_answer}",
+      "{follow_up_question}"
+    ],
+    "partial_with_next_step": [
+      "{partial_answer}",
+      "{next_step}"
+    ]
+  },
+  "complaints": {
+    "direct_answer": [
+      "{policy_answer}",
+      "{next_step}"
+    ],
+    "partial_with_clarify": [
+      "{partial_answer}",
+      "{follow_up_question}"
+    ],
+    "partial_with_next_step": [
+      "{partial_answer}",
+      "{next_step}"
+    ]
+  },
+  "routing": {
+    "direct_answer": [
+      "{policy_answer}",
+      "{next_step}"
+    ],
+    "partial_with_clarify": [
+      "{partial_answer}",
+      "{follow_up_question}"
+    ],
+    "partial_with_next_step": [
+      "{partial_answer}",
+      "{next_step}"
+    ]
+  },
+  "eligibility": {
+    "direct_answer": [
+      "{policy_answer}",
+      "{next_step}"
+    ],
+    "partial_with_clarify": [
+      "{partial_answer}",
+      "{follow_up_question}"
+    ],
+    "partial_with_next_step": [
+      "{partial_answer}",
+      "{next_step}"
+    ]
+  },
+  "fallback": {
+    "direct_answer": [
+      "{policy_answer}",
+      "{next_step}"
+    ],
+    "partial_with_clarify": [
+      "{partial_answer}",
+      "{follow_up_question}"
+    ],
+    "partial_with_next_step": [
+      "{partial_answer}",
+      "{next_step}"
+    ],
+    "escalation": [
+      "{policy_answer}",
+      "{next_step}"
+    ]
+  }
+}

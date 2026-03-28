@@ -1,0 +1,121 @@
+﻿[
+  {
+    "name": "mri_initial",
+    "message": "մռտ անվճա՞ր է",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "service_mri_policy_curated"
+  },
+  {
+    "name": "ct_initial",
+    "message": "կտ անվճա՞ր է",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "service_ct_policy_curated"
+  },
+  {
+    "name": "medicine_initial",
+    "message": "էս դեղը պետությունը տալիս ա՞",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "medicine_coverage_exact_name_dosage_form_v2"
+  },
+  {
+    "name": "payment_initial",
+    "message": "ինձնից գումար ուզել են, ասում են անվճար չի",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "complaint_unexpected_payment_dispute_v2"
+  },
+  {
+    "name": "routing_initial",
+    "message": "ուր դիմեմ ուղեգիր ստանալու համար",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "routing_referral_where_to_go_v2"
+  },
+  {
+    "name": "refusal_initial",
+    "message": "ինձ մերժել են ու չեն սպասարկել",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "complaint_refusal_denied_service_v2"
+  },
+  {
+    "name": "mri_variant_short",
+    "message": "մռտ",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "service_mri_policy_curated"
+  },
+  {
+    "name": "ct_variant_short",
+    "message": "կտ",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "service_ct_policy_curated"
+  },
+  {
+    "name": "medicine_variant_free",
+    "message": "դեղը անվճա՞ր է",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "medicine_coverage_exact_name_dosage_form_v2"
+  },
+  {
+    "name": "payment_variant",
+    "message": "ասել են որ վճարովի է",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "complaint_unexpected_payment_dispute_v2"
+  },
+  {
+    "name": "refusal_variant",
+    "message": "չեն սպասարկել ինձ",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "complaint_refusal_denied_service_v2"
+  },
+  {
+    "name": "routing_variant",
+    "message": "որտեղ ստանամ ուղեգիր",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "routing_referral_where_to_go_v2"
+  },
+  {
+    "name": "routing_variant_2",
+    "message": "որտեղ գնամ ուղեգրի համար",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "routing_referral_where_to_go_v2"
+  },
+  {
+    "name": "payment_emotional",
+    "message": "ինձանից փող են ուզել ու ասում են անվճար չի",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "complaint_unexpected_payment_dispute_v2"
+  },
+  {
+    "name": "refusal_emotional",
+    "message": "ինձ մերժել են",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "complaint_refusal_denied_service_v2"
+  },
+  {
+    "name": "medicine_emotional",
+    "message": "էս դեղը պետությունը տալիս ա թե չէ",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "medicine_coverage_exact_name_dosage_form_v2"
+  },
+  {
+    "name": "ct_free_variant",
+    "message": "կտ ծածկվո՞ւմ է",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "service_ct_policy_curated"
+  },
+  {
+    "name": "mri_free_variant",
+    "message": "մռտ ծածկվո՞ւմ է",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "service_mri_policy_curated"
+  },
+  {
+    "name": "routing_short",
+    "message": "ուր դիմեմ",
+    "expected_matched_card_id": "routing_referral_where_to_go_v2"
+  },
+  {
+    "name": "refusal_provider",
+    "message": "ծառայությունը չեն տվել",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "complaint_refusal_denied_service_v2"
+  }
+]

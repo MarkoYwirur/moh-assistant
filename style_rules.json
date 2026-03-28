@@ -1,0 +1,33 @@
+﻿{
+  "voice": {
+    "preferred": [
+      "answer_first",
+      "formal_academic_armenian",
+      "short_sentences",
+      "one_question_max",
+      "one_next_step_max",
+      "active_voice"
+    ],
+    "forbidden": [
+      "slang",
+      "chatty_fillers",
+      "bureaucratic_padding",
+      "multiple_questions",
+      "hotline_first_deflection"
+    ]
+  },
+  "length": {
+    "max_sentences_direct": 2,
+    "max_sentences_clarify": 2,
+    "max_sentences_escalation": 2
+  },
+  "question_policy": {
+    "max_questions": 1,
+    "question_position": "end"
+  },
+  "answer_policy": {
+    "must_start_with_answer": true,
+    "must_include_next_step_when_possible": true,
+    "must_not_start_with_meta_phrase": true
+  }
+}

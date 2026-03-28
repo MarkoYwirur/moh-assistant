@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask Here</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
+      color: #1d2433;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .header {
+      padding: 22px 24px 10px 24px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .sub {
+      padding: 0 24px 18px 24px;
+      font-size: 14px;
+      color: #5f6b82;
+      border-bottom: 1px solid #e7ebf3;
+    }
+    .chat {
+      height: 500px;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: #fafcff;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      max-width: 82%;
+    }
+    .user-row {
+      align-self: flex-end;
+    }
+    .bot-row {
+      align-self: flex-start;
+    }
+    .bubble {
+      padding: 12px 14px;
+      border-radius: 12px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .user {
+      background: #dfe9ff;
+    }
+    .bot {
+      background: #eef2f7;
+    }
+    .meta {
+      font-size: 12px;
+      color: #6f7990;
+    }
+    .composer {
+      display: flex;
+      gap: 10px;
+      padding: 16px;
+      border-top: 1px solid #e7ebf3;
+      background: #ffffff;
+    }
+    textarea {
+      flex: 1;
+      min-height: 58px;
+      max-height: 140px;
+      resize: vertical;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #cfd7e6;
+      border-radius: 10px;
+      outline: none;
+    }
+    button {
+      width: 130px;
+      border: none;
+      border-radius: 10px;
+      background: #1f4b99;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: #97acd6;
+      cursor: not-allowed;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 16px 16px 16px;
+      background: #ffffff;
+    }
+    .small-btn {
+      width: auto;
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">Ask Here</div>
+    <div class="sub">Write your question and read the answer in plain text.</div>
+
+    <div id="chat" class="chat"></div>
+
+    <div class="composer">
+      <textarea id="messageInput" placeholder="Գրեք ձեր հարցը այստեղ"></textarea>
+      <button id="sendBtn">Send</button>
+    </div>
+
+    <div class="toolbar">
+      <button id="resetBtn" class="small-btn">Start Over</button>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = "http://127.0.0.1:8000/chat";
+    const chatEl = document.getElementById("chat");
+    const inputEl = document.getElementById("messageInput");
+    const sendBtn = document.getElementById("sendBtn");
+    const resetBtn = document.getElementById("resetBtn");
+
+    let chatState = JSON.parse(localStorage.getItem("moh_chat_state") || "{}");
+    let chatHistory = JSON.parse(localStorage.getItem("moh_chat_history") || "[]");
+
+    function saveSession() {
+      localStorage.setItem("moh_chat_state", JSON.stringify(chatState));
+      localStorage.setItem("moh_chat_history", JSON.stringify(chatHistory));
+    }
+
+    function addMessage(text, role) {
+      const row = document.createElement("div");
+      row.className = `row ${role === "user" ? "user-row" : "bot-row"}`;
+
+      const bubble = document.createElement("div");
+      bubble.className = `bubble ${role}`;
+      bubble.textContent = text;
+
+      row.appendChild(bubble);
+      chatEl.appendChild(row);
+      chatEl.scrollTop = chatEl.scrollHeight;
+    }
+
+    function renderHistory() {
+      chatEl.innerHTML = "";
+      if (chatHistory.length === 0) {
+        addMessage("Բարև։ Գրեք ձեր հարցը։", "bot");
+        return;
+      }
+
+      for (const item of chatHistory) {
+        addMessage(item.text, item.role);
+      }
+    }
+
+    async function sendMessage() {
+      const message = inputEl.value.trim();
+      if (!message) return;
+
+      addMessage(message, "user");
+      chatHistory.push({ text: message, role: "user" });
+      saveSession();
+
+      inputEl.value = "";
+      sendBtn.disabled = true;
+
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            message,
+            state: chatState
+          })
+        });
+
+        const data = await response.json();
+        chatState = data.state || {};
+        const answer = data.answer || "Պատասխան չի ստացվել։";
+
+        addMessage(answer, "bot");
+        chatHistory.push({ text: answer, role: "bot" });
+        saveSession();
+      } catch (error) {
+        const answer = "Տեխնիկական խնդիր առաջացավ։ Փորձեք կրկին։";
+        addMessage(answer, "bot");
+        chatHistory.push({ text: answer, role: "bot" });
+        saveSession();
+      } finally {
+        sendBtn.disabled = false;
+        inputEl.focus();
+      }
+    }
+
+    function resetSession() {
+      chatState = {};
+      chatHistory = [];
+      saveSession();
+      renderHistory();
+    }
+
+    sendBtn.addEventListener("click", sendMessage);
+
+    inputEl.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    resetBtn.addEventListener("click", resetSession);
+
+    renderHistory();
+  </script>
+</body>
+</html>

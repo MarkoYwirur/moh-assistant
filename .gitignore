@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.pyc
+venv/
+logs/
+out_*.json
+test_*.json
+yes.json
+no.json
+frontend/__pycache__/
+
+.env
