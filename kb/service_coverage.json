@@ -898,7 +898,7 @@
     "clarification_needed_if": "Need referral status",
     "escalate_if": "Requires exact provider-specific access decision",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 90
+    "priority": 5
   },
   {
     "id": "service_surgery_policy_curated",
