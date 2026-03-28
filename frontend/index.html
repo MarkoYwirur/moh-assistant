@@ -3,135 +3,339 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ask Here</title>
+  <title>Հարցրեք այստեղ</title>
   <style>
+    :root {
+      --bg: #f3f6fb;
+      --card: #ffffff;
+      --primary: #184a98;
+      --primary-2: #2b63ba;
+      --text: #162033;
+      --muted: #647089;
+      --line: #e4eaf4;
+      --user: #dfe9ff;
+      --bot: #eef3f8;
+      --danger: #b42318;
+      --shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f6fb;
-      color: #1d2433;
+      background:
+        radial-gradient(circle at top left, #eef4ff 0%, transparent 30%),
+        radial-gradient(circle at top right, #edf8ff 0%, transparent 28%),
+        var(--bg);
+      color: var(--text);
     }
-    .wrap {
-      max-width: 760px;
-      margin: 40px auto;
-      background: #ffffff;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+
+    .page {
+      max-width: 900px;
+      margin: 36px auto;
+      padding: 0 18px;
+    }
+
+    .shell {
+      background: var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
       overflow: hidden;
+      border: 1px solid rgba(24, 74, 152, 0.08);
     }
-    .header {
-      padding: 22px 24px 10px 24px;
-      font-size: 28px;
-      font-weight: bold;
+
+    .hero {
+      padding: 26px 28px 20px 28px;
+      background: linear-gradient(135deg, #123c83 0%, #275db2 100%);
+      color: white;
     }
-    .sub {
-      padding: 0 24px 18px 24px;
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 7px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 10px 0 0 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.9);
+      max-width: 720px;
+    }
+
+    .notices {
+      padding: 16px 20px;
+      background: #f8fbff;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 10px;
+    }
+
+    .notice {
+      padding: 12px 14px;
+      border-radius: 12px;
       font-size: 14px;
-      color: #5f6b82;
-      border-bottom: 1px solid #e7ebf3;
+      line-height: 1.5;
     }
+
+    .notice.info {
+      background: #edf4ff;
+      color: #163a70;
+      border: 1px solid #d6e6ff;
+    }
+
+    .notice.warn {
+      background: #fff4f2;
+      color: var(--danger);
+      border: 1px solid #ffd7d2;
+    }
+
+    .examples {
+      padding: 16px 20px 6px 20px;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .examples-title {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .example-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .example-btn {
+      border: 1px solid #d7e2f3;
+      background: #f8fbff;
+      color: #174182;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.15s ease;
+    }
+
+    .example-btn:hover {
+      background: #edf4ff;
+      border-color: #c1d4f3;
+    }
+
     .chat {
       height: 500px;
       overflow-y: auto;
-      padding: 20px;
+      padding: 22px 20px;
+      background: #fbfcfe;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      background: #fafcff;
+      gap: 14px;
     }
+
     .row {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 6px;
       max-width: 82%;
     }
+
     .user-row {
       align-self: flex-end;
     }
+
     .bot-row {
       align-self: flex-start;
     }
+
     .bubble {
-      padding: 12px 14px;
-      border-radius: 12px;
-      line-height: 1.5;
+      padding: 14px 16px;
+      border-radius: 16px;
+      line-height: 1.6;
       white-space: pre-wrap;
       word-wrap: break-word;
+      font-size: 15px;
     }
+
     .user {
-      background: #dfe9ff;
+      background: var(--user);
+      border-top-right-radius: 6px;
     }
+
     .bot {
-      background: #eef2f7;
+      background: var(--bot);
+      border-top-left-radius: 6px;
     }
-    .meta {
-      font-size: 12px;
-      color: #6f7990;
-    }
+
     .composer {
-      display: flex;
-      gap: 10px;
-      padding: 16px;
-      border-top: 1px solid #e7ebf3;
-      background: #ffffff;
+      padding: 16px 20px 20px 20px;
+      background: white;
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 12px;
     }
+
+    .input-row {
+      display: flex;
+      gap: 12px;
+      align-items: stretch;
+    }
+
     textarea {
       flex: 1;
-      min-height: 58px;
-      max-height: 140px;
+      min-height: 72px;
+      max-height: 160px;
       resize: vertical;
-      padding: 12px;
+      padding: 14px 14px;
       font-size: 15px;
-      border: 1px solid #cfd7e6;
-      border-radius: 10px;
+      border: 1px solid #ccd6e6;
+      border-radius: 14px;
       outline: none;
+      color: var(--text);
+      background: #fcfdff;
     }
-    button {
-      width: 130px;
+
+    textarea:focus {
+      border-color: #7ea4dd;
+      box-shadow: 0 0 0 4px rgba(43, 99, 186, 0.08);
+    }
+
+    .send-btn {
+      width: 150px;
       border: none;
-      border-radius: 10px;
-      background: #1f4b99;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
       color: white;
-      font-size: 15px;
+      font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
     }
-    button:disabled {
-      background: #97acd6;
+
+    .send-btn:disabled {
+      opacity: 0.65;
       cursor: not-allowed;
     }
+
     .toolbar {
       display: flex;
-      justify-content: flex-end;
-      padding: 0 16px 16px 16px;
-      background: #ffffff;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
     }
-    .small-btn {
-      width: auto;
-      padding: 10px 14px;
+
+    .footer-note {
       font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+      max-width: 620px;
+    }
+
+    .reset-btn {
+      border: 1px solid #d5dfef;
+      background: white;
+      color: #27456f;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .typing {
+      display: none;
+      align-self: flex-start;
+      background: #eef3f8;
+      color: #42516c;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-size: 14px;
+      max-width: 260px;
+    }
+
+    @media (max-width: 720px) {
+      .title {
+        font-size: 28px;
+      }
+
+      .input-row {
+        flex-direction: column;
+      }
+
+      .send-btn {
+        width: 100%;
+        min-height: 52px;
+      }
+
+      .row {
+        max-width: 92%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="header">Ask Here</div>
-    <div class="sub">Write your question and read the answer in plain text.</div>
+  <div class="page">
+    <div class="shell">
+      <div class="hero">
+        <div class="eyebrow">ՀՀ առողջապահության նախարարության տեղեկատվական օգնական</div>
+        <h1 class="title">Հարցրեք այստեղ</h1>
+        <p class="subtitle">Գրեք ձեր հարցը և ստացեք տեղեկատվական պատասխան պարզ և հասկանալի ձևով։</p>
+      </div>
 
-    <div id="chat" class="chat"></div>
+      <div class="notices">
+        <div class="notice info">Սա տեղեկատվական օգնական է և բժշկական խորհրդատվություն չի տալիս։</div>
+        <div class="notice warn">Շտապ դեպքերում զանգահարեք 103 կամ 112։</div>
+      </div>
 
-    <div class="composer">
-      <textarea id="messageInput" placeholder="Գրեք ձեր հարցը այստեղ"></textarea>
-      <button id="sendBtn">Send</button>
-    </div>
+      <div class="examples">
+        <div class="examples-title">Օրինակ հարցեր</div>
+        <div class="example-list">
+          <button class="example-btn" data-text="ՄՌՏ-ն անվճա՞ր է">ՄՌՏ-ն անվճա՞ր է</button>
+          <button class="example-btn" data-text="Այս դեղը պետությունը տալիս է՞">Այս դեղը պետությունը տալիս է՞</button>
+          <button class="example-btn" data-text="Ուր դիմեմ ուղեգիր ստանալու համար">Ուր դիմեմ ուղեգիր ստանալու համար</button>
+          <button class="example-btn" data-text="Ինձնից գումար են պահանջել">Ինձնից գումար են պահանջել</button>
+        </div>
+      </div>
 
-    <div class="toolbar">
-      <button id="resetBtn" class="small-btn">Start Over</button>
+      <div id="chat" class="chat"></div>
+      <div id="typing" class="typing">Պատասխանը մշակվում է...</div>
+
+      <div class="composer">
+        <div class="input-row">
+          <textarea id="messageInput" placeholder="Գրեք ձեր հարցը այստեղ"></textarea>
+          <button id="sendBtn" class="send-btn">Ուղարկել</button>
+        </div>
+
+        <div class="toolbar">
+          <div class="footer-note">Պատասխանը ձևավորվում է պաշտոնական կանոնների հիման վրա, սակայն առանձին դեպքերում կարող է պահանջվել լրացուցիչ ճշտում։</div>
+          <button id="resetBtn" class="reset-btn">Սկսել նորից</button>
+        </div>
+      </div>
     </div>
   </div>
 
   <script>
-    const API_URL = "http://127.0.0.1:8000/chat";
+    const API_URL = "https://moh-assistant-api.onrender.com/chat";
     const chatEl = document.getElementById("chat");
+    const typingEl = document.getElementById("typing");
     const inputEl = document.getElementById("messageInput");
     const sendBtn = document.getElementById("sendBtn");
     const resetBtn = document.getElementById("resetBtn");
@@ -144,13 +348,19 @@
       localStorage.setItem("moh_chat_history", JSON.stringify(chatHistory));
     }
 
+    function formatBotText(text) {
+      const cleaned = String(text || "").trim();
+      if (!cleaned) return "Պատասխան չի ստացվել։";
+      return cleaned.replace(/։\s+/g, "։\n\n");
+    }
+
     function addMessage(text, role) {
       const row = document.createElement("div");
       row.className = `row ${role === "user" ? "user-row" : "bot-row"}`;
 
       const bubble = document.createElement("div");
       bubble.className = `bubble ${role}`;
-      bubble.textContent = text;
+      bubble.textContent = role === "bot" ? formatBotText(text) : text;
 
       row.appendChild(bubble);
       chatEl.appendChild(row);
@@ -169,8 +379,16 @@
       }
     }
 
-    async function sendMessage() {
-      const message = inputEl.value.trim();
+    function setLoading(isLoading) {
+      typingEl.style.display = isLoading ? "block" : "none";
+      sendBtn.disabled = isLoading;
+      if (isLoading) {
+        chatEl.scrollTop = chatEl.scrollHeight;
+      }
+    }
+
+    async function sendMessage(prefilledText = null) {
+      const message = (prefilledText ?? inputEl.value).trim();
       if (!message) return;
 
       addMessage(message, "user");
@@ -178,7 +396,7 @@
       saveSession();
 
       inputEl.value = "";
-      sendBtn.disabled = true;
+      setLoading(true);
 
       try {
         const response = await fetch(API_URL, {
@@ -194,8 +412,8 @@
 
         const data = await response.json();
         chatState = data.state || {};
-        const answer = data.answer || "Պատասխան չի ստացվել։";
 
+        const answer = data.answer || "Պատասխան չի ստացվել։";
         addMessage(answer, "bot");
         chatHistory.push({ text: answer, role: "bot" });
         saveSession();
@@ -205,7 +423,7 @@
         chatHistory.push({ text: answer, role: "bot" });
         saveSession();
       } finally {
-        sendBtn.disabled = false;
+        setLoading(false);
         inputEl.focus();
       }
     }
@@ -215,9 +433,10 @@
       chatHistory = [];
       saveSession();
       renderHistory();
+      inputEl.focus();
     }
 
-    sendBtn.addEventListener("click", sendMessage);
+    sendBtn.addEventListener("click", () => sendMessage());
 
     inputEl.addEventListener("keydown", function (e) {
       if (e.key === "Enter" && !e.shiftKey) {
@@ -227,6 +446,13 @@
     });
 
     resetBtn.addEventListener("click", resetSession);
+
+    document.querySelectorAll(".example-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        inputEl.value = btn.dataset.text;
+        sendMessage(btn.dataset.text);
+      });
+    });
 
     renderHistory();
   </script>
