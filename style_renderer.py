@@ -6,6 +6,7 @@ BASE = Path(__file__).resolve().parent
 STYLE_RULES = json.loads((BASE / "style_rules.json").read_text(encoding="utf-8-sig"))
 STYLE_LEXICON = json.loads((BASE / "style_lexicon.json").read_text(encoding="utf-8-sig"))
 STYLE_TEMPLATES = json.loads((BASE / "style_templates.json").read_text(encoding="utf-8-sig"))
+STYLE_EXAMPLES = json.loads((BASE / "style_examples.json").read_text(encoding="utf-8-sig"))
 
 
 def _clean(text: str | None) -> str:
@@ -56,6 +57,31 @@ def _template_parts(answer_type: str) -> list[str]:
     return section.get("default", [])
 
 
+def _best_example(category: str, answer_type: str) -> str:
+    for item in STYLE_EXAMPLES:
+        if item.get("category") == category and item.get("answer_type") == answer_type:
+            return _clean(item.get("text", ""))
+    for item in STYLE_EXAMPLES:
+        if item.get("answer_type") == answer_type:
+            return _clean(item.get("text", ""))
+    return ""
+
+
+def _extract_question_style(example_text: str, fallback: str) -> str:
+    if "։" in example_text:
+        last_part = example_text.split("։")[-1].strip()
+        if "՞" in last_part:
+            return last_part
+    return fallback
+
+
+def _extract_opener_style(example_text: str, fallback: str) -> str:
+    parts = [p.strip() for p in example_text.split("։") if p.strip()]
+    if parts:
+        return parts[0]
+    return fallback
+
+
 def render_style(payload: dict) -> str:
     answer_type = payload.get("answer_type", "direct_answer")
     category = payload.get("category", "")
@@ -81,6 +107,22 @@ def render_style(payload: dict) -> str:
         "safety_text": payload.get("safety_text", "")
     }
 
+    example_text = _best_example(category, answer_type)
+
+    if answer_type in {"clarify", "partial_answer_with_clarify"}:
+        field_map["follow_up_question"] = _extract_question_style(
+            example_text,
+            field_map["follow_up_question"]
+        )
+
+    if answer_type in {"partial_answer_with_clarify", "partial_answer_with_next_step", "direct_answer"}:
+        if field_map["partial_answer"]:
+            field_map["partial_answer"] = _extract_opener_style(example_text, field_map["partial_answer"])
+        elif field_map["policy_answer"]:
+            field_map["policy_answer"] = _extract_opener_style(example_text, field_map["policy_answer"])
+        elif field_map["gap_reason_text"]:
+            field_map["gap_reason_text"] = _extract_opener_style(example_text, field_map["gap_reason_text"])
+
     parts = []
     for item in template:
         parts.append(item.format(**field_map))
@@ -88,11 +130,5 @@ def render_style(payload: dict) -> str:
     text = " ".join(_sentence(part) for part in parts if _clean(part))
     text = _apply_lexicon(text)
     text = _limit_sentences(text, max_sentences=max_sentences)
-
-    preferred_openers = STYLE_LEXICON.get("preferred_openers", {}).get(category, [])
-    if preferred_openers and payload.get("force_preferred_opener") and text:
-        opener = preferred_openers[0]
-        if not text.startswith(opener):
-            text = _sentence(opener + " " + text)
 
     return text

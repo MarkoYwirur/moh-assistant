@@ -77,15 +77,14 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
         },
         "semantic": {
             "answer_type": action,
-            "category": card.get("category") if card else "",
+            "category": card.get("category") if card else "escalation",
             "policy_answer": "",
             "condition_note": "",
             "partial_answer": "",
             "next_step": "",
             "follow_up_question": "",
             "gap_reason_text": "",
-            "safety_text": "",
-            "force_preferred_opener": False
+            "safety_text": ""
         }
     }
 
@@ -99,11 +98,22 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
             payload["semantic"]["next_step"] = card.get("next_step", "")
         return payload
 
-    if action in {"clarify", "partial_answer_with_clarify"} and card:
+    if action == "clarify" and card:
         missing_field = missing_fields[0] if missing_fields else None
         question = _get_field_question(card, missing_field)
         payload["semantic"]["follow_up_question"] = question
+        payload["state"] = {
+            "pending_card_id": card.get("id"),
+            "pending_field": missing_field,
+            "collected_fields": collected_fields,
+        }
+        return payload
+
+    if action == "partial_answer_with_clarify" and card:
+        missing_field = missing_fields[0] if missing_fields else None
+        question = _get_field_question(card, missing_field)
         payload["semantic"]["partial_answer"] = card.get("safe_partial_answer", "")
+        payload["semantic"]["follow_up_question"] = question
         payload["state"] = {
             "pending_card_id": card.get("id"),
             "pending_field": missing_field,
@@ -117,10 +127,12 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
         return payload
 
     if action == "escalate_safety":
+        payload["semantic"]["category"] = "safety"
         payload["semantic"]["safety_text"] = "Ես բժշկական խորհրդատվություն չեմ տալիս"
         payload["semantic"]["next_step"] = "Եթե վիճակը շտապ է, զանգահարեք 103 կամ 112"
         return payload
 
-    payload["semantic"]["gap_reason_text"] = "Հիմա հստակ պատասխան տալ հնարավոր չէ"
+    payload["semantic"]["category"] = "escalation"
+    payload["semantic"]["gap_reason_text"] = "Այս հարցով հիմա հստակ պատասխան տալ հնարավոր չէ"
     payload["semantic"]["next_step"] = "Նշեք՝ կոնկրետ որ ծառայության, դեղի կամ խնդրի մասին է խոսքը"
     return payload
