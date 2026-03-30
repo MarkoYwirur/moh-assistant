@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Հարցրեք այստեղ</title>
+  <title>ՀՀ առողջապահության նախարարության տեղեկատվական օգնական</title>
   <style>
     :root {
       --bg: #f3f6fb;
       --card: #ffffff;
-      --primary: #184a98;
-      --primary-2: #2b63ba;
+      --primary: #17458f;
+      --primary-2: #2f67bd;
       --text: #162033;
       --muted: #647089;
       --line: #e4eaf4;
       --user: #dfe9ff;
       --bot: #eef3f8;
-      --danger: #b42318;
-      --shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
-      --radius: 16px;
+      --danger-bg: #fff4f2;
+      --danger-text: #b42318;
+      --info-bg: #edf4ff;
+      --info-text: #163a70;
+      --shadow: 0 12px 34px rgba(16, 24, 40, 0.08);
+      --radius: 18px;
     }
 
     * {
@@ -35,9 +38,9 @@
     }
 
     .page {
-      max-width: 900px;
-      margin: 36px auto;
-      padding: 0 18px;
+      max-width: 980px;
+      margin: 32px auto;
+      padding: 0 18px 36px 18px;
     }
 
     .shell {
@@ -45,11 +48,11 @@
       border-radius: 24px;
       box-shadow: var(--shadow);
       overflow: hidden;
-      border: 1px solid rgba(24, 74, 152, 0.08);
+      border: 1px solid rgba(23, 69, 143, 0.08);
     }
 
     .hero {
-      padding: 26px 28px 20px 28px;
+      padding: 28px 30px 24px 30px;
       background: linear-gradient(135deg, #123c83 0%, #275db2 100%);
       color: white;
     }
@@ -57,7 +60,7 @@
     .eyebrow {
       display: inline-block;
       font-size: 12px;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.45px;
       text-transform: uppercase;
       background: rgba(255,255,255,0.14);
       border: 1px solid rgba(255,255,255,0.18);
@@ -69,20 +72,46 @@
     .title {
       margin: 0;
       font-size: 34px;
-      line-height: 1.1;
+      line-height: 1.15;
       font-weight: 700;
+      max-width: 780px;
     }
 
     .subtitle {
-      margin: 10px 0 0 0;
+      margin: 12px 0 0 0;
       font-size: 16px;
-      line-height: 1.5;
-      color: rgba(255,255,255,0.9);
-      max-width: 720px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.92);
+      max-width: 820px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 18px 20px;
+      background: #f8fbff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .trust-card {
+      padding: 14px 14px;
+      border-radius: 14px;
+      font-size: 14px;
+      line-height: 1.55;
+      background: white;
+      border: 1px solid #e4ebf6;
+    }
+
+    .trust-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #173d79;
+      font-size: 14px;
     }
 
     .notices {
-      padding: 16px 20px;
+      padding: 0 20px 18px 20px;
       background: #f8fbff;
       border-bottom: 1px solid var(--line);
       display: grid;
@@ -97,66 +126,114 @@
     }
 
     .notice.info {
-      background: #edf4ff;
-      color: #163a70;
+      background: var(--info-bg);
+      color: var(--info-text);
       border: 1px solid #d6e6ff;
     }
 
     .notice.warn {
-      background: #fff4f2;
-      color: var(--danger);
+      background: var(--danger-bg);
+      color: var(--danger-text);
       border: 1px solid #ffd7d2;
     }
 
-    .examples {
-      padding: 16px 20px 6px 20px;
-      background: #ffffff;
+    .section {
+      padding: 22px 24px;
       border-bottom: 1px solid var(--line);
+      background: white;
     }
 
-    .examples-title {
-      font-size: 13px;
+    .section h2 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      color: #18345f;
+    }
+
+    .section p {
+      margin: 0;
       color: var(--muted);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .problem-card {
+      background: #f8fbff;
+      border: 1px solid #dce6f5;
+      border-radius: 16px;
+      padding: 16px 14px;
+      cursor: pointer;
+      transition: 0.15s ease;
+      text-align: left;
+      color: #174182;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .problem-card:hover {
+      background: #edf4ff;
+      border-color: #c4d7f3;
+      transform: translateY(-1px);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .step-card {
+      background: #fbfcfe;
+      border: 1px solid #e5ebf5;
+      border-radius: 16px;
+      padding: 16px 14px;
+    }
+
+    .step-num {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-2));
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
       margin-bottom: 10px;
     }
 
-    .example-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    .step-text {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #223047;
     }
 
-    .example-btn {
-      border: 1px solid #d7e2f3;
-      background: #f8fbff;
-      color: #174182;
-      border-radius: 999px;
-      padding: 10px 14px;
-      font-size: 14px;
-      cursor: pointer;
-      transition: 0.15s ease;
-    }
-
-    .example-btn:hover {
-      background: #edf4ff;
-      border-color: #c1d4f3;
+    .chat-wrap {
+      background: #fbfcfe;
     }
 
     .chat {
       height: 500px;
       overflow-y: auto;
       padding: 22px 20px;
-      background: #fbfcfe;
       display: flex;
       flex-direction: column;
       gap: 14px;
+      background: #fbfcfe;
     }
 
     .row {
       display: flex;
       flex-direction: column;
       gap: 6px;
-      max-width: 82%;
+      max-width: 78%;
     }
 
     .user-row {
@@ -170,7 +247,7 @@
     .bubble {
       padding: 14px 16px;
       border-radius: 16px;
-      line-height: 1.6;
+      line-height: 1.7;
       white-space: pre-wrap;
       word-wrap: break-word;
       font-size: 15px;
@@ -186,12 +263,61 @@
       border-top-left-radius: 6px;
     }
 
+    .typing-row {
+      align-self: flex-start;
+      display: none;
+      max-width: 140px;
+    }
+
+    .typing-bubble {
+      background: var(--bot);
+      border-top-left-radius: 6px;
+      border-radius: 16px;
+      padding: 14px 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7d8aa2;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.15s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    @keyframes bounce {
+      0%, 80%, 100% {
+        transform: translateY(0);
+        opacity: 0.5;
+      }
+      40% {
+        transform: translateY(-5px);
+        opacity: 1;
+      }
+    }
+
     .composer {
-      padding: 16px 20px 20px 20px;
+      padding: 18px 20px 20px 20px;
       background: white;
       border-top: 1px solid var(--line);
       display: grid;
       gap: 12px;
+    }
+
+    .hint {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
     }
 
     .input-row {
@@ -202,8 +328,8 @@
 
     textarea {
       flex: 1;
-      min-height: 72px;
-      max-height: 160px;
+      min-height: 78px;
+      max-height: 170px;
       resize: vertical;
       padding: 14px 14px;
       font-size: 15px;
@@ -212,6 +338,7 @@
       outline: none;
       color: var(--text);
       background: #fcfdff;
+      line-height: 1.55;
     }
 
     textarea:focus {
@@ -247,7 +374,7 @@
       font-size: 13px;
       color: var(--muted);
       line-height: 1.5;
-      max-width: 620px;
+      max-width: 680px;
     }
 
     .reset-btn {
@@ -260,15 +387,12 @@
       cursor: pointer;
     }
 
-    .typing {
-      display: none;
-      align-self: flex-start;
-      background: #eef3f8;
-      color: #42516c;
-      padding: 12px 14px;
-      border-radius: 14px;
-      font-size: 14px;
-      max-width: 260px;
+    @media (max-width: 860px) {
+      .trust-grid,
+      .problem-grid,
+      .steps {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 720px) {
@@ -288,6 +412,10 @@
       .row {
         max-width: 92%;
       }
+
+      .page {
+        margin: 20px auto;
+      }
     }
   </style>
 </head>
@@ -296,37 +424,90 @@
     <div class="shell">
       <div class="hero">
         <div class="eyebrow">ՀՀ առողջապահության նախարարության տեղեկատվական օգնական</div>
-        <h1 class="title">Հարցրեք այստեղ</h1>
-        <p class="subtitle">Գրեք ձեր հարցը և ստացեք տեղեկատվական պատասխան պարզ և հասկանալի ձևով։</p>
+        <h1 class="title">Հարցերի պարզեցված ուղղորդում առողջապահական ծառայությունների և վարչական խնդիրների դեպքում</h1>
+        <p class="subtitle">Օգնում է հասկանալ՝ ինչ անել, ուր դիմել և ինչ տվյալներ պատրաստել առողջապահական ծառայությունների, ուղեգրերի, դեղերի, վճարների և համակարգում երևացող տվյալների հետ կապված իրավիճակներում։</p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <strong>Ինչ է սա</strong>
+          Տեղեկատվական օգնական, որը տրամադրում է ուղղորդում առողջապահական ծառայությունների և վարչական հարցերի վերաբերյալ։
+        </div>
+        <div class="trust-card">
+          <strong>Ինչ չի անում</strong>
+          Այն չի տալիս բժշկական խորհրդատվություն և չի փոխարինում բժշկին, շտապ օգնությանը կամ անհատական որոշմանը։
+        </div>
+        <div class="trust-card">
+          <strong>Ինչու է ստեղծվել</strong>
+          Որպեսզի քաղաքացիներն ավելի արագ հասկանան իրենց հաջորդ քայլը և հեշտ գտնեն ճիշտ ուղղորդումը։
+        </div>
       </div>
 
       <div class="notices">
-        <div class="notice info">Սա տեղեկատվական օգնական է և բժշկական խորհրդատվություն չի տալիս։</div>
-        <div class="notice warn">Շտապ դեպքերում զանգահարեք 103 կամ 112։</div>
+        <div class="notice info">Պատասխանները ձևավորվում են կառուցված պաշտոնական նյութերի և կանոնների հիման վրա։ Որոշ դեպքերում կարող է պահանջվել լրացուցիչ ճշտում կամ համապատասխան հաստատություն դիմել։</div>
+        <div class="notice warn">Շտապ դեպքերում զանգահարեք 103 կամ 112։ Այս օգնականը շտապ օգնության փոխարեն չէ։</div>
       </div>
 
-      <div class="examples">
-        <div class="examples-title">Օրինակ հարցեր</div>
-        <div class="example-list">
-          <button class="example-btn" data-text="ՄՌՏ-ն անվճա՞ր է">ՄՌՏ-ն անվճա՞ր է</button>
-          <button class="example-btn" data-text="Այս դեղը պետությունը տալիս է՞">Այս դեղը պետությունը տալիս է՞</button>
-          <button class="example-btn" data-text="Ուր դիմեմ ուղեգիր ստանալու համար">Ուր դիմեմ ուղեգիր ստանալու համար</button>
-          <button class="example-btn" data-text="Ինձնից գումար են պահանջել">Ինձնից գումար են պահանջել</button>
+      <div class="section">
+        <h2>Որ հարցերով կարող է օգնել</h2>
+        <p>Ընտրեք ձեզ ծանոթ իրավիճակը կամ գրեք հարցը ազատ ձևով։</p>
+        <div class="problem-grid">
+          <button class="problem-card" data-text="Չգիտեմ՝ ուր դիմել">Չգիտեմ՝ ուր դիմել</button>
+          <button class="problem-card" data-text="Ինձնից գումար են պահանջել">Ինձնից գումար են պահանջել</button>
+          <button class="problem-card" data-text="Դեղը չեն տվել կամ չի երևում">Դեղը չեն տվել կամ չի երևում</button>
+          <button class="problem-card" data-text="Իմ տվյալները սխալ են երևում">Իմ տվյալները սխալ են երևում</button>
+          <button class="problem-card" data-text="Չեմ հասկանում՝ ուղեգիր պետք է, թե ոչ">Չեմ հասկանում՝ ուղեգիր պետք է, թե ոչ</button>
+          <button class="problem-card" data-text="Ինձ մերժել են">Ինձ մերժել են</button>
         </div>
       </div>
 
-      <div id="chat" class="chat"></div>
-      <div id="typing" class="typing">Պատասխանը մշակվում է...</div>
+      <div class="section">
+        <h2>Ինչպես է աշխատում</h2>
+        <p>Օգնականը հարցը մշակում է փուլերով և, անհրաժեշտության դեպքում, տալիս է հստակեցնող հարց՝ վերջնական ուղղորդումը ճիշտ ձևակերպելու համար։</p>
+        <div class="steps">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-text">Գրեք ձեր հարցը սովորական ձևով՝ այնպես, ինչպես կասեիք ընդունարանում կամ հեռախոսով։</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-text">Եթե պետք է, օգնականը տալիս է մեկ կամ մի քանի հստակեցնող հարց և բացատրում է՝ ինչու է այդ տվյալը կարևոր։</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-text">Դուք ստանում եք հաջորդ քայլը, ուղղորդումը կամ անհրաժեշտ հստակեցումը՝ ըստ ձեր իրավիճակի։</div>
+          </div>
+        </div>
+      </div>
 
-      <div class="composer">
-        <div class="input-row">
-          <textarea id="messageInput" placeholder="Գրեք ձեր հարցը այստեղ"></textarea>
-          <button id="sendBtn" class="send-btn">Ուղարկել</button>
+      <div class="section">
+        <h2>Որտեղից են գալիս պատասխանները</h2>
+        <p>Պատասխանները ձևավորվում են կառուցված պաշտոնական կանոնների, հաստատված նյութերի և սահմանված ընթացակարգերի հիման վրա։ Օգնականը չի փորձում կռահել և չի տալիս ազատ բժշկական խորհրդատվություն։</p>
+      </div>
+
+      <div class="chat-wrap">
+        <div id="chat" class="chat"></div>
+
+        <div id="typingRow" class="typing-row">
+          <div class="typing-bubble">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
 
-        <div class="toolbar">
-          <div class="footer-note">Պատասխանը ձևավորվում է պաշտոնական կանոնների հիման վրա, սակայն առանձին դեպքերում կարող է պահանջվել լրացուցիչ ճշտում։</div>
-          <button id="resetBtn" class="reset-btn">Սկսել նորից</button>
+        <div class="composer">
+          <div class="hint">Գրեք հարցը այնպես, ինչպես կբացատրեիք ընդունարանում կամ հեռախոսով։ Օրինակ՝ ինձնից գումար են ուզել, ինչ անեմ։</div>
+
+          <div class="input-row">
+            <textarea id="messageInput" placeholder="Գրեք ձեր հարցը այստեղ"></textarea>
+            <button id="sendBtn" class="send-btn">Ուղարկել</button>
+          </div>
+
+          <div class="toolbar">
+            <div class="footer-note">Այս օգնականը տրամադրում է տեղեկատվական ուղղորդում։ Որոշ դեպքերում վերջնական պատասխանի համար կարող է պահանջվել լրացուցիչ ստուգում կամ համապատասխան հաստատություն դիմել։</div>
+            <button id="resetBtn" class="reset-btn">Սկսել նորից</button>
+          </div>
         </div>
       </div>
     </div>
@@ -335,7 +516,7 @@
   <script>
     const API_URL = "https://moh-assistant-api.onrender.com/chat";
     const chatEl = document.getElementById("chat");
-    const typingEl = document.getElementById("typing");
+    const typingRowEl = document.getElementById("typingRow");
     const inputEl = document.getElementById("messageInput");
     const sendBtn = document.getElementById("sendBtn");
     const resetBtn = document.getElementById("resetBtn");
@@ -370,7 +551,7 @@
     function renderHistory() {
       chatEl.innerHTML = "";
       if (chatHistory.length === 0) {
-        addMessage("Բարև։ Գրեք ձեր հարցը։", "bot");
+        addMessage("Բարև։ Գրեք ձեր հարցը, և ես կփորձեմ ուղղորդել ձեզ ըստ ձեր իրավիճակի։", "bot");
         return;
       }
 
@@ -379,11 +560,28 @@
       }
     }
 
-    function setLoading(isLoading) {
-      typingEl.style.display = isLoading ? "block" : "none";
-      sendBtn.disabled = isLoading;
-      if (isLoading) {
-        chatEl.scrollTop = chatEl.scrollHeight;
+    function showTyping() {
+      typingRowEl.style.display = "flex";
+      chatEl.appendChild(typingRowEl);
+      chatEl.scrollTop = chatEl.scrollHeight;
+    }
+
+    function hideTyping() {
+      typingRowEl.style.display = "none";
+    }
+
+    async function smartDelay(startTime, answerText) {
+      const elapsed = Date.now() - startTime;
+      const length = String(answerText || "").length;
+
+      let target = 1500;
+      if (length > 220) target = 2600;
+      if (length > 420) target = 3600;
+      if (target > 5000) target = 5000;
+
+      const remaining = target - elapsed;
+      if (remaining > 0) {
+        await new Promise(resolve => setTimeout(resolve, remaining));
       }
     }
 
@@ -396,7 +594,10 @@
       saveSession();
 
       inputEl.value = "";
-      setLoading(true);
+      sendBtn.disabled = true;
+      showTyping();
+
+      const startTime = Date.now();
 
       try {
         const response = await fetch(API_URL, {
@@ -414,16 +615,22 @@
         chatState = data.state || {};
 
         const answer = data.answer || "Պատասխան չի ստացվել։";
+        await smartDelay(startTime, answer);
+
+        hideTyping();
         addMessage(answer, "bot");
         chatHistory.push({ text: answer, role: "bot" });
         saveSession();
       } catch (error) {
         const answer = "Տեխնիկական խնդիր առաջացավ։ Փորձեք կրկին։";
+        await smartDelay(startTime, answer);
+
+        hideTyping();
         addMessage(answer, "bot");
         chatHistory.push({ text: answer, role: "bot" });
         saveSession();
       } finally {
-        setLoading(false);
+        sendBtn.disabled = false;
         inputEl.focus();
       }
     }
@@ -433,6 +640,7 @@
       chatHistory = [];
       saveSession();
       renderHistory();
+      hideTyping();
       inputEl.focus();
     }
 
@@ -447,7 +655,7 @@
 
     resetBtn.addEventListener("click", resetSession);
 
-    document.querySelectorAll(".example-btn").forEach(btn => {
+    document.querySelectorAll(".problem-card").forEach(btn => {
       btn.addEventListener("click", () => {
         inputEl.value = btn.dataset.text;
         sendMessage(btn.dataset.text);

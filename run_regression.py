@@ -46,16 +46,37 @@ for test in branch_tests:
 
     ok = True
 
-    if second_response.get("action") != test["expected_second_action"]:
+    if "expected_second_action" in test and second_response.get("action") != test["expected_second_action"]:
         ok = False
 
-    if second_response.get("matched_card_id") != test["expected_second_card"]:
+    if "expected_second_card" in test and second_response.get("matched_card_id") != test["expected_second_card"]:
         ok = False
 
-    print({
-        "name": test["name"],
-        "ok": ok,
-        "first_action": first_response.get("action"),
-        "second_action": second_response.get("action"),
-        "second_card": second_response.get("matched_card_id")
-    })
+    if "third_message" in test:
+        third_response = client.post("/chat", json={
+            "message": test["third_message"],
+            "state": second_response.get("state", {})
+        }).json()
+
+        if "expected_third_action" in test and third_response.get("action") != test["expected_third_action"]:
+            ok = False
+
+        if "expected_third_card" in test and third_response.get("matched_card_id") != test["expected_third_card"]:
+            ok = False
+
+        print({
+            "name": test["name"],
+            "ok": ok,
+            "first_action": first_response.get("action"),
+            "second_action": second_response.get("action"),
+            "third_action": third_response.get("action"),
+            "third_card": third_response.get("matched_card_id")
+        })
+    else:
+        print({
+            "name": test["name"],
+            "ok": ok,
+            "first_action": first_response.get("action"),
+            "second_action": second_response.get("action"),
+            "second_card": second_response.get("matched_card_id")
+        })

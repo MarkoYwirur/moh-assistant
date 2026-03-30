@@ -26,5 +26,48 @@
     "second_message": "ոչ",
     "expected_second_action": "direct_answer",
     "expected_second_card": "service_ct_policy_curated"
+  },
+  {
+    "name": "medicine_not_provided_branch_1",
+    "first_message": "դեղը չեն տվել",
+    "second_message": "Պարացետամոլ 500 մգ հաբ",
+    "expected_second_action": "partial_answer_with_clarify",
+    "expected_second_card": "complaint_medicine_not_provided_v1"
+  },
+  {
+    "name": "medicine_not_provided_branch_2",
+    "first_message": "դեղը չեն տվել",
+    "second_message": "Պարացետամոլ 500 մգ հաբ",
+    "third_message": "դեղատունում",
+    "expected_third_action": "direct_answer",
+    "expected_third_card": "complaint_medicine_not_provided_v1"
+  },
+  {
+    "name": "missing_record_branch_1",
+    "first_message": "գրառում չկա",
+    "second_message": "բացակայում է",
+    "expected_second_action": "partial_answer_with_clarify",
+    "expected_second_card": "complaint_missing_or_wrong_record_v1"
+  },
+  {
+    "name": "armed_visibility_branch_1",
+    "first_message": "արմեդում չի երևում",
+    "second_message": "դեղատոմս",
+    "expected_second_action": "partial_answer_with_clarify",
+    "expected_second_card": "technical_armed_visibility_issue_v1"
+  },
+  {
+    "name": "duplicate_charge_branch_1",
+    "first_message": "երկու անգամ են գանձել",
+    "second_message": "կրկնակի",
+    "expected_second_action": "partial_answer_with_clarify",
+    "expected_second_card": "complaint_duplicate_charge_or_wrong_payment_status_v1"
+  },
+  {
+    "name": "specialist_referral_branch",
+    "first_message": "նեղ մասնագետի ուղեգիր է պետք",
+    "second_message": "սրտաբանի համար",
+    "expected_second_action": "direct_answer",
+    "expected_second_card": "routing_specialist_referral_confusion_v1"
   }
 ]

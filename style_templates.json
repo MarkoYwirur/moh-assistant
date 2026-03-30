@@ -8,11 +8,13 @@
   "partial_answer_with_clarify": {
     "default": [
       "{partial_answer}",
+      "{why_this_question}",
       "{follow_up_question}"
     ]
   },
   "clarify": {
     "default": [
+      "{why_this_question}",
       "{follow_up_question}"
     ]
   },
