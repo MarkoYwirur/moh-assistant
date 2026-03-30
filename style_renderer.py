@@ -7,7 +7,6 @@ STYLE_RULES = json.loads((BASE / "style_rules.json").read_text(encoding="utf-8-s
 STYLE_LEXICON = json.loads((BASE / "style_lexicon.json").read_text(encoding="utf-8-sig"))
 STYLE_TEMPLATES = json.loads((BASE / "style_templates.json").read_text(encoding="utf-8-sig"))
 STYLE_EXAMPLES = json.loads((BASE / "style_examples.json").read_text(encoding="utf-8-sig"))
-STYLE_PROFILE = json.loads((BASE / "style_profile.json").read_text(encoding="utf-8-sig"))
 
 
 def _clean(text: str | None) -> str:
@@ -49,7 +48,7 @@ def _limit_sentences(text: str, max_sentences: int) -> str:
     parts = [p.strip() for p in normalized.split("։") if p.strip()]
     parts = parts[:max_sentences]
     if not parts:
-      return ""
+        return ""
     return "։ ".join(parts) + "։"
 
 
@@ -58,51 +57,22 @@ def _template_parts(answer_type: str) -> list[str]:
     return section.get("default", [])
 
 
-def _best_example(category: str, answer_type: str) -> str:
-    for item in STYLE_EXAMPLES:
-        if item.get("category") == category and item.get("answer_type") == answer_type:
-            return _clean(item.get("text", ""))
-    for item in STYLE_EXAMPLES:
-        if item.get("answer_type") == answer_type:
-            return _clean(item.get("text", ""))
-    return ""
-
-
-def _extract_question_style(example_text: str, fallback: str) -> str:
-    parts = [p.strip() for p in example_text.split("։") if p.strip()]
-    if parts:
-        last_part = parts[-1]
-        if "՞" in last_part:
-            return last_part
-    return fallback
-
-
-def _extract_opening_style(example_text: str, fallback: str) -> str:
-    parts = [p.strip() for p in example_text.split("։") if p.strip()]
-    if parts:
-        return parts[0]
-    return fallback
-
-
 def render_style(payload: dict) -> str:
     answer_type = payload.get("answer_type", "direct_answer")
-    category = payload.get("category", "")
     max_map = STYLE_RULES.get("length", {})
     max_sentences = {
-        "direct_answer": max_map.get("max_sentences_direct", 2),
+        "direct_answer": max_map.get("max_sentences_direct", 3),
         "partial_answer_with_clarify": 3,
         "clarify": 2,
-        "partial_answer_with_next_step": max_map.get("max_sentences_direct", 2),
+        "partial_answer_with_next_step": 3,
         "escalate_true_gap": max_map.get("max_sentences_escalation", 2),
         "escalate_safety": max_map.get("max_sentences_escalation", 2),
-    }.get(answer_type, 2)
+    }.get(answer_type, 3)
 
     template = _template_parts(answer_type)
-    example_text = _best_example(category, answer_type)
 
     field_map = {
         "policy_answer": payload.get("policy_answer", ""),
-        "condition_note": payload.get("condition_note", ""),
         "partial_answer": payload.get("partial_answer", ""),
         "next_step": payload.get("next_step", ""),
         "follow_up_question": payload.get("follow_up_question", ""),
@@ -111,25 +81,11 @@ def render_style(payload: dict) -> str:
         "safety_text": payload.get("safety_text", "")
     }
 
-    if answer_type in {"clarify", "partial_answer_with_clarify"}:
-        field_map["follow_up_question"] = _extract_question_style(example_text, field_map["follow_up_question"])
-
-    if answer_type == "direct_answer" and field_map["policy_answer"]:
-        field_map["policy_answer"] = _extract_opening_style(example_text, field_map["policy_answer"])
-
-    if answer_type == "partial_answer_with_clarify" and field_map["partial_answer"]:
-        field_map["partial_answer"] = _extract_opening_style(example_text, field_map["partial_answer"])
-
-    if answer_type == "partial_answer_with_next_step" and field_map["partial_answer"]:
-        field_map["partial_answer"] = _extract_opening_style(example_text, field_map["partial_answer"])
-
-    if answer_type == "escalate_true_gap" and field_map["gap_reason_text"]:
-        field_map["gap_reason_text"] = _extract_opening_style(example_text, field_map["gap_reason_text"])
-
     parts = []
     for item in template:
         value = item.format(**field_map)
-        if _clean(value):
+        value = _clean(value)
+        if value:
             parts.append(_sentence(value))
 
     text = " ".join(parts)

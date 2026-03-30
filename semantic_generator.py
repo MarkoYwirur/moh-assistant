@@ -1,4 +1,11 @@
-﻿def _matches_when_clause(when_clause: dict, collected_fields: dict) -> bool:
+﻿import json
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parent
+CLARIFICATION_POLICY = json.loads((BASE / "clarification_policy.json").read_text(encoding="utf-8-sig"))
+
+
+def _matches_when_clause(when_clause: dict, collected_fields: dict) -> bool:
     for field_name, expected_value in when_clause.items():
         actual_value = collected_fields.get(field_name)
 
@@ -60,23 +67,62 @@ def _get_field_question(card: dict, field_name: str) -> str:
     return "Կնշե՞ք ավելի կոնկրետ տվյալներ։"
 
 
-def _get_field_why(field_name: str) -> str:
-    explanations = {
-        "referral_status": "Սա կարևոր է, որովհետև ծառայության կազմակերպման կարգը հաճախ կախված է ուղեգրի առկայությունից։",
-        "medicine_name_details": "Սա պետք է հստակեցնել, որովհետև վերջնական պատասխանը կախված է դեղի ճշգրիտ անվանումից, դեղաչափից և ձևից։",
-        "dispense_location": "Սա կարևոր է, որովհետև պետք է հասկանալ՝ որ օղակում է առաջացել խնդիրը։",
-        "service_context": "Սա պետք է հստակեցնել, որովհետև առանց ծառայության տեսակի և վայրի ճիշտ ուղղորդում հնարավոր չէ տալ։",
-        "refusal_context": "Սա կարևոր է, որովհետև պետք է հասկանալ՝ ինչն է մերժվել և ինչ հաջորդ քայլ է պետք առաջարկել։",
-        "routing_need_type": "Սա պետք է հստակեցնել, որովհետև տարբեր ծառայությունների դեպքում տարբեր ուղղորդում է գործում։",
-        "record_issue_type": "Սա կարևոր է, որովհետև բացակա և սխալ տվյալների դեպքում գործողությունները տարբեր են։",
-        "record_context": "Սա պետք է հասկանալ, որպեսզի հստակ լինի՝ ինչ տվյալ է խնդրահարույց։",
-        "armed_item_type": "Սա կարևոր է, որովհետև տարբեր տվյալների դեպքում տարբեր պատասխանատու օղակներ կարող են լինել։",
-        "armed_issue_context": "Սա պետք է հստակեցնել, որպեսզի հասկանալի լինի՝ որտեղ է առաջացել խափանումը կամ չերևալու խնդիրը։",
-        "payment_issue_type": "Սա կարևոր է, որովհետև կրկնակի գանձման և սխալ կարգավիճակի դեպքում հետագա քայլերը տարբեր են։",
-        "payment_context": "Սա պետք է հասկանալ, որպեսզի հնարավոր լինի ուղղորդել ճիշտ հաստատություն կամ գործողություն։",
-        "specialist_type_or_purpose": "Սա կարևոր է, որովհետև նեղ մասնագետի դեպքում ճիշտ ուղղորդումը կախված է դիմելու նպատակից։"
-    }
-    return explanations.get(field_name, "Սա պետք է հստակեցնել, որպեսզի հնարավոր լինի ճիշտ պատասխան տալ։")
+def _should_show_reason(field_name: str | None) -> bool:
+    if not field_name:
+        return False
+
+    hidden = set(CLARIFICATION_POLICY.get("hide_reason_for_fields", []))
+    shown = set(CLARIFICATION_POLICY.get("show_reason_for_fields", []))
+
+    if field_name in hidden:
+        return False
+    if field_name in shown:
+        return True
+    return False
+
+
+def _get_field_reason(field_name: str | None) -> str:
+    if not field_name:
+        return ""
+
+    if not _should_show_reason(field_name):
+        return ""
+
+    style = CLARIFICATION_POLICY.get("reason_style", {})
+    specific = style.get(field_name)
+    if isinstance(specific, str) and specific.strip():
+        return specific.strip()
+
+    short = style.get("short", [])
+    if isinstance(short, list) and short:
+        return short[0]
+
+    return ""
+
+
+def _build_partial_frame(card: dict, collected_fields: dict) -> str:
+    category = card.get("category", "")
+    safe_partial = (card.get("safe_partial_answer") or "").strip()
+
+    if safe_partial:
+        return safe_partial
+
+    if category == "complaints":
+        return "Այս պահին տեսնում եմ, որ խոսքը խնդրահարույց իրավիճակի մասին է, բայց վերջնական ուղղորդման համար մեկ տվյալ դեռ պետք է հստակեցնել։"
+
+    if category == "routing":
+        return "Ճիշտ ուղղորդումը կախված է ձեր կոնկրետ կարիքից, և դրա համար մեկ տվյալ պետք է հստակեցնել։"
+
+    if category == "medicines":
+        return "Դեղի վերաբերյալ վերջնական պատասխան տալու համար մեկ կարևոր տվյալ դեռ պետք է հստակեցնել։"
+
+    if category == "service_coverage":
+        return "Ծառայության վերաբերյալ վերջնական պատասխան տալու համար մեկ կարևոր տվյալ դեռ պետք է հստակեցնել։"
+
+    if category == "eligibility":
+        return "Այս հարցի պատասխանը կախված է ձեր կարգավիճակից կամ ծրագրից, և դրա համար մեկ տվյալ դեռ պետք է հստակեցնել։"
+
+    return "Վերջնական պատասխան տալու համար մեկ տվյալ դեռ պետք է հստակեցնել։"
 
 
 def build_semantic_payload(decision: dict, collected_fields: dict | None = None) -> dict:
@@ -124,9 +170,9 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
         missing_fields = _get_missing_fields(card, collected_fields)
         missing_field = missing_fields[0] if missing_fields else None
 
-        payload["semantic"]["partial_answer"] = card.get("safe_partial_answer", "")
+        payload["semantic"]["partial_answer"] = _build_partial_frame(card, collected_fields)
         payload["semantic"]["follow_up_question"] = _get_field_question(card, missing_field) if missing_field else "Կնշե՞ք ավելի կոնկրետ տվյալներ։"
-        payload["semantic"]["why_this_question"] = _get_field_why(missing_field) if missing_field else "Սա պետք է հստակեցնել, որպեսզի ճիշտ ուղղորդում հնարավոր լինի տալ։"
+        payload["semantic"]["why_this_question"] = _get_field_reason(missing_field)
 
         payload["state"] = {
             "pending_card_id": card.get("id"),
@@ -136,7 +182,7 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
         return payload
 
     if action == "partial_answer_with_next_step" and card:
-        payload["semantic"]["partial_answer"] = card.get("safe_partial_answer", "")
+        payload["semantic"]["partial_answer"] = _build_partial_frame(card, collected_fields)
         payload["semantic"]["next_step"] = card.get("next_step_if_missing", "") or card.get("next_step", "")
         return payload
 
