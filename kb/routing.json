@@ -1181,7 +1181,9 @@
       "where do i get a referral",
       "ուր դիմեմ ուղեգիր ստանալու համար",
       "ուղեգիր ոնց ստանամ",
-      "որտեղ գնամ ուղեգրի համար"
+      "որտեղ գնամ ուղեգրի համար",
+      "ur dimem uxegir stanalu hamar",
+      "vortegh stanam uxegir"
     ],
     "approved_answer": "Ճիշտ ուղղորդումը կախված է նրանից՝ խոսքը ծառայության, հետազոտության, թե մասնագետի դիմելու մասին է։",
     "allowed_answer_type": "conditional",
@@ -1240,7 +1242,7 @@
     "partial_answer_allowed": true,
     "safe_partial_answer": "Ուղղորդումը կախված է նրանից՝ խոսքը մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության մասին է։",
     "next_step_if_missing": "Նախ գրեք՝ ինչի համար եք ուզում դիմել։",
-    "priority": 170
+    "priority": 180
   },
   {
     "id": "routing_specialist_referral_confusion_v1",
@@ -1257,6 +1259,7 @@
       "նյարդաբանի ուղեգիր",
       "ակնաբույժի ուղեգիր",
       "ուղեգիր մասնագետի մոտ",
+      "masnageti mot inchpes gnam",
       "specialist referral",
       "referral to specialist"
     ],
@@ -1282,6 +1285,6 @@
     "partial_answer_allowed": true,
     "safe_partial_answer": "Եթե հարցը նեղ մասնագետի ուղղորդման մասին է, նախ պետք է հստակեցնել՝ որ մասնագետի կամ ինչ նպատակի մասին է խոսքը։",
     "next_step_if_missing": "Նախ նշե՛ք՝ որ մասնագետի մոտ եք ցանկանում դիմել կամ ինչ հարցով է պետք ուղղորդումը։",
-    "priority": 150
+    "priority": 170
   }
 ]

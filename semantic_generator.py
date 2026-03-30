@@ -27,11 +27,9 @@ def _select_rule_payload(card: dict, collected_fields: dict) -> dict | None:
     for rule in answer_rules:
         if not isinstance(rule, dict):
             continue
-
         when_clause = rule.get("when", {})
         if not isinstance(when_clause, dict):
             continue
-
         if _matches_when_clause(when_clause, collected_fields):
             return rule
 
@@ -40,16 +38,13 @@ def _select_rule_payload(card: dict, collected_fields: dict) -> dict | None:
 
 def _get_missing_fields(card: dict, collected_fields: dict) -> list[str]:
     required_fields = card.get("required_fields", [])
-    if not isinstance(required_fields, list):
-        return []
-
     missing = []
+
     for field in required_fields:
         value = collected_fields.get(field)
         if value is None:
             missing.append(field)
-            continue
-        if isinstance(value, str) and not value.strip():
+        elif isinstance(value, str) and not value.strip():
             missing.append(field)
 
     return missing
@@ -62,43 +57,26 @@ def _get_field_question(card: dict, field_name: str) -> str:
         if isinstance(question, str) and question.strip():
             return question.strip()
 
-    fallback = {
-        "referral_status": "Ուղեգիր ունե՞ք։",
-        "medicine_name_details": "Նշե՛ք դեղի ճշգրիտ անվանումը, դեղաչափը և ձևը։",
-        "dispense_location": "Նշե՛ք՝ որտեղ չեն տրամադրել դեղը։",
-        "service_context": "Նշե՛ք՝ որ ծառայության համար և որտեղ են գումար պահանջել։",
-        "refusal_context": "Նշե՛ք՝ ինչ ծառայություն են մերժել կամ ինչու չեն սպասարկել։",
-        "routing_need_type": "Նշե՛ք՝ խոսքը մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության մասին է։",
-        "record_issue_type": "Նշե՛ք՝ տվյալը բացակայում է, թե սխալ է երևում։",
-        "record_context": "Նշե՛ք՝ կոնկրետ ինչ գրառման կամ տվյալների մասին է խոսքը։",
-        "armed_item_type": "Նշե՛ք՝ ինչ տվյալ պետք է երևար ArMed-ում։",
-        "armed_issue_context": "Նշե՛ք՝ որտեղ և երբ եք նկատել խնդիրը։",
-        "payment_issue_type": "Նշե՛ք՝ խոսքը կրկնակի գանձման, թե սխալ կարգավիճակի մասին է։",
-        "payment_context": "Նշե՛ք՝ որ ծառայության կամ վճարման մասին է խոսքը և որտեղ եք նկատել խնդիրը։",
-        "specialist_type_or_purpose": "Նշե՛ք՝ որ մասնագետի մոտ եք ցանկանում դիմել կամ ինչ հարցով է անհրաժեշտ ուղղորդումը։"
-    }
-
-    return fallback.get(field_name, "Նշե՛ք՝ կոնկրետ ինչ հարցի մասին է խոսքը։")
+    return "Կնշե՞ք ավելի կոնկրետ տվյալներ։"
 
 
 def _get_field_why(field_name: str) -> str:
     explanations = {
-        "referral_status": "Սա պետք է հասկանալ, որովհետև ծառայության կազմակերպման կարգը հաճախ կախված է ուղեգրի առկայությունից։",
-        "medicine_name_details": "Սա պետք է հստակեցնել, որովհետև դեղի ծածկույթը որոշվում է ճշգրիտ անվանումով, դեղաչափով և ձևով։",
-        "dispense_location": "Սա կարևոր է, որովհետև պետք է հասկանալ՝ խնդիրը տրամադրման վայրի, կազմակերպման, թե ծածկույթի հետ է կապված։",
-        "service_context": "Սա կարևոր է, որովհետև առանց ծառայության տեսակի և վայրի հնարավոր չէ հասկանալ՝ խոսքը վճարի, կազմակերպման, թե իրավունքի հարցի մասին է։",
-        "refusal_context": "Սա պետք է հստակեցնել, որպեսզի հասկանալի լինի՝ ինչ է մերժվել և ինչ ուղի պետք է առաջարկել հաջորդ քայլի համար։",
-        "routing_need_type": "Սա կարևոր է, որովհետև ճիշտ ուղղորդումը կախված է նրանից, թե ինչ ծառայության համար եք ուզում դիմել։",
-        "record_issue_type": "Սա պետք է հասկանալ, որովհետև բացակա գրառման և սխալ տվյալների դեպքում գործողությունները տարբեր են։",
-        "record_context": "Սա կարևոր է, որովհետև պետք է հստակ հասկանալ՝ կոնկրետ որ տվյալն է խնդրահարույց։",
-        "armed_item_type": "Սա պետք է հստակեցնել, որովհետև տարբեր տվյալների դեպքում տարբեր հաստատություններ են պատասխանատու։",
-        "armed_issue_context": "Սա կարևոր է, որովհետև պետք է հասկանալ՝ որտեղ է առաջացել խափանումը կամ փոխանցման խնդիրը։",
-        "payment_issue_type": "Սա պետք է հասկանալ, որովհետև կրկնակի գանձման և սխալ կարգավիճակի դեպքում հաջորդ քայլերը տարբեր են։",
-        "payment_context": "Սա կարևոր է, որովհետև առանց ծառայության կամ վճարման կոնկրետ տվյալների ճիշտ ուղղորդում հնարավոր չէ տալ։",
-        "specialist_type_or_purpose": "Սա պետք է հստակեցնել, որովհետև նեղ մասնագետի դեպքում ուղեգրի անհրաժեշտությունը կախված է ծառայության նպատակից։"
+        "referral_status": "Սա կարևոր է, որովհետև ծառայության կազմակերպման կարգը հաճախ կախված է ուղեգրի առկայությունից։",
+        "medicine_name_details": "Սա պետք է հստակեցնել, որովհետև վերջնական պատասխանը կախված է դեղի ճշգրիտ անվանումից, դեղաչափից և ձևից։",
+        "dispense_location": "Սա կարևոր է, որովհետև պետք է հասկանալ՝ որ օղակում է առաջացել խնդիրը։",
+        "service_context": "Սա պետք է հստակեցնել, որովհետև առանց ծառայության տեսակի և վայրի ճիշտ ուղղորդում հնարավոր չէ տալ։",
+        "refusal_context": "Սա կարևոր է, որովհետև պետք է հասկանալ՝ ինչն է մերժվել և ինչ հաջորդ քայլ է պետք առաջարկել։",
+        "routing_need_type": "Սա պետք է հստակեցնել, որովհետև տարբեր ծառայությունների դեպքում տարբեր ուղղորդում է գործում։",
+        "record_issue_type": "Սա կարևոր է, որովհետև բացակա և սխալ տվյալների դեպքում գործողությունները տարբեր են։",
+        "record_context": "Սա պետք է հասկանալ, որպեսզի հստակ լինի՝ ինչ տվյալ է խնդրահարույց։",
+        "armed_item_type": "Սա կարևոր է, որովհետև տարբեր տվյալների դեպքում տարբեր պատասխանատու օղակներ կարող են լինել։",
+        "armed_issue_context": "Սա պետք է հստակեցնել, որպեսզի հասկանալի լինի՝ որտեղ է առաջացել խափանումը կամ չերևալու խնդիրը։",
+        "payment_issue_type": "Սա կարևոր է, որովհետև կրկնակի գանձման և սխալ կարգավիճակի դեպքում հետագա քայլերը տարբեր են։",
+        "payment_context": "Սա պետք է հասկանալ, որպեսզի հնարավոր լինի ուղղորդել ճիշտ հաստատություն կամ գործողություն։",
+        "specialist_type_or_purpose": "Սա կարևոր է, որովհետև նեղ մասնագետի դեպքում ճիշտ ուղղորդումը կախված է դիմելու նպատակից։"
     }
-
-    return explanations.get(field_name, "Սա պետք է հստակեցնել, որպեսզի հնարավոր լինի ճիշտ ուղղորդում տալ։")
+    return explanations.get(field_name, "Սա պետք է հստակեցնել, որպեսզի հնարավոր լինի ճիշտ պատասխան տալ։")
 
 
 def build_semantic_payload(decision: dict, collected_fields: dict | None = None) -> dict:
@@ -123,7 +101,6 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
             "answer_type": action,
             "category": card.get("category") if card else "escalation",
             "policy_answer": "",
-            "condition_note": "",
             "partial_answer": "",
             "next_step": "",
             "follow_up_question": "",
@@ -147,13 +124,9 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
         missing_fields = _get_missing_fields(card, collected_fields)
         missing_field = missing_fields[0] if missing_fields else None
 
-        question = _get_field_question(card, missing_field) if missing_field else "Կնշե՞ք ավելի կոնկրետ տվյալներ։"
-        why_text = _get_field_why(missing_field) if missing_field else "Սա պետք է հստակեցնել, որպեսզի ճիշտ պատասխան հնարավոր լինի ձևակերպել։"
-
-        if action == "partial_answer_with_clarify":
-            payload["semantic"]["partial_answer"] = card.get("safe_partial_answer", "")
-        payload["semantic"]["follow_up_question"] = question
-        payload["semantic"]["why_this_question"] = why_text
+        payload["semantic"]["partial_answer"] = card.get("safe_partial_answer", "")
+        payload["semantic"]["follow_up_question"] = _get_field_question(card, missing_field) if missing_field else "Կնշե՞ք ավելի կոնկրետ տվյալներ։"
+        payload["semantic"]["why_this_question"] = _get_field_why(missing_field) if missing_field else "Սա պետք է հստակեցնել, որպեսզի ճիշտ ուղղորդում հնարավոր լինի տալ։"
 
         payload["state"] = {
             "pending_card_id": card.get("id"),
@@ -175,5 +148,5 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
 
     payload["semantic"]["category"] = "escalation"
     payload["semantic"]["gap_reason_text"] = "Այս հարցով հիմա հստակ պատասխան տալ հնարավոր չէ"
-    payload["semantic"]["next_step"] = "Նշե՛ք՝ կոնկրետ որ ծառայության, դեղի կամ խնդրի մասին է խոսքը"
+    payload["semantic"]["next_step"] = "Կնշե՞ք ավելի կոնկրետ տվյալներ"
     return payload

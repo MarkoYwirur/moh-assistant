@@ -1,5 +1,6 @@
 ﻿import json
 import re
+from transliteration import transliterate_latin_armenian
 from functools import lru_cache
 from pathlib import Path
 
@@ -115,16 +116,16 @@ def normalize_text(text: str) -> str:
     if text is None:
         return ""
 
+    text = transliterate_latin_armenian(text)
     text = text.lower().strip()
-    text = text.replace("և", "եւ")
-    text = text.replace("՞", " ")
-    text = text.replace("՝", " ")
-    text = text.replace("։", " ")
-    text = text.replace("․", " ")
+    text = text.replace("?", "??")
+    text = text.replace("?", " ")
+    text = text.replace("?", " ")
+    text = text.replace("?", " ")
+    text = text.replace("?", " ")
     text = re.sub(r"[^\w\s]", " ", text, flags=re.UNICODE)
     text = re.sub(r"\s+", " ", text).strip()
     return text
-
 
 def _load_json_file(file_path: Path) -> list:
     with open(file_path, "r", encoding="utf-8") as f:
