@@ -1,0 +1,42 @@
+[
+  {
+    "label": "mec_filing_steps",
+    "source_file": "kb_raw_sources/complaints_extracted/mec_submit_application.txt",
+    "armenian_excerpt": "1. Տվյալների Լրացում\n2. Խախտման դեպք\n3. Մանրամասնեք դեպքը\n4. Թվային կամ ձեռքով ստորագրություն"
+  },
+  {
+    "label": "mec_incident_date_required",
+    "source_file": "kb_raw_sources/complaints_extracted/mec_submit_application.txt",
+    "armenian_excerpt": "Էթիկայի ենթադրյալ խախտման օրը, ամիսը, տարին"
+  },
+  {
+    "label": "mec_filing_deadline_one_year",
+    "source_file": "kb_raw_sources/complaints_extracted/mec_submit_application.txt",
+    "armenian_excerpt": "Դիմումները կարող են ներկայացվել, եթե ենթադրյալ խախտման օրվանից չի անցել մեկ օրացուցային տարի"
+  },
+  {
+    "label": "mec_complainant_required_fields",
+    "source_file": "kb_raw_sources/complaints_extracted/mec_submit_application.txt",
+    "armenian_excerpt": "Ձեր տվյալները\nԱնուն\nԱզգանուն\nԷլ. հասցե\nՀեռ. համար\nՄարզ  / Ռեգիոն\nՔաղաք / Համայնք\nՀասցե\nՇենք / Տուն"
+  },
+  {
+    "label": "mec_provider_required_fields",
+    "source_file": "kb_raw_sources/complaints_extracted/mec_submit_application.txt",
+    "armenian_excerpt": "Բուժաշխատողի տվյալները\nԱնուն\nԱզգանուն\nՄասնագիտացում / Պաշտոն\nԷլ. հասցե\nՀեռ. համար\nՄարզ  / Ռեգիոն\nՔաղաք / Համայնք\nԲուժհաստատության անվանումը"
+  },
+  {
+    "label": "mec_post_submission_notification",
+    "source_file": "kb_raw_sources/complaints_extracted/mec_home.txt",
+    "armenian_excerpt": "Էթիկայի հանձնաժողովը էթիկայի կանոնի խախտման գործով քննության վարույթը հարուցվելուց հետո մեկ աշխատանքային օրվա ընթացքում՝ լիազոր մարմնի քարտուղարության միջոցով «Փոստային կապի մասին» օրենքով սահմանված կարգով, իսկ էլեկտրոնային փոստի առկայության դեպքում՝ նաև էլեկտրոնային փոստի միջոցով ծանուցում է՝\n- այն բուժաշխատողին, ում դեմ ներկայացվել է դիմումը.\n- այն անձին կամ մարմնին, որը ներկայացրել է դիմումը:"
+  },
+  {
+    "label": "mec_cases_examined",
+    "source_file": "kb_raw_sources/complaints_extracted/mec_home.txt",
+    "armenian_excerpt": "Էթիկայի հանձնաժողովում քննության են ենթակա բուժաշխատողի մասնագիտական էթիկայի կանոնների խախտումները, որոնք չեն նախատեսում քրեական կամ վարչական պատասխանատվություն։"
+  },
+  {
+    "label": "hlib_online_application_required_fields",
+    "source_file": "kb_raw_sources/complaints_extracted/hlib_online_application.txt",
+    "armenian_excerpt": "Ստորև առկա բոլոր դաշտերի լրացումը պարտադիր է:"
+  }
+]

@@ -4,28 +4,28 @@
     "first_message": "մռտ անվճա՞ր է",
     "second_message": "այո",
     "expected_second_action": "direct_answer",
-    "expected_second_card": "service_mri_policy_curated"
+    "expected_second_card": "service_referral_status_root_v1"
   },
   {
     "name": "mri_no_branch",
     "first_message": "մռտ անվճա՞ր է",
     "second_message": "ոչ",
     "expected_second_action": "direct_answer",
-    "expected_second_card": "service_mri_policy_curated"
+    "expected_second_card": "service_referral_status_root_v1"
   },
   {
     "name": "ct_yes_branch",
     "first_message": "կտ անվճա՞ր է",
     "second_message": "այո",
     "expected_second_action": "direct_answer",
-    "expected_second_card": "service_ct_policy_curated"
+    "expected_second_card": "service_referral_status_root_v1"
   },
   {
     "name": "ct_no_branch",
     "first_message": "կտ անվճա՞ր է",
     "second_message": "ոչ",
     "expected_second_action": "direct_answer",
-    "expected_second_card": "service_ct_policy_curated"
+    "expected_second_card": "service_referral_status_root_v1"
   },
   {
     "name": "medicine_not_provided_resolution",

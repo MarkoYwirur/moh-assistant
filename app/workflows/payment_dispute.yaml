@@ -1,0 +1,33 @@
+﻿family: payment_dispute
+
+trigger_hints:
+  - վճար
+  - վճարովի
+  - գումար
+  - համավճար
+  - անվճար չի
+  - paid
+  - co pay
+
+required_fields:
+  - service_context
+
+field_questions:
+  service_context: "Գրե՛ք՝ որ ծառայության համար են գումար պահանջել և որ հաստատությունում։"
+
+field_priority:
+  - service_context
+  - has_referral_context
+  - payment_issue_kind
+
+branches:
+  - id: unexpected_payment_request
+    when:
+      service_context: __any__
+    answer: "Եթե ծառայության դիմաց ձեզնից գումար են պահանջել, միայն դրանից դեռ չի հետևում՝ պահանջը ճիշտ էր, թե ոչ։ Նախ պետք է հասկանալ՝ խոսքը որ ծառայության մասին է և որտեղ են գումար պահանջել։"
+    next_step: "Նախ դիմեք հենց այն բուժհաստատությանը, որտեղ գումար են պահանջել, և ճշտեք՝ ինչ հիմքով է պահանջվել վճարը։ Եթե պարզաբանումը մնում է անհասկանալի կամ հակասական, հաջորդ քայլը բողոքարկման ուղղությունն է։"
+
+source_preferences:
+  - hotline_8003
+  - moh_rights_section
+  - moh_faq_section

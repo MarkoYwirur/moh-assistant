@@ -1,8 +1,10 @@
-﻿import json
+import json
 import re
-from transliteration import transliterate_latin_armenian
 from functools import lru_cache
 from pathlib import Path
+
+from intent_refiner import detect_refined_intent
+from transliteration import transliterate_latin_armenian
 
 
 PROJECT_DIR = Path(__file__).resolve().parent
@@ -25,6 +27,17 @@ NO_WORDS = {
     "dont",
     "don't",
     "not",
+}
+
+CATEGORY_ALIASES = {
+    "medicine": "medicines",
+    "medicines": "medicines",
+    "complaint": "complaints",
+    "complaints": "complaints",
+    "routing": "routing",
+    "service_coverage": "service_coverage",
+    "eligibility": "eligibility",
+    "faq": "faq",
 }
 
 CATEGORY_HINTS = {
@@ -111,6 +124,56 @@ STRONG_DOMAIN_TERMS = {
     "faq": {"8003", "նախարարություն", "մոհ", "տեղեկանք"},
 }
 
+NON_RUNTIME_ID_SUBSTRINGS = [
+    "executive_summary",
+    "official_sources",
+    "official_complaint_channels",
+    "navigation_logic",
+    "top_25_citizen_routing_intents",
+    "card_ready_knowledge_units",
+    "missing_operational_details",
+    "group_1_",
+    "responsible_institution",
+    "sub_unit_department",
+    "cross_verification",
+    "secondary_sources",
+    "reports_and_research",
+    "government_decision",
+    "arlis",
+    "official_legal_texts",
+    "operational_front_door",
+    "eligibility_group_matrix",
+    "core_definitions",
+    "safe_answer_boundaries",
+    "safe_general_answer_boundaries",
+    "common_citizen_questions",
+    "key_facts_card_ready_units",
+    "gaps_and_conflicts",
+]
+
+NON_RUNTIME_TEXT_SUBSTRINGS = [
+    "executive summary",
+    "official sources",
+    "navigation logic",
+    "top 25 citizen routing intents",
+    "card-ready knowledge units",
+    "missing operational details",
+    "official legal texts",
+    "operational front door",
+    "eligibility group matrix",
+    "core definitions",
+    "safe general answer boundaries",
+    "safe answer boundaries",
+    "common citizen questions",
+    "key facts",
+    "gaps and conflicts",
+    "cross-verification",
+    "secondary sources",
+    "reports and research",
+    "responsible institution",
+    "sub-unit department",
+]
+
 
 def normalize_text(text: str) -> str:
     if text is None:
@@ -118,17 +181,239 @@ def normalize_text(text: str) -> str:
 
     text = transliterate_latin_armenian(text)
     text = text.lower().strip()
-    text = text.replace("?", "??")
+    text = text.replace("՞", " ")
     text = text.replace("?", " ")
-    text = text.replace("?", " ")
-    text = text.replace("?", " ")
-    text = text.replace("?", " ")
+    text = text.replace("՝", " ")
+    text = text.replace("։", " ")
     text = re.sub(r"[^\w\s]", " ", text, flags=re.UNICODE)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
+
+def _detect_issue_family(normalized_text: str) -> dict:
+    text = normalized_text or ""
+    signals = set()
+
+    def has_any(*phrases: str) -> bool:
+        return any(p in text for p in phrases)
+
+    has_referral = has_any(
+        "ուղեգիր", "uxegir"
+    )
+    has_specialist = has_any(
+        "մասնագետ", "նեղ մասնագետ", "սրտաբան", "նյարդաբան", "ակնաբույժ", "masnaget", "specialist"
+    )
+    has_where_to_go = has_any(
+        "ուր դիմեմ", "որտեղ գնամ", "ինչպես գնամ", "որտեղից ստանամ", "where should i go", "where do i get"
+    )
+    has_payment = has_any(
+        "վճար", "վճարովի", "գումար", "համավճար", "պետք է վճարեմ", "պահանջել", "անվճար չի", "co pay", "payment", "paid"
+    )
+    has_medicine = has_any(
+        "դեղ", "դեղը", "դեղատուն", "դեղատանը", "medicine", "pharmacy", "prescription", "դեղատոմս"
+    )
+    has_not_provided = has_any(
+        "չկա", "չեն տալիս", "չեն տվել", "չտվեցին", "չեմ ստացել", "չեն տրամադրել", "not provided"
+    )
+    has_visibility = has_any(
+        "չի երևում", "համակարգում", "արմեդ", "armed", "էլեկտրոնային համակարգում"
+    )
+    has_denial = has_any(
+        "մերժել", "չեն սպասարկել", "չեն ընդունել", "չեն տվել ծառայությունը", "refused", "denied"
+    )
+    has_complaint = has_any(
+        "բողոք", "գանգատ", "complaint"
+    )
+    has_contrast = has_any(
+        "բայց", "ասում են", "but"
+    )
+
+    if has_payment:
+        signals.add("payment")
+    if has_referral:
+        signals.add("referral")
+    if has_specialist:
+        signals.add("specialist")
+    if has_where_to_go:
+        signals.add("where_to_go")
+    if has_medicine:
+        signals.add("medicine")
+    if has_not_provided:
+        signals.add("not_provided")
+    if has_visibility:
+        signals.add("visibility")
+    if has_denial:
+        signals.add("denial")
+    if has_complaint:
+        signals.add("complaint")
+    if has_contrast:
+        signals.add("contrast")
+
+    family = "generic"
+
+    if has_visibility:
+        family = "record_visibility_issue"
+    elif has_medicine and has_not_provided:
+        family = "medicine_not_provided"
+    elif has_payment and (has_referral or has_contrast):
+        family = "payment_dispute"
+    elif has_denial:
+        family = "denied_service"
+    elif has_referral and has_specialist:
+        family = "routing_specialist"
+    elif has_referral or has_where_to_go:
+        family = "routing_referral"
+    elif has_medicine and has_any("ծածկվում", "անվճար է", "պետությունը տալիս", "covered", "free"):
+        family = "medicine_coverage"
+
+    return {"family": family, "signals": sorted(signals)}
+
+
+def _issue_family_bias(card: dict, normalized_text: str, detected: dict | None) -> float:
+    if not detected:
+        return 0.0
+
+    family = str(detected.get("family", "") or "")
+    signals = set(detected.get("signals", []) or [])
+
+    card_id = str(card.get("id", "") or "").lower()
+    category = _canonical_category(card.get("category", ""))
+    patterns_blob = " ".join(card.get("patterns", []) or []).lower()
+    hay = f"{card_id} {category} {patterns_blob}"
+
+    bias = 0.0
+
+    def in_hay(*terms: str) -> bool:
+        return any(term in hay for term in terms)
+
+    is_routing = category == "routing"
+    is_complaints = category == "complaints"
+    is_medicines = category == "medicines"
+    is_service = category == "service_coverage"
+
+    if family == "payment_dispute":
+        if is_complaints and in_hay("payment", "վճար", "համավճար", "duplicate charge", "wrong payment status"):
+            bias += 6.0
+        elif is_complaints:
+            bias += 2.0
+        elif is_medicines:
+            bias += 1.0
+        elif category == "eligibility":
+            bias += 0.5
+        else:
+            bias -= 1.5
+
+        if is_routing and "referral" in signals:
+            bias -= 4.0
+        if in_hay("specialist referral", "մասնագետի ուղեգիր", "ուղեգիր մասնագետի"):
+            bias -= 4.5
+
+    elif family == "medicine_not_provided":
+        if is_complaints and in_hay("medicine not provided", "դեղը չեն տալիս", "դեղը չկա", "չեմ ստացել դեղը"):
+            bias += 6.0
+        elif is_complaints:
+            bias += 2.0
+        elif is_medicines:
+            bias += 0.8
+        else:
+            bias -= 1.0
+
+    elif family == "record_visibility_issue":
+        if is_complaints and in_hay("armed", "արմեդ", "չի երևում", "visibility", "համակարգում"):
+            bias += 6.0
+        elif is_complaints:
+            bias += 2.0
+        else:
+            bias -= 2.0
+        if is_routing:
+            bias -= 1.5
+
+    elif family == "denied_service":
+        if is_complaints and in_hay("denied service", "refused care", "մերժել", "չեն սպասարկել"):
+            bias += 6.0
+        elif is_complaints:
+            bias += 2.0
+        else:
+            bias -= 1.0
+
+    elif family == "routing_specialist":
+        if is_routing and in_hay("specialist", "մասնագետ", "նեղ մասնագետ"):
+            bias += 5.0
+        elif is_service and in_hay("specialist", "մասնագետ"):
+            bias += 1.0
+        else:
+            bias -= 0.5
+
+    elif family == "routing_referral":
+        if is_routing and in_hay("ուր դիմեմ", "որտեղ գնամ", "ուղեգիր որտեղից", "where should i go"):
+            bias += 5.0
+        elif is_service and in_hay("ընտանեկան բժիշկ", "պոլիկլինիկա"):
+            bias += 1.0
+        else:
+            bias -= 0.5
+
+    elif family == "medicine_coverage":
+        if is_medicines and in_hay("ծածկվում", "անվճար է", "medicine covered", "medicine free", "պետությունը տալիս"):
+            bias += 7.0
+        elif is_medicines:
+            bias += 4.0
+        else:
+            bias -= 1.5
+
+    return round(bias, 4)
+
+
+def _canonical_category(value: str | None) -> str:
+    raw = (value or "").strip().lower()
+    return CATEGORY_ALIASES.get(raw, raw)
+
+
+def _card_text_blob(card: dict) -> str:
+    parts = [
+        str(card.get("id", "") or ""),
+        str(card.get("subtopic", "") or ""),
+        str(card.get("approved_answer", "") or "")[:250],
+    ]
+
+    patterns = card.get("patterns", [])
+    if isinstance(patterns, list):
+        parts.extend(str(p) for p in patterns)
+
+    return " ".join(parts).lower()
+
+
+def _default_runtime_enabled(card: dict) -> bool:
+    card_id = str(card.get("id", "") or "").lower()
+    blob = _card_text_blob(card)
+
+    if any(fragment in card_id for fragment in NON_RUNTIME_ID_SUBSTRINGS):
+        return False
+
+    if any(fragment in blob for fragment in NON_RUNTIME_TEXT_SUBSTRINGS):
+        return False
+
+    return True
+
+
+def _canonicalize_card(card: dict, source_file: str) -> dict | None:
+    if not isinstance(card, dict):
+        return None
+
+    card_copy = dict(card)
+    card_copy["_source_file"] = source_file
+    card_copy["category"] = _canonical_category(card_copy.get("category"))
+
+    if "runtime_enabled" not in card_copy:
+        card_copy["runtime_enabled"] = _default_runtime_enabled(card_copy)
+
+    if "card_kind" not in card_copy:
+        card_copy["card_kind"] = "citizen_runtime" if card_copy.get("runtime_enabled") else "research_note"
+
+    return card_copy
+
+
 def _load_json_file(file_path: Path) -> list:
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, "r", encoding="utf-8-sig") as f:
         content = json.load(f)
 
     if isinstance(content, list):
@@ -140,17 +425,15 @@ def _load_json_file(file_path: Path) -> list:
 
     cleaned = []
     for card in cards:
-        if not isinstance(card, dict):
-            continue
-        card_copy = dict(card)
-        card_copy["_source_file"] = file_path.name
-        cleaned.append(card_copy)
+        normalized = _canonicalize_card(card, file_path.name)
+        if normalized is not None:
+            cleaned.append(normalized)
 
     return cleaned
 
 
 @lru_cache(maxsize=1)
-def load_all_cards() -> list:
+def load_raw_cards() -> list:
     cards = []
     if not KB_DIR.exists():
         return cards
@@ -162,6 +445,11 @@ def load_all_cards() -> list:
             print(f"ERROR loading {file_path}: {e}")
 
     return cards
+
+
+@lru_cache(maxsize=1)
+def load_all_cards() -> list:
+    return [card for card in load_raw_cards() if card.get("runtime_enabled", False)]
 
 
 @lru_cache(maxsize=1)
@@ -205,7 +493,7 @@ def _pattern_score(pattern: str, text: str) -> float:
 
 
 def _category_hint_score(category: str, text: str) -> float:
-    hints = CATEGORY_HINTS.get(category, [])
+    hints = CATEGORY_HINTS.get(_canonical_category(category), [])
     score = 0.0
     for hint in hints:
         if normalize_text(hint) in text:
@@ -214,7 +502,7 @@ def _category_hint_score(category: str, text: str) -> float:
 
 
 def _strong_domain_bonus(card: dict, text: str) -> float:
-    category = card.get("category", "")
+    category = _canonical_category(card.get("category", ""))
     terms = STRONG_DOMAIN_TERMS.get(category, set())
     if not terms:
         return 0.0
@@ -229,7 +517,7 @@ def _strong_domain_bonus(card: dict, text: str) -> float:
 
 
 def _faq_penalty(card: dict, text: str) -> float:
-    category = card.get("category", "")
+    category = _canonical_category(card.get("category", ""))
     if category != "faq":
         return 0.0
 
@@ -274,15 +562,184 @@ def score_card(card: dict, user_text: str) -> float:
     return round(score, 4)
 
 
+def _call_refine_user_intent(user_text: str):
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return None
+    try:
+        return detect_refined_intent(normalized)
+    except Exception:
+        return None
+
+
+def _intent_refinement_bias(card: dict, normalized_text: str, refined: dict | None) -> float:
+    if not refined:
+        return 0.0
+
+    bias = 0.0
+
+    routing_mode = str(refined.get("routing_mode", "") or "").strip().lower()
+    payment_mode = str(refined.get("payment_mode", "") or "").strip().lower()
+    medicine_mode = str(refined.get("medicine_mode", "") or "").strip().lower()
+    signals = [str(x).lower() for x in (refined.get("signals", []) or [])]
+
+    card_id = str(card.get("id", "") or "").lower()
+    category = _canonical_category(card.get("category", ""))
+    patterns_blob = " ".join(card.get("patterns", []) or []).lower()
+    hay = f"{card_id} {category} {patterns_blob}"
+
+    def has_any(*needles: str) -> bool:
+        return any(n.lower() in hay for n in needles if n)
+
+    if routing_mode:
+        if routing_mode in {"referral_where_to_go", "where_to_go_referral", "referral"}:
+            if has_any("routing_referral_where_to_go", "referral_where_to_go"):
+                bias += 2.8
+            if has_any("specialist_service", "generic_specialist_service"):
+                bias -= 1.0
+
+        if routing_mode in {"specialist_referral_confusion", "specialist_referral", "specialist"}:
+            if has_any("routing_specialist_referral_confusion", "specialist_referral_confusion", "specialist_referral"):
+                bias += 2.8
+            if has_any("routing_referral_where_to_go"):
+                bias -= 0.5
+
+    if payment_mode:
+        if payment_mode in {"charged_despite_referral", "unexpected_payment", "payment_dispute", "paid_but_should_be_covered"}:
+            if has_any("complaint_unexpected_payment_dispute_v2", "unexpected_payment_dispute", "payment_dispute", "should_be_covered"):
+                bias += 3.2
+            if has_any("complaint_duplicate_charge_or_wrong_payment_status_v1", "duplicate_charge_or_wrong_payment_status"):
+                bias -= 1.6
+
+        if payment_mode in {"duplicate_charge", "wrong_status", "wrong_payment_status"}:
+            if has_any("complaint_duplicate_charge_or_wrong_payment_status_v1", "duplicate_charge_or_wrong_payment_status"):
+                bias += 3.0
+            if has_any("complaint_unexpected_payment_dispute_v2", "unexpected_payment_dispute", "payment_dispute", "should_be_covered"):
+                bias -= 0.8
+
+    if medicine_mode:
+        if medicine_mode in {"not_provided", "not_available", "pharmacy_missing", "medicine_not_provided"}:
+            if has_any("complaint_medicine_not_provided", "medicine_not_provided"):
+                bias += 2.8
+
+        if medicine_mode in {"generic_name_only", "generic_medicine_name", "needs_exact_medicine"}:
+            if has_any("medicine_coverage_exact_name_dosage_form", "exact_name_dosage_form"):
+                bias += 2.3
+
+    if "ուղեգիր ունեմ բայց չգիտեմ ուր գնամ" in normalized_text:
+        if has_any("routing_referral_where_to_go"):
+            bias += 3.2
+
+    if "ուր դիմեմ ուղեգիր ստանալու համար" in normalized_text:
+        if has_any("routing_referral_where_to_go"):
+            bias += 3.0
+
+    if "նեղ մասնագետի ուղեգիր է պետք" in normalized_text:
+        if has_any("routing_specialist_referral_confusion"):
+            bias += 3.2
+
+    if "համակարգում չի երևում" in normalized_text or "չի երևում համակարգում" in normalized_text:
+        if has_any("technical_armed_visibility_issue", "armed_visibility_issue"):
+            bias += 3.0
+
+    if "ասում են վճարովի է բայց ունեմ ուղեգիր" in normalized_text:
+        if has_any("complaint_unexpected_payment_dispute_v2", "unexpected_payment_dispute", "payment_dispute", "should_be_covered"):
+            bias += 3.4
+        if has_any("complaint_duplicate_charge_or_wrong_payment_status_v1", "duplicate_charge_or_wrong_payment_status"):
+            bias -= 1.2
+
+    if "դեղատանը չկա" in normalized_text:
+        if has_any("complaint_medicine_not_provided", "medicine_not_provided"):
+            bias += 3.0
+
+    if any("routing:" in s for s in signals):
+        if "routing" in category or "routing_" in card_id:
+            bias += 0.4
+
+    if any("payment:" in s for s in signals):
+        if has_any("payment", "charge", "charged", "wrong_payment_status", "duplicate_charge"):
+            bias += 0.4
+
+    if any("medicine:" in s for s in signals):
+        if has_any("medicine", "drug", "pharmacy", "dosage", "coverage_exact"):
+            bias += 0.4
+
+    return round(bias, 4)
+
+
 def get_top_candidates(user_text: str, top_k: int = 5, forced_card: dict | None = None) -> list:
     if forced_card is not None:
-        return [{"card": forced_card, "score": 99.0}]
+        return [{"card": forced_card, "score": 99.0, "base_score": 99.0, "refine_bias": 0.0, "family_bias": 0.0, "issue_family": "forced"}]
 
+    text = normalize_text(user_text)
     scored = []
+    detected = _detect_issue_family(text)
+
+    try:
+        refined = _call_refine_user_intent(user_text)
+    except Exception:
+        refined = None
+
     for card in load_all_cards():
-        score = score_card(card, user_text)
-        if score > 0:
-            scored.append({"card": card, "score": score})
+        base_score = score_card(card, user_text)
+        refine_bias = _intent_refinement_bias(card, text, refined) if refined else 0.0
+        family_bias = _issue_family_bias(card, text, detected)
+
+        # Do not let family bias resurrect junk cards with near-zero base evidence.
+        if base_score < 0.5:
+            family_bias = min(family_bias, 1.0)
+
+        final_score = base_score + refine_bias + family_bias
+
+        card_id = str(card.get("id", "") or "")
+        if card_id == "routing_referral_where_to_go_v2":
+            modality_markers = [
+                "մռտ",
+                "mri",
+                "magnetic resonance",
+                "մագնիսառեզոնանսային",
+                "կտ",
+                "ct",
+                "համակարգչային տոմոգրաֆիա",
+                "կոմպյուտերային տոմոգրաֆիա",
+                "անալիզ",
+                "վերլուծություն",
+                "lab test",
+                "laboratory",
+                "լաբորատոր",
+            ]
+            referral_possession_markers = [
+                "ուղեգիր ունեմ",
+                "ունեմ ուղեգիր",
+                "բժիշկը նշանակել է",
+                "ունեմ նշանակում",
+            ]
+            acquisition_markers = [
+                "ուր",
+                "որտեղ",
+                "որտեղից",
+                "ինչպես",
+                "ստանամ",
+            ]
+
+            has_modality = any(normalize_text(marker) in text for marker in modality_markers)
+            has_referral_possession = any(normalize_text(marker) in text for marker in referral_possession_markers)
+            has_acquisition_wording = any(normalize_text(marker) in text for marker in acquisition_markers)
+
+            if has_modality and has_referral_possession and not has_acquisition_wording:
+                final_score -= 20.0
+
+        if final_score <= 0:
+            continue
+
+        scored.append({
+            "card": card,
+            "score": round(final_score, 4),
+            "base_score": round(base_score, 4),
+            "refine_bias": round(refine_bias, 4),
+            "family_bias": round(family_bias, 4),
+            "issue_family": detected.get("family"),
+        })
 
     scored.sort(key=lambda item: item["score"], reverse=True)
     return scored[:top_k]

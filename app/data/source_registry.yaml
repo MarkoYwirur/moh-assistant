@@ -1,0 +1,156 @@
+﻿sources:
+  - source_id: hotline_8003
+    title: "MoH Hotline 8003"
+    type: hotline
+    url: "https://www.moh.am/"
+    topic_tags:
+      - hotline
+      - complaints
+      - citizen_support
+    family_tags:
+      - referral_specialist
+      - payment_dispute
+      - medicine_not_provided
+      - armed_visibility
+      - eligibility
+      - complaint_route
+    citizen_relevance: high
+    approved_for_retrieval: true
+    notes: "Main citizen hotline prominently referenced on moh.am."
+
+  - source_id: moh_home_citizen_sections
+    title: "moh.am main citizen sections"
+    type: page
+    url: "https://www.moh.am/"
+    topic_tags:
+      - faq
+      - rights
+      - citizen_support
+      - ministry_navigation
+    family_tags:
+      - referral_specialist
+      - eligibility
+      - complaint_route
+    citizen_relevance: high
+    approved_for_retrieval: true
+    notes: "Homepage and citizen-facing navigation sections such as FAQ, rights, hotline, electronic inquiries."
+
+  - source_id: moh_universal_health_insurance
+    title: "Universal Health Insurance section"
+    type: page
+    url: "https://www.moh.am/"
+    topic_tags:
+      - universal_insurance
+      - coverage
+      - eligibility
+    family_tags:
+      - eligibility
+      - payment_dispute
+      - referral_specialist
+    citizen_relevance: high
+    approved_for_retrieval: true
+    notes: "Relevant for insurance/coverage context but should not directly control workflow decisions."
+
+  - source_id: moh_ehealth_section
+    title: "Electronic Healthcare section"
+    type: page
+    url: "https://www.moh.am/"
+    topic_tags:
+      - ehealth
+      - digital_services
+      - armed
+    family_tags:
+      - armed_visibility
+      - referral_specialist
+    citizen_relevance: medium
+    approved_for_retrieval: true
+    notes: "Relevant for ARMED/e-health related citizen guidance."
+
+  - source_id: moh_forms_and_documents
+    title: "Document lists and application forms"
+    type: page
+    url: "https://www.moh.am/"
+    topic_tags:
+      - forms
+      - documents
+      - procedures
+    family_tags:
+      - complaint_route
+      - eligibility
+      - referral_specialist
+    citizen_relevance: medium
+    approved_for_retrieval: true
+    notes: "Useful as procedural evidence, not as primary workflow logic."
+
+  - source_id: moh_screening_programs
+    title: "Screening Programs section"
+    type: page
+    url: "https://www.moh.am/"
+    topic_tags:
+      - screening
+      - preventive_programs
+    family_tags:
+      - referral_specialist
+      - eligibility
+    citizen_relevance: medium
+    approved_for_retrieval: true
+    notes: "Potential later-use source for routing to screening-related services."
+
+  - source_id: moh_rights_section
+    title: "Your Rights section"
+    type: page
+    url: "https://www.moh.am/"
+    topic_tags:
+      - rights
+      - complaints
+      - citizen_support
+    family_tags:
+      - payment_dispute
+      - denied_service
+      - complaint_route
+    citizen_relevance: high
+    approved_for_retrieval: true
+    notes: "Likely core source for complaint-related families."
+
+  - source_id: moh_faq_section
+    title: "Frequently Asked Questions"
+    type: page
+    url: "https://www.moh.am/"
+    topic_tags:
+      - faq
+      - citizen_support
+    family_tags:
+      - referral_specialist
+      - eligibility
+      - complaint_route
+    citizen_relevance: high
+    approved_for_retrieval: true
+    notes: "Good for short official guidance, but needs filtering before use."
+
+  - source_id: pdf_ct_protocols
+    title: "CT imaging protocols PDF"
+    type: pdf
+    url: "https://www.moh.am/uploads/kic.pdf"
+    topic_tags:
+      - imaging
+      - ct
+      - diagnostics
+    family_tags:
+      - referral_specialist
+    citizen_relevance: low
+    approved_for_retrieval: false
+    notes: "Not citizen-first guidance. Keep in registry for later selective use only."
+
+  - source_id: pdf_otc_medicines_list
+    title: "Over-the-counter medicines list PDF"
+    type: pdf
+    url: "https://www.moh.am/uploads/Information.pdf"
+    topic_tags:
+      - medicines
+      - otc
+    family_tags:
+      - medicine_not_provided
+      - medicines
+    citizen_relevance: medium
+    approved_for_retrieval: false
+    notes: "Potentially useful later, but not part of referral family."

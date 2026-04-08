@@ -1,0 +1,114 @@
+[
+  {
+    "id": "service_admission_type_root_v1",
+    "category": "service_coverage",
+    "subtopic": "Hospitalization and surgery admission access",
+    "card_type": "conditional_policy",
+    "patterns": [
+      "հոսպիտալացում",
+      "հոսպիտալացումը անվճա՞ր է",
+      "հիվանդանոց պառկելը ծածկվո՞ւմ է",
+      "ստացիոնար բուժումը անվճա՞ր է",
+      "hospitalization",
+      "հիվանդանոց պառկել",
+      "ստացիոնար",
+      "վիրահատություն",
+      "վիրահատությունը անվճա՞ր է",
+      "պլանային վիրահատությունը ծածկվո՞ւմ է",
+      "շտապ վիրահատությունը անվճա՞ր է",
+      "surgery",
+      "operation",
+      "operation covered",
+      "վիրահատության համար պետք է պառկել հիվանդանոց",
+      "հիվանդանոցում վիրահատություն",
+      "պլանային հոսպիտալացում",
+      "շտապ հոսպիտալացում",
+      "պլանային վիրահատություն",
+      "շտապ վիրահատություն"
+    ],
+    "approved_answer": "Այս հարցի պատասխանը կախված է նրանից՝ խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության, և դեպքը շտապ՞ է, թե պլանային։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "service_type",
+      "admission_type"
+    ],
+    "field_questions": {
+      "service_type": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։",
+      "admission_type": "Դեպքը շտապ՞ է, թե պլանային։"
+    },
+    "field_values": {
+      "service_type": {
+        "hospitalization": [
+          "հոսպիտալացում",
+          "hospitalization",
+          "հիվանդանոց պառկել",
+          "ստացիոնար",
+          "պլանային հոսպիտալացում",
+          "շտապ հոսպիտալացում",
+          "հիվանդանոց ընդունվել"
+        ],
+        "surgery": [
+          "վիրահատություն",
+          "վիրահատության",
+          "surgery",
+          "operation",
+          "հիվանդանոցում վիրահատություն",
+          "պլանային վիրահատություն",
+          "շտապ վիրահատություն"
+        ]
+      },
+      "admission_type": {
+        "emergency": [
+          "շտապ",
+          "անհետաձգելի",
+          "շտապ օգնություն",
+          "կրիտիկական",
+          "շտապ վիրահատություն"
+        ],
+        "planned": [
+          "պլանային",
+          "նախապես",
+          "պլանավորված",
+          "շտապ չէ",
+          "ոչ շտապ"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "service_type": "hospitalization",
+          "admission_type": "emergency"
+        },
+        "answer": "Եթե հոսպիտալացումը շտապ է, առաջին հերթին գործում է շտապ օգնության և անհետաձգելի բուժօգնության կարգը։ Կոնկրետ ծածկույթի մանրամասները հետո կարող են ճշտվել։"
+      },
+      {
+        "when": {
+          "service_type": "hospitalization",
+          "admission_type": "planned"
+        },
+        "answer": "Եթե հոսպիտալացումը պլանային է, սովորաբար կարևոր է ուղեգիրը և ծրագրային հիմքը։ Լավ կլինի նախ ճշտել ընդունման հիմքը և զանգահարել 8003, եթե պետք է կոնկրետ ուղղորդում։"
+      },
+      {
+        "when": {
+          "service_type": "surgery",
+          "admission_type": "emergency"
+        },
+        "answer": "Եթե վիրահատությունը շտապ է, առաջնային է անհետաձգելի բուժօգնության կարգը, և հարցը չի թողնվում միայն ծածկույթի նախնական ճշտմանը։"
+      },
+      {
+        "when": {
+          "service_type": "surgery",
+          "admission_type": "planned"
+        },
+        "answer": "Եթե վիրահատությունը պլանային է, վերջնական ծածկույթը կախված է ծրագրից, բժշկական հիմքից և ընդունման կարգից։ Լավ է նախ ճշտել ուղեգրի և ծրագրի հիմքը։"
+      }
+    ],
+    "clarification_needed_if": "Need service type or admission type",
+    "escalate_if": "Requires exact personal outcome or hospital-specific decision",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 40,
+    "runtime_enabled": true,
+    "card_kind": "research_reference"
+  }
+]

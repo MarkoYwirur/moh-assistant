@@ -1,7 +1,7 @@
 [
   {
     "id": "complaint_1_executive_summary",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Executive Summary",
     "patterns": [
       "Executive Summary",
@@ -12,26 +12,48 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 9,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_2_official_complaint_channels",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Official Complaint Channels",
     "patterns": [
       "Official Complaint Channels",
-      "official complaint channels"
+      "official complaint channels",
+      "թեժ գիծ",
+      "թեժ գիծ երեխա",
+      "թեժ գիծ համարներ",
+      "8003",
+      "060 808003",
+      "060 80 80 02",
+      "010 65 47 11",
+      "010 52 88 72",
+      "hotline",
+      "թեժ գիծ երեխաներ",
+      "առողջապահության նախարարություն զանգահարել",
+      "զանգահարել նախարարություն",
+      "երեխայի բժշկական օգնության բողոք",
+      "երեխայի բժշկական օգնության մասին բողոք",
+      "երեխայի բժշկական օգնության և սպասարկման բողոք",
+      "երեխայի բժշկական օգնության և սպասարկման մասին բողոք",
+      "պետական առողջապահական գործակալություն",
+      "պետական առողջ ապահական գործակալություն"
     ],
-    "approved_answer": "MOH Hotline / Rapid Response: The Ministry’s 8003 hotline (or +37460838300) connects to its rapid-response department for citizen complaints. Alternatively, the landline (010) 528 872 is listed for MOH complaint inquiries. These lines can direct callers to the appropriate unit (e.g. medical inspectorate or ethics commission) or take basic information. Medical Ethics Commission: For complaints about provider conduct (e.g. doctor rudeness, medical errors), the dedicated Ethics Commission (established by MOH) accepts submissions. Citizens can use the commission’s web form at mec.am (“Ներկայացնել դիմում”) or mail a written complaint as specified by its rules.",
+    "approved_answer": "ՀՀ առողջապահության նախարարության պաշտոնական թեժ գծի և կապի համարներից նշված են 8003, 060 808003 և (010) 52 88 72։ Երեխաների բժշկական օգնության և սպասարկման մասին բողոքների, հարցերի, պարզաբանումների և տեղեկությունների համար քաղաքացիները կարող են դիմել նաև ՀՀ առողջապահության նախարարության պետական առողջ ապահական գործակալություն՝ (060) 80 80 02 և (010) 65 47 11։",
     "allowed_answer_type": "general",
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_9_commission",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Commission",
     "patterns": [
       "Commission",
@@ -42,11 +64,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_12_moh_inspection",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "MOH/Inspection",
     "patterns": [
       "MOH/Inspection",
@@ -57,11 +81,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_17_uhif",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "UHIF",
     "patterns": [
       "UHIF",
@@ -72,11 +98,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_23_if_prescription_drugs_covered_by_insurance",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "If prescription drugs covered by insurance",
     "patterns": [
       "If prescription drugs covered by insurance",
@@ -87,26 +115,43 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_29_inspection",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Inspection",
     "patterns": [
       "Inspection",
-      "inspection"
+      "inspection",
+      "հիվանդանոցի ծառայության բողոք",
+      "ինչպես բողոք ներկայացնել հիվանդանոցի ծառայության համար",
+      "վարչական բողոք ինչպես ներկայացնել",
+      "ծառայության կազմակերպման բողոք",
+      "գանգատ հիվանդանոցի ծառայության համար",
+      "հիվանդանոցի ծառայության կազմակերպման բողոք",
+      "անանուն բողոք",
+      "կեղծ բողոք",
+      "եթե բողոքը սխալ է լրացված",
+      "եթե բողոքում սխալ կա",
+      "եթե բողոքը իրավասությունից դուրս է",
+      "բողոքը իրավասությունից դուրս է",
+      "բողոքողը եռօրյա ժամկետում տեղեկացվում է"
     ],
-    "approved_answer": "Report to Health & Labor Inspection (81-07) or via its email. Issues like corruption, harassment by staff, or facility policy violations fall under inspection review.",
+    "approved_answer": "Եթե բողոքը վերաբերում է հիվանդանոցի ծառայությանը, կազմակերպմանը կամ վարչական հարցին, այն կարող է քննվել Հայաստանի Հանրապետության առողջապահական և աշխատանքի տեսչական մարմնի կարգով, ոչ թե բուժաշխատողի վարքագծի կամ մասնագիտական էթիկայի ՄԷԿ ընթացակարգով։ Բողոքը կարող է ներկայացվել առձեռն, փոստով կամ էլեկտրոնային եղանակով, պետք է ներառի բողոքողի տվյալները, պահանջը, ամսաթիվը, ստորագրությունը և ըստ անհրաժեշտության՝ կցվող փաստաթղթերը, հասցեն կամ հետադարձ կապը չնշելը ինքնին հիմք չէ այն անհետևանք թողնելու համար, անանուն և կեղծ բողոքներին ընթացք չի տրվում, շտկվող սխալների դեպքում 1 աշխատանքային օրվա ընթացքում նշվում են թերությունները և տրվում է 3 օր շտկելու համար, իրավասությունից դուրս հարցը փոխանցվում է օրենքով սահմանված կարգով, իսկ ընթացք տրվելու դեպքում բողոքողը 3 օրվա ընթացքում տեղեկացվում է և անհրաժեշտության դեպքում ծանուցվում է վարույթի, լսման կամ զննման մասին։",
     "allowed_answer_type": "general",
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
-    "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "source_reference": "kb_staging/non_ethics_complaint_procedure_ready.json",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_34_issues_with_e_health_portals_or_uhif",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Issues with e-health portals or UHIF",
     "patterns": [
       "Issues with e-health portals or UHIF",
@@ -117,11 +162,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_36_to_streamline_handling_each_complaint_should_be_filed_with_minimum_key_details_a",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "To streamline handling, each complaint should be filed with minimum key details and evidence",
     "patterns": [
       "To streamline handling, each complaint should be filed with minimum key details and evidence",
@@ -132,11 +179,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_37_unified_health_insurance_fund_uhif_website_uhif_am_has_a_contact_support_page_it",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Unified Health Insurance Fund: UHIF website uhif.am has a Contact & Support page. It shows",
     "patterns": [
       "Unified Health Insurance Fund: UHIF website uhif.am has a Contact & Support page. It shows",
@@ -147,11 +196,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_38_before_filing_any_complaint_citizens_should_gather",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Before filing any complaint, citizens should gather",
     "patterns": [
       "Before filing any complaint, citizens should gather",
@@ -162,26 +213,40 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_40_provider_misconduct",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Provider Misconduct",
     "patterns": [
       "Provider Misconduct",
-      "provider misconduct"
+      "provider misconduct",
+      "էթիկայի հանձնաժողով",
+      "բուժաշխատողի էթիկայի բողոք",
+      "բուժաշխատողի վարքագծի բողոք",
+      "բժշկի վարքագծի բողոք",
+      "բժշկի դեմ բողոք",
+      "ինչպես բողոք ներկայացնել",
+      "ինչ տվյալներ պետք է բողոքի համար",
+      "բողոքից հետո ինչ է լինում",
+      "ինչ ժամկետում պետք է բողոք ներկայացնել",
+      "մեկ տարվա ընթացքում բողոք"
     ],
-    "approved_answer": "“I understand your concern. Complaints about doctor or nurse behavior are handled by the MOH Medical Ethics Commission. You can file online at mec.am using the “Ներկայացնել դիմում” form, or submit a written complaint by post. Please include your name, contact info, the provider’s name, incident date, and a description of what happened. Also, attach any evidence (prescriptions, test results, etc.).”",
+    "approved_answer": "Եթե բողոքը վերաբերում է բուժաշխատողի վարքագծին կամ մասնագիտական էթիկայի հնարավոր խախտմանը, հենց այս նեղ ընթացակարգն է կիրառվում։ Այս դեպքում էթիկայի հանձնաժողովում քննվում են այն խախտումները, որոնք չեն նախատեսում քրեական կամ վարչական պատասխանատվություն, և դիմումը ներկայացվում է քայլերով՝ Տվյալների լրացում, Խախտման դեպք, Մանրամասնեք դեպքը, Թվային կամ ձեռքով ստորագրություն․ պետք է լրացվեն ձեր և բուժաշխատողի տվյալները, նշվի ենթադրյալ խախտման օրը, ամիսը, տարին, դիմումը ներկայացվի մեկ օրացուցային տարվա ընթացքում, իսկ վարույթը հարուցվելուց հետո մեկ աշխատանքային օրվա ընթացքում ծանուցվում են թե բուժաշխատողը, թե դիմումը ներկայացրած անձը կամ մարմինը։ Եթե բողոքը վերաբերում է հիվանդանոցային ծառայությանը, կազմակերպմանը կամ այլ հարցի, օգտվեք պաշտոնական բողոքի ուղիներից կամ դիմեք նախարարությանը։",
     "allowed_answer_type": "general",
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
-    "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "source_reference": "kb_staging/complaint_procedure_ready.json; kb_raw_sources/complaints_extracted/mec_submit_application.txt; kb_raw_sources/complaints_extracted/mec_home.txt",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_41_denied_service_benefit",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Denied Service/Benefit",
     "patterns": [
       "Denied Service/Benefit",
@@ -192,11 +257,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_42_payment_dispute",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Payment Dispute",
     "patterns": [
       "Payment Dispute",
@@ -207,11 +274,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_43_missing_medicine",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Missing Medicine",
     "patterns": [
       "Missing Medicine",
@@ -222,11 +291,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_44_administrative_misconduct",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Administrative Misconduct",
     "patterns": [
       "Administrative Misconduct",
@@ -237,11 +308,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_45_technical_system_issue",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Technical/System Issue",
     "patterns": [
       "Technical/System Issue",
@@ -252,11 +325,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_46_key_facts_card_ready_units",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Key Facts (Card-Ready Units)",
     "patterns": [
       "Key Facts (Card-Ready Units)",
@@ -267,11 +342,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_47_gaps_and_conflicts",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Gaps and Conflicts",
     "patterns": [
       "Gaps and Conflicts",
@@ -282,11 +359,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary (3).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_1_executive_summary_v2",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Executive Summary",
     "patterns": [
       "Executive Summary",
@@ -297,11 +376,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_24_if_the_refusal",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "If the refusal",
     "patterns": [
       "If the refusal",
@@ -312,11 +393,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_34_if_the_payment",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "If the payment",
     "patterns": [
       "If the payment",
@@ -327,11 +410,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_58_if_doctor_hospital",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "If doctor/hospital",
     "patterns": [
       "If doctor/hospital",
@@ -342,11 +427,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_66_armed_portal",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "ArMed portal",
     "patterns": [
       "ArMed portal",
@@ -357,11 +444,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_88_this_is_usually_a",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "This is usually a",
     "patterns": [
       "This is usually a",
@@ -372,11 +461,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_92_bill_details",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "bill details",
     "patterns": [
       "bill details"
@@ -386,11 +477,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_96_id_to_correct",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "ID to correct",
     "patterns": [
       "ID to correct",
@@ -401,11 +494,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_99_first_step_routing_by_problem_type",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "First-Step Routing by Problem Type",
     "patterns": [
       "First-Step Routing by Problem Type",
@@ -416,11 +511,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_100_complaint_vs_correction_vs_clarification_logic",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Complaint vs Correction vs Clarification Logic",
     "patterns": [
       "Complaint vs Correction vs Clarification Logic",
@@ -431,11 +528,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_101_technical_vs_benefit_vs_provider_the_operator_should_classify_the_root_cause",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Technical vs Benefit vs Provider: The operator should classify the root cause",
     "patterns": [
       "Technical vs Benefit vs Provider: The operator should classify the root cause",
@@ -446,11 +545,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_102_top_citizen_intents_common_phrases",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Top Citizen Intents (Common Phrases)",
     "patterns": [
       "Top Citizen Intents (Common Phrases)",
@@ -461,11 +562,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_104_gaps_unclear_areas_ministry_confirmation_needs",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Gaps, Unclear Areas, Ministry Confirmation Needs",
     "patterns": [
       "Gaps, Unclear Areas, Ministry Confirmation Needs",
@@ -476,11 +579,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_Medical__1",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Licensing point 1",
     "patterns": [
       "Licensing point 1",
@@ -491,11 +596,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__2",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Responsible Institution",
     "patterns": [
       "Responsible Institution",
@@ -506,11 +613,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__3",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Sub-Unit/Department",
     "patterns": [
       "Sub-Unit/Department",
@@ -521,11 +630,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__4",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Scope of Responsibility",
     "patterns": [
       "Scope of Responsibility",
@@ -536,11 +647,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__6",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Processing Chain",
     "patterns": [
       "Processing Chain",
@@ -551,11 +664,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__8",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Escalation Path",
     "patterns": [
       "Escalation Path",
@@ -566,11 +681,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__10",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Related Services",
     "patterns": [
       "Related Services",
@@ -581,11 +698,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__11",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Licensing point 11",
     "patterns": [
       "Licensing point 11",
@@ -596,11 +715,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__12",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Responsible Institution",
     "patterns": [
       "Responsible Institution",
@@ -611,11 +732,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__13",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Sub-Unit/Department",
     "patterns": [
       "Sub-Unit/Department",
@@ -626,11 +749,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__14",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Scope of Responsibility",
     "patterns": [
       "Scope of Responsibility",
@@ -641,11 +766,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__16",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Processing Chain",
     "patterns": [
       "Processing Chain",
@@ -656,11 +783,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__17",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Decision Authority",
     "patterns": [
       "Decision Authority",
@@ -671,11 +800,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__18",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Escalation Path",
     "patterns": [
       "Escalation Path",
@@ -686,11 +817,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__20",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Related Services",
     "patterns": [
       "Related Services",
@@ -701,11 +834,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__21",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Licensing point 21",
     "patterns": [
       "Licensing point 21",
@@ -716,11 +851,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__22",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Responsible Institution",
     "patterns": [
       "Responsible Institution",
@@ -731,11 +868,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__24",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Scope of Responsibility",
     "patterns": [
       "Scope of Responsibility",
@@ -746,11 +885,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__42",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Responsible Institution",
     "patterns": [
       "Responsible Institution",
@@ -761,11 +902,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__43",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Sub-Unit/Department",
     "patterns": [
       "Sub-Unit/Department",
@@ -776,11 +919,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__44",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Scope of Responsibility",
     "patterns": [
       "Scope of Responsibility",
@@ -791,11 +936,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__45",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Submission Channel",
     "patterns": [
       "Submission Channel",
@@ -806,11 +953,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__46",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Processing Chain",
     "patterns": [
       "Processing Chain",
@@ -821,11 +970,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__47",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Decision Authority",
     "patterns": [
       "Decision Authority",
@@ -836,11 +987,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__48",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Escalation Path",
     "patterns": [
       "Escalation Path",
@@ -851,11 +1004,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__49",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Contact Information",
     "patterns": [
       "Contact Information",
@@ -866,11 +1021,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__50",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Related Services",
     "patterns": [
       "Related Services",
@@ -881,11 +1038,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__51",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Licensing point 51",
     "patterns": [
       "Licensing point 51",
@@ -896,11 +1055,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__54",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Scope of Responsibility",
     "patterns": [
       "Scope of Responsibility",
@@ -911,11 +1072,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__55",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Submission Channel",
     "patterns": [
       "Submission Channel",
@@ -926,11 +1089,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__56",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Processing Chain",
     "patterns": [
       "Processing Chain",
@@ -941,11 +1106,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__58",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Escalation Path",
     "patterns": [
       "Escalation Path",
@@ -956,11 +1123,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__61",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Licensing point 61",
     "patterns": [
       "Licensing point 61",
@@ -971,11 +1140,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__64",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Scope of Responsibility",
     "patterns": [
       "Scope of Responsibility",
@@ -986,11 +1157,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__65",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Submission Channel",
     "patterns": [
       "Submission Channel",
@@ -1001,11 +1174,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__68",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Escalation Path",
     "patterns": [
       "Escalation Path",
@@ -1016,11 +1191,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__75",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Submission Channel",
     "patterns": [
       "Submission Channel",
@@ -1031,11 +1208,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__78",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Escalation Path",
     "patterns": [
       "Escalation Path",
@@ -1046,11 +1225,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__85",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Submission Channel",
     "patterns": [
       "Submission Channel",
@@ -1061,11 +1242,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__86",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Processing Chain",
     "patterns": [
       "Processing Chain",
@@ -1076,11 +1259,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__88",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Escalation Path",
     "patterns": [
       "Escalation Path",
@@ -1091,11 +1276,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__106",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Processing Chain",
     "patterns": [
       "Processing Chain",
@@ -1106,11 +1293,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__133",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "https",
     "patterns": [
       "https",
@@ -1121,11 +1310,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_Medical__135",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "https",
     "patterns": [
       "https",
@@ -1136,11 +1327,13 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs case review, evidence review, or legal interpretation",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "complaint_1_group_1_citizen_support_rights_direct_access",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Group 1: Citizen Support, Rights & Direct Access",
     "patterns": [
       "Group 1: Citizen Support, Rights & Direct Access",
@@ -1151,11 +1344,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_2_group_2_ministry_leadership_advisory_bodies",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "Group 2: Ministry Leadership & Advisory Bodies",
     "patterns": [
       "Group 2: Ministry Leadership & Advisory Bodies",
@@ -1166,11 +1361,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_6_find",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "find",
     "patterns": [
       "find"
@@ -1180,11 +1377,13 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_8_the_moh_hr_department_manages_recruitment_and_personnel_issues_within_the_health",
-    "category": "complaint",
+    "category": "complaints",
     "subtopic": "The MOH HR Department manages recruitment and personnel issues within the health sector . Key points",
     "patterns": [
       "The MOH HR Department manages recruitment and personnel issues within the health sector . Key points",
@@ -1195,7 +1394,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_unexpected_payment_dispute_v2",
@@ -1204,19 +1405,23 @@
       "գումար ուզել են",
       "վճար են պահանջել",
       "ասել են անվճար չի",
-      "համավճար",
-      "պետք է վճարեմ",
+      "համավճար են պահանջել",
+      "ասացին համավճար պիտի տամ",
+      "համավճար են վերցրել",
+      "ասում են պետք է վճարեմ",
+      "ուղեգրով էլ ասում են պետք է վճարեմ",
+      "ասացին որ պիտի վճարեմ",
       "paid unexpectedly",
       "co pay",
       "payment dispute"
     ],
-    "approved_answer": "Վճարի հարցում կարևոր է պարզել՝ խոսքը որ ծառայության մասին է և որտեղ է այն պահանջվել։",
+    "approved_answer": "Եթե ասում են, որ ծառայությունը վճարովի է, նախ պետք է պարզել՝ որ ծառայության մասին է խոսքը և որտեղ են գումար պահանջել։ Միայն դրանից հետո կարելի է հասկանալ՝ սա սովորական վճար է, համավճար, թե հնարավոր խախտում։",
     "allowed_answer_type": "conditional",
     "required_fields": [
       "service_context"
     ],
     "field_questions": {
-      "service_context": "Ո՞ր ծառայության համար և որտե՞ղ են գումար պահանջել։"
+      "service_context": "Գրե՛ք՝ որ ծառայության համար են գումար պահանջել և որ հաստատությունում։"
     },
     "field_values": {},
     "answer_rules": [
@@ -1224,15 +1429,17 @@
         "when": {
           "service_context": "__any__"
         },
-        "answer": "Միայն այն տեղեկությամբ, որ գումար են պահանջել, հնարավոր չէ վերջնական ասել՝ պահանջը ճիշտ էր, թե ոչ։",
-        "next_step": "Նշեք ծառայության տեսակը և բուժհաստատությունը։ Եթե հարցը վերաբերում է հնարավոր խախտման կամ ոչ հստակ վճարի, պետք է դիմել բուժհաստատությանը պարզաբանման համար, իսկ անհրաժեշտության դեպքում՝ բողոքի կարգով։"
+        "answer": "Եթե ուղեգրով կամ պետական ծրագրի շրջանակում ծառայության դիմաց ձեզնից գումար են պահանջել, նախ պետք է տարբերել՝ դա թույլատրելի վճա՞ր է, համավճա՞ր, թե անհիմն պահանջ։ Միայն «վճարովի է ասել են» ձևակերպումը բավարար չէ վերջնական եզրակացության համար։",
+        "next_step": "Նախ դիմեք հենց այն բուժհաստատությանը, որտեղ գումար են պահանջել, և հստակեցրեք՝ ինչ իրավական կամ կազմակերպչական հիմքով է պահանջվել վճարը։ Եթե պարզաբանումը հակասական է կամ վճարը ձեզ համար մնում է անհասկանալի, հաջորդ քայլը բողոքարկման ուղղով ընթացքն է։"
       }
     ],
     "clarifiable": true,
     "partial_answer_allowed": true,
-    "safe_partial_answer": "Վճարի հարցերում նախ պետք է տարբերել՝ սա պաշտոնական վճար էր, համավճար, թե ոչ հիմնավորված պահանջ։",
-    "next_step_if_missing": "Նախ գրեք՝ որ ծառայության համար և որտեղ են գումար պահանջել։",
-    "priority": 100
+    "safe_partial_answer": "Եթե ասում են, որ ծառայությունը վճարովի է, բայց դուք ուղեգիր կամ ակնկալիք ունեք, սա նախ ճշտման հարց է, հետո՝ հնարավոր բողոքի։",
+    "next_step_if_missing": "Նախ գրե՛ք՝ որ ծառայության համար են գումար պահանջել և որ հաստատությունում։",
+    "priority": 100,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_refusal_denied_service_v2",
@@ -1242,7 +1449,9 @@
       "չեն սպասարկել",
       "ծառայությունը չեն տվել",
       "չեն ընդունել",
-      "բողոք",
+      "բողոք մերժման համար",
+      "բողոք չեն սպասարկել",
+      "բողոք մերժված ծառայության համար",
       "denied service",
       "refused care"
     ],
@@ -1268,7 +1477,9 @@
     "partial_answer_allowed": true,
     "safe_partial_answer": "Մերժման հարցերում նախ պետք է պարզել՝ ինչ ծառայության մասին է խոսքը և ինչ հիմքով են մերժել։",
     "next_step_if_missing": "Նախ գրեք՝ ինչ ծառայություն են մերժել և ինչ պատճառ են ասել։",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_medicine_not_provided_v1",
@@ -1283,15 +1494,15 @@
       "prescribed medicine not provided",
       "medicine not provided"
     ],
-    "approved_answer": "Այս դեպքում նախ պետք է հստակեցնել՝ որ դեղի մասին է խոսքը և որտեղ այն չեն տրամադրել։",
+    "approved_answer": "Եթե դեղը դուրս է գրված, բայց չեն տրամադրել, նախ պետք է պարզել՝ որ դեղի մասին է խոսքը և որտեղ այն չեն տվել։ Դա պետք է, որպեսզի տարբերենք՝ խնդիրը ծածկույթի, առկայության, թե համակարգային տեսանելիության մեջ է։",
     "allowed_answer_type": "conditional",
     "required_fields": [
       "medicine_name_details",
       "dispense_location"
     ],
     "field_questions": {
-      "medicine_name_details": "Նշե՛ք դեղի ճշգրիտ անվանումը, դեղաչափը և ձևը։",
-      "dispense_location": "Նշե՛ք՝ որտեղ չեն տրամադրել դեղը։ Օրինակ՝ դեղատուն, բուժհաստատություն կամ այլ կետ։"
+      "medicine_name_details": "Գրե՛ք դեղի անվանումը, դեղաչափը և ձևը։",
+      "dispense_location": "Գրե՛ք՝ որտեղ չեն տվել դեղը՝ դեղատա՞ն, բուժհաստատությա՞ն, թե այլ վայրում։"
     },
     "field_values": {},
     "answer_rules": [
@@ -1300,15 +1511,17 @@
           "medicine_name_details": "__any__",
           "dispense_location": "__any__"
         },
-        "answer": "Եթե դեղը նշանակված է, բայց չի տրամադրվել, այս փուլում պետք է տարբերել՝ այն ընդհանրապես չի տրամադրվե՞լ, տվյալ վայրո՞ւմ չի եղել, թե խնդիրը համակարգում կամ կազմակերպման օղակում է եղել։",
-        "next_step": "Պատրաստեք դեղի ամբողջական տվյալները և այն վայրը, որտեղ այն չեն տրամադրել, ապա նախ դիմեք տվյալ տրամադրող օղակին կամ համապատասխան պատասխանատու հաստատությանը հստակեցման համար։"
+        "answer": "Եթե դեղը նշանակված է, բայց չի տրամադրվել, պետք է տարբերել առնվազն երեք բան՝ դեղը տվյալ վայրում չկա՞ր, տվյալ դեղը այդ կարգով չի՞ տրամադրվում, թե խնդիրը համակարգում կամ գրանցման շղթայում է եղել։",
+        "next_step": "Պատրաստեք դեղի ամբողջական տվյալները և այն վայրը, որտեղ այն չեն տվել, ապա նախ դիմեք հենց տվյալ տրամադրող օղակին պարզաբանման համար։ Եթե խնդիրը մնում է չլուծված, արդեն կարելի է անցնել բողոքարկման ուղղությանը։"
       }
     ],
     "clarifiable": true,
     "partial_answer_allowed": true,
-    "safe_partial_answer": "Եթե դեղը չեն տրամադրել, նախ պետք է հասկանալ՝ խոսքը ծածկույթի, տրամադրման կազմակերպման, թե տեսանելիության խնդրի մասին է։",
-    "next_step_if_missing": "Նախ նշե՛ք դեղի ամբողջական տվյալները և այն վայրը, որտեղ այն չեն տրամադրել։",
-    "priority": 105
+    "safe_partial_answer": "Եթե դեղը դուրս է գրված, բայց չեն տալիս, նախ պետք է հասկանալ՝ խնդիրը տրամադրման վայրո՞ւմ է, ծածկույթի՞, թե համակարգային տեսանելիության։",
+    "next_step_if_missing": "Նախ գրե՛ք դեղի անվանումը, դեղաչափը, ձևը և այն վայրը, որտեղ այն չեն տվել։",
+    "priority": 105,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_missing_or_wrong_record_v1",
@@ -1372,7 +1585,9 @@
     "partial_answer_allowed": true,
     "safe_partial_answer": "Եթե գրառումը բացակայում է կամ սխալ է երևում, նախ պետք է հասկանալ՝ ինչ տվյալ է խնդրահարույց և որտեղ պետք է այն արտացոլված լիներ։",
     "next_step_if_missing": "Նախ նշե՛ք՝ խոսքը բացակա գրառման, թե սխալ տվյալների մասին է։",
-    "priority": 105
+    "priority": 105,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "technical_armed_visibility_issue_v1",
@@ -1380,22 +1595,20 @@
     "patterns": [
       "արմեդում չի երևում",
       "armed-ում չի երևում",
-      "չի երևում համակարգում",
-      "էլեկտրոնային համակարգում չկա",
       "ArMed չի երևում",
       "ArMed-ում չկա",
       "armed visibility",
       "not visible in armed"
     ],
-    "approved_answer": "Եթե տվյալը ArMed-ում չի երևում, նախ պետք է հստակեցնել՝ ինչ տվյալ պետք է երևար և որտեղ եք նկատել խնդիրը։",
+    "approved_answer": "Եթե տվյալը ArMed-ում չի երևում, նախ պետք է հասկանալ՝ կոնկրետ ինչ տվյալ է բացակայում և որտեղ եք դա նկատել։ Միայն այդ դեպքում կարելի է տարբերել՝ սա տեխնիկական ուշացո՞ւմ է, մուտքագրման խնդի՞ր, թե կազմակերպչական խափանում։",
     "allowed_answer_type": "conditional",
     "required_fields": [
       "armed_item_type",
       "armed_issue_context"
     ],
     "field_questions": {
-      "armed_item_type": "Նշե՛ք՝ ինչ տվյալ պետք է երևար ArMed-ում։ Օրինակ՝ դեղատոմս, գրառում, ծառայություն կամ այլ տվյալ։",
-      "armed_issue_context": "Նշե՛ք՝ որտեղ և երբ եք նկատել, որ տվյալը չի երևում։"
+      "armed_item_type": "Գրե՛ք՝ ArMed-ում ինչ տվյալ պետք է երևար՝ դեղատոմս, ծառայություն, գրառում, թե այլ բան։",
+      "armed_issue_context": "Գրե՛ք՝ որտեղ և երբ եք նկատել, որ դա չի երևում։"
     },
     "field_values": {},
     "answer_rules": [
@@ -1404,15 +1617,17 @@
           "armed_item_type": "__any__",
           "armed_issue_context": "__any__"
         },
-        "answer": "Եթե տվյալը ArMed-ում չի երևում, խնդիրը կարող է կապված լինել մուտքագրման, փոխանցման կամ տեսանելիության ուշացման հետ։ Միայն չերևալու փաստով դեռ չի կարելի որոշել՝ խոսքը տեխնիկական խափանման, թե կազմակերպչական խնդրի մասին է։",
-        "next_step": "Պատրաստեք այն տվյալը, որը պետք է երևար, ինչպես նաև որտեղ և երբ եք նկատել խնդիրը, ապա նախ դիմեք այն հաստատությանը կամ մասնագետին, որտեղ այդ տվյալը պետք է ձևավորվեր։"
+        "answer": "Եթե տվյալը ArMed-ում չի երևում, միայն այդ փաստով դեռ չի կարելի ասել՝ խնդիրը տեխնիկական է, թե ոչ։ Նախ պետք է հասկանալ՝ տվյալը ստեղծվե՞լ է, ճիշտ մուտքագրվե՞լ է, և որտե՞ղ է շղթան կտրվել։",
+        "next_step": "Պատրաստեք այն տվյալը, որը պետք է երևար, ինչպես նաև որտեղ և երբ եք նկատել խնդիրը, ապա նախ դիմեք այն հաստատությանը կամ մասնագետին, որտեղ այդ տվյալը պետք է ձևավորվեր կամ մուտքագրվեր։"
       }
     ],
     "clarifiable": true,
     "partial_answer_allowed": true,
-    "safe_partial_answer": "Եթե տվյալը ArMed-ում չի երևում, նախ պետք է հասկանալ՝ կոնկրետ ինչ տվյալ է բացակայում և որտեղ է դա նկատվել։",
-    "next_step_if_missing": "Նախ նշե՛ք, թե ինչ տվյալ պետք է երևար ArMed-ում և որտեղ եք նկատել խնդիրը։",
-    "priority": 106
+    "safe_partial_answer": "Եթե տվյալը ArMed-ում չի երևում, նախ պետք է հասկանալ՝ ինչ տվյալ է բացակայում և որտեղ է դա խանգարում ձեզ։",
+    "next_step_if_missing": "Նախ գրե՛ք՝ ինչ տվյալ պետք է երևար ArMed-ում և որտեղ եք նկատել խնդիրը։",
+    "priority": 106,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "complaint_duplicate_charge_or_wrong_payment_status_v1",
@@ -1427,15 +1642,15 @@
       "duplicate charge",
       "wrong payment status"
     ],
-    "approved_answer": "Այս դեպքում նախ պետք է հստակեցնել՝ խոսքը կրկնակի գանձման, թե սխալ վճարման կարգավիճակի մասին է։",
+    "approved_answer": "Այս դեպքում պետք է հստակեցնել՝ խոսքը կրկնակի գանձման մասին է, թե վճարման տվյալներն են սխալ երևում։",
     "allowed_answer_type": "conditional",
     "required_fields": [
       "payment_issue_type",
       "payment_context"
     ],
     "field_questions": {
-      "payment_issue_type": "Նշե՛ք՝ խոսքը կրկնակի գանձման, թե սխալ կարգավիճակի մասին է։",
-      "payment_context": "Նշե՛ք՝ որ ծառայության կամ վճարման մասին է խոսքը և որտեղ եք նկատել խնդիրը։"
+      "payment_issue_type": "Գրե՛ք՝ խոսքը կրկնակի գանձմա՞ն մասին է, թե վճարման տվյալներն են սխալ երևում։",
+      "payment_context": "Գրե՛ք՝ որ ծառայության կամ վճարման մասին է խոսքը և որտեղ եք նկատել խնդիրը։"
     },
     "field_values": {
       "payment_issue_type": {
@@ -1471,8 +1686,10 @@
     ],
     "clarifiable": true,
     "partial_answer_allowed": true,
-    "safe_partial_answer": "Եթե կա կրկնակի գանձում կամ վճարման տվյալները սխալ են երևում, նախ պետք է հասկանալ՝ խնդրի կոնկրետ տեսակը և որ ծառայության հետ է դա կապված։",
-    "next_step_if_missing": "Նախ նշե՛ք՝ խոսքը կրկնակի գանձման, թե սխալ վճարման կարգավիճակի մասին է։",
-    "priority": 106
+    "safe_partial_answer": "Եթե վճարման հետ կապված տվյալները սխալ են կամ գումարը երկու անգամ է գանձվել, նախ պետք է առանձնացնել խնդրի տեսակը։",
+    "next_step_if_missing": "Նախ գրե՛ք՝ խոսքը կրկնակի գանձման մասին է, թե սխալ վճարման տվյալների։",
+    "priority": 106,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   }
 ]

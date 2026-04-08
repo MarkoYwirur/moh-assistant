@@ -2,8 +2,8 @@
 from style_renderer import render_style
 
 
-def build_response(decision: dict, collected_fields: dict | None = None) -> dict:
-    payload = build_semantic_payload(decision, collected_fields)
+def build_response(decision: dict, collected_fields: dict | None = None, user_text: str = "") -> dict:
+    payload = build_semantic_payload(decision, collected_fields, user_text=user_text)
     semantic = payload["semantic"]
 
     answer = render_style(semantic)

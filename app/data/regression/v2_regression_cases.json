@@ -1,0 +1,218 @@
+﻿[
+  {
+    "id": "referral_vague_1",
+    "family": "referral_specialist",
+    "message": "ուր գնամ",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "referral_vague_2",
+    "family": "referral_specialist",
+    "message": "ուղեգիր ոնց ստանամ",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "referral_specific_1",
+    "family": "referral_specialist",
+    "message": "սրտաբանի մոտ ոնց գնամ",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "referral_specific_2",
+    "family": "referral_specialist",
+    "message": "մռտ-ի համար ուր դիմեմ",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "referral_borderline_1",
+    "family": "referral_specialist",
+    "message": "մասնագետի մոտ ուզում եմ գնալ",
+    "expected_behavior": "clarify"
+  },
+
+  {
+    "id": "payment_vague_1",
+    "family": "payment_dispute",
+    "message": "ասում են վճարովի է",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "payment_vague_2",
+    "family": "payment_dispute",
+    "message": "վճար են ուզում բայց չգիտեմ ինչի համար",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "payment_specific_1",
+    "family": "payment_dispute",
+    "message": "մռտ-ի համար, պոլիկլինիկայում գումար են ուզում",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "payment_specific_2",
+    "family": "payment_dispute",
+    "message": "կտ-ի համար հիվանդանոցում վճար են պահանջում",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "payment_borderline_1",
+    "family": "payment_dispute",
+    "message": "ասում են վճարովի է բայց ունեմ ուղեգիր",
+    "expected_behavior": "clarify"
+  },
+
+  {
+    "id": "record_vague_1",
+    "family": "record_or_visibility_issue",
+    "message": "չի երևում",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "record_vague_2",
+    "family": "record_or_visibility_issue",
+    "message": "համակարգում չկա դրա համար չեն տալիս",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "record_specific_1",
+    "family": "record_or_visibility_issue",
+    "message": "արմեդում դեղատոմսը չի երևում, դեղատանը դրա համար չեն տալիս",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "record_specific_2",
+    "family": "record_or_visibility_issue",
+    "message": "արմեդում ուղեգիրը չի երևում",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "record_borderline_1",
+    "family": "record_or_visibility_issue",
+    "message": "գրառումս սխալ է երևում",
+    "expected_behavior": "answer"
+  },
+
+  {
+    "id": "medicine_vague_1",
+    "family": "medicine_not_provided",
+    "message": "դեղը չեն տալիս",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "medicine_vague_2",
+    "family": "medicine_not_provided",
+    "message": "դեղատանը չկա",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "medicine_specific_1",
+    "family": "medicine_not_provided",
+    "message": "Աբիրատերոնը դեղատանը չեն տալիս, դուրս է գրված",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "medicine_specific_2",
+    "family": "medicine_not_provided",
+    "message": "Աբիրատերոնը դեղատանը չկա",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "medicine_borderline_1",
+    "family": "medicine_not_provided",
+    "message": "դուրս է գրված բայց չեն տալիս",
+    "expected_behavior": "clarify"
+  },
+
+  {
+    "id": "denied_vague_1",
+    "family": "denied_service",
+    "message": "մերժել են",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "denied_vague_2",
+    "family": "denied_service",
+    "message": "չեն ընդունել",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "denied_specific_1",
+    "family": "denied_service",
+    "message": "ՄՌՏ-ն հիվանդանոցում մերժել են",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "denied_specific_2",
+    "family": "denied_service",
+    "message": "վիրահատությունը հիվանդանոցում մերժել են",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "denied_borderline_1",
+    "family": "denied_service",
+    "message": "ծառայությունը չեն արել",
+    "expected_behavior": "clarify"
+  },
+
+  {
+    "id": "eligibility_vague_1",
+    "family": "eligibility_check",
+    "message": "ինձ հասնում է՞",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "eligibility_vague_2",
+    "family": "eligibility_check",
+    "message": "կարո՞ղ եմ օգտվել",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "eligibility_specific_1",
+    "family": "eligibility_check",
+    "message": "թոշակառու եմ, օգտվելու իրավունք ունե՞մ",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "eligibility_specific_2",
+    "family": "eligibility_check",
+    "message": "65-ից բարձր եմ, իրավունք ունե՞մ",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "eligibility_borderline_1",
+    "family": "eligibility_check",
+    "message": "աշխատող եմ, ինձ հասնու՞մ է",
+    "expected_behavior": "answer"
+  },
+
+  {
+    "id": "coverage_vague_1",
+    "family": "service_coverage_check",
+    "message": "ծածկվո՞ւմ է",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "coverage_vague_2",
+    "family": "service_coverage_check",
+    "message": "անվճա՞ր է",
+    "expected_behavior": "clarify"
+  },
+  {
+    "id": "coverage_specific_1",
+    "family": "service_coverage_check",
+    "message": "ՄՌՏ-ն ծածկվո՞ւմ է",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "coverage_specific_2",
+    "family": "service_coverage_check",
+    "message": "հոսպիտալացումը անվճա՞ր է",
+    "expected_behavior": "answer"
+  },
+  {
+    "id": "coverage_borderline_1",
+    "family": "service_coverage_check",
+    "message": "մասնագետի մոտը ծածկվո՞ւմ է",
+    "expected_behavior": "answer"
+  }
+]

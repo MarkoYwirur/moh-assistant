@@ -1,0 +1,1213 @@
+[
+  {
+    "id": "service_coverage_4_government_decision_1974_ն",
+    "category": "service_coverage",
+    "subtopic": "Government Decision 1974-Ն.",
+    "patterns": [
+      "Government Decision 1974-Ն.",
+      "government decision 1974-ն."
+    ],
+    "approved_answer": "A citizen gets charged for one of a few repeatable reasons, almost always operational—not “because the doctor felt like it”: - they are using a non-contracted facility/pharmacy (or the facility is contracted but not for that service), - they don’t have the right referral (or the referral is expired/not accepted in the e-health system), - the service is outside the package/program (or outside clinical/volume criteria), - the service is co-paid (shared payment is legally allowed) and they didn’t understand the split, - they asked to be treated outside the queue (“do it tomorrow”)—which is explicitly handled as paid in the uninsured minimum/additional workflow.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_note"
+  },
+  {
+    "id": "service_coverage_7_arlis_official_legal_texts",
+    "category": "service_coverage",
+    "subtopic": "ARLIS (official legal texts)",
+    "patterns": [
+      "ARLIS (official legal texts)",
+      "arlis (official legal texts)"
+    ],
+    "approved_answer": "Law “On Universal Health Insurance” (adopted 17 Dec 2025): definitions, referral requirement, contracted-provider rule, preventive-services prerequisite, co-pay concept, and the formal Fund complaint process. Government Decision 1974-Ն (25 Dec 2025): the minimum package for uninsured, additional services, eligible status groups, and the electronic referral + queue + co-pay operational procedure; also explicitly voids older frameworks (318-Ն, 375-Ն). Government Decision 1953-Ա (25 Dec 2025): establishing the Universal Health Insurance Fund (institutional basis).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_note"
+  },
+  {
+    "id": "service_coverage_8_universal_health_insurance_fund_operational_citizen_facing_rules_searchable_list",
+    "category": "service_coverage",
+    "subtopic": "Universal Health Insurance Fund (operational citizen-facing rules, searchable lists, and contact)",
+    "patterns": [
+      "Universal Health Insurance Fund (operational citizen-facing rules, searchable lists, and contact)",
+      "universal health insurance fund (operational citizen-facing rules, searchable lists, and contact)"
+    ],
+    "approved_answer": "1 2 3 4 5 6 7 • 8 • 9 • 10 • 11 • 12 1 “Insurance” page: who is insured in the first phase; what is covered vs not; and the standard citizen workflow (polyclinic → prevention exam → referral → service). Searchable database of reimbursed services and medicines (“Services and Medicines”). Contact channels.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_9_ministry_of_health_of_the_republic_of_armenia_contact_and_public_interface",
+    "category": "service_coverage",
+    "subtopic": "Ministry of Health of the Republic of Armenia contact and public interface",
+    "patterns": [
+      "Ministry of Health of the Republic of Armenia contact and public interface",
+      "ministry of health of the republic of armenia contact and public interface"
+    ],
+    "approved_answer": "Official contact details on moh.am (info line). Government portal page listing Ministry hotline/phones.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_10_screenings_and_program_examples_from_official_moh_documents",
+    "category": "service_coverage",
+    "subtopic": "Screenings and program examples from official MOH documents",
+    "patterns": [
+      "Screenings and program examples from official MOH documents",
+      "screenings and program examples from official moh documents"
+    ],
+    "approved_answer": "MOH Order 426-Լ (31 Jan 2023) continuing the colorectal cancer early detection program and identifying participating facilities and covered diagnostic follow-up steps (colonoscopic and pathomorphological diagnostics, specialist consults). ARLIS-published ministerial act text referencing preventive checks (e.g., Pap smear , breast exam/ mammography by indication, etc.) as part of preventive services.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_11_complaints_escalation_and_civic_channels",
+    "category": "service_coverage",
+    "subtopic": "Complaints, escalation, and civic channels",
+    "patterns": [
+      "Complaints, escalation, and civic channels",
+      "complaints, escalation, and civic channels"
+    ],
+    "approved_answer": "Health and Labour Inspection Body official hotline/contact (regulatory oversight, including medical services domain). Human Rights Defender of the Republic of Armenia hotline availability and numbers. e-request.am unified portal to submit requests/complaints and track by control number .",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_12_emergency_access",
+    "category": "service_coverage",
+    "subtopic": "Emergency access",
+    "patterns": [
+      "Emergency access",
+      "emergency access"
+    ],
+    "approved_answer": "Yerevan Municipality published emergency numbers including 103 (Ambulance) and 911 (crisis management center). Ministry of Interior rescue portal describing 911 emergency medical support/consultation as free.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_15_primary_care",
+    "category": "service_coverage",
+    "subtopic": "Primary care",
+    "patterns": [
+      "Primary care",
+      "primary care"
+    ],
+    "approved_answer": "Can it be free / state-covered? Yes, commonly. - Insured (UHI): primary care services are provided after the patient is identified using the UHI certificate or an ID document. - Uninsured (minimum package): the minimum package explicitly includes primary health care services. • 13 • 14 • 15 • 16 • 17 • 18 • • 19 • 20 • • 21 22 • 23 24 • 25 26 • • 27 28 • 29 30 31 2 Referral needed? - For insured people: primary care itself does not require a referral; it is the gateway that issues referrals for most other services.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_16_specialist_care",
+    "category": "service_coverage",
+    "subtopic": "Specialist care",
+    "patterns": [
+      "Specialist care",
+      "specialist care"
+    ],
+    "approved_answer": "Can it be free / subsidized / co-paid? Often covered for insured; case-dependent for uninsured. - Insured (UHI): outpatient services beyond primary care are generally provided with referral after identification. - Uninsured: the minimum package’s outpatient portion is narrow (primary care, pregnancy monitoring, emergency/urgent services, and specific diagnostics for confirmed cancer/TB), so routine specialist visits are not safely claimable as “free” unless they fall under a defined program/condition. Referral needed? Yes for most scheduled specialist visits in UHI; and referral is a central requirement in the uninsured minimum/additional pathway. Provider type matters?",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_17_hospital_care",
+    "category": "service_coverage",
+    "subtopic": "Hospital care",
+    "patterns": [
+      "Hospital care",
+      "hospital care"
+    ],
+    "approved_answer": "Can it be free / subsidized / co-paid? Yes, but split by status and condition. - Insured (UHI): inpatient services are part of the insurance package and generally require referral; emergency/urgent care is treated differently (no preventive prerequisite). - Uninsured (minimum package): the minimum package includes a defined set of inpatient service types such as ICU, tuberculosis care, psychiatric/narcology, infectious diseases (including HIV/AIDS), dialysis, maternity care/pregnancy pathology, emergency MI stenting, stroke endovascular treatment, aneurysm rupture/dissection surgery, cancer surgery, acute rehabilitation, burn care, and Hepatitis C services.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_18_imaging",
+    "category": "service_coverage",
+    "subtopic": "Imaging",
+    "patterns": [
+      "Imaging",
+      "imaging"
+    ],
+    "approved_answer": "Can it be free / subsidized / co-paid? Sometimes—depends on package and criteria. - Insured: imaging is covered only if it is in the package and the citizen follows the route (identification + referral + contracted provider/service). The practical rule is: verify the imaging service in the Fund’s searchable “services” database and choose a contracted facility for it. - Uninsured (minimum package): outpatient lab/instrumental diagnostics are explicitly guaranteed only for patients with confirmed malignant neoplasms and tuberculosis diagnoses (as defined by authorized lists/criteria).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_19_lab_tests",
+    "category": "service_coverage",
+    "subtopic": "Lab tests",
+    "patterns": [
+      "Lab tests",
+      "lab tests"
+    ],
+    "approved_answer": "Can it be free / subsidized / co-paid? Often yes for insured; constrained for uninsured. - Insured: lab testing is part of outpatient services when included in the package and ordered/referral-compliant. The Fund’s service database is the operational source of truth for “is this test reimbursed.” - Uninsured: outpatient diagnostics are narrowly guaranteed for confirmed cancer/TB and to limited status groups for additional diagnostics.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_20_surgery",
+    "category": "service_coverage",
+    "subtopic": "Surgery",
+    "patterns": [
+      "Surgery",
+      "surgery"
+    ],
+    "approved_answer": "Can it be free / subsidized / co-paid? Yes, but co-pay and criteria risks exist. - Insured: surgeries are covered when included in the package and routed correctly (referral + contracted provider). - Uninsured (minimum package): includes specific high-impact surgical services (e.g., MI coronary stenting, stroke endovascular care, certain aneurysm surgeries, malignant neoplasm surgeries, burn care), plus acute rehabilitation.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_21_emergency_care",
+    "category": "service_coverage",
+    "subtopic": "Emergency care",
+    "patterns": [
+      "Emergency care",
+      "emergency care"
+    ],
+    "approved_answer": "Can it be free / state-covered? Yes—this is one of the clearest “do not overcomplicate” areas. - Under UHI law, receiving a preventive service is not a prerequisite for emergency/urgent care services. - The uninsured minimum package explicitly includes emergency/urgent services (both outpatient emergency and certain hospital contexts). 38 6 7 39 40 41 42 43 32 35 44 45 46 4 How citizens access it (operational): - In Yerevan, the official municipal site states ambulance calls are received via 103 (ambulance).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_23_can_it_be_free_state_covered_often_yes_but_it_is_program_driven_and_criteria_dri",
+    "category": "service_coverage",
+    "subtopic": "Can it be free / state-covered? Often yes, but it is program-driven and criteria-driven. - Insured (UHI)",
+    "patterns": [
+      "Can it be free / state-covered? Often yes, but it is program-driven and criteria-driven. - Insured (UHI)",
+      "can it be free / state-covered? often yes, but it is program-driven and criteria-driven. - insured (uhi)"
+    ],
+    "approved_answer": "preventive services are included in the insurance package and are reimbursable. Also, the law makes preventive service (or being properly scheduled) a prerequisite for using the insurance package in general— except for emergency care. - Official texts tied to preventive screening content include items like breast exam (with mammography by medical indication) and Pap smear for cervical cancer early detection.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_25_can_it_be_free_state_covered_yes_heavily_across_both_uhi_and_state_programs_uhi_",
+    "category": "service_coverage",
+    "subtopic": "Can it be free / state-covered? Yes, heavily, across both UHI and state programs. - UHI insured groups",
+    "patterns": [
+      "Can it be free / state-covered? Yes, heavily, across both UHI and state programs. - UHI insured groups",
+      "can it be free / state-covered? yes, heavily, across both uhi and state programs. - uhi insured groups"
+    ],
+    "approved_answer": "the UHI Fund states that all children under 18 and people aged 65+ are insured with state budget financing; it also lists broader vulnerable groups. - Uninsured minimum package: includes maternity care and pregnancy pathology, plus outpatient prenatal monitoring and postpartum monitoring for 42 days.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_26_chronic_disease_services",
+    "category": "service_coverage",
+    "subtopic": "Chronic disease services",
+    "patterns": [
+      "Chronic disease services",
+      "chronic disease services"
+    ],
+    "approved_answer": "Can it be free / subsidized / co-paid? Yes, but it is the most criteria-sensitive group. - Insured: the UHI Fund explicitly includes chronic disease management/dispensary follow-up in the covered scope. - The law also references outpatient continuous monitoring for chronic disease states as an included cost category (including lab/instrumental tests, consultations, and other interventions such as physiotherapy), with co-payment possible for some service elements. 47 48 49 20 19 50 13 51 52 53 13 54 5 - Uninsured (additional services): urgent inpatient treatment for exacerbations/complications of chronic disease is explicitly listed as an additional service.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_27_rehabilitation",
+    "category": "service_coverage",
+    "subtopic": "Rehabilitation",
+    "patterns": [
+      "Rehabilitation",
+      "rehabilitation"
+    ],
+    "approved_answer": "Can it be free / state-covered? Yes, but split by age/status and by “acute vs chronic.” - Uninsured (health programs): chronic rehabilitation for children under 18 (including sanatorium) is explicitly covered as a health program. - Uninsured (minimum package): acute rehabilitation medical services are explicitly included. - Uninsured (additional services): rehabilitation services are granted only to specific Annex 1 status subgroups (the decision enumerates which subpoints qualify). Referral, provider, and program conditions This section is the “why citizens get stuck” engine—because it’s where hidden constraints live. Insurance status is the first fork; do not skip it.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_28_safe_general_answer_boundaries_for_a_ministry_assistant",
+    "category": "service_coverage",
+    "subtopic": "Safe general-answer boundaries for a Ministry assistant",
+    "patterns": [
+      "Safe general-answer boundaries for a Ministry assistant",
+      "safe general-answer boundaries for a ministry assistant"
+    ],
+    "approved_answer": "A Ministry assistant should not guess eligibility. The safe boundary is: explain the rule, then explain what data controls eligibility, then tell the citizen what to check and what to prepare. The UHI law itself acknowledges that minimum/additional services and their access conditions are set by government decisions and that services can vary by age/sex/status; this makes “generic yes/no” answers risky. What cannot be answered generically (because it becomes personal eligibility): - “Is [specific test/ procedure] free for me?” (depends on insured/uninsured, status group, diagnosis confirmation, package inclusion, clinical criteria, referral validity, provider contract).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_note"
+  },
+  {
+    "id": "service_coverage_29_common_citizen_questions_that_drive_hotline_volume",
+    "category": "service_coverage",
+    "subtopic": "Common citizen questions that drive hotline volume",
+    "patterns": [
+      "Common citizen questions that drive hotline volume",
+      "common citizen questions that drive hotline volume"
+    ],
+    "approved_answer": "Is MRI free? Not a safe yes/no. MRI is covered only if it is included for your condition under your status (insured vs uninsured), ordered via referral, and done at a contracted provider for that service; uninsured outpatient diagnostics are explicitly narrow (confirmed cancer/TB and limited status groups). Do I need a referral? If you’re insured: primary care → no; most specialist visits/tests/hospital care → yes. If you’re using the uninsured minimum/additional pathway: the system is explicitly referral-driven through the e-health system. Where can I get this done?",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_note"
+  },
+  {
+    "id": "service_coverage_31_operational_access_workflows",
+    "category": "service_coverage",
+    "subtopic": "Operational access workflows",
+    "patterns": [
+      "Operational access workflows",
+      "operational access workflows"
+    ],
+    "approved_answer": "Primary care visit (insured or start-point for uninsured) 1) Confirm your insurance status in the system (practically via ArMed or Fund tools, as described by the Fund). 2) Book and attend your polyclinic therapist/primary care doctor; complete preventive exam if required for using the insurance package. 3) If needed, obtain an electronic referral for specialist/tests/hospital. Specialist consultation / planned diagnostics (insured) 1) Get an electronic referral from primary care. 2) Choose a contracted facility that provides that service (verify via Fund listings/search). 3) Present your insurance certificate/ID; the facility accepts the referral and schedules or delivers the service.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_32_what_to_prepare_before_calling",
+    "category": "service_coverage",
+    "subtopic": "What to prepare before calling",
+    "patterns": [
+      "What to prepare before calling",
+      "what to prepare before calling"
+    ],
+    "approved_answer": "This is the minimum data that prevents “back-and-forth” calls and makes the hotline able to decide in one pass. Personal identifiers used in the health system (ID document details; public services number where applicable). Your insurance status evidence as displayed in ArMed / by Fund workflow (screenshot is fine). Referral details: issuing organization/doctor; referral date; the procedure defines referral validity and acceptance. Provider details: facility name, location, and whether it is contracted for the exact service (the Fund is required to publish contracted provider lists and service lists).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_35_coverage_triage_universal_opener",
+    "category": "service_coverage",
+    "subtopic": "Coverage triage (universal opener)",
+    "patterns": [
+      "Coverage triage (universal opener)",
+      "coverage triage (universal opener)"
+    ],
+    "approved_answer": "“Coverage depends on your status (insured/uninsured), the presence of a valid electronic referral, and whether the provider is contracted for that service. If you share: your status screenshot, referral date/issuer , and provider name, we can tell you the correct route and whether co-pay is expected.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_36_mri_question",
+    "category": "service_coverage",
+    "subtopic": "MRI question",
+    "patterns": [
+      "MRI question",
+      "mri question"
+    ],
+    "approved_answer": "“MRI can be covered only if it is included under your package/program criteria and done with a referral at a contracted provider . For uninsured citizens, outpatient diagnostics coverage is explicitly narrow (confirmed cancer/TB and limited status groups), so we cannot promise MRI coverage without checking your status and indication.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_37_referral_rule",
+    "category": "service_coverage",
+    "subtopic": "Referral rule",
+    "patterns": [
+      "Referral rule",
+      "referral rule"
+    ],
+    "approved_answer": "“For insured citizens: primary care visits don’t require a referral; most specialist/tests/hospital services do. 26 24 • 83 • 80 • 37 • 88 • 89 • 90 • 91 92 93 10 For uninsured minimum/additional services: the procedure is referral-driven through the e-health system.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_38_non_contracted_provider_warning",
+    "category": "service_coverage",
+    "subtopic": "Non-contracted provider warning",
+    "patterns": [
+      "Non-contracted provider warning",
+      "non-contracted provider warning"
+    ],
+    "approved_answer": "“If the facility/pharmacy is not contracted with the Fund for that service, it is generally not covered. Always verify the provider and service in the Fund’s published lists before going.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_39_queue_expectations",
+    "category": "service_coverage",
+    "subtopic": "Queue expectations",
+    "patterns": [
+      "Queue expectations",
+      "queue expectations"
+    ],
+    "approved_answer": "“For insured planned services, waitlisting up to 6 months is legally allowed when capacity is limited. If the wait limit expires, you can access the service at a non-contracted provider and seek reimbursement at the package price.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_40_co_pay_explanation_insured",
+    "category": "service_coverage",
+    "subtopic": "Co-pay explanation (insured)",
+    "patterns": [
+      "Co-pay explanation (insured)",
+      "co-pay explanation (insured)"
+    ],
+    "approved_answer": "“Co-pay means the package pays up to a maximum amount, and you pay the difference in defined cases. For medicines, the law describes how the difference is handled relative to maximum reimbursement.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_41_co_pay_documentation_uninsured_minimum_additional",
+    "category": "service_coverage",
+    "subtopic": "Co-pay documentation (uninsured minimum/additional)",
+    "patterns": [
+      "Co-pay documentation (uninsured minimum/additional)",
+      "co-pay documentation (uninsured minimum/additional)"
+    ],
+    "approved_answer": "“If co-pay is applied for inpatient services, the provider must sign a paid-services contract with you showing state-paid vs patient-paid amounts and the price. Payments are made to the provider’s account; installments are allowed; a limited waiver/reduction mechanism exists.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_42_emergency_rule",
+    "category": "service_coverage",
+    "subtopic": "Emergency rule",
+    "patterns": [
+      "Emergency rule",
+      "emergency rule"
+    ],
+    "approved_answer": "“Emergency/urgent care should not depend on having completed preventive exams. In Yerevan, ambulance is reached via 103; 911 is also published for emergency medical support.” Wrongly charged under UHI—what next “The law requires submitting a written complaint to the Fund first; it is reviewed by the Fund’s commission, with defined timelines and required complaint contents. This step is mandatory before mediation/court.”",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_43_where_to_escalate_provider_misconduct",
+    "category": "service_coverage",
+    "subtopic": "Where to escalate provider misconduct",
+    "patterns": [
+      "Where to escalate provider misconduct",
+      "where to escalate provider misconduct"
+    ],
+    "approved_answer": "“For suspected violations in the medical services domain, you can contact the Health and Labour Inspection Body hotline. For formal written complaints you can also use the e-request portal and track by control number .” Unclear, conflicting, or missing areas needing ministry confirmation These are the specific gaps a high-stakes Ministry assistant should not “wing,” because they change",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_44_outcomes_and_liability",
+    "category": "service_coverage",
+    "subtopic": "outcomes and liability",
+    "patterns": [
+      "outcomes and liability"
+    ],
+    "approved_answer": "Exact co-payment rates and caps for specific services under UHI and under the uninsured minimum/additional pathway: Government Decision 1974-Ն states that co-pay amounts and prices are set by the Fund with the authorized body’s agreement, meaning they can change and may not be fully encoded in a single public legal annex. A citizen-facing assistant needs a current, authoritative co-pay table and where it is published. The exact “authorized body lists and criteria” that define when uninsured minimum-package inpatient categories apply (and what outpatient “lab/instrumental diagnostics” includes under 3 94 38 65 95 96 75 97 • 98 • 11 cancer/TB coverage).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_2_primary_healthcare_consultation",
+    "category": "service_coverage",
+    "subtopic": "Primary Healthcare Consultation",
+    "patterns": [
+      "Primary Healthcare Consultation",
+      "primary healthcare consultation"
+    ],
+    "approved_answer": "Category: Primary care Coverage: Fully covered under state programs; condition-dependent under universal insurance (post-2026). Until 2026, all citizens receive free primary care services via state-funded programs. From 2026, primary care is included in the insurance package for insured individuals. Eligibility: All citizens (and legal residents) are eligible. Under the new insurance law, insured persons (initially defined by age, employment, disability, etc.) are eligible for the insurance package .",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_3_emergency_medical_care",
+    "category": "service_coverage",
+    "subtopic": "Emergency Medical Care",
+    "patterns": [
+      "Emergency Medical Care",
+      "emergency medical care"
+    ],
+    "approved_answer": "Category: Emergency care Coverage: Fully covered. Emergency medical aid is guaranteed for all citizens. State programs ensure “urgent first medical aid” at outpatient facilities for everyone. Under universal insurance, emergency transport and care (including ambulance services) are reimbursed. Eligibility: All individuals (no restriction) have access to emergency care. From 2026, insured persons (and in practice citizens) also retain this right in the insurance system. Covered Elements: First-response care, emergency room treatment, ambulance transport (air or ground), and necessary life-saving interventions. The insurance law explicitly includes costs for emergency transport and care.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_4_hospitalization_inpatient_care",
+    "category": "service_coverage",
+    "subtopic": "Hospitalization (Inpatient Care)",
+    "patterns": [
+      "Hospitalization (Inpatient Care)",
+      "hospitalization (inpatient care)"
+    ],
+    "approved_answer": "Category: Inpatient care Coverage: Fully covered under state programs; condition-dependent under insurance. State-funded programs cover necessary hospital admissions arranged through primary care. From 2026, hospitalization costs for insured patients are reimbursed by the insurance fund (with co-pay provisions) . Eligibility: All citizens requiring medically necessary inpatient care. Under insurance, eligible patients must be insured when admitted. Vulnerable and special groups also benefit from state programs. Covered Elements: Inpatient treatment including accommodation, nursing care, diagnostics, procedures and surgeries when medically indicated.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_5_specialist_outpatient_visits",
+    "category": "service_coverage",
+    "subtopic": "Specialist Outpatient Visits",
+    "patterns": [
+      "Specialist Outpatient Visits",
+      "specialist outpatient visits"
+    ],
+    "approved_answer": "Category: Outpatient care Coverage: Partially covered. Outpatient specialist consultations are covered when medically necessary. State programs fund specialist consults via the dispensation system (e.g., refer-for-specialist). Under insurance, outpatient specialist care is included but may involve co-pay. Eligibility: Patients requiring specialist evaluation (referral by a primary doctor). All insured individuals can access this benefit. Covered Elements: Expert consultations (e.g. cardiology, endocrinology, etc.) at outpatient clinics. Under state rules, if a primary doctor deems it necessary, the visit is arranged by the state.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_6_blood_tests",
+    "category": "service_coverage",
+    "subtopic": "Blood Tests",
+    "patterns": [
+      "Blood Tests",
+      "blood tests"
+    ],
+    "approved_answer": "Category: Laboratory testing Coverage: Fully covered for approved tests. State programs cover common lab tests at primary care clinics (per Ministerial order). Insurance reimburses most medically-indicated lab tests (with possible co-pay). Eligibility: Patients for whom a doctor orders the test (preventive or diagnostic). Under insurance, insured persons only. Covered Elements: Standard blood counts, biochemistry, and other routine lab analyses required for diagnosis or monitoring. State programs refer to a defined list (per MoH order). Insurance includes lab tests for covered conditions. Exclusions: Specialty or research-only tests are not covered.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_7_category_diagnostics",
+    "category": "service_coverage",
+    "subtopic": "Category: Diagnostics",
+    "patterns": [
+      "Category: Diagnostics",
+      "category: diagnostics"
+    ],
+    "approved_answer": "Coverage: Partially covered. Essential imaging (X-ray, ultrasound, CT/MRI) is covered when clinically indicated. State programs fund essential imaging under primary care and hospital care. Insurance covers these diagnostics (often partially). Eligibility: Patients with a referral for imaging. Insured individuals. Covered Elements: Standard X-rays and ultrasounds needed for diagnosis or monitoring. Advanced imaging (CT, MRI) likely covered only with strong indication or within hospital settings. Exclusions: Non-essential or screening imaging without medical necessity. ⚠ No explicit exclusion list found.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_8_vaccination_programs",
+    "category": "service_coverage",
+    "subtopic": "Vaccination Programs",
+    "patterns": [
+      "Vaccination Programs",
+      "vaccination programs"
+    ],
+    "approved_answer": "Category: Preventive care Coverage: Fully covered. All vaccines in the national immunization schedule are provided free by the state. The insurance package explicitly includes national calendar vaccinations. Eligibility: All target groups as per schedule (infants, children, pregnant women, etc.). Coverage is guaranteed for citizens. Covered Elements: Childhood vaccines (BCG, polio, DPT, MMR, etc.) and other national program vaccines. Possibly seasonal vaccines (e.g. flu for risk groups) per public health policy. Exclusions: Vaccines not on the national schedule (e.g. optional vaccines) are paid by individuals. ⚠ No formal exclusion list available.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_9_screening_programs",
+    "category": "service_coverage",
+    "subtopic": "Screening Programs",
+    "patterns": [
+      "Screening Programs",
+      "screening programs"
+    ],
+    "approved_answer": "Category: Preventive care Coverage: Fully covered for state-recommended screenings. Population screening services (e.g. cervical Pap smears, mammography) are provided by public programs. The insurance law includes “screenings, consultations, and vaccinations” in covered costs. Eligibility: Target groups as defined (e.g. women of certain age for breast/cervical screening). Insured persons are eligible under the insurance regime. Covered Elements: Preventive screening tests for priority conditions (exact programs not specified in available sources). These would include standard early-detection services per health policy. Exclusions: Screenings outside official programs (e.g.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_10_essential_medicines_coverage",
+    "category": "service_coverage",
+    "subtopic": "Essential Medicines Coverage",
+    "patterns": [
+      "Essential Medicines Coverage",
+      "essential medicines coverage"
+    ],
+    "approved_answer": "Category: Pharmaceutical coverage Coverage: Partially covered. Prescription medicines are subsidized. Under state programs, some drugs (especially for priority conditions) are provided free/subsidized to vulnerable groups. The insurance package reimburses drugs used in hospital and chronic care. Eligibility: Patients prescribed medications. Vulnerable groups (children, disabled, poor) often receive 11 11 11 11 11 11 11 11 4 additional support under specific programs. Insured individuals receive reimbursements on medications in the package. Covered Elements: Medications listed in national essential/drug programs (e.g. diabetes insulin, hypertension drugs).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_11_subsidized_drug_lists",
+    "category": "service_coverage",
+    "subtopic": "Subsidized Drug Lists",
+    "patterns": [
+      "Subsidized Drug Lists",
+      "subsidized drug lists"
+    ],
+    "approved_answer": "Category: Pharmaceutical coverage Coverage: Partially covered. The government publishes lists of subsidized drugs for certain patient groups. These are reimbursed or provided free to eligible individuals. Under insurance, reimbursed drugs include those listed in the formulary (subject to co-pay). Eligibility: Patients belonging to specific groups (children, disabled, etc.) or with certain diagnoses, as defined by government decrees (e.g. low-income families, war veterans). Covered Elements: Specific medications for chronic diseases, psychiatric care, oncology, etc., as listed in official regulations (not fully detailed here).",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_12_diabetes_related_care",
+    "category": "service_coverage",
+    "subtopic": "Diabetes-Related Care",
+    "patterns": [
+      "Diabetes-Related Care",
+      "diabetes-related care"
+    ],
+    "approved_answer": "Category: Chronic conditions Coverage: Fully covered. Diabetes care (including monitoring and treatment) is guaranteed under state programs and included in insurance. Chronic outpatient care for diabetes – drugs (insulin, oral agents), glucose testing, specialist consultations – are covered. Eligibility: All patients diagnosed with diabetes. Insured persons (post-2026) have coverage for their diabetes care under insurance. Covered Elements: Blood glucose tests, insulin/medications, nutrition counseling, eye/foot exams, and endocrinology visits. Insurance law specifically covers chronic disease monitoring costs (drugs, labs, consults) .",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_13_cardiovascular_disease_management",
+    "category": "service_coverage",
+    "subtopic": "Cardiovascular Disease Management",
+    "patterns": [
+      "Cardiovascular Disease Management",
+      "cardiovascular disease management"
+    ],
+    "approved_answer": "Category: Chronic conditions Coverage: Fully covered. Cardiovascular (CV) care is provided under both state programs and insurance. Outpatient CV care (drugs, tests) and inpatient CV services (like surgeries) are covered. Eligibility: Patients with CV conditions (hypertension, heart disease) are eligible under disease management programs. Insured individuals receive coverage under the insurance package. Covered Elements: Antihypertensive and cardiac medications, blood pressure and cholesterol tests, cardiology visits, and necessary interventions (angiography, bypass surgery). Chronic outpatient CV care and inpatient CV care are included in insurance benefits.",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_coverage_14_microsoft_word_document1",
+    "category": "service_coverage",
+    "subtopic": "Microsoft Word - Document1",
+    "patterns": [
+      "Microsoft Word - Document1",
+      "microsoft word - document1"
+    ],
+    "approved_answer": "https://www.e-gov.am/u_files/file/decrees/kar/2020/12/2053_2.pdf 9 15 11 15 11 15 9 11 15 1 5 6 2 7 8 9 10 11 15 3 4 12 13 14 6",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
+    "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_mri_policy_curated",
+    "category": "service_coverage",
+    "subtopic": "MRI",
+    "card_type": "conditional_policy",
+    "patterns": [
+      "մռտ",
+      "mri",
+      "magnetic resonance",
+      "մագնիսառեզոնանսային"
+    ],
+    "approved_answer": "ՄՌՏ ծառայության պատասխանը կախված է ուղեգրի և կիրառվող պայմանների առկայությունից։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "referral_status"
+    ],
+    "field_questions": {
+      "referral_status": "Ուղեգիր ունե՞ք։"
+    },
+    "field_values": {
+      "referral_status": {
+        "has_referral": [
+          "այո",
+          "ունեմ",
+          "կա",
+          "ուղեգիր ունեմ"
+        ],
+        "no_referral": [
+          "ոչ",
+          "չունեմ",
+          "չկա",
+          "ուղեգիր չունեմ"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "referral_status": "has_referral"
+        },
+        "answer": "Եթե ունեք ուղեգիր, ՄՌՏ ծառայության կազմակերպման և ծածկույթի հարցը պետք է գնահատվի գործող պայմաններով և համապատասխան բուժհաստատության կարգով։",
+        "next_step": "Դիմեք ձեր բժշկին կամ այն բուժհաստատությանը, որտեղ պետք է իրականացվի հետազոտությունը, որպեսզի ճշտվի ծառայության կազմակերպման կարգը։"
+      },
+      {
+        "when": {
+          "referral_status": "no_referral"
+        },
+        "answer": "Եթե ուղեգիր չունեք, միայն այս տեղեկությամբ հնարավոր չէ հաստատել ՄՌՏ ծառայության ծածկույթը։",
+        "next_step": "Նախ դիմեք ձեր պոլիկլինիկա կամ բուժող բժշկին՝ ուղեգրի անհրաժեշտությունը և հետագա կարգը ճշտելու համար։"
+      }
+    ],
+    "clarification_needed_if": "Need referral status",
+    "escalate_if": "Requires exact personal coverage decision or live verification",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 100,
+    "clarifiable": true,
+    "partial_answer_allowed": true,
+    "safe_partial_answer": "ՄՌՏ-ի պատասխանը կախված է ուղեգրի և ծառայության պայմաններից։",
+    "next_step_if_missing": "Նախ պետք է պարզել՝ ուղեգիր ունե՞ք։",
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_ct_policy_curated",
+    "category": "service_coverage",
+    "subtopic": "CT",
+    "card_type": "conditional_policy",
+    "patterns": [
+      "ct",
+      "ct scan",
+      "համակարգչային տոմոգրաֆիա",
+      "կտ"
+    ],
+    "approved_answer": "Համակարգչային տոմոգրաֆիան կարող է տրամադրվել պետական ծրագրերով, եթե կան համապատասխան պայմաններ և բժշկի ուղեգիր։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "referral_status"
+    ],
+    "field_questions": {
+      "referral_status": "Ուղեգիր ունե՞ք։"
+    },
+    "field_values": {
+      "referral_status": {
+        "yes": [
+          "ուղեգիր ունեմ",
+          "ունեմ ուղեգիր",
+          "այո ունեմ",
+          "այո",
+          "տվել են ուղեգիր"
+        ],
+        "no": [
+          "ուղեգիր չունեմ",
+          "չունեմ ուղեգիր",
+          "ոչ",
+          "դեռ չունեմ"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "referral_status": "yes"
+        },
+        "answer": "Եթե ունեք ուղեգիր, համակարգչային տոմոգրաֆիան կարող է լինել պետական ծրագրով, եթե տվյալ ծառայությունը ներառված է ձեր կիրառվող կարգում։ Եթե ուզում եք ճշտել կոնկրետ դեպքը, զանգահարեք 8003։"
+      },
+      {
+        "when": {
+          "referral_status": "no"
+        },
+        "answer": "Եթե ուղեգիր չունեք, նախ պետք է բժշկի ուղեգիր ստանաք, քանի որ առանց դրա ծառայության անվճար տրամադրումը սովորաբար չի որոշվում։"
+      }
+    ],
+    "clarification_needed_if": "Need referral status",
+    "escalate_if": "Requires exact personal coverage decision or live verification",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 100,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_hospitalization_policy_curated",
+    "category": "service_coverage",
+    "subtopic": "Hospitalization",
+    "card_type": "conditional_policy",
+    "patterns": [
+      "հոսպիտալացում",
+      "hospitalization",
+      "հիվանդանոց պառկել",
+      "ստացիոնար"
+    ],
+    "approved_answer": "Հոսպիտալացման պայմանները կախված են նրանից՝ դեպքը շտապ է, թե պլանային, և ինչ հիմքով եք ընդունվում։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "admission_type"
+    ],
+    "field_questions": {
+      "admission_type": "Դեպքը շտապ՞ է, թե պլանային։"
+    },
+    "field_values": {
+      "admission_type": {
+        "emergency": [
+          "շտապ",
+          "անհետաձգելի",
+          "շտապ օգնություն",
+          "կրիտիկական"
+        ],
+        "planned": [
+          "պլանային",
+          "նախապես",
+          "պլանավորված"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "admission_type": "emergency"
+        },
+        "answer": "Եթե հոսպիտալացումը շտապ է, առաջին հերթին գործում է շտապ օգնության և անհետաձգելի բուժօգնության կարգը։ Կոնկրետ ծածկույթի մանրամասները հետո կարող են ճշտվել։"
+      },
+      {
+        "when": {
+          "admission_type": "planned"
+        },
+        "answer": "Եթե հոսպիտալացումը պլանային է, սովորաբար կարևոր է ուղեգիրը և ծրագրային հիմքը։ Լավ կլինի նախ ճշտել ընդունման հիմքը և զանգահարել 8003, եթե պետք է կոնկրետ ուղղորդում։"
+      }
+    ],
+    "clarification_needed_if": "Need admission type",
+    "escalate_if": "Requires exact provider-specific admission decision",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 95,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_specialist_policy_curated",
+    "category": "service_coverage",
+    "subtopic": "Specialist care",
+    "card_type": "conditional_policy",
+    "patterns": [
+      "մասնագետ",
+      "մասնագետի մոտ",
+      "specialist",
+      "doctor specialist",
+      "նեղ մասնագետ",
+      "ուղեգիր մասնագետի համար",
+      "մասնագետի այց",
+      "մասնագետի մոտ գնալ",
+      "մասնագետի մոտ գնալը"
+    ],
+    "approved_answer": "Մասնագետի մոտ այցելության համար հաճախ կարևոր է՝ ունե՞ք ուղեգիր, թե ոչ։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "referral_status"
+    ],
+    "field_questions": {
+      "referral_status": "Ուղեգիր ունե՞ք ընտանեկան բժշկից կամ բուժող բժշկից։"
+    },
+    "field_values": {
+      "referral_status": {
+        "yes": [
+          "ուղեգիր ունեմ",
+          "ունեմ ուղեգիր",
+          "այո",
+          "տվել են ուղեգիր"
+        ],
+        "no": [
+          "ուղեգիր չունեմ",
+          "ոչ",
+          "չկա ուղեգիր",
+          "դեռ չունեմ"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "referral_status": "yes"
+        },
+        "answer": "Եթե ունեք ուղեգիր, մասնագետի այցը կարող է կազմակերպվել գործող կարգով՝ կախված ծառայությունից և ծրագրից։"
+      },
+      {
+        "when": {
+          "referral_status": "no"
+        },
+        "answer": "Եթե ուղեգիր չունեք, նախ պետք է ճշտել՝ տվյալ մասնագետի համար ուղեգիր պահանջվո՞ւմ է, քանի որ շատ դեպքերում հենց դա է որոշիչը։"
+      }
+    ],
+    "clarification_needed_if": "Need referral status",
+    "escalate_if": "Requires exact provider-specific access decision",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 5,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_surgery_policy_curated",
+    "category": "service_coverage",
+    "subtopic": "Surgery",
+    "card_type": "conditional_policy",
+    "patterns": [
+      "վիրահատություն",
+      "surgery",
+      "operation"
+    ],
+    "approved_answer": "Վիրահատությունների պետպատվերով կամ ապահովագրական ծածկույթը կախված է վիրահատության տեսակից, բժշկական հիմքից և ծրագրային կարգից։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "admission_type"
+    ],
+    "field_questions": {
+      "admission_type": "Վիրահատությունը շտապ՞ է, թե պլանային։"
+    },
+    "field_values": {
+      "admission_type": {
+        "emergency": [
+          "շտապ",
+          "անհետաձգելի",
+          "շտապ վիրահատություն"
+        ],
+        "planned": [
+          "շտապ չէ",
+          "ոչ շտապ",
+          "պլանային",
+          "նախապես",
+          "պլանավորված"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "admission_type": "emergency"
+        },
+        "answer": "Եթե վիրահատությունը շտապ է, առաջնային է անհետաձգելի բուժօգնության կարգը, և հարցը չի թողնվում միայն ծածկույթի նախնական ճշտմանը։"
+      },
+      {
+        "when": {
+          "admission_type": "planned"
+        },
+        "answer": "Եթե վիրահատությունը պլանային է, վերջնական ծածկույթը կախված է ծրագրից, բժշկական հիմքից և ընդունման կարգից։ Լավ է նախ ճշտել ուղեգրի և ծրագրի հիմքը։"
+      }
+    ],
+    "clarification_needed_if": "Need emergency vs planned",
+    "escalate_if": "Requires exact personal outcome or hospital-specific decision",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 90,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_lab_policy_curated",
+    "category": "service_coverage",
+    "subtopic": "Lab tests",
+    "card_type": "conditional_policy",
+    "patterns": [
+      "անալիզ",
+      "վերլուծություն",
+      "lab test",
+      "laboratory",
+      "լաբորատոր"
+    ],
+    "approved_answer": "Լաբորատոր քննությունները կարող են տրամադրվել պետական կարգով, եթե դրանք նշանակված են համապատասխան հիմքով։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "referral_status"
+    ],
+    "field_questions": {
+      "referral_status": "Բժշկի նշանակո՞ւմ կամ ուղեգիր ունեք այդ քննության համար։"
+    },
+    "field_values": {
+      "referral_status": {
+        "yes": [
+          "ունեմ նշանակում",
+          "ունեմ ուղեգիր",
+          "այո",
+          "բժիշկը նշանակել է"
+        ],
+        "no": [
+          "չունեմ նշանակում",
+          "ուղեգիր չունեմ",
+          "ոչ",
+          "ինքնուրույն եմ ուզում"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "referral_status": "yes"
+        },
+        "answer": "Եթե քննությունը նշանակված է բժշկի կողմից, այն կարող է տրամադրվել գործող պետական կամ ծրագրային կարգով՝ կախված ծառայության տեսակից։"
+      },
+      {
+        "when": {
+          "referral_status": "no"
+        },
+        "answer": "Եթե բժշկի նշանակություն կամ ուղեգիր չունեք, լաբորատոր քննության անվճար տրամադրումը սովորաբար չի որոշվում մինչև դրա հիմքը չճշտվի։"
+      }
+    ],
+    "clarification_needed_if": "Need referral or prescription status",
+    "escalate_if": "Requires exact personal coverage decision",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 85,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_emergency_policy_curated",
+    "category": "service_coverage",
+    "subtopic": "Emergency care",
+    "card_type": "direct_policy",
+    "patterns": [
+      "շտապ օգնություն",
+      "emergency",
+      "103",
+      "112",
+      "անհետաձգելի"
+    ],
+    "approved_answer": "Շտապ և անհետաձգելի բուժօգնությունը առաջնային է և կազմակերպվում է անհապաղ։ Եթե հիմա վիճակը շտապ է, զանգահարեք 103 կամ 112։",
+    "allowed_answer_type": "direct",
+    "clarification_needed_if": "",
+    "escalate_if": "Medical advice request or symptom evaluation",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 100,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_family_doctor_route_curated",
+    "category": "service_coverage",
+    "subtopic": "Family doctor routing",
+    "card_type": "direct_policy",
+    "patterns": [
+      "ընտանեկան բժիշկ",
+      "family doctor",
+      "պոլիկլինիկա",
+      "ուր գնամ առաջինը",
+      "որտեղ դիմեմ առաջինը"
+    ],
+    "approved_answer": "Եթե հարցը սովորական բուժօգնության, ուղեգրի կամ քննության կազմակերպման մասին է, առաջին քայլը սովորաբար ընտանեկան բժիշկն ու ձեր պոլիկլինիկան են։",
+    "allowed_answer_type": "general",
+    "clarification_needed_if": "",
+    "escalate_if": "Needs exact provider directory or urgent case",
+    "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
+    "priority": 95,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  },
+  {
+    "id": "service_ct_policy_curated_v2",
+    "category": "service_coverage",
+    "patterns": [
+      "կտ",
+      "ct",
+      "համակարգչային տոմոգրաֆիա",
+      "կոմպյուտերային տոմոգրաֆիա",
+      "ct scan"
+    ],
+    "approved_answer": "ԿՏ ծառայության պատասխանը կախված է ուղեգրի և կիրառվող պայմանների առկայությունից։",
+    "allowed_answer_type": "conditional",
+    "required_fields": [
+      "referral_status"
+    ],
+    "field_questions": {
+      "referral_status": "Ուղեգիր ունե՞ք։"
+    },
+    "field_values": {
+      "referral_status": {
+        "has_referral": [
+          "այո",
+          "ունեմ",
+          "կա",
+          "ուղեգիր ունեմ"
+        ],
+        "no_referral": [
+          "ոչ",
+          "չունեմ",
+          "չկա",
+          "ուղեգիր չունեմ"
+        ]
+      }
+    },
+    "answer_rules": [
+      {
+        "when": {
+          "referral_status": "has_referral"
+        },
+        "answer": "Եթե ունեք ուղեգիր, ԿՏ ծառայության կազմակերպման և ծածկույթի հարցը պետք է գնահատվի գործող պայմաններով և համապատասխան բուժհաստատության կարգով։",
+        "next_step": "Դիմեք ձեր բժշկին կամ այն բուժհաստատությանը, որտեղ պետք է իրականացվի հետազոտությունը, որպեսզի ճշտվի ծառայության կազմակերպման կարգը։"
+      },
+      {
+        "when": {
+          "referral_status": "no_referral"
+        },
+        "answer": "Եթե ուղեգիր չունեք, միայն այս տեղեկությամբ հնարավոր չէ հաստատել ԿՏ ծառայության ծածկույթը։",
+        "next_step": "Նախ դիմեք ձեր պոլիկլինիկա կամ բուժող բժշկին՝ ուղեգրի անհրաժեշտությունը և հետագա կարգը ճշտելու համար։"
+      }
+    ],
+    "clarifiable": true,
+    "partial_answer_allowed": true,
+    "safe_partial_answer": "ԿՏ-ի պատասխանը կախված է ուղեգրի և ծառայության պայմաններից։",
+    "next_step_if_missing": "Նախ պետք է պարզել՝ ուղեգիր ունե՞ք։",
+    "priority": 100,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
+  }
+]

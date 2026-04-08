@@ -1,0 +1,53 @@
+﻿import json
+import sys
+from pathlib import Path
+
+from app.family_map import get_family_config
+from app.retriever import get_all_sources
+
+LEGACY_KB_PATH = Path("app/data/legacy_kb_inventory.json")
+OUT_DIR = Path("app/data/family_input_packs")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def load_legacy_rows():
+    return json.loads(LEGACY_KB_PATH.read_text(encoding="utf-8"))
+
+
+def build_family_input_pack(family: str):
+    cfg = get_family_config(family)
+    legacy_ids = set(cfg.get("legacy_card_ids", []))
+    source_ids = set(cfg.get("source_ids", []))
+
+    legacy_rows = load_legacy_rows()
+    matched_legacy = [
+        r for r in legacy_rows
+        if r.get("id") in legacy_ids
+    ]
+
+    all_sources = get_all_sources()
+    matched_sources = [
+        s for s in all_sources
+        if s.get("source_id") in source_ids
+    ]
+
+    pack = {
+        "family": family,
+        "legacy_card_ids": sorted(list(legacy_ids)),
+        "source_ids": sorted(list(source_ids)),
+        "legacy_cards": matched_legacy,
+        "sources": matched_sources,
+    }
+
+    out_path = OUT_DIR / f"{family}.json"
+    out_path.write_text(json.dumps(pack, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"WROTE {out_path}")
+    print(f"LEGACY_MATCHES={len(matched_legacy)}")
+    print(f"SOURCE_MATCHES={len(matched_sources)}")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        raise SystemExit("Usage: py -m app.data.build_family_input_pack <family_name>")
+
+    build_family_input_pack(sys.argv[1])

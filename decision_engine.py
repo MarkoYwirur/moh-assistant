@@ -47,6 +47,51 @@ SAFETY_PATTERNS = [
 ]
 
 
+def _is_child_eligibility_safety_override(user_text: str, candidates: list) -> bool:
+    text = normalize_text(user_text)
+    if not text or not candidates:
+        return False
+
+    top_card_id = candidates[0]["card"].get("id")
+    if top_card_id != "eligibility_status_coverage_root_v1":
+        return False
+
+    has_child_signal = any(term in text for term in ("երեխա", "երեխայի", "մինչև 18", "մինչեւ 18", "անչափահաս"))
+    has_eligibility_anchor = any(
+        term in text
+        for term in ("անվճար", "ծածկ", "բժշկական օգնություն", "բուժօգնություն", "հիվանդանոց", "իրավունք")
+    )
+    has_medical_advice_signal = any(
+        term in text
+        for term in ("ինչ դեղ", "ինչ խմեմ", "ինչ անեմ", "դեղաչափ", "ախտանիշ", "ջերմություն", "ցավ", "շնչ", "արյուն")
+    )
+
+    return has_child_signal and has_eligibility_anchor and not has_medical_advice_signal
+
+
+def _is_admission_coverage_safety_override(user_text: str, candidates: list) -> bool:
+    text = normalize_text(user_text)
+    if not text or not candidates:
+        return False
+
+    top_card_id = candidates[0]["card"].get("id")
+    if top_card_id != "service_admission_type_root_v1":
+        return False
+
+    has_admission_anchor = any(
+        term in text
+        for term in ("հոսպիտալ", "հիվանդանոց", "ստացիոնար", "վիրահատ", "operation", "surgery")
+    )
+    # normalize_text can split Armenian punctuation variants, so match the stable stem.
+    has_coverage_anchor = any(term in text for term in ("անվճա", "ծածկ"))
+    has_medical_advice_signal = any(
+        term in text
+        for term in ("ինչ դեղ", "ինչ խմեմ", "ինչ անեմ", "դեղաչափ", "ախտանիշ", "ջերմություն", "ցավ", "շնչ", "արյուն")
+    )
+
+    return has_admission_anchor and has_coverage_anchor and not has_medical_advice_signal
+
+
 def is_safety_case(user_text: str) -> bool:
     text = normalize_text(user_text)
     if not text:
@@ -166,7 +211,10 @@ def decide(user_text: str, candidates: list, collected_fields: dict | None = Non
     if collected_fields is None:
         collected_fields = {}
 
-    if is_safety_case(user_text):
+    if is_safety_case(user_text) and not (
+        _is_child_eligibility_safety_override(user_text, candidates)
+        or _is_admission_coverage_safety_override(user_text, candidates)
+    ):
         return {
             "action": Action.ESCALATE_SAFETY.value,
             "reason": "safety_medical",

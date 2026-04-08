@@ -1,0 +1,30 @@
+[
+  {
+    "name": "service_shadow_mri_general",
+    "message": "ՄՌՏ-ն ծածկվո՞ւմ է",
+    "expected_current_winner": "service_mri_policy_curated",
+    "expected_root_service_type": "mri",
+    "expected_root_referral_status_if_any": null
+  },
+  {
+    "name": "service_shadow_ct_general",
+    "message": "ԿՏ-ն ծածկվո՞ւմ է",
+    "expected_current_winner": "service_ct_policy_curated_v2",
+    "expected_root_service_type": "ct",
+    "expected_root_referral_status_if_any": null
+  },
+  {
+    "name": "service_shadow_lab_general",
+    "message": "անալիզը ծածկվո՞ւմ է",
+    "expected_current_winner": "service_lab_policy_curated",
+    "expected_root_service_type": "lab",
+    "expected_root_referral_status_if_any": null
+  },
+  {
+    "name": "service_shadow_specialist_general",
+    "message": "մասնագետի այցը ծածկվո՞ւմ է",
+    "expected_current_winner": "service_specialist_policy_curated",
+    "expected_root_service_type": "specialist",
+    "expected_root_referral_status_if_any": null
+  }
+]

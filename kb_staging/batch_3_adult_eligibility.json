@@ -1,0 +1,58 @@
+﻿[
+{
+"fact": "պետության կողմից երաշխավորված անվճար հիվանդանոցային բուժօգնությունը տրամադրվում է իրավասու խմբերին",
+"family": "eligibility_status",
+"card": "eligibility_status_coverage_root_v1",
+"type": "eligibility_rule",
+"confidence": "high"
+},
+{
+"fact": "ոչ բոլոր քաղաքացիներն են ավտոմատ օգտվում անվճար հիվանդանոցային բուժօգնությունից",
+"family": "eligibility_status",
+"card": "eligibility_status_coverage_root_v1",
+"type": "condition",
+"confidence": "high"
+},
+{
+"fact": "անվճար բուժօգնությունը կախված է քաղաքացու կարգավիճակից",
+"family": "eligibility_status",
+"card": "eligibility_status_coverage_root_v1",
+"type": "condition",
+"confidence": "high"
+},
+{
+"fact": "իրավասու խմբերը կարող են օգտվել անվճար կամ արտոնյալ բուժօգնությունից",
+"family": "eligibility_status",
+"card": "eligibility_status_coverage_root_v1",
+"type": "eligibility_rule",
+"confidence": "high"
+},
+{
+"fact": "որոշ դեպքերում անհրաժեշտ է ուղեգիր անվճար բուժօգնություն ստանալու համար",
+"family": "referral_status",
+"card": "service_referral_status_root_v1",
+"type": "requirement",
+"confidence": "high"
+},
+{
+"fact": "հիվանդանոցային անվճար բուժօգնությունը կարող է պահանջել նախնական գնահատում կամ ուղղորդում",
+"family": "referral_status",
+"card": "service_referral_status_root_v1",
+"type": "condition",
+"confidence": "medium"
+},
+{
+"fact": "իրավասու խմբերի ցանկը սահմանվում է պետական ծրագրերով",
+"family": "eligibility_status",
+"card": "eligibility_status_coverage_root_v1",
+"type": "condition",
+"confidence": "high"
+},
+{
+"fact": "անվճար բուժօգնության պայմանները կարող են տարբեր լինել ծառայության տեսակից կախված",
+"family": "eligibility_status",
+"card": "eligibility_status_coverage_root_v1",
+"type": "condition",
+"confidence": "high"
+}
+]

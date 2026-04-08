@@ -1,0 +1,100 @@
+[
+  {
+    "phrase": "երեխայի համար ինչ է ծածկվում",
+    "group": "eligibility",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "eligibility_status_coverage_root_v1"
+  },
+  {
+    "phrase": "աշխատող եմ ապահովագրված եմ",
+    "group": "eligibility",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "eligibility_status_coverage_root_v1"
+  },
+  {
+    "phrase": "մռտի համար ուղեգիր ունեմ",
+    "group": "referral_status",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "service_referral_status_root_v1"
+  },
+  {
+    "phrase": "անալիզը ծածկվո՞ւմ է",
+    "group": "referral_status",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "service_referral_status_root_v1"
+  },
+  {
+    "phrase": "մասնագետի այցը ծածկվո՞ւմ է",
+    "group": "referral_status",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "service_referral_status_root_v1"
+  },
+  {
+    "phrase": "հոսպիտալացումը անվճա՞ր է",
+    "group": "admission_type",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "service_admission_type_root_v1"
+  },
+  {
+    "phrase": "վիրահատությունը անվճա՞ր է",
+    "group": "admission_type",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "service_admission_type_root_v1"
+  },
+  {
+    "phrase": "ասում են վճարովի է բայց ունեմ ուղեգիր",
+    "group": "complaints_routing",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "complaint_unexpected_payment_dispute_v2"
+  },
+  {
+    "phrase": "համակարգում չի երևում դրա համար չեն տալիս",
+    "group": "complaints_routing",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "technical_armed_visibility_issue_v1"
+  },
+  {
+    "phrase": "ուր դիմեմ ուղեգիր ստանալու համար",
+    "group": "complaints_routing",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "routing_referral_where_to_go_v2"
+  },
+  {
+    "phrase": "այս դեղը ծածկվո՞ւմ է",
+    "group": "medicines_contacts",
+    "demo_status": "safe_with_explanation",
+    "risk_note": "The system now routes this generic medicine question correctly, but the operator should explain that an exact medicine name, dosage, and form are still required for a meaningful answer.",
+    "expected_family_hint": "medicine_coverage_exact_name_dosage_form_v2"
+  },
+  {
+    "phrase": "երեխայի համար դեղ է ծածկվում",
+    "group": "medicines_contacts",
+    "demo_status": "safe_with_explanation",
+    "risk_note": "The system will usually ask for the exact medicine name, dosage, and form. That is acceptable if the operator explains the follow-up.",
+    "expected_family_hint": "medicine_coverage_exact_name_dosage_form_v2"
+  },
+  {
+    "phrase": "թեժ գիծ",
+    "group": "medicines_contacts",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "complaint_2_official_complaint_channels"
+  },
+  {
+    "phrase": "8003",
+    "group": "medicines_contacts",
+    "demo_status": "safe_to_demo",
+    "risk_note": "",
+    "expected_family_hint": "complaint_2_official_complaint_channels"
+  }
+]

@@ -12,7 +12,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_2_official_sources_found",
@@ -27,7 +29,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_3_navigation_logic_by_scenario",
@@ -42,7 +46,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_4_emergency_care_vs_non_emergency",
@@ -57,7 +63,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_5_referral_rules",
@@ -72,7 +80,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_6_clinic_hospital_hotline_routing_map",
@@ -87,7 +97,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_7_emergency_vs_non_emergency_boundaries",
@@ -102,7 +114,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_8_before_you_seek_care_or_call_for_help_gather_key_information_to_streamline_the_p",
@@ -117,7 +131,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_9_top_25_citizen_routing_intents",
@@ -132,7 +148,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_10_card_ready_knowledge_units",
@@ -147,7 +165,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_11_missing_operational_details_needing_ministry_clarification",
@@ -162,7 +182,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Executive Summary  (2).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_4_each_of_the_above_modules_application_review_decision_notification_can_be_reused",
@@ -177,7 +199,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "_administrative_healthcare_processes.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_117_health_privacy",
@@ -192,7 +216,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "_administrative_healthcare_processes.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_118_cross_verification_and_commentary_secondary_sources",
@@ -207,7 +233,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "_administrative_healthcare_processes.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_1_group_1_citizen_support_rights_direct_access",
@@ -222,7 +250,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_4_entities",
@@ -237,7 +267,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_6_find",
@@ -251,7 +283,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_10_the_moh_actively_publishes_reports_and_research_to_maintain_transparency_and_inf",
@@ -266,7 +300,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_14_group_9_laboratory_emergency_networks",
@@ -281,7 +317,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_16_with_who_eu_or_us_agencies",
@@ -296,7 +334,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_18_official_statements_recent_highlights_as_of_march_2026_include",
@@ -311,7 +351,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Group_1__Citizen_Support,_Rights_&_Direct_Access (1).pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_2_responsible_institution",
@@ -326,7 +368,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_3_sub_unit_department",
@@ -341,7 +385,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_5_submission_channel",
@@ -356,7 +402,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_8_escalation_path",
@@ -371,7 +419,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_9_contact_information",
@@ -386,7 +436,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_12_responsible_institution",
@@ -401,7 +453,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_13_sub_unit_department",
@@ -416,7 +470,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_15_submission_channel",
@@ -431,7 +487,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_18_escalation_path",
@@ -446,7 +504,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_19_contact_information",
@@ -461,7 +521,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_22_responsible_institution",
@@ -476,7 +538,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_32_responsible_institution",
@@ -491,7 +555,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_42_responsible_institution",
@@ -506,7 +572,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_43_sub_unit_department",
@@ -521,7 +589,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_45_submission_channel",
@@ -536,7 +606,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_48_escalation_path",
@@ -551,7 +623,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_49_contact_information",
@@ -566,7 +640,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_52_responsible_institution",
@@ -581,7 +657,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_53_sub_unit_department",
@@ -596,7 +674,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_55_submission_channel",
@@ -611,7 +691,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_58_escalation_path",
@@ -626,7 +708,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_59_contact_information",
@@ -641,7 +725,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_62_responsible_institution",
@@ -656,7 +742,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_63_sub_unit_department",
@@ -671,7 +759,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_65_submission_channel",
@@ -686,7 +776,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_68_escalation_path",
@@ -701,7 +793,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_69_contact_information",
@@ -716,7 +810,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_73_sub_unit_department",
@@ -731,7 +827,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_75_submission_channel",
@@ -746,7 +844,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_77_decision_authority",
@@ -761,7 +861,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_79_contact_information",
@@ -776,7 +878,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_82_responsible_institution",
@@ -791,7 +895,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_83_sub_unit_department",
@@ -806,7 +912,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_85_submission_channel",
@@ -821,7 +929,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_88_escalation_path",
@@ -836,7 +946,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_89_contact_information",
@@ -851,7 +963,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_92_responsible_institution",
@@ -866,7 +980,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_93_sub_unit_department",
@@ -881,7 +997,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_95_submission_channel",
@@ -896,7 +1014,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_102_responsible_institution",
@@ -911,7 +1031,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_103_sub_unit_department",
@@ -926,7 +1048,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_105_submission_channel",
@@ -941,7 +1065,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_112_responsible_institution",
@@ -956,7 +1082,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_113_sub_unit_department",
@@ -971,7 +1099,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_115_submission_channel",
@@ -986,7 +1116,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_119_contact_information",
@@ -1001,7 +1133,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_121_routing_point_121",
@@ -1016,7 +1150,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_122_responsible_institution",
@@ -1031,7 +1167,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_123_sub_unit_department",
@@ -1046,7 +1184,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_124_scope_of_responsibility",
@@ -1061,7 +1201,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_125_submission_channel",
@@ -1076,7 +1218,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_130_related_services",
@@ -1091,7 +1235,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_131_routing_point_131",
@@ -1106,7 +1252,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_132_routing_point_132",
@@ -1121,7 +1269,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_133_https",
@@ -1136,7 +1286,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_134_routing_point_134",
@@ -1151,7 +1303,9 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_135_https",
@@ -1166,14 +1320,16 @@
     "clarification_needed_if": "",
     "escalate_if": "If the user needs destination-specific advice not clearly stated in the source",
     "source_reference": "Medical_Institution_Licensing_(ալիցենզավորում_רפואական_հաստատության_գործունեության_համար).docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "routing_referral_where_to_go_v2",
     "category": "routing",
     "patterns": [
-      "ուր դիմեմ",
-      "որտեղ գնամ",
+      "ուր դիմեմ հետազոտության ուղեգիր ստանալու համար",
+      "ուր դիմեմ ընդհանուր բուժօգնության ուղեգրի համար",
       "որ բժիշկի գնամ",
       "ուղեգիր որտեղից ստանամ",
       "որտեղ ստանամ ուղեգիր",
@@ -1181,17 +1337,19 @@
       "where do i get a referral",
       "ուր դիմեմ ուղեգիր ստանալու համար",
       "ուղեգիր ոնց ստանամ",
-      "որտեղ գնամ ուղեգրի համար",
+      "որտեղ գնամ ուղեգիր ստանալու համար",
+      "որտեղ գնամ հետազոտության ուղեգիր ստանալու համար",
+      "որտեղ գնամ ընդհանուր բուժօգնության ուղեգրի համար",
       "ur dimem uxegir stanalu hamar",
       "vortegh stanam uxegir"
     ],
-    "approved_answer": "Ճիշտ ուղղորդումը կախված է նրանից՝ խոսքը ծառայության, հետազոտության, թե մասնագետի դիմելու մասին է։",
+    "approved_answer": "Ճիշտ ուղղորդումը կախված է նրանից՝ ուզում եք դիմել նեղ մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության համար։",
     "allowed_answer_type": "conditional",
     "required_fields": [
       "routing_need_type"
     ],
     "field_questions": {
-      "routing_need_type": "Խոսքը ո՞ր տարբերակի մասին է՝ մասնագետ, հետազոտություն, թե ընդհանուր բուժօգնություն։"
+      "routing_need_type": "Գրե՛ք՝ ինչի համար եք ուզում դիմել՝ նեղ մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության։"
     },
     "field_values": {
       "routing_need_type": {
@@ -1202,7 +1360,6 @@
         ],
         "diagnostic": [
           "հետազոտություն",
-          "մռտ",
           "կտ",
           "անալիզ",
           "diagnostic"
@@ -1220,29 +1377,31 @@
         "when": {
           "routing_need_type": "specialist"
         },
-        "answer": "Եթե խոսքը նեղ մասնագետի դիմելու մասին է, առաջին քայլը սովորաբար ձեր պոլիկլինիկա կամ ընտանեկան բժշկին դիմելն է, որպեսզի պարզվի՝ անհրաժեշտ է ուղեգիր, թե ոչ։",
-        "next_step": "Դիմեք ձեր պոլիկլինիկա կամ ընտանեկան բժշկին՝ հաջորդ քայլը ճշտելու համար։"
+        "answer": "Եթե ուզում եք դիմել նեղ մասնագետի, առաջին քայլը սովորաբար պոլիկլինիկա կամ ընտանեկան բժիշկն է, որպեսզի պարզվի՝ տվյալ դեպքում ուղեգիր պահանջվո՞ւմ է, թե ոչ։",
+        "next_step": "Դիմեք ձեր պոլիկլինիկա կամ ընտանեկան բժշկին՝ տվյալ մասնագետի դիմելու ճիշտ ուղին ճշտելու համար։"
       },
       {
         "when": {
           "routing_need_type": "diagnostic"
         },
-        "answer": "Եթե խոսքը հետազոտության մասին է, ճիշտ ուղին կախված է հետազոտության տեսակից և ուղեգրի պահանջից։",
-        "next_step": "Նախ պարզեք՝ տվյալ հետազոտության համար ուղեգիր պե՞տք է, և դրա համար դիմեք ձեր բժշկին կամ պոլիկլինիկա։"
+        "answer": "Եթե խոսքը հետազոտության մասին է, հաջորդ քայլը կախված է հետազոտության տեսակից և նրանից՝ դրա համար ուղեգիր պահանջվո՞ւմ է, թե ոչ։",
+        "next_step": "Նախ ճշտեք հետազոտության տեսակը, հետո դիմեք ձեր բժշկին կամ պոլիկլինիկա՝ հասկանալու համար՝ ուղեգիր պետք է, թե կարելի է անցնել անմիջապես։"
       },
       {
         "when": {
           "routing_need_type": "general_care"
         },
-        "answer": "Եթե հարցը ընդհանուր բուժօգնության մասին է, առաջին քայլը պոլիկլինիկա կամ ընտանեկան բժիշկ դիմելն է։",
+        "answer": "Եթե հարցը ընդհանուր բուժօգնության մասին է, սովորական առաջին կետը պոլիկլինիկան կամ ընտանեկան բժիշկն է։",
         "next_step": "Դիմեք ձեր պոլիկլինիկա կամ ընտանեկան բժշկին՝ հետագա ուղղորդման համար։"
       }
     ],
     "clarifiable": true,
     "partial_answer_allowed": true,
-    "safe_partial_answer": "Ուղղորդումը կախված է նրանից՝ խոսքը մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության մասին է։",
-    "next_step_if_missing": "Նախ գրեք՝ ինչի համար եք ուզում դիմել։",
-    "priority": 180
+    "safe_partial_answer": "Որտեղ դիմելն ուղղակի կախված է նրանից, թե ինչ տեսակի օգնություն կամ ծառայություն է պետք։",
+    "next_step_if_missing": "Նախ գրե՛ք՝ ինչի համար եք ուզում դիմել։",
+    "priority": 180,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "routing_specialist_referral_confusion_v1",
@@ -1263,13 +1422,13 @@
       "specialist referral",
       "referral to specialist"
     ],
-    "approved_answer": "Այս հարցով նախ պետք է հստակեցնել՝ կոնկրետ որ մասնագետի մասին է խոսքը և ինչ նպատակով եք ցանկանում դիմել։",
+    "approved_answer": "Եթե ուզում եք դիմել նեղ մասնագետի, նախ պետք է հասկանալ՝ կոնկրետ որ մասնագետի մասին է խոսքը կամ ինչ հարցով եք ցանկանում դիմել։",
     "allowed_answer_type": "conditional",
     "required_fields": [
       "specialist_type_or_purpose"
     ],
     "field_questions": {
-      "specialist_type_or_purpose": "Նշե՛ք՝ որ մասնագետի մոտ եք ցանկանում դիմել կամ ինչ հարցով է անհրաժեշտ ուղղորդումը։"
+      "specialist_type_or_purpose": "Գրե՛ք՝ որ մասնագետի մոտ եք ուզում գնալ կամ ինչ հարցով է պետք ուղղորդումը։"
     },
     "field_values": {},
     "answer_rules": [
@@ -1277,14 +1436,16 @@
         "when": {
           "specialist_type_or_purpose": "__any__"
         },
-        "answer": "Եթե ցանկանում եք դիմել նեղ մասնագետի, առաջին քայլը սովորաբար ճիշտ ուղղորդման աղբյուրը պարզելն է՝ հատկապես երբ հարցը վերաբերում է կազմակերպված բուժօգնությանը կամ ուղեգրով ծառայությանը։",
-        "next_step": "Նախ դիմեք ձեր պոլիկլինիկային կամ բուժող բժշկին՝ հստակեցնելու համար, թե տվյալ մասնագետի դեպքում ուղեգիր պահանջվո՞ւմ է, թե կարելի է դիմել անմիջապես։"
+        "answer": "Նեղ մասնագետի դիմելու դեպքում առաջին հարցը սովորաբար այն է՝ պետք է արդյոք ընտանեկան բժիշկ/պոլիկլինիկա փուլ անցնել, թե տվյալ դեպքում կարելի է դիմել անմիջապես։",
+        "next_step": "Նախ դիմեք ձեր պոլիկլինիկային կամ բուժող բժշկին՝ ճշտելու համար, թե տվյալ մասնագետի դեպքում ուղեգիր պահանջվո՞ւմ է, թե ոչ։"
       }
     ],
     "clarifiable": true,
     "partial_answer_allowed": true,
-    "safe_partial_answer": "Եթե խոսքը նեղ մասնագետի դիմելու մասին է, առաջին կարևոր հարցը տվյալ մասնագետի կամ նպատակի հստակեցումն է։",
-    "next_step_if_missing": "Նախ նշե՛ք՝ որ մասնագետի մոտ եք ցանկանում դիմել կամ ինչ հարցով է պետք ուղղորդումը։",
-    "priority": 170
+    "safe_partial_answer": "Եթե հարցը նեղ մասնագետի մասին է, նախ պետք է հստակեցնել՝ կոնկրետ որ մասնագետի կամ ինչ նպատակի համար եք ուզում դիմել։",
+    "next_step_if_missing": "Նախ գրե՛ք՝ որ մասնագետի մոտ եք ուզում գնալ կամ ինչ հարցով է պետք ուղղորդումը։",
+    "priority": 170,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   }
 ]

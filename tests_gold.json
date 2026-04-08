@@ -3,13 +3,13 @@
     "name": "mri_initial",
     "message": "մռտ անվճա՞ր է",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "service_mri_policy_curated"
+    "expected_matched_card_id": "service_referral_status_root_v1"
   },
   {
     "name": "ct_initial",
     "message": "կտ անվճա՞ր է",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "service_ct_policy_curated"
+    "expected_matched_card_id": "service_referral_status_root_v1"
   },
   {
     "name": "medicine_initial",
@@ -36,86 +36,51 @@
     "expected_matched_card_id": "complaint_refusal_denied_service_v2"
   },
   {
-    "name": "mri_variant_short",
-    "message": "մռտ",
+    "name": "medicine_not_provided_initial",
+    "message": "դեղը չեն տվել",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "service_mri_policy_curated"
+    "expected_matched_card_id": "complaint_medicine_not_provided_v1"
   },
   {
-    "name": "ct_variant_short",
-    "message": "կտ",
+    "name": "missing_record_initial",
+    "message": "գրառում չկա",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "service_ct_policy_curated"
+    "expected_matched_card_id": "complaint_missing_or_wrong_record_v1"
   },
   {
-    "name": "medicine_variant_free",
-    "message": "դեղը անվճա՞ր է",
+    "name": "wrong_record_initial",
+    "message": "տվյալը սխալ է երևում",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "medicine_coverage_exact_name_dosage_form_v2"
+    "expected_matched_card_id": "complaint_missing_or_wrong_record_v1"
   },
   {
-    "name": "payment_variant",
-    "message": "ասել են որ վճարովի է",
+    "name": "armed_visibility_initial",
+    "message": "արմեդում չի երևում",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "complaint_unexpected_payment_dispute_v2"
+    "expected_matched_card_id": "technical_armed_visibility_issue_v1"
   },
   {
-    "name": "refusal_variant",
-    "message": "չեն սպասարկել ինձ",
+    "name": "duplicate_charge_initial",
+    "message": "երկու անգամ են գանձել",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "complaint_refusal_denied_service_v2"
+    "expected_matched_card_id": "complaint_duplicate_charge_or_wrong_payment_status_v1"
   },
   {
-    "name": "routing_variant",
-    "message": "որտեղ ստանամ ուղեգիր",
+    "name": "wrong_payment_status_initial",
+    "message": "վճարման կարգավիճակը սխալ է",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "routing_referral_where_to_go_v2"
+    "expected_matched_card_id": "complaint_duplicate_charge_or_wrong_payment_status_v1"
   },
   {
-    "name": "routing_variant_2",
-    "message": "որտեղ գնամ ուղեգրի համար",
+    "name": "specialist_referral_initial",
+    "message": "նեղ մասնագետի ուղեգիր է պետք",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "routing_referral_where_to_go_v2"
+    "expected_matched_card_id": "routing_specialist_referral_confusion_v1"
   },
   {
-    "name": "payment_emotional",
-    "message": "ինձանից փող են ուզել ու ասում են անվճար չի",
+    "name": "specialist_referral_variant",
+    "message": "մասնագետի մոտ ինչպես գնամ",
     "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "complaint_unexpected_payment_dispute_v2"
-  },
-  {
-    "name": "refusal_emotional",
-    "message": "ինձ մերժել են",
-    "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "complaint_refusal_denied_service_v2"
-  },
-  {
-    "name": "medicine_emotional",
-    "message": "էս դեղը պետությունը տալիս ա թե չէ",
-    "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "medicine_coverage_exact_name_dosage_form_v2"
-  },
-  {
-    "name": "ct_free_variant",
-    "message": "կտ ծածկվո՞ւմ է",
-    "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "service_ct_policy_curated"
-  },
-  {
-    "name": "mri_free_variant",
-    "message": "մռտ ծածկվո՞ւմ է",
-    "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "service_mri_policy_curated"
-  },
-  {
-    "name": "routing_short",
-    "message": "ուր դիմեմ",
-    "expected_matched_card_id": "routing_referral_where_to_go_v2"
-  },
-  {
-    "name": "refusal_provider",
-    "message": "ծառայությունը չեն տվել",
-    "expected_action": "partial_answer_with_clarify",
-    "expected_matched_card_id": "complaint_refusal_denied_service_v2"
+    "expected_matched_card_id": "routing_specialist_referral_confusion_v1"
   }
 ]

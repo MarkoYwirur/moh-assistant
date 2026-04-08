@@ -1,0 +1,43 @@
+﻿family: record_or_visibility_issue
+
+trigger_hints:
+  - չի երևում
+  - համակարգում
+  - armed
+  - armed-ում
+  - արմեդ
+  - գրառում
+  - տվյալ
+  - սխալ է երևում
+  - բացակայում է
+  - missing record
+
+required_fields:
+  - issue_target
+
+field_questions:
+  issue_target: "Գրե՛ք՝ կոնկրետ ինչ տվյալ կամ ինչ գրառում չի երևում կամ սխալ է երևում։"
+
+field_priority:
+  - issue_target
+  - issue_system
+  - issue_place
+
+branches:
+  - id: armed_visibility_issue
+    when:
+      issue_system: armed
+      issue_target: __any__
+    answer: "Եթե տվյալը ArMed-ում չի երևում, նախ պետք է ճշտել՝ կոնկրետ ինչ տվյալ է բացակայում կամ սխալ է երևում։"
+    next_step: "Նախ դիմեք այն տեղը, որտեղ այդ տվյալը պետք է ստեղծվեր կամ մուտքագրվեր, և խնդրեք ստուգել՝ արդյոք այն ճիշտ է գրանցվել համակարգում։ Եթե խնդիրը չի լուծվում, հաջորդ քայլը թեժ գծով կամ բողոքարկման ուղղությամբ դիմելն է։"
+
+  - id: generic_record_issue
+    when:
+      issue_target: __any__
+    answer: "Եթե որևէ տվյալ կամ գրառում բացակայում է կամ սխալ է երևում, նախ պետք է պարզել՝ կոնկրետ ինչ տվյալի մասին է խոսքը և որտեղ պետք է այն երևար։"
+    next_step: "Նախ դիմեք այն հաստատությանը կամ ծառայությանը, որտեղ այդ տվյալը պետք է գրանցվեր կամ երևար, և խնդրեք ստուգել գրանցումը։ Եթե խնդիրը չի լուծվում, հաջորդ քայլը պաշտոնական դիմում կամ թեժ գծով կապն է։"
+
+source_preferences:
+  - hotline_8003
+  - moh_ehealth_section
+  - moh_faq_section

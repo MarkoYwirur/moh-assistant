@@ -1,0 +1,66 @@
+﻿from typing import Any, Dict, Tuple
+
+
+def _clean(s: str) -> str:
+    return " ".join((s or "").split()).strip()
+
+
+def _compose_referral_specialist(branch: Dict[str, Any], collected_fields: Dict[str, Any]) -> Tuple[str, str]:
+    need_type = collected_fields.get("need_type")
+    detail = collected_fields.get("specialist_or_service")
+
+    if need_type == "specialist" and detail:
+        answer = f"Եթե ուզում եք դիմել {detail}ի, առաջին քայլը սովորաբար պոլիկլինիկա կամ ընտանեկան բժիշկն է, որպեսզի այնտեղ ճշտեք՝ այս դեպքում ուղեգիր պահանջվո՞ւմ է, թե ոչ։"
+        next_step = f"Դիմեք ձեր պոլիկլինիկա կամ ընտանեկան բժշկին և ճշտեք՝ {detail}ի դեպքում կարելի՞ է դիմել անմիջապես, թե պետք է ուղեգիր։"
+        return _clean(answer), _clean(next_step)
+
+    if need_type == "diagnostic" and detail:
+        label = detail.upper() if detail in {"մռտ", "կտ"} else detail
+        answer = f"Եթե հարցը {label}-ի մասին է, առաջին քայլը սովորաբար ձեր բժշկին կամ պոլիկլինիկային դիմելն է, որովհետև հենց այնտեղ է պարզվում՝ այդ հետազոտության համար ուղեգիր պահանջվո՞ւմ է, թե ոչ։"
+        next_step = f"Դիմեք ձեր բժշկին կամ պոլիկլինիկա և ճշտեք՝ {label}-ի համար ուղեգիր պե՞տք է, և որտեղ պետք է անցնեք հետազոտությունը։"
+        return _clean(answer), _clean(next_step)
+
+    if need_type == "general":
+        answer = "Եթե հարցը ընդհանուր բուժօգնության մասին է, սովորական առաջին կետը պոլիկլինիկան կամ ընտանեկան բժիշկն է։"
+        next_step = "Դիմեք ձեր պոլիկլինիկա կամ ընտանեկան բժշկին՝ հետագա ուղղորդումը հասկանալու համար։"
+        return _clean(answer), _clean(next_step)
+
+    return _clean(branch.get("answer", "")), _clean(branch.get("next_step", ""))
+
+
+def _compose_payment_dispute(branch: Dict[str, Any], collected_fields: Dict[str, Any]) -> Tuple[str, str]:
+    service_name = _clean(str(collected_fields.get("service_name_or_type", "") or ""))
+    institution = _clean(str(collected_fields.get("institution_context", "") or ""))
+    has_referral = bool(collected_fields.get("has_referral_context"))
+
+    if service_name and institution:
+        answer = f"Եթե {service_name}-ի համար {institution} ձեզնից գումար են պահանջել, դա դեռ ինքնին չի նշանակում, որ պահանջը ճիշտ էր։"
+        if has_referral:
+            answer += " Քանի որ նշում եք ուղեգիր, հատկապես կարևոր է հենց տեղում ճշտել՝ ինչ հիմքով է պահանջվել վճարը։"
+        else:
+            answer += " Նախ պետք է հենց տեղում ճշտել՝ ինչ հիմքով է պահանջվել վճարը։"
+
+        next_step = f"Դիմեք հենց {institution} և խնդրեք հստակ ասել՝ {service_name}-ի համար ինչ հիմքով է պահանջվում վճարը։ Եթե բացատրությունը մնում է անհասկանալի կամ հակասական, հաջորդ քայլը բողոքարկման ուղղությունն է։"
+        return _clean(answer), _clean(next_step)
+
+    if service_name:
+        answer = f"Եթե {service_name}-ի համար ձեզնից գումար են պահանջել, դա դեռ ինքնին չի նշանակում, որ պահանջը ճիշտ էր։"
+        if has_referral:
+            answer += " Քանի որ նշում եք ուղեգիր, հատկապես կարևոր է հենց տեղում ճշտել՝ ինչ հիմքով է պահանջվել վճարը։"
+        else:
+            answer += " Նախ պետք է ճշտել՝ ինչ հիմքով է պահանջվել վճարը։"
+
+        next_step = f"Դիմեք այն հաստատությանը, որտեղ {service_name}-ի համար գումար են պահանջել, և խնդրեք հստակ ասել՝ ինչ հիմքով է վճարը պահանջվում։ Եթե բացատրությունը մնում է անհասկանալի կամ հակասական, հաջորդ քայլը բողոքարկման ուղղությունն է։"
+        return _clean(answer), _clean(next_step)
+
+    return _clean(branch.get("answer", "")), _clean(branch.get("next_step", ""))
+
+
+def compose_answer(family: str, branch: Dict[str, Any], collected_fields: Dict[str, Any]) -> Tuple[str, str]:
+    if family == "referral_specialist":
+        return _compose_referral_specialist(branch, collected_fields)
+
+    if family == "payment_dispute":
+        return _compose_payment_dispute(branch, collected_fields)
+
+    return _clean(branch.get("answer", "")), _clean(branch.get("next_step", ""))

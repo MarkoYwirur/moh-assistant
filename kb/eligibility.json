@@ -11,7 +11,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_5_primary_official_armenian_legal_sources_incorporated_on_arlis",
@@ -26,7 +28,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_6_operational_front_door_official_platforms",
@@ -41,7 +45,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_7_eligibility_group_matrix",
@@ -56,7 +62,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_8_core_definitions_that_control_the_logic",
@@ -71,7 +79,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_10_what_qualifies_at",
@@ -86,7 +96,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_13_disability_functional_limitation",
@@ -101,7 +113,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_15_former_servicemen_receiving",
@@ -116,7 +130,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_16_parent_guardian_of_a_child_with",
@@ -131,7 +147,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_17_families_of_deceased_missing",
@@ -146,7 +164,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_18_socially_vulnerable_family",
@@ -161,7 +181,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_20_salaried_employees",
@@ -176,7 +198,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_21_phase_in_is_income_threshold_and",
@@ -191,7 +215,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_26_phase_in_depends_on_declared_gross",
@@ -206,7 +232,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_27_other_income_recipients_civil",
@@ -221,7 +249,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_30_explicitly_later_phase_general_rule",
@@ -236,7 +266,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_33_mothers_caring_for_a_child_under",
@@ -251,7 +283,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_34_government_decision_1973_n_defines_these_group_based_medicine_benefits",
@@ -266,7 +300,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_35_malaria",
@@ -281,7 +317,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_36_safe_answer_boundaries_and_escalation_triggers",
@@ -296,7 +334,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_37_safe_to_answer_without_personal_data",
@@ -311,7 +351,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_38_must_stop_and_escalate_to_case_review",
@@ -326,7 +368,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_39_top_citizen_intent_questions",
@@ -341,7 +385,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_40_family_based_questions",
@@ -356,7 +402,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_41_elderly_and_pensioner_questions",
@@ -371,7 +419,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_42_disability_questions",
@@ -386,7 +436,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_43_pregnancy_and_newborn_questions",
@@ -401,7 +453,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_44_free_medicines_and_chronic_diseases",
@@ -416,7 +470,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_45_social_vulnerability_system_questions",
@@ -431,7 +487,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_46_social_package_questions",
@@ -446,7 +504,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_47_what_to_prepare_before_calling",
@@ -461,7 +521,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_48_identity_and_registry_linkage",
@@ -476,7 +538,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_49_status_proof_relevant_to_the_benefit_category",
@@ -491,7 +555,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_50_status_verification_and_correction_routes",
@@ -506,7 +572,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_51_verify_uhi_status_first",
@@ -521,7 +589,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_52_correct_specific_underlying_statuses_at_the_right_source",
@@ -536,7 +606,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "eligibility_53_if_a_citizen_believes_a_clinic_wrongly_refused_them",
@@ -551,7 +623,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_55_card_ready_knowledge_units",
@@ -566,7 +640,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "uhi_keypoint_2_legal_basis_verified",
@@ -581,7 +657,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_3_system_type_verified",
@@ -596,7 +674,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_4_coverage_model_verified",
@@ -611,7 +691,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_5_eligibility_logic_verified",
@@ -626,7 +708,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_6_contribution_mechanism_verified",
@@ -641,7 +725,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_7_state_subsidy_rules_verified_partially_specified",
@@ -656,7 +742,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_8_fund_flow_mechanism_verified",
@@ -671,7 +759,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_9_covered_services_linkage_verified",
@@ -686,7 +776,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_10_enforcement_rules_verified_partially_specified",
@@ -701,7 +793,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_11_administrative_process_flow_verified",
@@ -716,7 +810,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_12_exceptions_edge_rules_partially_specified",
@@ -731,7 +827,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_13_system_status_indicators",
@@ -746,7 +844,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_15_concept_name",
@@ -761,7 +861,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_16_legal_basis_verified",
@@ -776,7 +878,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_17_system_type_verified",
@@ -791,7 +895,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_18_coverage_model",
@@ -806,7 +912,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_19_eligibility_logic_verified",
@@ -821,7 +929,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_20_contribution_mechanism",
@@ -836,7 +946,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_21_state_subsidy_rules",
@@ -851,7 +963,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_22_fund_flow_mechanism",
@@ -866,7 +980,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_23_covered_services_linkage",
@@ -881,7 +997,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_24_enforcement_rules",
@@ -896,7 +1014,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_25_administrative_process_flow",
@@ -911,7 +1031,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_26_exceptions_edge_rules",
@@ -926,7 +1048,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_27_system_status_indicators",
@@ -941,7 +1065,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_29_legal_basis_verified",
@@ -956,7 +1082,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_30_system_type_verified",
@@ -971,7 +1099,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_31_who_pays_verified",
@@ -986,7 +1116,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_32_how_collected_verified",
@@ -1001,7 +1133,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_33_mandatory_vs_voluntary",
@@ -1016,7 +1150,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_34_exemptions_verified",
@@ -1031,7 +1167,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_35_rates_partially_specified",
@@ -1046,7 +1184,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_36_if_not_paid",
@@ -1061,7 +1201,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_38_legal_basis_verified",
@@ -1076,7 +1218,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_39_system_type_verified",
@@ -1091,7 +1235,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_40_coverage_model",
@@ -1106,7 +1252,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_41_exact_eligibility_conditions_verified",
@@ -1121,7 +1269,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_42_children_and_youth",
@@ -1136,7 +1286,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_44_disability",
@@ -1151,7 +1303,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_45_parents",
@@ -1166,7 +1320,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_46_war_veterans",
@@ -1181,7 +1337,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_47_social_assistance",
@@ -1196,7 +1354,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_48_formally_employed_self_employed",
@@ -1211,7 +1371,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_49_agricultural_workers",
@@ -1226,7 +1388,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_50_citizenship_residency",
@@ -1241,7 +1405,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_51_employment_income",
@@ -1256,7 +1422,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_52_vulnerable_groups",
@@ -1271,7 +1439,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_53_unclear_or_not_defined",
@@ -1286,7 +1456,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_54_enrollment_status_duration",
@@ -1301,7 +1473,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_55_system_status_indicators",
@@ -1316,7 +1490,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_57_sources",
@@ -1331,7 +1507,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "uhi_keypoint_59_https",
@@ -1346,7 +1524,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_61_https",
@@ -1361,7 +1541,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_63_https",
@@ -1376,7 +1558,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "uhi_keypoint_65_https",
@@ -1391,7 +1575,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for personal status confirmation or exact current registry result",
     "source_reference": "Armenia_Universal_Health_Insurance_System.docx",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_65plus_policy_curated",
@@ -1462,7 +1648,9 @@
     "clarification_needed_if": "Need benefit type",
     "escalate_if": "Requires exact personal entitlement or live verification",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_pensioner_policy_curated",
@@ -1470,6 +1658,8 @@
     "subtopic": "Pensioner",
     "card_type": "conditional_policy",
     "patterns": [
+      "թոշակառու եմ ինչ իրավունք ունեմ",
+      "թոշակառու եմ ինչ է ծածկվում",
       "թոշակառու",
       "pensioner",
       "пенсионер"
@@ -1525,7 +1715,9 @@
     "clarification_needed_if": "Need benefit type",
     "escalate_if": "Requires exact personal entitlement or live verification",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 95
+    "priority": 95,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_disability_policy_curated",
@@ -1590,7 +1782,9 @@
     "clarification_needed_if": "Need benefit type",
     "escalate_if": "Requires exact personal entitlement or live verification",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_pregnancy_policy_curated",
@@ -1598,6 +1792,9 @@
     "subtopic": "Pregnancy",
     "card_type": "conditional_policy",
     "patterns": [
+      "հղի եմ ինչն է ծածկվում",
+      "հղիության դեպքում ինչ է ծածկվում",
+      "հղիության ժամանակ ինչ ծածկույթ կա",
       "հղի",
       "հղիություն",
       "pregnant",
@@ -1656,7 +1853,9 @@
     "clarification_needed_if": "Need benefit type",
     "escalate_if": "Requires exact personal entitlement or live verification",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 95
+    "priority": 95,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_child_policy_curated",
@@ -1664,9 +1863,11 @@
     "subtopic": "Child",
     "card_type": "conditional_policy",
     "patterns": [
-      "երեխա",
-      "child",
-      "kid",
+      "երեխայի համար ինչ ծածկույթ կա",
+      "երեխայի համար ինչ է ծածկվում",
+      "երեխայի համար որ ծառայություններն են ծածկվում",
+      "երեխայի բուժօգնության իրավունքներ",
+      "երեխայի համար ինչ բուժօգնություն կա",
       "անչափահաս"
     ],
     "approved_answer": "Երեխայի կարգավիճակը կարող է նշանակություն ունենալ որոշ պետական առողջապահական և դեղորայքային արտոնությունների դեպքում։",
@@ -1720,7 +1921,9 @@
     "clarification_needed_if": "Need benefit type",
     "escalate_if": "Requires exact personal entitlement or live verification",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 95
+    "priority": 95,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_social_vulnerability_policy_curated",
@@ -1785,7 +1988,9 @@
     "clarification_needed_if": "Need benefit type",
     "escalate_if": "Requires exact personal entitlement or live verification",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 90
+    "priority": 90,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "eligibility_worker_insured_policy_curated",
@@ -1793,12 +1998,9 @@
     "subtopic": "Insured worker",
     "card_type": "conditional_policy",
     "patterns": [
-      "աշխատող",
-      "insured worker",
-      "աշխատանք ունեմ",
-      "վճարումներ եմ անում",
-      "insured"
-    ],
+        "աշխատող եմ ապահովագրվա՞ծ եմ",
+        "վճարումներ եմ անում"
+      ],
     "approved_answer": "Աշխատող կամ ապահովագրված կարգավիճակը կարող է նշանակություն ունենալ առողջապահական ծառայությունների ընդհանուր ծածկույթի դեպքում։",
     "allowed_answer_type": "conditional",
     "required_fields": [
@@ -1850,6 +2052,8 @@
     "clarification_needed_if": "Need benefit type",
     "escalate_if": "Requires exact personal entitlement or live verification",
     "source_reference": "Eligibility for state-supported healthcare and medicine benefits in Armenia.pdf",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   }
 ]

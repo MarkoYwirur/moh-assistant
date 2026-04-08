@@ -1,0 +1,28 @@
+﻿families:
+  referral_specialist:
+    allowed_source_ids:
+      - hotline_8003
+      - moh_home_citizen_sections
+      - moh_faq_section
+    notes: "Keep family 1 narrow. Do not pull insurance, e-health, screening, or generic forms yet."
+
+  payment_dispute:
+    allowed_source_ids:
+      - hotline_8003
+      - moh_rights_section
+      - moh_faq_section
+    notes: "Placeholder for family 2."
+
+  armed_visibility:
+    allowed_source_ids:
+      - hotline_8003
+      - moh_ehealth_section
+      - moh_faq_section
+    notes: "Placeholder for later."
+
+  eligibility:
+    allowed_source_ids:
+      - hotline_8003
+      - moh_universal_health_insurance
+      - moh_faq_section
+    notes: "Placeholder for later."

@@ -67,6 +67,65 @@ def _get_field_question(card: dict, field_name: str) -> str:
     return "Կնշե՞ք ավելի կոնկրետ տվյալներ։"
 
 
+def _select_best_missing_field(card: dict, collected_fields: dict, user_text: str = "") -> str | None:
+    missing_fields = _get_missing_fields(card, collected_fields)
+    if not missing_fields:
+        return None
+
+    if len(missing_fields) == 1:
+        return missing_fields[0]
+
+    text = (user_text or "").lower()
+    card_id = str(card.get("id", "") or "").lower()
+
+    def has_any(*parts: str) -> bool:
+        return any(p in text for p in parts)
+
+    # Payment dispute: service context first is the highest leverage.
+    if card_id == "complaint_unexpected_payment_dispute_v2":
+        if "service_context" in missing_fields:
+            return "service_context"
+
+    # Duplicate charge / wrong status: first identify issue type if user already hints it.
+    if card_id == "complaint_duplicate_charge_or_wrong_payment_status_v1":
+        if "payment_issue_type" in missing_fields and has_any("կրկն", "երկու անգամ", "սխալ է երևում", "կարգավիճակ", "wrong status", "duplicate"):
+            return "payment_issue_type"
+        if "payment_context" in missing_fields and has_any("վճար", "գանձ", "ծառայություն"):
+            return "payment_context"
+
+    # Medicine not provided:
+    # If user already told us the location context (e.g. pharmacy), ask medicine details first.
+    # If user clearly told us the medicine but not where, ask location first.
+    if card_id == "complaint_medicine_not_provided_v1":
+        location_markers = ("դեղատ", "pharmacy", "բուժհաստատ", "հաստատությ", "կետ")
+        medicine_markers = ("մգ", "mg", "մլ", "ml", "հաբ", "սրվակ", "դեղաչափ", "tablet", "capsule")
+        has_location = has_any(*location_markers)
+        has_medicine_details = has_any(*medicine_markers)
+
+        if "medicine_name_details" in missing_fields and has_location:
+            return "medicine_name_details"
+        if "dispense_location" in missing_fields and has_medicine_details:
+            return "dispense_location"
+
+    # ArMed visibility: ask what item is missing before anything else.
+    if card_id == "technical_armed_visibility_issue_v1":
+        if "armed_item_type" in missing_fields:
+            return "armed_item_type"
+        if "armed_issue_context" in missing_fields:
+            return "armed_issue_context"
+
+    # Generic routing: if specialist is already mentioned, don't ask broad/general-care style first.
+    if card_id == "routing_referral_where_to_go_v2":
+        if "routing_need_type" in missing_fields:
+            return "routing_need_type"
+
+    if card_id == "routing_specialist_referral_confusion_v1":
+        if "specialist_type_or_purpose" in missing_fields:
+            return "specialist_type_or_purpose"
+
+    return missing_fields[0]
+
+
 def _should_show_reason(field_name: str | None) -> bool:
     if not field_name:
         return False
@@ -125,7 +184,7 @@ def _build_partial_frame(card: dict, collected_fields: dict) -> str:
     return "Վերջնական պատասխան տալու համար մեկ տվյալ դեռ պետք է հստակեցնել։"
 
 
-def build_semantic_payload(decision: dict, collected_fields: dict | None = None) -> dict:
+def build_semantic_payload(decision: dict, collected_fields: dict | None = None, user_text: str = "") -> dict:
     if collected_fields is None:
         collected_fields = {}
 
@@ -168,11 +227,11 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None)
 
     if action in {"clarify", "partial_answer_with_clarify"} and card:
         missing_fields = _get_missing_fields(card, collected_fields)
-        missing_field = missing_fields[0] if missing_fields else None
+        missing_field = _select_best_missing_field(card, collected_fields, user_text=user_text)
 
         payload["semantic"]["partial_answer"] = _build_partial_frame(card, collected_fields)
         payload["semantic"]["follow_up_question"] = _get_field_question(card, missing_field) if missing_field else "Կնշե՞ք ավելի կոնկրետ տվյալներ։"
-        payload["semantic"]["why_this_question"] = _get_field_reason(missing_field)
+        payload["semantic"]["why_this_question"] = ""
 
         payload["state"] = {
             "pending_card_id": card.get("id"),

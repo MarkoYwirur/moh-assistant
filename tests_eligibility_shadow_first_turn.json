@@ -1,0 +1,51 @@
+[
+  {
+    "name": "elig_shadow_65plus_general",
+    "message": "65+ եմ ինչ իրավունք ունեմ",
+    "expected_current_winner": "eligibility_65plus_policy_curated",
+    "expected_root_status_group": "elderly_65plus",
+    "expected_root_benefit_scope_if_any": "general_coverage"
+  },
+  {
+    "name": "elig_shadow_pensioner_general",
+    "message": "թոշակառու եմ ինչ իրավունք ունեմ",
+    "expected_current_winner": "eligibility_pensioner_policy_curated",
+    "expected_root_status_group": "pensioner",
+    "expected_root_benefit_scope_if_any": "general_coverage"
+  },
+  {
+    "name": "elig_shadow_disability_general",
+    "message": "հաշմանդամություն ունեմ",
+    "expected_current_winner": "eligibility_disability_policy_curated",
+    "expected_root_status_group": "disability",
+    "expected_root_benefit_scope_if_any": null
+  },
+  {
+    "name": "elig_shadow_child_general",
+    "message": "երեխայի համար ինչ ծածկույթ կա",
+    "expected_current_winner": "eligibility_child_policy_curated",
+    "expected_root_status_group": "child",
+    "expected_root_benefit_scope_if_any": "general_coverage"
+  },
+  {
+    "name": "elig_shadow_pregnancy_general",
+    "message": "հղի եմ ինչն է ծածկվում",
+    "expected_current_winner": "eligibility_pregnancy_policy_curated",
+    "expected_root_status_group": "pregnancy",
+    "expected_root_benefit_scope_if_any": "general_coverage"
+  },
+  {
+    "name": "elig_shadow_social_general",
+    "message": "սոցիալապես անապահով եմ",
+    "expected_current_winner": "eligibility_social_vulnerability_policy_curated",
+    "expected_root_status_group": "social_vulnerability",
+    "expected_root_benefit_scope_if_any": null
+  },
+  {
+    "name": "elig_shadow_worker_general",
+    "message": "աշխատող եմ ապահովագրված եմ",
+    "expected_current_winner": "eligibility_worker_insured_policy_curated",
+    "expected_root_status_group": "worker_insured",
+    "expected_root_benefit_scope_if_any": null
+  }
+]

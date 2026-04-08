@@ -12,7 +12,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "service_coverage_7_arlis_official_legal_texts",
@@ -27,7 +29,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_8_universal_health_insurance_fund_operational_citizen_facing_rules_searchable_list",
@@ -42,7 +46,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_9_ministry_of_health_of_the_republic_of_armenia_contact_and_public_interface",
@@ -57,7 +63,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_10_screenings_and_program_examples_from_official_moh_documents",
@@ -72,7 +80,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_11_complaints_escalation_and_civic_channels",
@@ -87,7 +97,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_12_emergency_access",
@@ -102,7 +114,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_15_primary_care",
@@ -117,7 +131,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_16_specialist_care",
@@ -132,7 +148,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_17_hospital_care",
@@ -147,7 +165,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_18_imaging",
@@ -162,7 +182,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_19_lab_tests",
@@ -177,7 +199,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_20_surgery",
@@ -192,7 +216,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_21_emergency_care",
@@ -207,7 +233,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_23_can_it_be_free_state_covered_often_yes_but_it_is_program_driven_and_criteria_dri",
@@ -222,7 +250,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_25_can_it_be_free_state_covered_yes_heavily_across_both_uhi_and_state_programs_uhi_",
@@ -237,7 +267,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_26_chronic_disease_services",
@@ -252,7 +284,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_27_rehabilitation",
@@ -267,7 +301,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_28_safe_general_answer_boundaries_for_a_ministry_assistant",
@@ -282,7 +318,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_29_common_citizen_questions_that_drive_hotline_volume",
@@ -297,7 +335,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_31_operational_access_workflows",
@@ -312,7 +352,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_32_what_to_prepare_before_calling",
@@ -327,7 +369,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_35_coverage_triage_universal_opener",
@@ -342,7 +386,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_36_mri_question",
@@ -357,7 +403,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_37_referral_rule",
@@ -372,7 +420,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_38_non_contracted_provider_warning",
@@ -387,7 +437,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_39_queue_expectations",
@@ -402,7 +454,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_40_co_pay_explanation_insured",
@@ -417,7 +471,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_41_co_pay_documentation_uninsured_minimum_additional",
@@ -432,7 +488,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_42_emergency_rule",
@@ -447,7 +505,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_43_where_to_escalate_provider_misconduct",
@@ -462,7 +522,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_44_outcomes_and_liability",
@@ -476,7 +538,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 8
+    "priority": 8,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_2_primary_healthcare_consultation",
@@ -491,7 +555,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_3_emergency_medical_care",
@@ -506,7 +572,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_4_hospitalization_inpatient_care",
@@ -521,7 +589,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_5_specialist_outpatient_visits",
@@ -536,7 +606,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_6_blood_tests",
@@ -551,7 +623,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_7_category_diagnostics",
@@ -566,7 +640,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_8_vaccination_programs",
@@ -581,7 +657,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_9_screening_programs",
@@ -596,7 +674,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_10_essential_medicines_coverage",
@@ -611,7 +691,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_11_subsidized_drug_lists",
@@ -626,7 +708,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_12_diabetes_related_care",
@@ -641,7 +725,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_13_cardiovascular_disease_management",
@@ -656,7 +742,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_coverage_14_microsoft_word_document1",
@@ -671,7 +759,9 @@
     "clarification_needed_if": "",
     "escalate_if": "User asks for a personal case outcome, exact cost, or unsupported exception",
     "source_reference": "Armenian_Healthcare_Service_Coverage.pdf",
-    "priority": 7
+    "priority": 7,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_mri_policy_curated",
@@ -680,6 +770,7 @@
     "card_type": "conditional_policy",
     "patterns": [
       "մռտ",
+      "մռտի համար ուղեգիր ունեմ",
       "mri",
       "magnetic resonance",
       "մագնիսառեզոնանսային"
@@ -731,7 +822,9 @@
     "clarifiable": true,
     "partial_answer_allowed": true,
     "safe_partial_answer": "ՄՌՏ-ի պատասխանը կախված է ուղեգրի և ծառայության պայմաններից։",
-    "next_step_if_missing": "Նախ պետք է պարզել՝ ուղեգիր ունե՞ք։"
+    "next_step_if_missing": "Նախ պետք է պարզել՝ ուղեգիր ունե՞ք։",
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_ct_policy_curated",
@@ -786,7 +879,9 @@
     "clarification_needed_if": "Need referral status",
     "escalate_if": "Requires exact personal coverage decision or live verification",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": false,
+    "card_kind": "research_reference"
   },
   {
     "id": "service_hospitalization_policy_curated",
@@ -795,6 +890,9 @@
     "card_type": "conditional_policy",
     "patterns": [
       "հոսպիտալացում",
+      "հոսպիտալացումը անվճա՞ր է",
+      "հիվանդանոց պառկելը ծածկվո՞ւմ է",
+      "ստացիոնար բուժումը անվճա՞ր է",
       "hospitalization",
       "հիվանդանոց պառկել",
       "ստացիոնար"
@@ -839,7 +937,9 @@
     "clarification_needed_if": "Need admission type",
     "escalate_if": "Requires exact provider-specific admission decision",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 95
+    "priority": 95,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_specialist_policy_curated",
@@ -847,15 +947,15 @@
     "subtopic": "Specialist care",
     "card_type": "conditional_policy",
     "patterns": [
-      "մասնագետ",
-      "մասնագետի մոտ",
-      "specialist",
-      "doctor specialist",
-      "նեղ մասնագետ",
-      "ուղեգիր մասնագետի համար",
-      "մասնագետի այց",
-      "մասնագետի մոտ գնալ",
-      "մասնագետի մոտ գնալը"
+      "մասնագետի այցը",
+      "մասնագետի այցը ծածկվո՞ւմ է",
+      "մասնագետի այց առանց ուղեգրի",
+      "մասնագետի ծառայությունը ծածկվում է",
+      "մասնագետի այցը անվճար է",
+      "մասնագետի ծառայության ծածկույթ",
+      "specialist visit covered",
+      "specialist appointment covered",
+      "specialist service covered"
     ],
     "approved_answer": "Մասնագետի մոտ այցելության համար հաճախ կարևոր է՝ ունե՞ք ուղեգիր, թե ոչ։",
     "allowed_answer_type": "conditional",
@@ -898,7 +998,9 @@
     "clarification_needed_if": "Need referral status",
     "escalate_if": "Requires exact provider-specific access decision",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 5
+    "priority": 5,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_surgery_policy_curated",
@@ -907,6 +1009,9 @@
     "card_type": "conditional_policy",
     "patterns": [
       "վիրահատություն",
+      "վիրահատությունը անվճա՞ր է",
+      "պլանային վիրահատությունը ծածկվո՞ւմ է",
+      "շտապ վիրահատությունը անվճա՞ր է",
       "surgery",
       "operation"
     ],
@@ -951,7 +1056,9 @@
     "clarification_needed_if": "Need emergency vs planned",
     "escalate_if": "Requires exact personal outcome or hospital-specific decision",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 90
+    "priority": 90,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_lab_policy_curated",
@@ -960,6 +1067,9 @@
     "card_type": "conditional_policy",
     "patterns": [
       "անալիզ",
+      "անալիզը ծածկվո՞ւմ է",
+      "բժիշկը անալիզ է նշանակել",
+      "անալիզ առանց ուղեգրի",
       "վերլուծություն",
       "lab test",
       "laboratory",
@@ -1006,7 +1116,9 @@
     "clarification_needed_if": "Need referral or prescription status",
     "escalate_if": "Requires exact personal coverage decision",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 85
+    "priority": 85,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_emergency_policy_curated",
@@ -1025,7 +1137,9 @@
     "clarification_needed_if": "",
     "escalate_if": "Medical advice request or symptom evaluation",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_family_doctor_route_curated",
@@ -1035,7 +1149,9 @@
     "patterns": [
       "ընտանեկան բժիշկ",
       "family doctor",
-      "պոլիկլինիկա",
+      "պոլիկլինիկա առաջին քայլ",
+      "պոլիկլինիկա ուր դիմեմ",
+      "պոլիկլինիկայում որ բժշկին դիմեմ",
       "ուր գնամ առաջինը",
       "որտեղ դիմեմ առաջինը"
     ],
@@ -1044,7 +1160,9 @@
     "clarification_needed_if": "",
     "escalate_if": "Needs exact provider directory or urgent case",
     "source_reference": "Operational Map of State-Covered Healthcare Services in Armenia.pdf",
-    "priority": 95
+    "priority": 95,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "service_ct_policy_curated_v2",
@@ -1100,6 +1218,8 @@
     "partial_answer_allowed": true,
     "safe_partial_answer": "ԿՏ-ի պատասխանը կախված է ուղեգրի և ծառայության պայմաններից։",
     "next_step_if_missing": "Նախ պետք է պարզել՝ ուղեգիր ունե՞ք։",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": false,
+    "card_kind": "citizen_runtime"
   }
 ]

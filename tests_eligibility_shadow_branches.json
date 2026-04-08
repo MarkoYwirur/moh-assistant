@@ -1,0 +1,58 @@
+[
+  {
+    "name": "elig_shadow_65plus_medicine",
+    "first_message": "65+ եմ",
+    "second_message": "դեղորայք",
+    "expected_current_second_card": "eligibility_65plus_policy_curated",
+    "expected_root_status_group": "elderly_65plus",
+    "expected_root_benefit_scope": "medicine"
+  },
+  {
+    "name": "elig_shadow_pensioner_medicine",
+    "first_message": "թոշակառու եմ",
+    "second_message": "դեղորայք",
+    "expected_current_second_card": "eligibility_pensioner_policy_curated",
+    "expected_root_status_group": "pensioner",
+    "expected_root_benefit_scope": "medicine"
+  },
+  {
+    "name": "elig_shadow_child_treatment",
+    "first_message": "երեխայի համար եմ հարցնում",
+    "second_message": "բուժօգնություն",
+    "expected_current_second_card": "eligibility_child_policy_curated",
+    "expected_root_status_group": "child",
+    "expected_root_benefit_scope": "treatment"
+  },
+  {
+    "name": "elig_shadow_pregnancy_diagnostic",
+    "first_message": "հղի եմ",
+    "second_message": "հետազոտություն",
+    "expected_current_second_card": "eligibility_pregnancy_policy_curated",
+    "expected_root_status_group": "pregnancy",
+    "expected_root_benefit_scope": "diagnostic"
+  },
+  {
+    "name": "elig_shadow_pregnancy_maternal",
+    "first_message": "հղի եմ",
+    "second_message": "մայրական ծառայություններ",
+    "expected_current_second_card": "eligibility_pregnancy_policy_curated",
+    "expected_root_status_group": "pregnancy",
+    "expected_root_benefit_scope": "maternal"
+  },
+  {
+    "name": "elig_shadow_social_medicine",
+    "first_message": "սոցիալապես անապահով եմ",
+    "second_message": "դեղորայք",
+    "expected_current_second_card": "eligibility_social_vulnerability_policy_curated",
+    "expected_root_status_group": "social_vulnerability",
+    "expected_root_benefit_scope": "medicine"
+  },
+  {
+    "name": "elig_shadow_worker_coverage",
+    "first_message": "աշխատող եմ",
+    "second_message": "ծածկվա՞ծ եմ",
+    "expected_current_second_card": "eligibility_worker_insured_policy_curated",
+    "expected_root_status_group": "worker_insured",
+    "expected_root_benefit_scope": "general_coverage"
+  }
+]

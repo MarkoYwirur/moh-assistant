@@ -1,0 +1,66 @@
+[
+  {
+    "name": "service_shadow_mri_has_referral",
+    "first_message": "ՄՌՏ-ն ծածկվո՞ւմ է",
+    "second_message": "ուղեգիր ունեմ",
+    "expected_current_second_card": "service_mri_policy_curated",
+    "expected_root_service_type": "mri",
+    "expected_root_referral_status": "has_referral"
+  },
+  {
+    "name": "service_shadow_mri_no_referral",
+    "first_message": "ՄՌՏ-ն ծածկվո՞ւմ է",
+    "second_message": "ուղեգիր չունեմ",
+    "expected_current_second_card": "service_mri_policy_curated",
+    "expected_root_service_type": "mri",
+    "expected_root_referral_status": "no_referral"
+  },
+  {
+    "name": "service_shadow_ct_has_referral",
+    "first_message": "ԿՏ-ն ծածկվո՞ւմ է",
+    "second_message": "ուղեգիր ունեմ",
+    "expected_current_second_card": "service_ct_policy_curated_v2",
+    "expected_root_service_type": "ct",
+    "expected_root_referral_status": "has_referral"
+  },
+  {
+    "name": "service_shadow_ct_no_referral",
+    "first_message": "ԿՏ-ն ծածկվո՞ւմ է",
+    "second_message": "ուղեգիր չունեմ",
+    "expected_current_second_card": "service_ct_policy_curated_v2",
+    "expected_root_service_type": "ct",
+    "expected_root_referral_status": "no_referral"
+  },
+  {
+    "name": "service_shadow_lab_has_referral",
+    "first_message": "անալիզը ծածկվո՞ւմ է",
+    "second_message": "բժիշկը նշանակել է",
+    "expected_current_second_card": "service_lab_policy_curated",
+    "expected_root_service_type": "lab",
+    "expected_root_referral_status": "has_referral"
+  },
+  {
+    "name": "service_shadow_lab_no_referral",
+    "first_message": "անալիզը ծածկվո՞ւմ է",
+    "second_message": "ինքնուրույն եմ ուզում",
+    "expected_current_second_card": "service_lab_policy_curated",
+    "expected_root_service_type": "lab",
+    "expected_root_referral_status": "no_referral"
+  },
+  {
+    "name": "service_shadow_specialist_has_referral",
+    "first_message": "մասնագետի այցը ծածկվո՞ւմ է",
+    "second_message": "ուղեգիր ունեմ",
+    "expected_current_second_card": "service_specialist_policy_curated",
+    "expected_root_service_type": "specialist",
+    "expected_root_referral_status": "has_referral"
+  },
+  {
+    "name": "service_shadow_specialist_no_referral",
+    "first_message": "մասնագետի այցը ծածկվո՞ւմ է",
+    "second_message": "ուղեգիր չունեմ",
+    "expected_current_second_card": "service_specialist_policy_curated",
+    "expected_root_service_type": "specialist",
+    "expected_root_referral_status": "no_referral"
+  }
+]

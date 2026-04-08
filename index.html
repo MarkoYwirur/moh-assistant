@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ՀՀ առողջապահության նախարարության տեղեկատվական օգնական</title>
+  <style>
+    :root{
+      --bg:#eef3fb;
+      --surface:#ffffff;
+      --surface-2:#f7f9fd;
+      --primary:#204f9e;
+      --primary-2:#2f67bd;
+      --text:#172338;
+      --muted:#61708b;
+      --line:#dfe7f3;
+      --user:#dfe9ff;
+      --bot:#f2f6fb;
+      --success:#eaf4ee;
+      --success-text:#1f6a43;
+      --warn:#fff4e7;
+      --warn-text:#8a5413;
+      --danger:#fff1ef;
+      --danger-text:#b5473d;
+      --shadow:0 14px 40px rgba(18,35,70,.10);
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, #edf4ff 0%, transparent 28%),
+        radial-gradient(circle at top right, #eef8ff 0%, transparent 26%),
+        var(--bg);
+    }
+
+    .page{
+      max-width:1240px;
+      margin:0 auto;
+      padding:20px 18px 32px;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:30;
+      backdrop-filter: blur(12px);
+      background:rgba(238,243,251,.82);
+      padding:8px 0 14px;
+    }
+
+    .topbar-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:10px 14px;
+      border:1px solid rgba(32,79,158,.08);
+      border-radius:18px;
+      background:rgba(255,255,255,.72);
+      box-shadow:var(--shadow);
+    }
+
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      min-width:0;
+    }
+
+    .brand-mark{
+      width:46px;
+      height:46px;
+      border-radius:14px;
+      background:linear-gradient(135deg,#dce8ff,#f8fbff);
+      border:1px solid #dbe6f8;
+      flex:0 0 46px;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:700;
+      line-height:1.25;
+    }
+
+    .brand-sub{
+      font-size:13px;
+      color:var(--muted);
+      margin-top:3px;
+      line-height:1.35;
+    }
+
+    .topbar-actions{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid #dbe5f5;
+      background:#fff;
+      color:#244374;
+      padding:10px 14px;
+      border-radius:999px;
+      font-size:14px;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap:22px;
+      margin-top:18px;
+    }
+
+    .hero{
+      background:linear-gradient(135deg,#19438a 0%, #275db2 55%, #6e95dd 100%);
+      color:#fff;
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-80px;
+      bottom:-100px;
+      width:280px;
+      height:280px;
+      background:radial-gradient(circle, rgba(255,255,255,.22), transparent 70%);
+    }
+
+    .hero-inner{
+      padding:30px 28px 26px;
+      position:relative;
+      z-index:1;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.18);
+      background:rgba(255,255,255,.10);
+      font-size:12px;
+      letter-spacing:.3px;
+      margin-bottom:14px;
+    }
+
+    .hero h1{
+      margin:0;
+      font-size:clamp(30px,4vw,48px);
+      line-height:1.08;
+      max-width:760px;
+    }
+
+    .hero p{
+      margin:14px 0 0;
+      max-width:720px;
+      font-size:17px;
+      line-height:1.6;
+      color:rgba(255,255,255,.93);
+    }
+
+    .hero-points{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin-top:22px;
+    }
+
+    .hero-point{
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.16);
+      border-radius:18px;
+      padding:14px;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .hero-point strong{
+      display:block;
+      margin-bottom:6px;
+      font-size:15px;
+    }
+
+    .chat-panel{
+      background:rgba(255,255,255,.9);
+      border:1px solid rgba(32,79,158,.08);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+
+    .chat-head{
+      padding:18px 18px 14px;
+      border-bottom:1px solid var(--line);
+      background:linear-gradient(180deg,#fbfdff 0%,#f4f8fd 100%);
+    }
+
+    .chat-head-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      margin-bottom:10px;
+      flex-wrap:wrap;
+    }
+
+    .chat-head h2{
+      font-size:21px;
+      margin:0;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:#edf4ff;
+      color:#18488f;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700;
+    }
+
+    .chat-head p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:14px;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+      padding:14px 18px 0;
+      background:#fff;
+    }
+
+    .quick-btn{
+      border:1px solid #dbe6f6;
+      background:#f8fbff;
+      color:#1f447f;
+      padding:14px;
+      border-radius:18px;
+      text-align:left;
+      cursor:pointer;
+      transition:.15s ease;
+      font-size:14px;
+      line-height:1.45;
+    }
+
+    .quick-btn strong{
+      display:block;
+      font-size:15px;
+      margin-bottom:5px;
+    }
+
+    .quick-btn:hover{
+      transform:translateY(-1px);
+      background:#eef5ff;
+      border-color:#bfd4f3;
+    }
+
+    .chat{
+      height:470px;
+      overflow-y:auto;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      padding:18px;
+      background:linear-gradient(180deg,#fbfdff 0%, #f7faff 100%);
+    }
+
+    .row{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      max-width:82%;
+    }
+
+    .user-row{ align-self:flex-end; }
+    .bot-row{ align-self:flex-start; }
+
+    .bubble{
+      padding:14px 16px;
+      border-radius:18px;
+      font-size:15px;
+      line-height:1.7;
+      white-space:pre-wrap;
+      word-wrap:break-word;
+    }
+
+    .user{
+      background:var(--user);
+      border-top-right-radius:8px;
+    }
+
+    .bot{
+      background:var(--bot);
+      border-top-left-radius:8px;
+      border:1px solid #e4ebf5;
+    }
+
+    .typing-row{
+      align-self:flex-start;
+      display:none;
+      max-width:120px;
+    }
+
+    .typing-bubble{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      background:var(--bot);
+      border:1px solid #e4ebf5;
+      padding:14px 16px;
+      border-radius:18px;
+      border-top-left-radius:8px;
+    }
+
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:#7d8aa2;
+      animation:bounce 1.2s infinite ease-in-out;
+    }
+
+    .dot:nth-child(2){ animation-delay:.15s; }
+    .dot:nth-child(3){ animation-delay:.3s; }
+
+    @keyframes bounce{
+      0%,80%,100%{ transform:translateY(0); opacity:.5; }
+      40%{ transform:translateY(-5px); opacity:1; }
+    }
+
+    .composer{
+      border-top:1px solid var(--line);
+      background:#fff;
+      padding:16px 18px 18px;
+      display:grid;
+      gap:12px;
+    }
+
+    .hint{
+      font-size:14px;
+      color:var(--muted);
+      line-height:1.55;
+    }
+
+    .input-row{
+      display:flex;
+      gap:12px;
+      align-items:stretch;
+    }
+
+    textarea{
+      flex:1;
+      min-height:78px;
+      max-height:170px;
+      resize:vertical;
+      padding:14px 14px;
+      font-size:15px;
+      line-height:1.6;
+      color:var(--text);
+      border:1px solid #ccd6e6;
+      border-radius:16px;
+      outline:none;
+      background:#fcfdff;
+    }
+
+    textarea:focus{
+      border-color:#7ea4dd;
+      box-shadow:0 0 0 4px rgba(43,99,186,.08);
+    }
+
+    .send-btn{
+      width:146px;
+      border:none;
+      border-radius:16px;
+      background:linear-gradient(135deg,var(--primary),var(--primary-2));
+      color:#fff;
+      font-size:16px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .send-btn:disabled{
+      opacity:.65;
+      cursor:not-allowed;
+    }
+
+    .toolbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .footer-note{
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.5;
+      max-width:690px;
+    }
+
+    .reset-btn{
+      border:1px solid #d5dfef;
+      background:#fff;
+      color:#27456f;
+      border-radius:12px;
+      padding:10px 14px;
+      font-size:14px;
+      cursor:pointer;
+    }
+
+    .below{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+      margin-top:22px;
+    }
+
+    .card{
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(32,79,158,.08);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      padding:22px;
+    }
+
+    .card h3{
+      margin:0 0 12px;
+      font-size:22px;
+      color:#18345f;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    .mini-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin-top:16px;
+    }
+
+    .mini-item{
+      background:#f8fbff;
+      border:1px solid #dce6f5;
+      border-radius:18px;
+      padding:15px 14px;
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .mini-item strong{
+      display:block;
+      margin-bottom:6px;
+      color:#173d79;
+      font-size:15px;
+    }
+
+    .flow{
+      display:grid;
+      gap:12px;
+      margin-top:16px;
+    }
+
+    .flow-step{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      background:#fbfcfe;
+      border:1px solid #e5ebf5;
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .num{
+      width:32px;
+      height:32px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--primary),var(--primary-2));
+      color:#fff;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      flex:0 0 32px;
+      margin-top:1px;
+    }
+
+    .flow-step strong{
+      display:block;
+      font-size:15px;
+      margin-bottom:4px;
+    }
+
+    .flow-step span{
+      font-size:14px;
+      color:#42526d;
+      line-height:1.5;
+    }
+
+    .status-grid{
+      display:grid;
+      gap:12px;
+      margin-top:16px;
+    }
+
+    .status{
+      padding:14px 16px;
+      border-radius:16px;
+      border:1px solid transparent;
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    .status.success{ background:var(--success); color:var(--success-text); border-color:#cfe8d8; }
+    .status.warn{ background:var(--warn); color:var(--warn-text); border-color:#f2d9ba; }
+    .status.danger{ background:var(--danger); color:var(--danger-text); border-color:#f0c8c3; }
+
+    .accordion{
+      display:grid;
+      gap:14px;
+      margin-top:22px;
+    }
+
+    details{
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(32,79,158,.08);
+      border-radius:22px;
+      box-shadow:var(--shadow);
+      padding:18px 18px;
+    }
+
+    summary{
+      list-style:none;
+      cursor:pointer;
+      font-size:17px;
+      font-weight:700;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+    }
+
+    summary::-webkit-details-marker{ display:none; }
+
+    .details-body{
+      margin-top:14px;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.65;
+    }
+
+    .details-body ul{
+      margin:10px 0 0;
+      padding-left:18px;
+    }
+
+    .details-body li{
+      margin-bottom:8px;
+    }
+
+    @media (max-width:1100px){
+      .layout{ grid-template-columns:1fr; }
+      .below{ grid-template-columns:1fr; }
+    }
+
+    @media (max-width:860px){
+      .hero-points,
+      .quick-grid,
+      .mini-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:720px){
+      .page{ padding:14px 14px 24px; }
+      .topbar-inner{ align-items:flex-start; }
+      .input-row{ flex-direction:column; }
+      .send-btn{ width:100%; min-height:52px; }
+      .row{ max-width:92%; }
+      .hero-inner{ padding:24px 20px 22px; }
+      .card{ padding:18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div>
+            <div class="brand-title">ՀՀ առողջապահության նախարարության տեղեկատվական օգնական</div>
+            <div class="brand-sub">Պարզ լեզվով ուղղորդում առողջապահական և վարչական հարցերով</div>
+          </div>
+        </div>
+
+        <div class="topbar-actions">
+          <a class="pill" href="#chatbox">Գրել հարց</a>
+          <span class="pill">Շտապ դեպք՝ 103 կամ 112</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="eyebrow">Պաշտոնական նյութերի հիման վրա աշխատող օգնական</div>
+          <h1>Գրեք ձեր հարցը և ստացեք հասկանալի հաջորդ քայլը</h1>
+          <p>
+            Օգնականը օգնում է հասկանալ՝ ուր դիմել, ինչ անել հիմա և ինչ տեղեկություն պատրաստել։
+            Եթե հարցը հստակ է, տալիս է ուղղորդում։ Եթե հարցը խառն է կամ ռիսկային, փոխանցում է համապատասխան մասնագետին։
+          </p>
+
+          <div class="hero-points">
+            <div class="hero-point">
+              <strong>Պարզ պատասխան</strong>
+              Երկար ու խճճված բացատրության փոխարեն՝ հասկանալով ինչ անել հիմա։
+            </div>
+            <div class="hero-point">
+              <strong>Պաշտոնական հիմք</strong>
+              Պատասխանները կառուցվում են հաստատված նյութերի և ընթացակարգերի վրա։
+            </div>
+            <div class="hero-point">
+              <strong>Անվտանգ մոտեցում</strong>
+              Չի տալիս բժշկական խորհուրդ և չի գուշակում, երբ տվյալը բավարար չէ։
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chat-panel" id="chatbox">
+        <div class="chat-head">
+          <div class="chat-head-top">
+            <h2>Գրեք ձեր հարցը</h2>
+            <span class="tag">Ուղիղ կապ backend-ին</span>
+          </div>
+          <p>Կարող եք գրել ազատ ձևով, ինչպես կասեիք ընդունարանում կամ հեռախոսով։</p>
+        </div>
+
+        <div class="quick-grid">
+          <button class="quick-btn" data-text="Չեմ հասկանում՝ ուղեգիր պետք է, թե ոչ">
+            <strong>Ուղեգիր</strong>
+            Չեմ հասկանում՝ պետք է, թե ոչ
+          </button>
+          <button class="quick-btn" data-text="Ինձնից գումար են պահանջել">
+            <strong>Վճար</strong>
+            Ինձնից գումար են պահանջել
+          </button>
+          <button class="quick-btn" data-text="Դեղը չեն տվել կամ չի երևում">
+            <strong>Դեղ</strong>
+            Չեն տվել կամ չի երևում
+          </button>
+        </div>
+
+        <div id="chat" class="chat"></div>
+
+        <div id="typingRow" class="typing-row">
+          <div class="typing-bubble">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="composer">
+          <div class="hint">Օրինակ՝ «Ինձ մերժել են, ինչ անեմ» կամ «ՄՌՏ-ի համար ուղեգիր ունե՞մ պետք»։</div>
+
+          <div class="input-row">
+            <textarea id="messageInput" placeholder="Գրեք ձեր հարցը այստեղ"></textarea>
+            <button id="sendBtn" class="send-btn">Ուղարկել</button>
+          </div>
+
+          <div class="toolbar">
+            <div class="footer-note">
+              Այս օգնականը տալիս է տեղեկատվական ուղղորդում։ Որոշ դեպքերում վերջնական պատասխանի համար կարող է պետք լինել լրացուցիչ ստուգում կամ համապատասխան հաստատություն դիմել։
+            </div>
+            <button id="resetBtn" class="reset-btn">Սկսել նորից</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="below">
+      <section class="card">
+        <h3>Որ հարցերով կարող է օգնել</h3>
+        <p>Սա ամեն ինչի մասին chatbot չէ։ Այն ավելի լավ է աշխատում այն հարցերով, որտեղ պետք է հասկանալ ճիշտ հաջորդ քայլը։</p>
+
+        <div class="mini-grid">
+          <div class="mini-item">
+            <strong>Ուղեգիր և ուղղորդում</strong>
+            Որտե՞ղ դիմել, ո՞վ է տալիս ուղեգիր, ի՞նչ քայլ անել հետո։
+          </div>
+          <div class="mini-item">
+            <strong>Վճար և մերժում</strong>
+            Եթե գումար են պահանջել կամ ծառայությունը չեն տվել։
+          </div>
+          <div class="mini-item">
+            <strong>Դեղ և տվյալներ</strong>
+            Եթե դեղը չեն տրամադրել, կամ համակարգում տվյալը սխալ է երևում։
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Ինչպես է աշխատում</h3>
+        <p>Օգնականը չի փորձում խելացի երևալ։ Այն փորձում է ճիշտ որոշել՝ պատասխանե՞լ, թե՞ փոխանցել մասնագետին։</p>
+
+        <div class="flow">
+          <div class="flow-step">
+            <div class="num">1</div>
+            <div>
+              <strong>Հասկանում է հարցի տեսակը</strong>
+              <span>Օրինակ՝ ուղեգիր, վճար, դեղ, մերժում կամ տվյալների խնդիր։</span>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="num">2</div>
+            <div>
+              <strong>Ստուգում է՝ տվյալը հերիքո՞ւմ է</strong>
+              <span>Եթե պետք է, տալիս է հստակեցնող հարց, ոչ թե պատահական պատասխան։</span>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="num">3</div>
+            <div>
+              <strong>Տալիս է հաջորդ քայլը</strong>
+              <span>Եթե հարցը հստակ է՝ պատասխանում է։ Եթե ոչ՝ ուղղորդում է համապատասխան կողմին։</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="accordion">
+      <details>
+        <summary>
+          <span>Ինչ չի անում այս օգնականը</span>
+          <span>+</span>
+        </summary>
+        <div class="details-body">
+          Օգնականը չի փոխարինում բժշկին, շտապ օգնությանը կամ բուժհաստատության վերջնական որոշմանը։
+          <ul>
+            <li>Չի տալիս անհատական բժշկական խորհուրդ կամ ախտորոշում</li>
+            <li>Չի որոշում շտապ միջամտության կարիքը</li>
+            <li>Չի հորինում պատասխան, եթե պաշտոնական հիմքը բավարար չէ</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>Երբ է անմիջապես պետք դիմել շտապ օգնության</span>
+          <span>+</span>
+        </summary>
+        <div class="details-body">
+          Եթե վիճակը շտապ է, պետք է անմիջապես զանգահարել 103 կամ 112։
+          <ul>
+            <li>Կյանքին կամ առողջությանը վտանգ սպառնացող վիճակ</li>
+            <li>Սուր ցավ, ծանր շնչառություն, գիտակցության խանգարում կամ այլ անհետաձգելի նշաններ</li>
+            <li>Այս օգնականը շտապ օգնության փոխարեն չէ</li>
+          </ul>
+        </div>
+      </details>
+
+      <details open>
+        <summary>
+          <span>Ինչ մոտեցում է օգտագործում</span>
+          <span>+</span>
+        </summary>
+        <div class="details-body">
+          Համակարգը կառուցված է անվտանգ տրամաբանությամբ։
+          <div class="status-grid">
+            <div class="status success">Հարցը հստակ է → տալիս է պարզ և հասկանալի ուղղորդում</div>
+            <div class="status warn">Տվյալը քիչ է → տալիս է կարճ հստակեցնող հարց</div>
+            <div class="status danger">Հարցը խառն է կամ ռիսկային է → փոխանցում է համապատասխան մասնագետին</div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = "https://moh-assistant-api.onrender.com/chat";
+    const chatEl = document.getElementById("chat");
+    const typingRowEl = document.getElementById("typingRow");
+    const inputEl = document.getElementById("messageInput");
+    const sendBtn = document.getElementById("sendBtn");
+    const resetBtn = document.getElementById("resetBtn");
+
+    let chatState = JSON.parse(localStorage.getItem("moh_chat_state") || "{}");
+    let chatHistory = JSON.parse(localStorage.getItem("moh_chat_history") || "[]");
+
+    function saveSession() {
+      localStorage.setItem("moh_chat_state", JSON.stringify(chatState));
+      localStorage.setItem("moh_chat_history", JSON.stringify(chatHistory));
+    }
+
+    function formatBotText(text) {
+      const cleaned = String(text || "").trim();
+      if (!cleaned) return "Պատասխան չի ստացվել։";
+      return cleaned.replace(/։\s+/g, "։\n\n");
+    }
+
+    function addMessage(text, role) {
+      const row = document.createElement("div");
+      row.className = `row ${role === "user" ? "user-row" : "bot-row"}`;
+
+      const bubble = document.createElement("div");
+      bubble.className = `bubble ${role}`;
+      bubble.textContent = role === "bot" ? formatBotText(text) : text;
+
+      row.appendChild(bubble);
+      chatEl.appendChild(row);
+      chatEl.scrollTop = chatEl.scrollHeight;
+    }
+
+    function renderHistory() {
+      chatEl.innerHTML = "";
+      if (chatHistory.length === 0) {
+        addMessage("Բարև։ Գրեք ձեր հարցը, և ես կօգնեմ հասկանալ՝ ինչ անել հիմա կամ ուր դիմել։", "bot");
+        return;
+      }
+
+      for (const item of chatHistory) {
+        addMessage(item.text, item.role);
+      }
+    }
+
+    function showTyping() {
+      typingRowEl.style.display = "flex";
+      chatEl.appendChild(typingRowEl);
+      chatEl.scrollTop = chatEl.scrollHeight;
+    }
+
+    function hideTyping() {
+      typingRowEl.style.display = "none";
+    }
+
+    async function smartDelay(startTime, answerText) {
+      const elapsed = Date.now() - startTime;
+      const length = String(answerText || "").length;
+
+      let target = 1200;
+      if (length > 220) target = 2200;
+      if (length > 420) target = 3000;
+      if (target > 4500) target = 4500;
+
+      const remaining = target - elapsed;
+      if (remaining > 0) {
+        await new Promise(resolve => setTimeout(resolve, remaining));
+      }
+    }
+
+    async function sendMessage(prefilledText = null) {
+      const message = (prefilledText ?? inputEl.value).trim();
+      if (!message) return;
+
+      addMessage(message, "user");
+      chatHistory.push({ text: message, role: "user" });
+      saveSession();
+
+      inputEl.value = "";
+      sendBtn.disabled = true;
+      showTyping();
+
+      const startTime = Date.now();
+
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            message,
+            state: chatState
+          })
+        });
+
+        const data = await response.json();
+        chatState = data.state || {};
+
+        const answer = data.answer || "Պատասխան չի ստացվել։";
+        await smartDelay(startTime, answer);
+
+        hideTyping();
+        addMessage(answer, "bot");
+        chatHistory.push({ text: answer, role: "bot" });
+        saveSession();
+      } catch (error) {
+        const answer = "Տեխնիկական խնդիր առաջացավ։ Խնդրում ենք փորձել կրկին։";
+        await smartDelay(startTime, answer);
+
+        hideTyping();
+        addMessage(answer, "bot");
+        chatHistory.push({ text: answer, role: "bot" });
+        saveSession();
+      } finally {
+        sendBtn.disabled = false;
+        inputEl.focus();
+      }
+    }
+
+    function resetSession() {
+      chatState = {};
+      chatHistory = [];
+      saveSession();
+      renderHistory();
+      hideTyping();
+      inputEl.focus();
+    }
+
+    sendBtn.addEventListener("click", () => sendMessage());
+
+    inputEl.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    resetBtn.addEventListener("click", resetSession);
+
+    document.querySelectorAll(".quick-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        inputEl.value = btn.dataset.text;
+        sendMessage(btn.dataset.text);
+      });
+    });
+
+    renderHistory();
+  </script>
+</body>
+</html>

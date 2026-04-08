@@ -1,0 +1,122 @@
+[
+  {
+    "label": "hlib_scope_general_complaints",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Ընդհանուր դրույթներ / կետ 1",
+    "armenian_excerpt": "Սույն կարգով կարգավորվում են Հայաստանի Հանրապետության առողջապահական և աշխատանքի տեսչական մարմնի գործունեության ոլորտում հանրությունից ստացվող բողոքների ընդունման և դրանց հետագա ընթացք տալու հետ կապված հարաբերությունները:",
+    "status": "insertion-ready",
+    "reason": "Exact cleaned OCR text that safely scopes the non-ethics procedure to HLIB complaints."
+  },
+  {
+    "label": "hlib_submission_methods",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետ 4",
+    "armenian_excerpt": "Բողոքները կարող են ներկայացվել.\n1) առձեռն.\n2) փոստով.\n3) էլեկտրոնային եղանակով (էլեկտրոնային փոստով կամ պաշտոնական կայքէջում առցանց դիմում լրացնելով):",
+    "status": "insertion-ready",
+    "reason": "Exact filing-method excerpt for the non-ethics inspection complaint path."
+  },
+  {
+    "label": "hlib_required_information",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետ 6",
+    "armenian_excerpt": "Բողոքը պետք է պարունակի հետևյալ տեղեկատվությունը.\n1) բողոքողի անունը, ազգանունը, իրավաբանական անձի դեպքում՝ նրա լրիվ անվանումը.\n2) բողոքողի հասցեն (իրավաբանական անձի գտնվելու վայրը).\n3) բողոքողի հետադարձ կապի միջոցը (էլեկտրոնային փոստ կամ հեռախոսահամար).\n4) մարմնի անվանումը, որին ներկայացվում է բողոքը.\n5) ներկայացվող պահանջը (բողոքի առարկա).\n6) կցվող փաստաթղթերի ցանկը (եթե այդպիսիք ներկայացվում են).\n7) բողոքը կազմելու տարին, ամիսը և ամսաթիվը.\n8) բողոքողի ստորագրությունը, իսկ իրավաբանական անձի դեպքում՝ նրա իրավասու պաշտոնատար անձի ստորագրությունը.\n9) ֆիզիկական անձի դեպքում՝ անձը հաստատող փաստաթղթի տվյալները:",
+    "status": "insertion-ready",
+    "reason": "Exact required-data list suitable for a narrow non-ethics complaint procedure layer."
+  },
+  {
+    "label": "hlib_missing_contact_not_disqualifying",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետ 9",
+    "armenian_excerpt": "Սույն կարգի 6-րդ կետի 2-րդ կամ 3-րդ ենթակետով սահմանված տեղեկատվությունը չներկայացնելը հիմք չէ բողոքը անհետևանք թողնելու համար: Տեսչական մարմինը պարտավոր է միջոցներ ձեռնարկել բողոքողի հասցեն կամ հետադարձ կապի միջոցների վերաբերյալ տեղեկատվությունը բողոքողից ստանալու ուղղությամբ:",
+    "status": "insertion-ready",
+    "reason": "Exact excerpt that clarifies what happens if address or contact details are missing."
+  },
+  {
+    "label": "hlib_correctable_errors_timing",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետ 10",
+    "armenian_excerpt": "Եթե բողոքում առկա են տեխնիկական սխալներ կամ բացթողումներ, որոնք կարող են շտկվել, ապա Տեսչական մարմինը 1 աշխատանքային օրվա ժամկետում դրանք մատնացույց է անում բողոք բերող անձին՝ նրան հնարավորություն ընձեռելով եռօրյա ժամկետում շտկելու այդ սխալները կամ բացթողումները:",
+    "status": "insertion-ready",
+    "reason": "Exact timeline for correcting errors or omissions."
+  },
+  {
+    "label": "hlib_out_of_jurisdiction_forwarding",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետ 12",
+    "armenian_excerpt": "Եթե բողոքով ներկայացվող հարցը չի մտնում Տեսչական մարմնի իրավասությունների շրջանակի մեջ կամ ներկայացված հարցերից մեկը կամ մի քանիսը ենթակա են այլ վարչական մարմնի իրավասությանը, ապա դրան ընթացք է տրվում «Վարչարարության հիմունքների և վարչական վարույթի մասին» Հայաստանի Հանրապետության օրենքի 33-րդ հոդվածով սահմանված կարգով:",
+    "status": "insertion-ready",
+    "reason": "Exact escalation/forwarding rule for complaints outside HLIB jurisdiction."
+  },
+  {
+    "label": "hlib_complainant_notified_three_days",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետ 13",
+    "armenian_excerpt": "Բողոքի՝ Տեսչական մարմնին վերաբերող մասով տրվում է համապատասխան ընթացք, որի մասին բողոքողը եռօրյա ժամկետում տեղեկացվում է:",
+    "status": "insertion-ready",
+    "reason": "Exact post-submission notice timing for the complainant."
+  },
+  {
+    "label": "hlib_anonymous_false_rejected",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետ 15",
+    "armenian_excerpt": "Անանուն և կեղծ բողոքներին ընթացք չի տրվում:",
+    "status": "insertion-ready",
+    "reason": "Exact condition on anonymous or false complaints."
+  },
+  {
+    "label": "hlib_high_risk_inspection_timing",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընդունումը / կետեր 16-18",
+    "armenian_excerpt": "Եթե Տեսչական մարմին ստացված բողոքը պարունակում է տնտեսավարող սուբյեկտի գործունեության հետ կապված տվյալներ՝ տնտեսավարող սուբյեկտի կողմից անձանց կյանքին կամ առողջությանը վտանգ սպառնալու մասին տեղեկություններ (փաստեր), ապա տեսչական մարմնի ղեկավարը հրապարակում է հրաման կամ հանձնարարագիր ստուգում իրականացնելու մասին: Ստուգում անցկացնելու մասին հրամանը կամ հանձնարարագիրը ընդունվում է սեղմ ժամկետում, բայց ոչ ուշ քան բողոքը տեսչական մարմին մուտքագրելու օրվանից 3 օրվա ընթացքում: Ստուգում իրականացնելու մասին տեսչական մարմինը տեղեկացնում է բողոքողին հրամանը կամ հանձնարարագիրը ընդունելուց հետո 3 օրյա ժամկետում:",
+    "status": "insertion-ready",
+    "reason": "Exact conditional timeline for high-risk complaints."
+  },
+  {
+    "label": "hlib_proceeding_notice_and_hearing",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընթացքը / կետեր 22-24",
+    "armenian_excerpt": "Հանրությունից ստացված բողոքի ընթացքն ապահովելու համար Տեսչական մարմնում ուսումնասիրվում է դիմումի բովանդակությունը և Տեսչական մարմնին բողոքով բարձրացված հարցի իրավասության մեջ լինելու դեպքում եռօրյա ժամկետում վարույթի մասնակիցներին (բողոքողին և վարչական ակտի հասցեատիրոջը) ծանուցվում է վարչական վարույթի հարուցման մասին: Ծանուցմամբ նաև նշվում է Տեսչական մարմնում լսում իրականացնելու մասին՝ նշելով լսում անցկացնելու տեղը, օրը և ժամը: Անհրաժեշտության դեպքում կարող են իրականացվել մեկից ավելի լսումներ:",
+    "status": "insertion-ready",
+    "reason": "Exact post-submission flow with notice, hearing, and possible multiple hearings."
+  },
+  {
+    "label": "hlib_inspection_order_notice_three_working_days",
+    "source_file": "kb_staging/non_ethics_complaint_procedure_extracted.txt",
+    "source_section": "Բողոքների ընթացքը / կետ 26",
+    "armenian_excerpt": "Զննում իրականացնելու մասին հրամանը 3 աշխատանքային օրյա ժամկետում առձեռն կամ փոստով ծանուցվում է վարույթի մասնակիցներին:",
+    "status": "insertion-ready",
+    "reason": "Exact timeline for notifying parties about an inspection order."
+  },
+  {
+    "label": "hlib_online_application_required_fields",
+    "source_file": "kb_raw_sources/complaints_extracted/hlib_online_application.txt",
+    "source_section": "Առցանց դիմում էջ",
+    "armenian_excerpt": "Ստորև առկա բոլոր դաշտերի լրացումը պարտադիր է:",
+    "status": "review-needed",
+    "reason": "Exact local line, but still too generic on its own and not enough to define the broader non-ethics procedure without stronger neighboring excerpts."
+  },
+  {
+    "label": "hlib_online_application_path",
+    "source_file": "kb_raw_sources/complaints_extracted/hlib_online_application.txt",
+    "source_section": "Առցանց դիմում էջ",
+    "armenian_excerpt": "Առցանց դիմում",
+    "status": "review-needed",
+    "reason": "Confirms an online path exists, but does not add enough procedure detail by itself."
+  },
+  {
+    "label": "hlib_pdf_appendix_2_high_risk_catalog",
+    "source_file": "kb_raw_sources/complaints_extracted/hlib_complaints_procedure_ocr.txt",
+    "source_section": "Հավելված 2",
+    "armenian_excerpt": "ԱՌՈՂՋԱՊԱՀԱԿԱՆ ԵՎ ԱՇԽԱՏԱՆՔԻ ՏԵՍՉԱԿԱՆ ՄԱՐՄՆԻ ՎԵՐԱՀՍԿՈՂՈՒԹՅԱՆ ՈԼՈՐՏՈՒՄ ԱՆՁԱՆՑ ԿՅԱՆՔԻՆ ԿԱՄ ԱՌՈՂՋՈՒԹՅԱՆԸ ՍՊԱՌՆԱՑՈՂ ՎՏԱՆԳԻ ԲԱՐՁՐ ԱՍՏԻՃԱՆ ՀԱՄԱՐՎՈՂ ԴԵՊՔԵՐԻ ՑԱՆԿ",
+    "status": "review-needed",
+    "reason": "Relevant only for a later high-risk complaint triage pass, not for the core non-ethics complaint procedure layer."
+  },
+  {
+    "label": "hlib_appendix_1_consultation_form",
+    "source_file": "kb_raw_sources/complaints_extracted/hlib_complaints_procedure_ocr.txt",
+    "source_section": "Հավելված 1",
+    "armenian_excerpt": "ԽՈՐՀՐԴԱՏՎՈՒԹՅԱՆ ԹԵՐԹԻԿ",
+    "status": "reject",
+    "reason": "Appendix 1 OCR remains too noisy to support exact excerpt use in this run."
+  }
+]

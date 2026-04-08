@@ -1,0 +1,50 @@
+[
+  {
+    "name": "admission_shadow_hospitalization_emergency_branch",
+    "first_message": "հոսպիտալացումը անվճա՞ր է",
+    "second_message": "շտապ է",
+    "expected_current_second_card": "service_hospitalization_policy_curated",
+    "expected_root_service_type": "hospitalization",
+    "expected_root_admission_type": "emergency"
+  },
+  {
+    "name": "admission_shadow_hospitalization_planned_branch",
+    "first_message": "հոսպիտալացումը անվճա՞ր է",
+    "second_message": "պլանային է",
+    "expected_current_second_card": "service_hospitalization_policy_curated",
+    "expected_root_service_type": "hospitalization",
+    "expected_root_admission_type": "planned"
+  },
+  {
+    "name": "admission_shadow_surgery_emergency_branch",
+    "first_message": "վիրահատությունը անվճա՞ր է",
+    "second_message": "շտապ է",
+    "expected_current_second_card": "service_surgery_policy_curated",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type": "emergency"
+  },
+  {
+    "name": "admission_shadow_surgery_planned_branch",
+    "first_message": "վիրահատությունը անվճա՞ր է",
+    "second_message": "պլանային է",
+    "expected_current_second_card": "service_surgery_policy_curated",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type": "planned"
+  },
+  {
+    "name": "admission_shadow_mixed_surgery_hospital_emergency_branch",
+    "first_message": "վիրահատության համար պետք է պառկել հիվանդանոց",
+    "second_message": "շտապ է",
+    "expected_current_second_card": "routing_referral_where_to_go_v2",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type": "emergency"
+  },
+  {
+    "name": "admission_shadow_mixed_surgery_hospital_planned_branch",
+    "first_message": "վիրահատության համար պետք է պառկել հիվանդանոց",
+    "second_message": "պլանային է",
+    "expected_current_second_card": "routing_referral_where_to_go_v2",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type": "planned"
+  }
+]

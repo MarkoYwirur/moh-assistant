@@ -1,7 +1,7 @@
 [
   {
     "id": "medicine_աբիրատերոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Աբիրատերոն",
     "patterns": [
       "Աբիրատերոն",
@@ -13,11 +13,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ադալիմումամբ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ադալիմումամբ",
     "patterns": [
       "Ադալիմումամբ",
@@ -28,11 +30,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ադենոզինտրիֆոսֆատ_դինատրիում",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ադենոզինտրիֆոսֆատ դինատրիում",
     "patterns": [
       "Ադենոզինտրիֆոսֆատ դինատրիում",
@@ -43,11 +47,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ազաթիոպրին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ազաթիոպրին",
     "patterns": [
       "Ազաթիոպրին",
@@ -59,11 +65,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ազիթրոմիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ազիթրոմիցին",
     "patterns": [
       "Ազիթրոմիցին",
@@ -75,11 +83,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ալբենդազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ալբենդազոլ",
     "patterns": [
       "Ալբենդազոլ",
@@ -90,11 +100,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ալյումինի_հիդրօքսիդ_օքսիդ_մագնեզիումի_հիդրօքսիդ_օքսիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ալյումինի հիդրօքսիդ (օքսիդ) + Մագնեզիումի հիդրօքսիդ (օքսիդ)",
     "patterns": [
       "Ալյումինի հիդրօքսիդ (օքսիդ) + Մագնեզիումի հիդրօքսիդ (օքսիդ)",
@@ -105,11 +117,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ալոպուրինոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ալոպուրինոլ",
     "patterns": [
       "Ալոպուրինոլ",
@@ -120,11 +134,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ակտիվացված_ածուխ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ակտիվացված ածուխ",
     "patterns": [
       "Ակտիվացված ածուխ",
@@ -135,11 +151,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամբրոքսոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամբրոքսոլ",
     "patterns": [
       "Ամբրոքսոլ",
@@ -150,11 +168,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամիկացին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամիկացին",
     "patterns": [
       "Ամիկացին",
@@ -166,11 +186,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամինոֆիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամինոֆիլին",
     "patterns": [
       "Ամինոֆիլին",
@@ -182,11 +204,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամիոդարոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամիոդարոն",
     "patterns": [
       "Ամիոդարոն",
@@ -198,11 +222,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամիտրիպտիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամիտրիպտիլին",
     "patterns": [
       "Ամիտրիպտիլին",
@@ -214,11 +240,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամլոդիպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամլոդիպին",
     "patterns": [
       "Ամլոդիպին",
@@ -230,11 +258,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամլոդիպին_լոզարտան",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամլոդիպին +Լոզարտան",
     "patterns": [
       "Ամլոդիպին +Լոզարտան",
@@ -246,11 +276,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամլոդիպին_վալսարտան_հիդրոքլորոթիազիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամլոդիպին +Վալսարտան+ Հիդրոքլորոթիազիդ",
     "patterns": [
       "Ամլոդիպին +Վալսարտան+ Հիդրոքլորոթիազիդ",
@@ -261,11 +293,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամպիցիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամպիցիլին",
     "patterns": [
       "Ամպիցիլին",
@@ -277,11 +311,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամօքսիցիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամօքսիցիլին",
     "patterns": [
       "Ամօքսիցիլին",
@@ -293,11 +329,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամօքսիցիլին_քլավուլանաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամօքսիցիլին + Քլավուլանաթթու",
     "patterns": [
       "Ամօքսիցիլին + Քլավուլանաթթու",
@@ -308,11 +346,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ամֆոտերիցին_b",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ամֆոտերիցին B",
     "patterns": [
       "Ամֆոտերիցին B",
@@ -323,11 +363,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_անաստրոզոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Անաստրոզոլ",
     "patterns": [
       "Անաստրոզոլ",
@@ -338,11 +380,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ապիքսաբան",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ապիքսաբան",
     "patterns": [
       "Ապիքսաբան",
@@ -354,11 +398,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ասկորբինաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ասկորբինաթթու",
     "patterns": [
       "Ասկորբինաթթու",
@@ -369,11 +415,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ատենոլոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ատենոլոլ",
     "patterns": [
       "Ատենոլոլ",
@@ -384,11 +432,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ատորվաստատին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ատորվաստատին",
     "patterns": [
       "Ատորվաստատին",
@@ -400,11 +450,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ատորվաստատին_ռամիպրիլ_ացետիլսալիցիլաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ատորվաստատին+Ռամիպրիլ+ Ացետիլսալիցիլաթթու",
     "patterns": [
       "Ատորվաստատին+Ռամիպրիլ+ Ացետիլսալիցիլաթթու",
@@ -415,11 +467,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ատրոպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ատրոպին",
     "patterns": [
       "Ատրոպին",
@@ -431,11 +485,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_արծաթի_սուլֆադիազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Արծաթի սուլֆադիազին",
     "patterns": [
       "Արծաթի սուլֆադիազին",
@@ -447,11 +503,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ացետազոլամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ացետազոլամիդ",
     "patterns": [
       "Ացետազոլամիդ",
@@ -462,11 +520,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ացետիլսալիցիլաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ացետիլսալիցիլաթթու",
     "patterns": [
       "Ացետիլսալիցիլաթթու",
@@ -477,11 +537,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ացետիլսալիցիլաթթու_նա_համակցված_մագնեզիումի_հիդրոօքսիդի_հետ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ացետիլսալիցիլաթթու (նաև համակցված մագնեզիումի հիդրոօքսիդի հետ)",
     "patterns": [
       "Ացետիլսալիցիլաթթու (նաև համակցված մագնեզիումի հիդրոօքսիդի հետ)",
@@ -492,11 +554,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ացետիլցիստեին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ացետիլցիստեին",
     "patterns": [
       "Ացետիլցիստեին",
@@ -508,11 +572,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ացիկլովիր",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ացիկլովիր",
     "patterns": [
       "Ացիկլովիր",
@@ -523,11 +589,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բեկլոմետազոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բեկլոմետազոն",
     "patterns": [
       "Բեկլոմետազոն",
@@ -539,11 +607,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բենզաթին_բենզիլպենիցիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բենզաթին Բենզիլպենիցիլին",
     "patterns": [
       "Բենզաթին Բենզիլպենիցիլին",
@@ -555,11 +625,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բենզիլ_բենզոատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բենզիլ բենզոատ",
     "patterns": [
       "Բենզիլ բենզոատ",
@@ -570,11 +642,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բենզիլպենիցիլին_պենիցիլին_g",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բենզիլպենիցիլին (Պենիցիլին G)",
     "patterns": [
       "Բենզիլպենիցիլին (Պենիցիլին G)",
@@ -585,11 +659,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բենզոբարբիտալ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բենզոբարբիտալ",
     "patterns": [
       "Բենզոբարբիտալ",
@@ -600,11 +676,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բենզոիլ_պերօքսիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բենզոիլ պերօքսիդ",
     "patterns": [
       "Բենզոիլ պերօքսիդ",
@@ -615,11 +693,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բետահիստին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բետահիստին",
     "patterns": [
       "Բետահիստին",
@@ -631,11 +711,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բետամեթազոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բետամեթազոն",
     "patterns": [
       "Բետամեթազոն",
@@ -647,11 +729,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բիկալուտամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բիկալուտամիդ",
     "patterns": [
       "Բիկալուտամիդ",
@@ -662,11 +746,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բիսմութի_տրիկալիումական_դիցիտրատ_բիսմութի_օքսիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բիսմութի տրիկալիումական դիցիտրատ (բիսմութի օքսիդ)",
     "patterns": [
       "Բիսմութի տրիկալիումական դիցիտրատ (բիսմութի օքսիդ)",
@@ -677,11 +763,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բիսոպրոլոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բիսոպրոլոլ",
     "patterns": [
       "Բիսոպրոլոլ",
@@ -692,11 +780,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բիսոպրոլոլ_ամլոդիպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բիսոպրոլոլ + Ամլոդիպին",
     "patterns": [
       "Բիսոպրոլոլ + Ամլոդիպին",
@@ -708,11 +798,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բիսոպրոլոլ_պերինդոպրիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բիսոպրոլոլ + Պերինդոպրիլ",
     "patterns": [
       "Բիսոպրոլոլ + Պերինդոպրիլ",
@@ -723,11 +815,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բուդեսոնիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բուդեսոնիդ",
     "patterns": [
       "Բուդեսոնիդ",
@@ -738,11 +832,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բուդեսոնիդ_ֆորմոտերոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բուդեսոնիդ + Ֆորմոտերոլ",
     "patterns": [
       "Բուդեսոնիդ + Ֆորմոտերոլ",
@@ -753,11 +849,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_բրիմոնիդին_թիմոլոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Բրիմոնիդին + Թիմոլոլ",
     "patterns": [
       "Բրիմոնիդին + Թիմոլոլ",
@@ -768,11 +866,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլիբենկլամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլիբենկլամիդ",
     "patterns": [
       "Գլիբենկլամիդ",
@@ -783,11 +883,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլիկլազիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլիկլազիդ",
     "patterns": [
       "Գլիկլազիդ",
@@ -798,11 +900,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլիմեպիրիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլիմեպիրիդ",
     "patterns": [
       "Գլիմեպիրիդ",
@@ -813,11 +917,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլիմեպիրիդ_մետֆորմին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլիմեպիրիդ+Մետֆորմին",
     "patterns": [
       "Գլիմեպիրիդ+Մետֆորմին",
@@ -829,11 +935,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլիցերիլ_տրինիտրատ_նիտրոգլիցերին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլիցերիլ տրինիտրատ (նիտրոգլիցերին)",
     "patterns": [
       "Գլիցերիլ տրինիտրատ (նիտրոգլիցերին)",
@@ -844,11 +952,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլիցերոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլիցերոլ",
     "patterns": [
       "Գլիցերոլ",
@@ -859,11 +969,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլիքվիդոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլիքվիդոն",
     "patterns": [
       "Գլիքվիդոն",
@@ -875,11 +987,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլյուկագոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլյուկագոն",
     "patterns": [
       "Գլյուկագոն",
@@ -891,11 +1005,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլյուկոզ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլյուկոզ",
     "patterns": [
       "Գլյուկոզ",
@@ -906,11 +1022,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գլյուկոզ_նատրիումի_քլորիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գլյուկոզ+Նատրիումի քլորիդ",
     "patterns": [
       "Գլյուկոզ+Նատրիումի քլորիդ",
@@ -921,11 +1039,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_գրիզեոֆուլվին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Գրիզեոֆուլվին",
     "patterns": [
       "Գրիզեոֆուլվին",
@@ -937,11 +1057,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դoքսիցիկլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դoքսիցիկլին",
     "patterns": [
       "Դoքսիցիկլին",
@@ -953,11 +1075,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դապագլիֆլոզին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դապագլիֆլոզին",
     "patterns": [
       "Դապագլիֆլոզին",
@@ -969,11 +1093,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դելամանիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դելամանիդ",
     "patterns": [
       "Դելամանիդ",
@@ -984,11 +1110,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դեքսամեթազոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դեքսամեթազոն",
     "patterns": [
       "Դեքսամեթազոն",
@@ -1000,11 +1128,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դեֆերoքսամին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դեֆերoքսամին",
     "patterns": [
       "Դեֆերoքսամին",
@@ -1016,11 +1146,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դիազեպամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դիազեպամ",
     "patterns": [
       "Դիազեպամ",
@@ -1031,11 +1163,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դիգօքսին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դիգօքսին",
     "patterns": [
       "Դիգօքսին",
@@ -1047,11 +1181,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դիդրոգեստերոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դիդրոգեստերոն",
     "patterns": [
       "Դիդրոգեստերոն",
@@ -1063,11 +1199,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դիլտիազեմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դիլտիազեմ",
     "patterns": [
       "Դիլտիազեմ",
@@ -1078,11 +1216,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դիկլոֆենակ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դիկլոֆենակ",
     "patterns": [
       "Դիկլոֆենակ",
@@ -1093,11 +1233,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դիոսմին_հեսպերիդին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դիոսմին + Հեսպերիդին",
     "patterns": [
       "Դիոսմին + Հեսպերիդին",
@@ -1109,11 +1251,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դիֆենհիդրամին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դիֆենհիդրամին",
     "patterns": [
       "Դիֆենհիդրամին",
@@ -1125,11 +1269,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դոկուզատ_նատրիում",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դոկուզատ նատրիում",
     "patterns": [
       "Դոկուզատ նատրիում",
@@ -1140,11 +1286,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_դրոտավերին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Դրոտավերին",
     "patterns": [
       "Դրոտավերին",
@@ -1156,11 +1304,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_երկաթ_պարունակող_համակցություն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Երկաթ պարունակող համակցություն",
     "patterns": [
       "Երկաթ պարունակող համակցություն",
@@ -1172,11 +1322,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_երկաթի_սուլֆատ_ֆոլաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Երկաթի սուլֆատ+ ֆոլաթթու",
     "patterns": [
       "Երկաթի սուլֆատ+ ֆոլաթթու",
@@ -1187,11 +1339,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_զոլեդրոնաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Զոլեդրոնաթթու",
     "patterns": [
       "Զոլեդրոնաթթու",
@@ -1202,11 +1356,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էթանոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էթանոլ",
     "patterns": [
       "Էթանոլ",
@@ -1217,11 +1373,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էթինիլէստրադիոլ_նորէթիստերոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էթինիլէստրադիոլ + Նորէթիստերոն",
     "patterns": [
       "Էթինիլէստրադիոլ + Նորէթիստերոն",
@@ -1233,11 +1391,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էթոսուքսիմիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էթոսուքսիմիդ",
     "patterns": [
       "Էթոսուքսիմիդ",
@@ -1248,11 +1408,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էնալապրիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էնալապրիլ",
     "patterns": [
       "Էնալապրիլ",
@@ -1263,11 +1425,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էնալապրիլ_հիդրոքլորոթիազիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էնալապրիլ + Հիդրոքլորոթիազիդ",
     "patterns": [
       "Էնալապրիլ + Հիդրոքլորոթիազիդ",
@@ -1278,11 +1442,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էնօքսապարին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էնօքսապարին",
     "patterns": [
       "Էնօքսապարին",
@@ -1294,11 +1460,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էստրադիոլ_ցիպիոնատ_մեդրօքսիպրոգեստերոն_ացետատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էստրադիոլ ցիպիոնատ + Մեդրօքսիպրոգեստերոն ացետատ",
     "patterns": [
       "Էստրադիոլ ցիպիոնատ + Մեդրօքսիպրոգեստերոն ացետատ",
@@ -1309,11 +1477,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_էրիթրոմիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Էրիթրոմիցին",
     "patterns": [
       "Էրիթրոմիցին",
@@ -1325,11 +1495,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_թիամազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Թիամազոլ",
     "patterns": [
       "Թիամազոլ",
@@ -1340,11 +1512,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_թիամին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Թիամին",
     "patterns": [
       "Թիամին",
@@ -1356,11 +1530,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_թիմոլոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Թիմոլոլ",
     "patterns": [
       "Թիմոլոլ",
@@ -1371,11 +1547,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_թիմոլոլ_բրինզոլամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Թիմոլոլ + Բրինզոլամիդ",
     "patterns": [
       "Թիմոլոլ + Բրինզոլամիդ",
@@ -1386,11 +1564,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_թիոգուանին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Թիոգուանին",
     "patterns": [
       "Թիոգուանին",
@@ -1402,11 +1582,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իբուպրոֆեն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իբուպրոֆեն",
     "patterns": [
       "Իբուպրոֆեն",
@@ -1418,11 +1600,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իզոսորբիդի_դինիտրատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իզոսորբիդի դինիտրատ",
     "patterns": [
       "Իզոսորբիդի դինիտրատ",
@@ -1433,11 +1617,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իզոսորբիդի_մոնոնիտրատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իզոսորբիդի մոնոնիտրատ",
     "patterns": [
       "Իզոսորբիդի մոնոնիտրատ",
@@ -1448,11 +1634,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իմիպենեմ_ցիլաստատին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իմիպենեմ + Ցիլաստատին",
     "patterns": [
       "Իմիպենեմ + Ցիլաստատին",
@@ -1464,11 +1652,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ինդապամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ինդապամիդ",
     "patterns": [
       "Ինդապամիդ",
@@ -1479,11 +1669,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իպրատրոպիումի_բրոմիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իպրատրոպիումի բրոմիդ",
     "patterns": [
       "Իպրատրոպիումի բրոմիդ",
@@ -1494,11 +1686,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իպրատրոպիումի_բրոմիդ_ֆենոտերոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իպրատրոպիումի բրոմիդ + Ֆենոտերոլ",
     "patterns": [
       "Իպրատրոպիումի բրոմիդ + Ֆենոտերոլ",
@@ -1509,11 +1703,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իվերմեկտին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իվերմեկտին",
     "patterns": [
       "Իվերմեկտին",
@@ -1525,11 +1721,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_իտրակոնազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Իտրակոնազոլ",
     "patterns": [
       "Իտրակոնազոլ",
@@ -1540,11 +1738,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լաբետալոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լաբետալոլ",
     "patterns": [
       "Լաբետալոլ",
@@ -1555,11 +1755,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լակտուլոզ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լակտուլոզ",
     "patterns": [
       "Լակտուլոզ",
@@ -1570,11 +1772,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լամոտրիջին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լամոտրիջին",
     "patterns": [
       "Լամոտրիջին",
@@ -1586,11 +1790,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լատանապրոստ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լատանապրոստ",
     "patterns": [
       "Լատանապրոստ",
@@ -1601,11 +1807,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվամիզոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվամիզոլ",
     "patterns": [
       "Լեվամիզոլ",
@@ -1616,11 +1824,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվետիրացետամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվետիրացետամ",
     "patterns": [
       "Լեվետիրացետամ",
@@ -1631,11 +1841,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվոդոպա_կարբիդոպա",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվոդոպա+ Կարբիդոպա",
     "patterns": [
       "Լեվոդոպա+ Կարբիդոպա",
@@ -1646,11 +1858,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվոթիրօքսին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվոթիրօքսին",
     "patterns": [
       "Լեվոթիրօքսին",
@@ -1662,11 +1876,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվոմեպրոմազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվոմեպրոմազին",
     "patterns": [
       "Լեվոմեպրոմազին",
@@ -1678,11 +1894,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվոնորգեստրել",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվոնորգեստրել",
     "patterns": [
       "Լեվոնորգեստրել",
@@ -1693,11 +1911,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվոնորգէստրել_էթինիլէստրադիոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվոնորգէստրել + Էթինիլէստրադիոլ",
     "patterns": [
       "Լեվոնորգէստրել + Էթինիլէստրադիոլ",
@@ -1708,11 +1928,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լեվոֆլօքսացին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լեվոֆլօքսացին",
     "patterns": [
       "Լեվոֆլօքսացին",
@@ -1724,11 +1946,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լետրոզոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լետրոզոլ",
     "patterns": [
       "Լետրոզոլ",
@@ -1739,11 +1963,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լիդոկաին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լիդոկաին",
     "patterns": [
       "Լիդոկաին",
@@ -1755,11 +1981,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լիզինոպրիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լիզինոպրիլ",
     "patterns": [
       "Լիզինոպրիլ",
@@ -1770,11 +1998,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լիզինոպրիլ_ամլոդիպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լիզինոպրիլ+ Ամլոդիպին",
     "patterns": [
       "Լիզինոպրիլ+ Ամլոդիպին",
@@ -1786,11 +2016,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լիզինոպրիլ_հիդրոքլորոթիազիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լիզինոպրիլ+ Հիդրոքլորոթիազիդ",
     "patterns": [
       "Լիզինոպրիլ+ Հիդրոքլորոթիազիդ",
@@ -1801,11 +2033,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լիթիումի_կարբոնատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լիթիումի կարբոնատ",
     "patterns": [
       "Լիթիումի կարբոնատ",
@@ -1816,11 +2050,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լինեզոլիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լինեզոլիդ",
     "patterns": [
       "Լինեզոլիդ",
@@ -1831,11 +2067,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լոզարտան",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լոզարտան",
     "patterns": [
       "Լոզարտան",
@@ -1847,11 +2085,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լոզարտան_հիդրոքլորոթիազիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լոզարտան + Հիդրոքլորոթիազիդ",
     "patterns": [
       "Լոզարտան + Հիդրոքլորոթիազիդ",
@@ -1862,11 +2102,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լոպերամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լոպերամիդ",
     "patterns": [
       "Լոպերամիդ",
@@ -1877,11 +2119,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լորազեպամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լորազեպամ",
     "patterns": [
       "Լորազեպամ",
@@ -1892,11 +2136,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_լորատադին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Լորատադին",
     "patterns": [
       "Լորատադին",
@@ -1908,11 +2154,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կաբերգոլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կաբերգոլին",
     "patterns": [
       "Կաբերգոլին",
@@ -1924,11 +2172,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կալամին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կալամին",
     "patterns": [
       "Կալամին",
@@ -1940,11 +2190,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կալիումի_յոդիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կալիումի յոդիդ",
     "patterns": [
       "Կալիումի յոդիդ",
@@ -1955,11 +2207,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կալցիում_քոլեկալցիֆերոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կալցիում+քոլեկալցիֆերոլ",
     "patterns": [
       "Կալցիում+քոլեկալցիֆերոլ",
@@ -1970,11 +2224,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կալցիումի_գլյուկոնատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կալցիումի գլյուկոնատ",
     "patterns": [
       "Կալցիումի գլյուկոնատ",
@@ -1985,11 +2241,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կալցիֆեդիոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կալցիֆեդիոլ",
     "patterns": [
       "Կալցիֆեդիոլ",
@@ -2000,11 +2258,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կանամիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կանամիցին",
     "patterns": [
       "Կանամիցին",
@@ -2016,11 +2276,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կապեցիտաբին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կապեցիտաբին",
     "patterns": [
       "Կապեցիտաբին",
@@ -2032,11 +2294,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կապտոպրիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կապտոպրիլ",
     "patterns": [
       "Կապտոպրիլ",
@@ -2047,11 +2311,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կարբամազեպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կարբամազեպին",
     "patterns": [
       "Կարբամազեպին",
@@ -2063,11 +2329,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կարվեդիլոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կարվեդիլոլ",
     "patterns": [
       "Կարվեդիլոլ",
@@ -2078,11 +2346,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կետոպրոֆեն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կետոպրոֆեն",
     "patterns": [
       "Կետոպրոֆեն",
@@ -2094,11 +2364,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլարիթրոմիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլարիթրոմիցին",
     "patterns": [
       "Կլարիթրոմիցին",
@@ -2110,11 +2382,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլինդամիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլինդամիցին",
     "patterns": [
       "Կլինդամիցին",
@@ -2126,11 +2400,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլոզապին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլոզապին",
     "patterns": [
       "Կլոզապին",
@@ -2142,11 +2418,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլոմիպրամին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլոմիպրամին",
     "patterns": [
       "Կլոմիպրամին",
@@ -2158,11 +2436,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլոմիֆեն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլոմիֆեն",
     "patterns": [
       "Կլոմիֆեն",
@@ -2174,11 +2454,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլոնազեպամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլոնազեպամ",
     "patterns": [
       "Կլոնազեպամ",
@@ -2189,11 +2471,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլոպիդոգրել",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլոպիդոգրել",
     "patterns": [
       "Կլոպիդոգրել",
@@ -2204,11 +2488,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլոտրիմազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլոտրիմազոլ",
     "patterns": [
       "Կլոտրիմազոլ",
@@ -2219,11 +2505,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլոֆազիմին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլոֆազիմին",
     "patterns": [
       "Կլոֆազիմին",
@@ -2235,11 +2523,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կլօքսացիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կլօքսացիլին",
     "patterns": [
       "Կլօքսացիլին",
@@ -2251,11 +2541,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կոդեին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կոդեին",
     "patterns": [
       "Կոդեին",
@@ -2267,11 +2559,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կոլիստին_կոլիստեմեթատ_նատրիում",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կոլիստին (կոլիստեմեթատ նատրիում)",
     "patterns": [
       "Կոլիստին (կոլիստեմեթատ նատրիում)",
@@ -2282,11 +2576,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_կուպր_քարածխային",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Կուպր քարածխային",
     "patterns": [
       "Կուպր քարածխային",
@@ -2298,11 +2594,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_հալոպերիդոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Հալոպերիդոլ",
     "patterns": [
       "Հալոպերիդոլ",
@@ -2313,11 +2611,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_հիդրալազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Հիդրալազին",
     "patterns": [
       "Հիդրալազին",
@@ -2329,11 +2629,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_հիդրոկորտիզոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Հիդրոկորտիզոն",
     "patterns": [
       "Հիդրոկորտիզոն",
@@ -2345,11 +2647,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_հիդրոքլորոթիազիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Հիդրոքլորոթիազիդ",
     "patterns": [
       "Հիդրոքլորոթիազիդ",
@@ -2360,11 +2664,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_հիդրօքսիքլորոքվին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Հիդրօքսիքլորոքվին",
     "patterns": [
       "Հիդրօքսիքլորոքվին",
@@ -2376,11 +2682,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_հիոսցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Հիոսցին",
     "patterns": [
       "Հիոսցին",
@@ -2392,11 +2700,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մագնեզիումի_սուլֆատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մագնեզիումի սուլֆատ",
     "patterns": [
       "Մագնեզիումի սուլֆատ",
@@ -2407,11 +2717,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մեբենդազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մեբենդազոլ",
     "patterns": [
       "Մեբենդազոլ",
@@ -2422,11 +2734,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մեդրօքսիպրոգեստերոն_ացետատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մեդրօքսիպրոգեստերոն ացետատ",
     "patterns": [
       "Մեդրօքսիպրոգեստերոն ացետատ",
@@ -2437,11 +2751,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մեթադոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մեթադոն",
     "patterns": [
       "Մեթադոն",
@@ -2453,11 +2769,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մեթիլպրեդնիզոլոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մեթիլպրեդնիզոլոն",
     "patterns": [
       "Մեթիլպրեդնիզոլոն",
@@ -2469,11 +2787,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մեթոտրեքսատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մեթոտրեքսատ",
     "patterns": [
       "Մեթոտրեքսատ",
@@ -2484,11 +2804,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մետամիզոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մետամիզոլ",
     "patterns": [
       "Մետամիզոլ",
@@ -2499,11 +2821,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մետոկլոպրամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մետոկլոպրամիդ",
     "patterns": [
       "Մետոկլոպրամիդ",
@@ -2514,11 +2838,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մետոպրոլոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մետոպրոլոլ",
     "patterns": [
       "Մետոպրոլոլ",
@@ -2529,11 +2855,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մետրոնիդազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մետրոնիդազոլ",
     "patterns": [
       "Մետրոնիդազոլ",
@@ -2544,11 +2872,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մետֆորմին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մետֆորմին",
     "patterns": [
       "Մետֆորմին",
@@ -2560,11 +2890,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մերոպենեմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մերոպենեմ",
     "patterns": [
       "Մերոպենեմ",
@@ -2575,11 +2907,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_միդազոլամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Միդազոլամ",
     "patterns": [
       "Միդազոլամ",
@@ -2590,11 +2924,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_միզանյութ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Միզանյութ",
     "patterns": [
       "Միզանյութ",
@@ -2605,11 +2941,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_միկաֆունգին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Միկաֆունգին",
     "patterns": [
       "Միկաֆունգին",
@@ -2621,11 +2959,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_միկոնազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Միկոնազոլ",
     "patterns": [
       "Միկոնազոլ",
@@ -2636,11 +2976,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մոնտելուկաստ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մոնտելուկաստ",
     "patterns": [
       "Մոնտելուկաստ",
@@ -2651,11 +2993,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մորֆին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մորֆին",
     "patterns": [
       "Մորֆին",
@@ -2667,11 +3011,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մուպիրոցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մուպիրոցին",
     "patterns": [
       "Մուպիրոցին",
@@ -2683,11 +3029,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մօքսիֆլօքսացին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մօքսիֆլօքսացին",
     "patterns": [
       "Մօքսիֆլօքսացին",
@@ -2699,11 +3047,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_մօքսոնիդին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Մօքսոնիդին",
     "patterns": [
       "Մօքսոնիդին",
@@ -2715,11 +3065,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_յոդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Յոդ",
     "patterns": [
       "Յոդ",
@@ -2730,11 +3082,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նատամիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նատամիցին",
     "patterns": [
       "Նատամիցին",
@@ -2746,11 +3100,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նատրիումի_թիոսուլֆատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նատրիումի թիոսուլֆատ",
     "patterns": [
       "Նատրիումի թիոսուլֆատ",
@@ -2761,11 +3117,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նատրիումի_քլորիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նատրիումի քլորիդ",
     "patterns": [
       "Նատրիումի քլորիդ",
@@ -2776,11 +3134,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նեոստիգմին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նեոստիգմին",
     "patterns": [
       "Նեոստիգմին",
@@ -2792,11 +3152,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ներարկման_ջուր",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ներարկման ջուր",
     "patterns": [
       "Ներարկման ջուր",
@@ -2807,11 +3169,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ներքին_ընդունման_ջրավերականգնիչ_աղեր",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ներքին ընդունման ջրավերականգնիչ աղեր",
     "patterns": [
       "Ներքին ընդունման ջրավերականգնիչ աղեր",
@@ -2822,11 +3186,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նիկլոզամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նիկլոզամիդ",
     "patterns": [
       "Նիկլոզամիդ",
@@ -2837,11 +3203,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նիկոտին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նիկոտին",
     "patterns": [
       "Նիկոտին",
@@ -2853,11 +3221,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նիկոտինաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նիկոտինաթթու",
     "patterns": [
       "Նիկոտինաթթու",
@@ -2868,11 +3238,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նիստատին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նիստատին",
     "patterns": [
       "Նիստատին",
@@ -2884,11 +3256,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նիտրոֆուրանտոին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նիտրոֆուրանտոին",
     "patterns": [
       "Նիտրոֆուրանտոին",
@@ -2900,11 +3274,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նիֆեդիպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նիֆեդիպին",
     "patterns": [
       "Նիֆեդիպին",
@@ -2916,11 +3292,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_նորէթիստերոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Նորէթիստերոն",
     "patterns": [
       "Նորէթիստերոն",
@@ -2932,11 +3310,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ուլիպրիստալ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ուլիպրիստալ",
     "patterns": [
       "Ուլիպրիստալ",
@@ -2947,11 +3327,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պ_ամինոսալիցիլաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պ-ամինոսալիցիլաթթու",
     "patterns": [
       "Պ-ամինոսալիցիլաթթու",
@@ -2962,11 +3344,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պանկրեատին_լիպազ_ամիլազ_պրոտեազ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պանկրեատին (լիպազ, ամիլազ, պրոտեազ)",
     "patterns": [
       "Պանկրեատին (լիպազ, ամիլազ, պրոտեազ)",
@@ -2977,11 +3361,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պանտոպրազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պանտոպրազոլ",
     "patterns": [
       "Պանտոպրազոլ",
@@ -2992,11 +3378,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պարացետամոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պարացետամոլ",
     "patterns": [
       "Պարացետամոլ",
@@ -3007,11 +3395,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պարոմոմիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պարոմոմիցին",
     "patterns": [
       "Պարոմոմիցին",
@@ -3023,11 +3413,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պենիցիլամին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պենիցիլամին",
     "patterns": [
       "Պենիցիլամին",
@@ -3039,11 +3431,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պերինդոպրիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պերինդոպրիլ",
     "patterns": [
       "Պերինդոպրիլ",
@@ -3054,11 +3448,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պերինդոպրիլ_ամլոդիպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պերինդոպրիլ + Ամլոդիպին",
     "patterns": [
       "Պերինդոպրիլ + Ամլոդիպին",
@@ -3070,11 +3466,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պերինդոպրիլ_ինդապամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պերինդոպրիլ + Ինդապամիդ",
     "patterns": [
       "Պերինդոպրիլ + Ինդապամիդ",
@@ -3085,11 +3483,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պերինդոպրիլ_ինդապամիդ_ամլոդիպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պերինդոպրիլ + Ինդապամիդ + Ամլոդիպին",
     "patterns": [
       "Պերինդոպրիլ + Ինդապամիդ + Ամլոդիպին",
@@ -3101,11 +3501,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պերմեթրին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պերմեթրին",
     "patterns": [
       "Պերմեթրին",
@@ -3117,11 +3519,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պիլոկարպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պիլոկարպին",
     "patterns": [
       "Պիլոկարպին",
@@ -3133,11 +3537,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պիպերացիլին_տազոբակտամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պիպերացիլին + Տազոբակտամ",
     "patterns": [
       "Պիպերացիլին + Տազոբակտամ",
@@ -3148,11 +3554,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պիրանտել",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պիրանտել",
     "patterns": [
       "Պիրանտել",
@@ -3163,11 +3571,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պիրացետամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պիրացետամ",
     "patterns": [
       "Պիրացետամ",
@@ -3178,11 +3588,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պիրիդոստիգմինի_բրոմիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պիրիդոստիգմինի բրոմիդ",
     "patterns": [
       "Պիրիդոստիգմինի բրոմիդ",
@@ -3193,11 +3605,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պիրիդօքսին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պիրիդօքսին",
     "patterns": [
       "Պիրիդօքսին",
@@ -3209,11 +3623,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պոդոֆիլոտոքսին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պոդոֆիլոտոքսին",
     "patterns": [
       "Պոդոֆիլոտոքսին",
@@ -3225,11 +3641,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պովիդոն_յոդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պովիդոն յոդ",
     "patterns": [
       "Պովիդոն յոդ",
@@ -3240,11 +3658,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրազիքվանտել",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրազիքվանտել",
     "patterns": [
       "Պրազիքվանտել",
@@ -3255,11 +3675,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրեդնիզոլոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրեդնիզոլոն",
     "patterns": [
       "Պրեդնիզոլոն",
@@ -3271,11 +3693,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրոգեստերոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրոգեստերոն",
     "patterns": [
       "Պրոգեստերոն",
@@ -3287,11 +3711,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրոկաին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրոկաին",
     "patterns": [
       "Պրոկաին",
@@ -3303,11 +3729,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրոկաին_բենզիլպենիցիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրոկաին բենզիլպենիցիլին",
     "patterns": [
       "Պրոկաին բենզիլպենիցիլին",
@@ -3319,11 +3747,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրոպիլթիոուրացիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրոպիլթիոուրացիլ",
     "patterns": [
       "Պրոպիլթիոուրացիլ",
@@ -3334,11 +3764,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրոպրանոլոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրոպրանոլոլ",
     "patterns": [
       "Պրոպրանոլոլ",
@@ -3349,11 +3781,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_պրոստագլանդին_e",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Պրոստագլանդին E",
     "patterns": [
       "Պրոստագլանդին E",
@@ -3364,11 +3798,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռամիպրիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռամիպրիլ",
     "patterns": [
       "Ռամիպրիլ",
@@ -3379,11 +3815,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռամիպրիլ_ամլոդիպին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռամիպրիլ + Ամլոդիպին",
     "patterns": [
       "Ռամիպրիլ + Ամլոդիպին",
@@ -3395,11 +3833,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռամիպրիլ_հիդրոքլորոթիազիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռամիպրիլ + Հիդրոքլորոթիազիդ",
     "patterns": [
       "Ռամիպրիլ + Հիդրոքլորոթիազիդ",
@@ -3410,11 +3850,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռանիտիդին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռանիտիդին",
     "patterns": [
       "Ռանիտիդին",
@@ -3426,11 +3868,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռետինոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռետինոլ",
     "patterns": [
       "Ռետինոլ",
@@ -3441,11 +3885,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռիբոֆլավին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռիբոֆլավին",
     "patterns": [
       "Ռիբոֆլավին",
@@ -3457,11 +3903,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռիսպերիդոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռիսպերիդոն",
     "patterns": [
       "Ռիսպերիդոն",
@@ -3473,11 +3921,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ռիվարօքսաբան",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ռիվարօքսաբան",
     "patterns": [
       "Ռիվարօքսաբան",
@@ -3489,11 +3939,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սալբուտամոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սալբուտամոլ",
     "patterns": [
       "Սալբուտամոլ",
@@ -3504,11 +3956,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սալիցիլաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սալիցիլաթթու",
     "patterns": [
       "Սալիցիլաթթու",
@@ -3519,11 +3973,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սալմետերոլ_ֆլուտիկազոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սալմետերոլ + Ֆլուտիկազոն",
     "patterns": [
       "Սալմետերոլ + Ֆլուտիկազոն",
@@ -3535,11 +3991,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սելենի_սուլֆիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սելենի սուլֆիդ",
     "patterns": [
       "Սելենի սուլֆիդ",
@@ -3550,11 +4008,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սենոզիդներ_a_b",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սենոզիդներ A, B",
     "patterns": [
       "Սենոզիդներ A, B",
@@ -3565,11 +4025,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սերտրալին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սերտրալին",
     "patterns": [
       "Սերտրալին",
@@ -3581,11 +4043,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սիմվաստատին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սիմվաստատին",
     "patterns": [
       "Սիմվաստատին",
@@ -3597,11 +4061,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սուլֆադիազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սուլֆադիազին",
     "patterns": [
       "Սուլֆադիազին",
@@ -3613,11 +4079,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սուլֆամեթօքսազոլ_տրիմեթոպրիմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սուլֆամեթօքսազոլ + Տրիմեթոպրիմ",
     "patterns": [
       "Սուլֆամեթօքսազոլ + Տրիմեթոպրիմ",
@@ -3628,11 +4096,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սուլֆասալազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սուլֆասալազին",
     "patterns": [
       "Սուլֆասալազին",
@@ -3644,11 +4114,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սումատրիպտան",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սումատրիպտան",
     "patterns": [
       "Սումատրիպտան",
@@ -3660,11 +4132,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սպեկտինոմիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սպեկտինոմիցին",
     "patterns": [
       "Սպեկտինոմիցին",
@@ -3676,11 +4150,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_սպիրոնոլակտոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Սպիրոնոլակտոն",
     "patterns": [
       "Սպիրոնոլակտոն",
@@ -3692,11 +4168,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ստրեպտոմիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ստրեպտոմիցին",
     "patterns": [
       "Ստրեպտոմիցին",
@@ -3708,11 +4186,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վալացիկլովիր",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վալացիկլովիր",
     "patterns": [
       "Վալացիկլովիր",
@@ -3723,11 +4203,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վալպրոաթթու_վալպրոատ_նատրիում",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վալպրոաթթու (վալպրոատ նատրիում)",
     "patterns": [
       "Վալպրոաթթու (վալպրոատ նատրիում)",
@@ -3738,11 +4220,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վանկոմիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վանկոմիցին",
     "patterns": [
       "Վանկոմիցին",
@@ -3754,11 +4238,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վարենիկլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վարենիկլին",
     "patterns": [
       "Վարենիկլին",
@@ -3770,11 +4256,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վարֆարին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վարֆարին",
     "patterns": [
       "Վարֆարին",
@@ -3786,11 +4274,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վեկուրոնիում",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վեկուրոնիում",
     "patterns": [
       "Վեկուրոնիում",
@@ -3801,11 +4291,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վերապամիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վերապամիլ",
     "patterns": [
       "Վերապամիլ",
@@ -3816,11 +4308,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վիգաբատրին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վիգաբատրին",
     "patterns": [
       "Վիգաբատրին",
@@ -3832,11 +4326,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վինպոցետին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վինպոցետին",
     "patterns": [
       "Վինպոցետին",
@@ -3848,11 +4344,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_վորիկոնազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Վորիկոնազոլ",
     "patterns": [
       "Վորիկոնազոլ",
@@ -3863,11 +4361,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տամսուլոզին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տամսուլոզին",
     "patterns": [
       "Տամսուլոզին",
@@ -3879,11 +4379,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տամօքսիֆեն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տամօքսիֆեն",
     "patterns": [
       "Տամօքսիֆեն",
@@ -3895,11 +4397,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տեստոստերոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տեստոստերոն",
     "patterns": [
       "Տեստոստերոն",
@@ -3911,11 +4415,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տետրակաին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տետրակաին",
     "patterns": [
       "Տետրակաին",
@@ -3927,11 +4433,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տետրացիկլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տետրացիկլին",
     "patterns": [
       "Տետրացիկլին",
@@ -3943,11 +4451,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տերբինաֆին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տերբինաֆին",
     "patterns": [
       "Տերբինաֆին",
@@ -3959,11 +4469,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տոբրամիցին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տոբրամիցին",
     "patterns": [
       "Տոբրամիցին",
@@ -3975,11 +4487,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տոլպերիզոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տոլպերիզոն",
     "patterns": [
       "Տոլպերիզոն",
@@ -3991,11 +4505,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տոկոֆերոլ_ացետատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տոկոֆերոլ ացետատ",
     "patterns": [
       "Տոկոֆերոլ ացետատ",
@@ -4006,11 +4522,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տորասեմիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տորասեմիդ",
     "patterns": [
       "Տորասեմիդ",
@@ -4021,11 +4539,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տրամադոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տրամադոլ",
     "patterns": [
       "Տրամադոլ",
@@ -4036,11 +4556,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տրանեքսամաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տրանեքսամաթթու",
     "patterns": [
       "Տրանեքսամաթթու",
@@ -4051,11 +4573,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տրիամցինոլոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տրիամցինոլոն",
     "patterns": [
       "Տրիամցինոլոն",
@@ -4067,11 +4591,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տրիհեքսիֆենիդիլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տրիհեքսիֆենիդիլ",
     "patterns": [
       "Տրիհեքսիֆենիդիլ",
@@ -4082,11 +4608,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տրիմեպերիդին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տրիմեպերիդին",
     "patterns": [
       "Տրիմեպերիդին",
@@ -4098,11 +4626,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տրիֆլուոպերազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տրիֆլուոպերազին",
     "patterns": [
       "Տրիֆլուոպերազին",
@@ -4114,11 +4644,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_տրոպիկամիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Տրոպիկամիդ",
     "patterns": [
       "Տրոպիկամիդ",
@@ -4129,11 +4661,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցետիրիզին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցետիրիզին",
     "patterns": [
       "Ցետիրիզին",
@@ -4145,11 +4679,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆազոլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆազոլին",
     "patterns": [
       "Ցեֆազոլին",
@@ -4161,11 +4697,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆալեքսին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆալեքսին",
     "patterns": [
       "Ցեֆալեքսին",
@@ -4177,11 +4715,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆեպիմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆեպիմ",
     "patterns": [
       "Ցեֆեպիմ",
@@ -4192,11 +4732,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆիքսիմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆիքսիմ",
     "patterns": [
       "Ցեֆիքսիմ",
@@ -4207,11 +4749,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆոտաքսիմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆոտաքսիմ",
     "patterns": [
       "Ցեֆոտաքսիմ",
@@ -4222,11 +4766,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆուրօքսիմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆուրօքսիմ",
     "patterns": [
       "Ցեֆուրօքսիմ",
@@ -4237,11 +4783,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆտազիդիմ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆտազիդիմ",
     "patterns": [
       "Ցեֆտազիդիմ",
@@ -4252,11 +4800,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆտազիդիմ_ավիբակտամ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆտազիդիմ+Ավիբակտամ",
     "patterns": [
       "Ցեֆտազիդիմ+Ավիբակտամ",
@@ -4267,11 +4817,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցեֆտրիաքսոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցեֆտրիաքսոն",
     "patterns": [
       "Ցեֆտրիաքսոն",
@@ -4283,11 +4835,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցիանոկոբալամին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցիանոկոբալամին",
     "patterns": [
       "Ցիանոկոբալամին",
@@ -4299,11 +4853,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցիկլիզին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցիկլիզին",
     "patterns": [
       "Ցիկլիզին",
@@ -4315,11 +4871,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցիկլոպենտոլատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցիկլոպենտոլատ",
     "patterns": [
       "Ցիկլոպենտոլատ",
@@ -4330,11 +4888,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցիկլոսպորին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցիկլոսպորին",
     "patterns": [
       "Ցիկլոսպորին",
@@ -4346,11 +4906,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցինկի_սուլֆատ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցինկի սուլֆատ",
     "patterns": [
       "Ցինկի սուլֆատ",
@@ -4361,11 +4923,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցիպրոֆլօքսացին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցիպրոֆլօքսացին",
     "patterns": [
       "Ցիպրոֆլօքսացին",
@@ -4377,11 +4941,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ցիպրոֆլոքսացին_դեքսամեթազոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ցիպրոֆլոքսացին + Դեքսամեթազոն",
     "patterns": [
       "Ցիպրոֆլոքսացին + Դեքսամեթազոն",
@@ -4393,11 +4959,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_քլորամֆենիկոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Քլորամֆենիկոլ",
     "patterns": [
       "Քլորամֆենիկոլ",
@@ -4408,11 +4976,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_քլորհեքսիդին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Քլորհեքսիդին",
     "patterns": [
       "Քլորհեքսիդին",
@@ -4424,11 +4994,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_քլորպրոմազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Քլորպրոմազին",
     "patterns": [
       "Քլորպրոմազին",
@@ -4440,11 +5012,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_քոլեկալցիֆերոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Քոլեկալցիֆերոլ",
     "patterns": [
       "Քոլեկալցիֆերոլ",
@@ -4455,11 +5029,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_քսիլոմետազոլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Քսիլոմետազոլին",
     "patterns": [
       "Քսիլոմետազոլին",
@@ -4471,11 +5047,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_օլանզապին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Օլանզապին",
     "patterns": [
       "Օլանզապին",
@@ -4487,11 +5065,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_օմեպրազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Օմեպրազոլ",
     "patterns": [
       "Օմեպրազոլ",
@@ -4502,11 +5082,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_օնդանսետրոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Օնդանսետրոն",
     "patterns": [
       "Օնդանսետրոն",
@@ -4518,11 +5100,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_օսելտամիվիր",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Օսելտամիվիր",
     "patterns": [
       "Օսելտամիվիր",
@@ -4533,11 +5117,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_օֆլօքսացին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Օֆլօքսացին",
     "patterns": [
       "Օֆլօքսացին",
@@ -4549,11 +5135,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆամոտիդին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆամոտիդին",
     "patterns": [
       "Ֆամոտիդին",
@@ -4565,11 +5153,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆենիտոին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆենիտոին",
     "patterns": [
       "Ֆենիտոին",
@@ -4581,11 +5171,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆենոբարբիտալ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆենոբարբիտալ",
     "patterns": [
       "Ֆենոբարբիտալ",
@@ -4596,11 +5188,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆենօքսիմեթիլպենիցիլին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆենօքսիմեթիլպենիցիլին",
     "patterns": [
       "Ֆենօքսիմեթիլպենիցիլին",
@@ -4612,11 +5206,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆիտոմենադիոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆիտոմենադիոն",
     "patterns": [
       "Ֆիտոմենադիոն",
@@ -4628,11 +5224,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆլուդրոկորտիզոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆլուդրոկորտիզոն",
     "patterns": [
       "Ֆլուդրոկորտիզոն",
@@ -4644,11 +5242,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆլուկոնազոլ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆլուկոնազոլ",
     "patterns": [
       "Ֆլուկոնազոլ",
@@ -4659,11 +5259,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆլուորէսցեին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆլուորէսցեին",
     "patterns": [
       "Ֆլուորէսցեին",
@@ -4675,11 +5277,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆլուտիկազոն",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆլուտիկազոն",
     "patterns": [
       "Ֆլուտիկազոն",
@@ -4691,11 +5295,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆլուցիտոզին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆլուցիտոզին",
     "patterns": [
       "Ֆլուցիտոզին",
@@ -4707,11 +5313,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆլուօքսետին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆլուօքսետին",
     "patterns": [
       "Ֆլուօքսետին",
@@ -4723,11 +5331,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆլուֆենազին",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆլուֆենազին",
     "patterns": [
       "Ֆլուֆենազին",
@@ -4739,11 +5349,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆոլաթթու",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆոլաթթու",
     "patterns": [
       "Ֆոլաթթու",
@@ -4754,11 +5366,13 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_ֆուրոսեմիդ",
-    "category": "medicine",
+    "category": "medicines",
     "subtopic": "Ֆուրոսեմիդ",
     "patterns": [
       "Ֆուրոսեմիդ",
@@ -4769,16 +5383,22 @@
     "clarification_needed_if": "User gives only a brand, partial name, or unclear dosage/form",
     "escalate_if": "User asks personal eligibility, diagnosis, substitute, or treatment advice",
     "source_reference": "List_of_Subsidised_and_covered_medicine.docx",
-    "priority": 10
+    "priority": 10,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   },
   {
     "id": "medicine_coverage_exact_name_dosage_form_v2",
     "category": "medicines",
     "patterns": [
       "դեղը պետությունը տալիս ա",
-      "դեղը ծածկվում է",
-      "դեղը անվճար է",
-      "դեղորայքը անվճար է",
+      "այս դեղը ծածկվո՞ւմ է",
+      "էս կոնկրետ դեղը ծածկվում է",
+      "կոնկրետ դեղի ծածկույթ",
+      "դեղը պետությունը ծածկում է",
+      "էս կոնկրետ դեղը անվճար է",
+      "կոնկրետ դեղը անվճար է",
+      "կոնկրետ դեղորայքը անվճար է",
       "medicine covered",
       "medicine free",
       "պետությունը տալիս ա"
@@ -4805,6 +5425,8 @@
     "partial_answer_allowed": true,
     "safe_partial_answer": "Դեղորայքի ծածկույթը չի կարելի հաստատել միայն ընդհանուր հարցով։ Պետք է ճշգրիտ համընկնում անվանման, դեղաչափի և ձևի միջև։",
     "next_step_if_missing": "Նախ գրեք դեղի ճշգրիտ անվանումը, դեղաչափը և ձևը։",
-    "priority": 100
+    "priority": 100,
+    "runtime_enabled": true,
+    "card_kind": "citizen_runtime"
   }
 ]

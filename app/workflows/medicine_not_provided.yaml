@@ -1,0 +1,34 @@
+﻿family: medicine_not_provided
+
+trigger_hints:
+  - դեղ
+  - դեղատուն
+  - դեղատանը
+  - չեն տալիս
+  - չկա
+  - դուրս է գրված
+  - prescription
+  - medicine
+
+required_fields:
+  - medicine_context
+
+field_questions:
+  medicine_context: "Գրե՛ք՝ որ դեղի մասին է խոսքը և որտեղ չեն տրամադրել այն։"
+
+field_priority:
+  - medicine_context
+  - medicine_name_or_type
+  - dispense_place
+  - has_prescription_context
+
+branches:
+  - id: medicine_not_given
+    when:
+      medicine_context: __any__
+    answer: "Եթե դեղը դուրս է գրված կամ ակնկալվում է, բայց չեն տրամադրում, նախ պետք է հասկանալ՝ որ դեղի մասին է խոսքը և որտեղ է առաջացել խնդիրը։"
+    next_step: "Նախ դիմեք այն տեղը, որտեղ դեղը պետք է տրամադրվեր, և ճշտեք՝ խնդիրը կապված է առկայության, գրանցման, թե տրամադրման կարգի հետ։ Եթե խնդիրը չի լուծվում, հաջորդ քայլը թեժ գծով կամ բողոքարկման ուղղությամբ դիմելն է։"
+
+source_preferences:
+  - hotline_8003
+  - moh_faq_section

@@ -1,0 +1,33 @@
+﻿family: denied_service
+
+trigger_hints:
+  - մերժել
+  - չեն ընդունել
+  - չեն արել
+  - չեն սպասարկել
+  - չեն տրամադրել ծառայությունը
+  - refused
+  - denied service
+
+required_fields:
+  - denial_context
+
+field_questions:
+  denial_context: "Գրե՛ք՝ որ ծառայությունն են մերժել կամ որտեղ են ձեզ մերժել։"
+
+field_priority:
+  - denial_context
+  - service_name_or_type
+  - institution_context
+
+branches:
+  - id: denied_service_case
+    when:
+      denial_context: __any__
+    answer: "Եթե ձեզ որևէ ծառայություն չեն տրամադրել կամ մերժել են, նախ պետք է պարզել՝ կոնկրետ որ ծառայության մասին է խոսքը և ինչ պատճառաբանությամբ է մերժումը եղել։"
+    next_step: "Նախ դիմեք հենց այն հաստատությանը, որտեղ մերժել են ծառայությունը, և խնդրեք հստակ ասել մերժման պատճառը։ Եթե պատճառաբանությունը մնում է անհասկանալի կամ հակասական, հաջորդ քայլը բողոքարկման ուղղությունն է։"
+
+source_preferences:
+  - hotline_8003
+  - moh_rights_section
+  - moh_faq_section

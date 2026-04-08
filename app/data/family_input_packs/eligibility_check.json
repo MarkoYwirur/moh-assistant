@@ -1,0 +1,164 @@
+{
+  "family": "eligibility_check",
+  "legacy_card_ids": [
+    "eligibility_65plus_policy_curated",
+    "eligibility_child_policy_curated",
+    "eligibility_disability_policy_curated",
+    "eligibility_pensioner_policy_curated",
+    "eligibility_pregnancy_policy_curated",
+    "eligibility_social_vulnerability_policy_curated",
+    "eligibility_worker_insured_policy_curated"
+  ],
+  "source_ids": [
+    "hotline_8003",
+    "moh_faq_section",
+    "moh_universal_health_insurance"
+  ],
+  "legacy_cards": [
+    {
+      "source_file": "eligibility.json",
+      "id": "eligibility_65plus_policy_curated",
+      "category": "eligibility",
+      "runtime_enabled": true,
+      "card_kind": "citizen_runtime",
+      "priority": 100,
+      "has_patterns": true,
+      "has_required_fields": true,
+      "has_answer_rules": true,
+      "approved_answer_preview": "65 և բարձր տարիքը կարող է նշանակություն ունենալ որոշ պետական առողջապահական ծրագրերի և արտոնությունների դեպքում։"
+    },
+    {
+      "source_file": "eligibility.json",
+      "id": "eligibility_pensioner_policy_curated",
+      "category": "eligibility",
+      "runtime_enabled": true,
+      "card_kind": "citizen_runtime",
+      "priority": 95,
+      "has_patterns": true,
+      "has_required_fields": true,
+      "has_answer_rules": true,
+      "approved_answer_preview": "Թոշակառու կարգավիճակը կարող է նշանակություն ունենալ որոշ պետական առողջապահական ծրագրերի և արտոնությունների դեպքում։"
+    },
+    {
+      "source_file": "eligibility.json",
+      "id": "eligibility_disability_policy_curated",
+      "category": "eligibility",
+      "runtime_enabled": true,
+      "card_kind": "citizen_runtime",
+      "priority": 100,
+      "has_patterns": true,
+      "has_required_fields": true,
+      "has_answer_rules": true,
+      "approved_answer_preview": "Հաշմանդամության կարգավիճակը կարող է նշանակություն ունենալ պետական առողջապահական ծառայությունների և դեղորայքային արտոնությունների դեպքում։"
+    },
+    {
+      "source_file": "eligibility.json",
+      "id": "eligibility_pregnancy_policy_curated",
+      "category": "eligibility",
+      "runtime_enabled": true,
+      "card_kind": "citizen_runtime",
+      "priority": 95,
+      "has_patterns": true,
+      "has_required_fields": true,
+      "has_answer_rules": true,
+      "approved_answer_preview": "Հղիությունը կարող է նշանակություն ունենալ մայրական և որոշ առողջապահական ծառայությունների պետական ծածկույթի դեպքում։"
+    },
+    {
+      "source_file": "eligibility.json",
+      "id": "eligibility_child_policy_curated",
+      "category": "eligibility",
+      "runtime_enabled": true,
+      "card_kind": "citizen_runtime",
+      "priority": 95,
+      "has_patterns": true,
+      "has_required_fields": true,
+      "has_answer_rules": true,
+      "approved_answer_preview": "Երեխայի կարգավիճակը կարող է նշանակություն ունենալ որոշ պետական առողջապահական և դեղորայքային արտոնությունների դեպքում։"
+    },
+    {
+      "source_file": "eligibility.json",
+      "id": "eligibility_social_vulnerability_policy_curated",
+      "category": "eligibility",
+      "runtime_enabled": true,
+      "card_kind": "citizen_runtime",
+      "priority": 90,
+      "has_patterns": true,
+      "has_required_fields": true,
+      "has_answer_rules": true,
+      "approved_answer_preview": "Սոցիալապես անապահով կամ նպաստառու կարգավիճակը կարող է նշանակություն ունենալ որոշ պետական առողջապահական ծրագրերի դեպքում։"
+    },
+    {
+      "source_file": "eligibility.json",
+      "id": "eligibility_worker_insured_policy_curated",
+      "category": "eligibility",
+      "runtime_enabled": true,
+      "card_kind": "citizen_runtime",
+      "priority": 100,
+      "has_patterns": true,
+      "has_required_fields": true,
+      "has_answer_rules": true,
+      "approved_answer_preview": "Աշխատող կամ ապահովագրված կարգավիճակը կարող է նշանակություն ունենալ առողջապահական ծառայությունների ընդհանուր ծածկույթի դեպքում։"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "hotline_8003",
+      "title": "MoH Hotline 8003",
+      "type": "hotline",
+      "url": "https://www.moh.am/",
+      "topic_tags": [
+        "hotline",
+        "complaints",
+        "citizen_support"
+      ],
+      "family_tags": [
+        "referral_specialist",
+        "payment_dispute",
+        "medicine_not_provided",
+        "armed_visibility",
+        "eligibility",
+        "complaint_route"
+      ],
+      "citizen_relevance": "high",
+      "approved_for_retrieval": true,
+      "notes": "Main citizen hotline prominently referenced on moh.am."
+    },
+    {
+      "source_id": "moh_universal_health_insurance",
+      "title": "Universal Health Insurance section",
+      "type": "page",
+      "url": "https://www.moh.am/",
+      "topic_tags": [
+        "universal_insurance",
+        "coverage",
+        "eligibility"
+      ],
+      "family_tags": [
+        "eligibility",
+        "payment_dispute",
+        "referral_specialist"
+      ],
+      "citizen_relevance": "high",
+      "approved_for_retrieval": true,
+      "notes": "Relevant for insurance/coverage context but should not directly control workflow decisions."
+    },
+    {
+      "source_id": "moh_faq_section",
+      "title": "Frequently Asked Questions",
+      "type": "page",
+      "url": "https://www.moh.am/",
+      "topic_tags": [
+        "faq",
+        "citizen_support"
+      ],
+      "family_tags": [
+        "referral_specialist",
+        "eligibility",
+        "complaint_route"
+      ],
+      "citizen_relevance": "high",
+      "approved_for_retrieval": true,
+      "notes": "Good for short official guidance, but needs filtering before use."
+    }
+  ]
+}

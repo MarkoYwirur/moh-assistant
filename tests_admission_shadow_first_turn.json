@@ -1,0 +1,72 @@
+[
+  {
+    "name": "admission_shadow_hospitalization_general",
+    "message": "հոսպիտալացումը անվճա՞ր է",
+    "expected_current_winner": "service_hospitalization_policy_curated",
+    "expected_root_service_type": "hospitalization",
+    "expected_root_admission_type_if_any": null
+  },
+  {
+    "name": "admission_shadow_hospitalization_inpatient",
+    "message": "հիվանդանոց պառկելը ծածկվո՞ւմ է",
+    "expected_current_winner": "service_hospitalization_policy_curated",
+    "expected_root_service_type": "hospitalization",
+    "expected_root_admission_type_if_any": null
+  },
+  {
+    "name": "admission_shadow_surgery_general",
+    "message": "վիրահատությունը անվճա՞ր է",
+    "expected_current_winner": "service_surgery_policy_curated",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type_if_any": null
+  },
+  {
+    "name": "admission_shadow_surgery_covered",
+    "message": "operation covered",
+    "expected_current_winner": "service_surgery_policy_curated",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type_if_any": null
+  },
+  {
+    "name": "admission_shadow_hospitalization_planned",
+    "message": "պլանային հոսպիտալացում",
+    "expected_current_winner": "service_hospitalization_policy_curated",
+    "expected_root_service_type": "hospitalization",
+    "expected_root_admission_type_if_any": "planned"
+  },
+  {
+    "name": "admission_shadow_hospitalization_emergency",
+    "message": "շտապ հոսպիտալացում",
+    "expected_current_winner": "service_hospitalization_policy_curated",
+    "expected_root_service_type": "hospitalization",
+    "expected_root_admission_type_if_any": "emergency"
+  },
+  {
+    "name": "admission_shadow_surgery_planned",
+    "message": "պլանային վիրահատությունը ծածկվո՞ւմ է",
+    "expected_current_winner": "service_surgery_policy_curated",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type_if_any": "planned"
+  },
+  {
+    "name": "admission_shadow_surgery_emergency",
+    "message": "շտապ վիրահատությունը անվճա՞ր է",
+    "expected_current_winner": "service_surgery_policy_curated",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type_if_any": "emergency"
+  },
+  {
+    "name": "admission_shadow_mixed_hospital_for_surgery",
+    "message": "վիրահատության համար պետք է պառկել հիվանդանոց",
+    "expected_current_winner": "routing_referral_where_to_go_v2",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type_if_any": null
+  },
+  {
+    "name": "admission_shadow_mixed_hospital_surgery",
+    "message": "հիվանդանոցում վիրահատություն",
+    "expected_current_winner": "service_surgery_policy_curated",
+    "expected_root_service_type": "surgery",
+    "expected_root_admission_type_if_any": null
+  }
+]
