@@ -9,3 +9,18 @@ no.json
 frontend/__pycache__/
 
 .env
+
+# temp files
+_tmp*
+tmp_*
+
+# backups
+*.bak
+
+# step/debug artifacts
+*.step*
+*backup*
+
+# raw source and staging workdirs
+kb_raw_sources/
+kb_staging/
