@@ -1,1 +1,0 @@
-PDF text extraction yielded no selectable Armenian text; the file appears image-based/scanned and needs OCR for exact excerpt use.
