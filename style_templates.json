@@ -1,0 +1,39 @@
+{
+  "direct_answer": {
+    "default": [
+      "{policy_answer}",
+      "{next_step}"
+    ]
+  },
+  "partial_answer_with_clarify": {
+    "default": [
+      "{partial_answer}",
+      "{why_this_question}",
+      "{follow_up_question}"
+    ]
+  },
+  "clarify": {
+    "default": [
+      "{why_this_question}",
+      "{follow_up_question}"
+    ]
+  },
+  "partial_answer_with_next_step": {
+    "default": [
+      "{partial_answer}",
+      "{next_step}"
+    ]
+  },
+  "escalate_true_gap": {
+    "default": [
+      "{gap_reason_text}",
+      "{next_step}"
+    ]
+  },
+  "escalate_safety": {
+    "default": [
+      "{safety_text}",
+      "{next_step}"
+    ]
+  }
+}
