@@ -1,0 +1,57 @@
+{
+  "phase": 5,
+  "family_id": "service_admission_inpatient_breadth_v1",
+  "decision": "safe_batching_limit_reached_for_now",
+  "reason": "The remaining noisy admission surface is split across real owner boundaries rather than one clean leak.",
+  "remaining_noisy_probe_results": [
+    {
+      "message": "երբ են ընդունում հիվանդանոց",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Still overlaps with dispute-flavored acceptance wording."
+    },
+    {
+      "message": "երբ են պառկեցնում հիվանդանոց",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Bare timing/acceptance wording remains too entangled."
+    },
+    {
+      "message": "ինչպես են պառկեցնում հիվանդանոց",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Procedure wording with bare պառկեցնում remains too noisy."
+    },
+    {
+      "message": "երբ են հոսպիտալացնում",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Still split away from the admission root."
+    },
+    {
+      "message": "երբ են ստացիոնար ընդունում",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Still ambiguous enough that a broader move would likely widen theft."
+    }
+  ],
+  "safe_to_move_now": false,
+  "why_not": [
+    "The remaining surface does not share one clean lexical boundary.",
+    "Bare ընդունում/պառկեցնում timing wording overlaps with complaint_unexpected_payment_dispute_v2 in current runtime behavior.",
+    "Broadening the admission guard further would risk stealing non-admission surfaces and weakening the payment-dispute owner."
+  ],
+  "narrow_slices_completed": [
+    "admission prerequisite / document wording",
+    "admission policy wording framed as conditions/cases for hospital or inpatient acceptance"
+  ],
+  "protected_neighbors_checked": [
+    "service_admission_type_root_v1",
+    "complaint_unexpected_payment_dispute_v2",
+    "eligibility_status_coverage_root_v1",
+    "routing_referral_where_to_go_v2",
+    "routing_specialist_referral_confusion_v1",
+    "service_referral_status_root_v1",
+    "complaint_2_official_complaint_channels",
+    "complaint_refusal_denied_service_v2",
+    "medicine_coverage_exact_name_dosage_form_v2",
+    "faq_27",
+    "technical_armed_visibility_issue_v1"
+  ],
+  "next_recommended_step": "Pause further admission/inpatient breadth patching and transition to Phase 5 completion / Phase 6 readiness."
+}

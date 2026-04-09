@@ -1,0 +1,72 @@
+{
+  "phase": 5,
+  "family_id": "faq_family_doctor_registration_transfer_rules_v1",
+  "scope": {
+    "includes": [
+      "registration with a family doctor",
+      "changing polyclinic / transfer / attachment change",
+      "refusal-rule informational questions for family-doctor registration",
+      "complaint contact when registration or transfer is refused"
+    ],
+    "excludes": [
+      "generic complaint channels with no registration/transfer anchor",
+      "hospital admission/process",
+      "generic referral routing",
+      "eligibility / state-order entitlement questions",
+      "the deferred free/subsidized-care legal-basis strand"
+    ]
+  },
+  "owner_map": {
+    "informational_registration_transfer": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ",
+    "refusal_rules_information": "faq_40_երբ_կարող_է_ընտանեկան_բժիշկը_հրաժարվել_գրանցելուց",
+    "registration_refusal_complaint_contact": "complaint_refusal_denied_service_v2",
+    "transfer_refusal_complaint_contact": "complaint_refusal_denied_service_v2"
+  },
+  "stable_surfaces": [
+    {
+      "message": "Ինչպե՞ս գրանցվել ընտանեկան բժշկի մոտ",
+      "runtime_owner": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ"
+    },
+    {
+      "message": "Պոլիկլինիկա փոխելու կարգը որն է",
+      "runtime_owner": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ"
+    },
+    {
+      "message": "Ե՞րբ կարող է ընտանեկան բժիշկը հրաժարվել գրանցելուց",
+      "runtime_owner": "faq_40_երբ_կարող_է_ընտանեկան_բժիշկը_հրաժարվել_գրանցելուց"
+    },
+    {
+      "message": "Եթե ընտանեկան բժիշկը չի գրանցում ուր դիմեմ",
+      "runtime_owner": "complaint_refusal_denied_service_v2"
+    }
+  ],
+  "narrow_migration_completed": {
+    "name": "transfer_and_registration_refusal_complaint_contact",
+    "reason": "Complaint-contact phrasing about being unable to change or transfer polyclinic registration, and about being unable to get attached/registered with a family doctor, was leaking into the informational transfer owner.",
+    "examples_now_fixed": [
+      "Եթե ուրիշ պոլիկլինիկա չեմ կարող գրանցվել ուր դիմեմ",
+      "Եթե տեղափոխվել չեմ կարող պոլիկլինիկա ուր դիմեմ",
+      "Եթե պոլիկլինիկա փոխել չեմ կարող ուր բողոքեմ",
+      "Եթե չեմ կարող կցագրվել ընտանեկան բժշկի մոտ ուր դիմեմ"
+    ]
+  },
+  "protected_neighbors": [
+    "complaint_2_official_complaint_channels",
+    "service_admission_type_root_v1",
+    "routing_referral_where_to_go_v2",
+    "eligibility_status_coverage_root_v1",
+    "complaint_refusal_denied_service_v2"
+  ],
+  "remaining_watchpoints": [
+    {
+      "message": "Եթե պոլիկլինիկայում չեն գրանցում որտեղ բողոքեմ",
+      "runtime_owner": "complaint_refusal_denied_service_v2",
+      "note": "Still uses the generic denied-service follow-up rather than the family-specific transfer/registration follow-up."
+    },
+    {
+      "message": "Եթե այլ պոլիկլինիկա չեն գրանցում որտեղ բողոքեմ",
+      "runtime_owner": "complaint_refusal_denied_service_v2",
+      "note": "Ownership is correct; remaining issue is clarify-text quality, not routing failure."
+    }
+  ]
+}

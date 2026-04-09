@@ -184,6 +184,26 @@ def _build_partial_frame(card: dict, collected_fields: dict) -> str:
     return "Վերջնական պատասխան տալու համար մեկ տվյալ դեռ պետք է հստակեցնել։"
 
 
+def _compose_structured_direct_answer(blocks: dict | None) -> tuple[str, str]:
+    if not isinstance(blocks, dict):
+        return "", ""
+
+    policy_parts = []
+    next_step_parts = []
+
+    for key in ("what_this_is", "what_matters", "where_to_go"):
+        value = blocks.get(key)
+        if isinstance(value, str) and value.strip():
+            policy_parts.append(value.strip())
+
+    for key in ("first_next_step", "escalation_route", "constraints", "special_case"):
+        value = blocks.get(key)
+        if isinstance(value, str) and value.strip():
+            next_step_parts.append(value.strip())
+
+    return " ".join(policy_parts).strip(), " ".join(next_step_parts).strip()
+
+
 def build_semantic_payload(decision: dict, collected_fields: dict | None = None, user_text: str = "") -> dict:
     if collected_fields is None:
         collected_fields = {}
@@ -218,11 +238,13 @@ def build_semantic_payload(decision: dict, collected_fields: dict | None = None,
     if action == "direct_answer" and card:
         rule_payload = _select_rule_payload(card, collected_fields)
         if rule_payload:
-            payload["semantic"]["policy_answer"] = rule_payload.get("answer", "")
-            payload["semantic"]["next_step"] = rule_payload.get("next_step", "")
+            structured_policy, structured_next = _compose_structured_direct_answer(rule_payload.get("structured_answer"))
+            payload["semantic"]["policy_answer"] = structured_policy or rule_payload.get("answer", "")
+            payload["semantic"]["next_step"] = structured_next or rule_payload.get("next_step", "")
         else:
-            payload["semantic"]["policy_answer"] = card.get("approved_answer", "")
-            payload["semantic"]["next_step"] = card.get("next_step", "")
+            structured_policy, structured_next = _compose_structured_direct_answer(card.get("structured_answer"))
+            payload["semantic"]["policy_answer"] = structured_policy or card.get("approved_answer", "")
+            payload["semantic"]["next_step"] = structured_next or card.get("next_step", "")
         return payload
 
     if action in {"clarify", "partial_answer_with_clarify"} and card:

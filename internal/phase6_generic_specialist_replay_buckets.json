@@ -1,0 +1,74 @@
+{
+  "phase": 6,
+  "surface_id": "generic_specialist_process_residue",
+  "review_type": "expanded_offline_replay",
+  "live_adjudication_enabled": false,
+  "overall_shadow_history": {
+    "generic_specialist_shadow_rows_reviewed": 29,
+    "note": "This combines earlier shadow rows with the latest targeted probe pack. The strongest repeated disagreement remains concentrated around referral-needed phrasing near the routing edge."
+  },
+  "targeted_probe_pack": {
+    "rows_added": 12,
+    "buckets": {
+      "referral_needed": {
+        "count": 4,
+        "runtime_winner_patterns": {
+          "service_referral_status_root_v1": 3,
+          "routing_specialist_referral_confusion_v1": 1
+        },
+        "shadow_predicted_patterns": {
+          "service_referral_status_root_v1": 4
+        },
+        "disagreement_rate": 0.25,
+        "assessment": "Some evidence of possible improvement, but the disagreement is still concentrated in the narrow 'նեղ մասնագետի ուղեգիր է պետք' wording family, which sits close to stable routing behavior."
+      },
+      "routing_arrangement": {
+        "count": 4,
+        "runtime_winner_patterns": {
+          "routing_specialist_referral_confusion_v1": 4
+        },
+        "shadow_predicted_patterns": {
+          "routing_specialist_referral_confusion_v1": 4
+        },
+        "disagreement_rate": 0.0,
+        "assessment": "This bucket strongly supports leaving routing authoritative. Any live pilot must not steal this shape."
+      },
+      "free_care_coverage": {
+        "count": 4,
+        "runtime_winner_patterns": {
+          "eligibility_status_coverage_root_v1": 1,
+          "service_referral_status_root_v1": 1,
+          "routing_specialist_referral_confusion_v1": 2
+        },
+        "shadow_predicted_patterns": {
+          "eligibility_status_coverage_root_v1": 4
+        },
+        "disagreement_rate": 0.75,
+        "assessment": "The shadow consistently prefers eligibility, which may indicate real improvement, but it also shows that this surface decomposes into a second boundary problem rather than one clean referral-status pilot."
+      }
+    }
+  },
+  "cross_bucket_conclusion": {
+    "evidence_for_future_pilot": "improved_but_still_insufficient",
+    "why": [
+      "The routing/arrangement bucket cleanly confirms that routing_specialist_referral_confusion_v1 must stay authoritative there.",
+      "The referral-needed bucket shows only a narrow repeated disagreement, not broad replay-backed evidence.",
+      "The free-care/coverage bucket points toward eligibility, which means the generic-specialist surface is not one simple adjudication problem."
+    ],
+    "pilot_readiness": "no_go_for_now"
+  },
+  "what_is_still_missing": [
+    "A larger generic-specialist replay set with more diverse referral-needed phrasings",
+    "A cleaner separation between referral-needed and entitlement-coded variants",
+    "A candidate live rule that improves referral-needed behavior without touching routing or free-care buckets"
+  ],
+  "recommendation": {
+    "next_stage": "remain_shadow_only",
+    "next_work_item": "continue offline replay/review for generic_specialist_process_residue only",
+    "do_not_do_yet": [
+      "No live owner override",
+      "No answer-generation changes",
+      "No broadening beyond the allowlisted family set"
+    ]
+  }
+}

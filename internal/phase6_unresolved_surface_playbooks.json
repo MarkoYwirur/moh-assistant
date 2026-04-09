@@ -1,0 +1,191 @@
+{
+  "phase": 6,
+  "mode": "design_only",
+  "surfaces": [
+    {
+      "surface_id": "complaint_generic_procedure_residue",
+      "current_failure_shape": {
+        "examples": [
+          "Ում դիմեմ գանգատով",
+          "Բողոքը որտեղ պետք է տամ",
+          "Ինչպես ընթացք տամ բողոքին"
+        ],
+        "runtime_split": [
+          "routing_referral_where_to_go_v2",
+          "service_admission_type_root_v1",
+          "routing_specialist_referral_confusion_v1"
+        ]
+      },
+      "why_phase5_guards_are_exhausted": [
+        "Remaining examples no longer form a complaint subtype with clear lexical anchors.",
+        "Any new guard would reopen frozen complaint owners or broaden generic complaint-procedure handling."
+      ],
+      "candidate_bounded_phase6_mechanism": {
+        "type": "shadow_family_disagreement_logging",
+        "allowlisted_families": [
+          "complaint_depth_mixed_intent_routing",
+          "routing_referral_where_to_go_v2",
+          "service_admission_type_root_v1",
+          "routing_specialist_referral_confusion_v1"
+        ],
+        "surface_features": [
+          "generic complaint verb without complaint subtype noun",
+          "presence/absence of service anchor",
+          "presence/absence of place/destination wording"
+        ],
+        "future_adjudication_rule": "Only if shadow and runtime repeatedly disagree on the same generic-procedure cluster and one bounded complaint owner dominates telemetry."
+      },
+      "must_remain_symbolic_or_bounded": [
+        "complaint subtype selection",
+        "complaint channel and destination answers"
+      ],
+      "must_not_be_free_reasoned": [
+        "where to complain",
+        "how to file complaints",
+        "which authority owns the complaint"
+      ],
+      "risks_guardrails": [
+        "Do not let shadow inference override complaint owners without allowlisting.",
+        "Prefer clarify over alternate owner when subtype evidence is weak."
+      ]
+    },
+    {
+      "surface_id": "generic_specialist_process_residue",
+      "current_failure_shape": {
+        "examples": [
+          "մասնագետի համար նախ բժիշկ պիտի տեսնե՞մ",
+          "մասնագետի մոտ գնալու համար ինչ է պետք",
+          "մասնագետի մոտ ինչպես գրանցվեմ"
+        ],
+        "runtime_split": [
+          "routing_specialist_referral_confusion_v1",
+          "service_referral_status_root_v1",
+          "eligibility_status_coverage_root_v1"
+        ]
+      },
+      "why_phase5_guards_are_exhausted": [
+        "Named-specialist and MRI/CT slices are already moved; what remains is generic and crosses routing, policy, and entitlement boundaries.",
+        "Further phrase guards would steal valid routing or eligibility traffic."
+      ],
+      "candidate_bounded_phase6_mechanism": {
+        "type": "shadow_then_allowlisted_second_pass",
+        "allowlisted_families": [
+          "service_referral_status_root_v1",
+          "routing_specialist_referral_confusion_v1",
+          "eligibility_status_coverage_root_v1"
+        ],
+        "surface_features": [
+          "generic specialist noun vs named specialist",
+          "referral-needed wording",
+          "arrangement wording",
+          "free-care/coverage wording"
+        ],
+        "future_adjudication_rule": "Only adjudicate between referral-status and specialist-routing when free-care wording is absent and no destination verbs are present."
+      },
+      "must_remain_symbolic_or_bounded": [
+        "referral requirement policy",
+        "specialist routing guidance",
+        "eligibility/entitlement logic"
+      ],
+      "must_not_be_free_reasoned": [
+        "whether a specialist visit is covered",
+        "whether referral is mandatory in a personalized case"
+      ],
+      "risks_guardrails": [
+        "If coverage words appear, keep eligibility authoritative.",
+        "If destination/arrangement words appear, keep routing authoritative unless telemetry proves otherwise."
+      ]
+    },
+    {
+      "surface_id": "noisy_admission_timing_residue",
+      "current_failure_shape": {
+        "examples": [
+          "երբ են ընդունում հիվանդանոց",
+          "երբ են պառկեցնում հիվանդանոց",
+          "ինչպես են պառկեցնում հիվանդանոց",
+          "երբ են հոսպիտալացնում"
+        ],
+        "runtime_split": [
+          "complaint_unexpected_payment_dispute_v2",
+          "service_admission_type_root_v1"
+        ]
+      },
+      "why_phase5_guards_are_exhausted": [
+        "The clean admission-policy slice is already moved; what remains is a timing/acceptance pocket with no single safe lexical boundary.",
+        "Broadening admission guards further would likely weaken the payment-dispute owner."
+      ],
+      "candidate_bounded_phase6_mechanism": {
+        "type": "surface-specific disagreement bucket",
+        "allowlisted_families": [
+          "service_admission_type_root_v1",
+          "complaint_unexpected_payment_dispute_v2"
+        ],
+        "surface_features": [
+          "timing verbs like երբ",
+          "acceptance verbs like ընդուն/պառկեցնել",
+          "presence/absence of payment terms",
+          "presence/absence of hospital/inpatient anchors"
+        ],
+        "future_adjudication_rule": "Only prefer admission policy when hospital/inpatient anchors are strong and payment/dispute markers are absent."
+      },
+      "must_remain_symbolic_or_bounded": [
+        "admission type policy",
+        "payment dispute routing"
+      ],
+      "must_not_be_free_reasoned": [
+        "hospital acceptance policy",
+        "patient-specific admission eligibility",
+        "payment dispute outcomes"
+      ],
+      "risks_guardrails": [
+        "Do not override payment-dispute owner on weak timing-only phrasing.",
+        "If evidence is weak, keep runtime behavior or clarify rather than reroute."
+      ]
+    },
+    {
+      "surface_id": "deferred_legal_basis_vs_eligibility_overlap",
+      "current_failure_shape": {
+        "examples": [
+          "Ի՞նչ իրավական ակտերով է ամրագրված քաղաքացիների իրավունքները ստանալ անվճար և արտոնյալ բժշկական օգնություն",
+          "Անվճար բուժօգնության իրավական հիմքը որն է",
+          "Արտոնյալ բուժօգնության իրավական հիմքը որն է"
+        ],
+        "runtime_split": [
+          "eligibility_status_coverage_root_v1",
+          "info_rights_governance_legal_basis_v1"
+        ]
+      },
+      "why_phase5_guards_are_exhausted": [
+        "The free/subsidized-care legal-basis strand remains explicitly deferred because it overlaps strongly with eligibility wording.",
+        "Phase 5 narrow guards cannot solve this safely without weakening eligibility."
+      ],
+      "candidate_bounded_phase6_mechanism": {
+        "type": "shadow family discriminator with no live reroute initially",
+        "allowlisted_families": [
+          "info_rights_governance_legal_basis_v1",
+          "eligibility_status_coverage_root_v1"
+        ],
+        "surface_features": [
+          "legal basis anchors",
+          "rights/regulation nouns",
+          "status/benefit anchors",
+          "free/subsidized entitlement markers"
+        ],
+        "future_adjudication_rule": "Only consider rerouting toward legal-basis when legal/regulatory anchors dominate and no personal status or benefit-determination framing is present."
+      },
+      "must_remain_symbolic_or_bounded": [
+        "eligibility determination",
+        "legal-basis grounded answer selection"
+      ],
+      "must_not_be_free_reasoned": [
+        "whether a user qualifies for free care",
+        "invented legal interpretations",
+        "ungrounded legal-basis answers"
+      ],
+      "risks_guardrails": [
+        "Never let a semantic layer answer legal-basis questions directly.",
+        "Shadow inference may only rank eligibility vs legal-basis families, not produce the answer."
+      ]
+    }
+  ]
+}

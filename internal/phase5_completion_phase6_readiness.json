@@ -1,0 +1,85 @@
+{
+  "phase": 5,
+  "status": "complete_enough_to_stop",
+  "summary": {
+    "stable_enough_families": [
+      {
+        "family_id": "faq_family_doctor_registration_transfer_rules_v1",
+        "status": "ownership_stable_enough",
+        "note": "Only clarify-text consistency remains."
+      }
+    ],
+    "safe_batching_limit_families": [
+      {
+        "family_id": "complaint_depth_mixed_intent_routing",
+        "reason": "Remaining complaint residue is split across records, routing, results, and broad complaint-procedure surfaces."
+      },
+      {
+        "family_id": "service_referral_status_service_breadth_v1",
+        "reason": "Remaining generic specialist process and entitlement surfaces are too entangled with routing and eligibility."
+      },
+      {
+        "family_id": "service_admission_inpatient_breadth_v1",
+        "reason": "Remaining noisy bare ընդունում/պառկեցնում timing wording is still entangled with payment-dispute overlap."
+      }
+    ],
+    "explicitly_deferred_out_of_scope": [
+      {
+        "family_id": "info_rights_governance_legal_basis_v1",
+        "subset": "free_subsidized_care_legal_basis_residual",
+        "reason": "Explicitly deferred because of strong overlap with eligibility_status_coverage_root_v1."
+      }
+    ],
+    "partially_advanced_but_not_forced_further": [
+      {
+        "family_id": "info_rights_governance_legal_basis_v1",
+        "completed_safe_slices": [
+          "pharmacy oversight",
+          "confidentiality / data protection",
+          "foreign-citizen legal basis",
+          "provider liability / accountability"
+        ],
+        "note": "No further safe move attempted because the remaining legal-basis strand is deferred."
+      }
+    ]
+  },
+  "phase6_readiness": {
+    "suitable_shadow_or_adjudication_opportunities": [
+      {
+        "surface": "generic complaint-procedure residue",
+        "why": "Split across multiple complaint/routing owners and better suited for shadow family disagreement logging than another narrow guard."
+      },
+      {
+        "surface": "generic specialist process wording",
+        "why": "Boundary between referral-status policy and specialist routing confusion is now too nuanced for more phrase-level guards."
+      },
+      {
+        "surface": "noisy admission timing wording",
+        "why": "Bare ընդունում/պառկեցնում timing forms are split between admission policy and payment/dispute behavior."
+      },
+      {
+        "surface": "deferred free/subsidized legal-basis strand",
+        "why": "High overlap with eligibility requires adjudication/telemetry support, not direct freeform routing."
+      }
+    ],
+    "must_remain_symbolic_or_bounded": [
+      "owner selection among strong roots",
+      "eligibility and entitlement policy",
+      "complaint destination and complaint subtype routing",
+      "referral-status policy",
+      "admission / hospitalization policy",
+      "medicine exact-name coverage decisions",
+      "legal-basis and provider-liability grounded answers"
+    ],
+    "must_not_be_handed_to_broad_free_reasoning": [
+      "personalized eligibility determinations",
+      "free/subsidized care legal basis with entitlement overlap",
+      "complaint-channel or complaint-subtype decisions",
+      "referral, admission, hospitalization, or surgery access policy",
+      "payment-dispute resolution paths",
+      "provider liability / accountability policy answers"
+    ],
+    "recommended_phase6_boundary": "Add constrained shadow/adjudication around family disagreements without changing symbolic owners or allowing free reasoning to invent policy answers."
+  },
+  "recommended_next_step": "Do not implement orchestration changes yet. Treat this as a clean Phase 5 stop and use the readiness notes to scope a bounded Phase 6 design document or shadow telemetry pass."
+}

@@ -1,0 +1,35 @@
+{
+  "log_file": "logs/phase6_shadow_disagreements.jsonl",
+  "mode": "shadow_only",
+  "unresolved_surfaces_enabled": [
+    "generic_specialist_process_residue",
+    "noisy_admission_timing_residue",
+    "complaint_generic_procedure_residue",
+    "deferred_legal_basis_vs_eligibility_overlap"
+  ],
+  "row_schema": {
+    "timestamp": "ISO8601 UTC string",
+    "unresolved_surface_tag": "string",
+    "original_user_text": "string",
+    "runtime_winner": "matched_card_id or matched_family",
+    "runtime_family_proxy": "existing runtime family proxy label when available",
+    "shadow_predicted_family": "allowlisted family id for this unresolved surface",
+    "confidence": "float in [0,1]",
+    "competing_families": [
+      {
+        "family_id": "string",
+        "score": "float"
+      }
+    ],
+    "action": "runtime action",
+    "follow_up_question": "runtime follow-up or null"
+  },
+  "guardrails": [
+    "No owner override",
+    "No answer generation changes",
+    "No live adjudication",
+    "Only allowlisted families may be ranked per unresolved surface",
+    "Shadow inference never generates policy content",
+    "This schema documents telemetry only; runtime owner selection remains unchanged"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "phase": 6,
+  "mode": "status_handoff_only",
+  "status": "shadow_only_complete_for_current_safe_scope",
+  "live_adjudication_active": false,
+  "why_live_phase6_is_not_enabled": [
+    "All currently documented unresolved surfaces are either still too risky for live second-pass adjudication or have not accumulated enough replay evidence.",
+    "Generic specialist process wording remains the cleanest candidate, but even there the final referral-needed-only gating pass ended in a no-go decision.",
+    "No other unresolved surface has a lower-risk live path than the already-rejected generic-specialist pilot."
+  ],
+  "implemented_phase6_work": {
+    "shadow_only_telemetry": {
+      "status": "implemented",
+      "artifacts": [
+        "internal/phase6_shadow_adjudication_architecture.json",
+        "internal/phase6_unresolved_surface_playbooks.json",
+        "internal/phase6_shadow_log_schema.json"
+      ],
+      "runtime_hook_file": "logging_utils.py",
+      "log_file": "logs/phase6_shadow_disagreements.jsonl",
+      "properties": [
+        "No owner override",
+        "No answer-generation changes",
+        "Only allowlisted families ranked per unresolved surface",
+        "Stable owners remain authoritative"
+      ]
+    },
+    "offline_design_and_review": {
+      "generic_specialist_process_residue": [
+        "internal/phase6_generic_specialist_offline_adjudication_trial.json",
+        "internal/phase6_generic_specialist_gating_review.json",
+        "internal/phase6_generic_specialist_replay_buckets.json",
+        "internal/phase6_generic_specialist_referral_needed_final_gating.json"
+      ],
+      "global_status": [
+        "internal/phase6_shadow_surface_status.json"
+      ]
+    }
+  },
+  "surfaces_remaining_shadow_only": [
+    {
+      "surface_id": "generic_specialist_process_residue",
+      "state": "shadow_only_with_offline_design_and_final_no_go",
+      "why": [
+        "Referral-needed-only live pilot is still too brittle at the wording boundary.",
+        "Routing/arrangement and free-care/coverage buckets must remain excluded."
+      ]
+    },
+    {
+      "surface_id": "noisy_admission_timing_residue",
+      "state": "shadow_only",
+      "why": [
+        "This surface still sits on the protected payment-dispute edge."
+      ]
+    },
+    {
+      "surface_id": "complaint_generic_procedure_residue",
+      "state": "shadow_only",
+      "why": [
+        "Any live move would reopen frozen complaint-family boundaries."
+      ]
+    },
+    {
+      "surface_id": "deferred_legal_basis_vs_eligibility_overlap",
+      "state": "shadow_only",
+      "why": [
+        "This strand remains explicitly deferred and must stay symbolic/bounded."
+      ]
+    }
+  ],
+  "explicit_no_go_decisions": [
+    {
+      "surface_id": "generic_specialist_process_residue",
+      "decision": "no_go_for_live_pilot",
+      "artifacts": [
+        "internal/phase6_generic_specialist_gating_review.json",
+        "internal/phase6_generic_specialist_referral_needed_final_gating.json"
+      ]
+    }
+  ],
+  "too_risky_for_live_adjudication_right_now": [
+    {
+      "surface_id": "generic_specialist_process_residue",
+      "risk": "The only remaining disagreement strong enough to consider is too close to stable routing behavior and not broad enough for safe override."
+    },
+    {
+      "surface_id": "noisy_admission_timing_residue",
+      "risk": "A mistaken override would weaken complaint_unexpected_payment_dispute_v2."
+    },
+    {
+      "surface_id": "complaint_generic_procedure_residue",
+      "risk": "A live adjudicator here would risk reopening frozen complaint-routing boundaries."
+    },
+    {
+      "surface_id": "deferred_legal_basis_vs_eligibility_overlap",
+      "risk": "Eligibility and legal-basis policy must not be handed to live semantic arbitration yet."
+    }
+  ],
+  "evidence_required_before_revisiting_any_live_pilot": [
+    "A larger and more diverse replay set on the exact candidate surface",
+    "Bucket-level proof that protected neighboring owners remain untouched",
+    "A threshold rule that keeps the runtime winner on mixed or weak evidence",
+    "No answer-generation changes and no widening beyond the allowlisted family set",
+    "Regression-green and validation-baseline-unchanged proof for any future pilot"
+  ],
+  "recommended_future_path": {
+    "principle": "telemetry_first_replay_first_no_live_override_until_stronger_evidence_exists",
+    "next_step": "Remain in status/handoff mode unless a future run gathers materially stronger replay evidence for one already-documented surface.",
+    "do_not_do_yet": [
+      "No live adjudication",
+      "No owner override",
+      "No answer-generation changes",
+      "No reopening of frozen Phase 5 families"
+    ]
+  }
+}

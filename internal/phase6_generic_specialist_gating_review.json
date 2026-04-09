@@ -1,0 +1,65 @@
+{
+  "phase": 6,
+  "surface_id": "generic_specialist_process_residue",
+  "review_type": "offline_replay_only",
+  "decision": "no_go_for_live_pilot",
+  "live_adjudication_enabled": false,
+  "allowlisted_families": [
+    "service_referral_status_root_v1",
+    "routing_specialist_referral_confusion_v1",
+    "eligibility_status_coverage_root_v1"
+  ],
+  "evidence_summary": {
+    "shadow_rows_reviewed": 10,
+    "runtime_shadow_disagreements": 4,
+    "unique_high_confidence_disagreement_shape": [
+      {
+        "text": "նեղ մասնագետի ուղեգիր է պետք",
+        "runtime_winner": "routing_specialist_referral_confusion_v1",
+        "shadow_predicted_family": "service_referral_status_root_v1",
+        "confidence": 1.0
+      }
+    ],
+    "agreement_examples": [
+      {
+        "text": "մասնագետի համար ուղեգիր է պետք",
+        "runtime_winner": "service_referral_status_root_v1",
+        "shadow_predicted_family": "service_referral_status_root_v1",
+        "confidence": 1.0
+      },
+      {
+        "text": "մասնագետի համար նախ բժիշկ պիտի տեսնե՞մ",
+        "runtime_winner": "routing_specialist_referral_confusion_v1",
+        "shadow_predicted_family": "routing_specialist_referral_confusion_v1",
+        "confidence": 1.0
+      },
+      {
+        "text": "մասնագետի մոտ անվճար կարո՞ղ եմ գնալ",
+        "runtime_winner": "eligibility_status_coverage_root_v1",
+        "shadow_predicted_family": "eligibility_status_coverage_root_v1",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "why_no_go": [
+    "The disagreement set is still small and concentrated in one wording family rather than a broad replay-backed pattern.",
+    "The strongest disagreement sits next to stable specialist-routing behavior, so a live override could steal routing traffic.",
+    "There is not yet enough replay evidence showing that a bounded override improves net accuracy without harming protected routing or eligibility neighbors.",
+    "Current confidence is high inside the shadow ranker, but fallback safety has not been validated on a sufficiently diverse generic-specialist sample."
+  ],
+  "required_evidence_before_any_live_pilot": [
+    "More shadow rows across diverse generic-specialist prompts, not just repeated referral-needed wording",
+    "Offline replay proving that destination/arrangement wording still stays with routing_specialist_referral_confusion_v1",
+    "Offline replay proving that free-care wording still stays with eligibility_status_coverage_root_v1",
+    "A concrete threshold rule that leaves the runtime winner untouched on mixed or weak evidence"
+  ],
+  "current_recommendation": {
+    "next_stage": "remain_shadow_only",
+    "next_work_item": "offline replay expansion and disagreement bucketing for generic-specialist prompts only",
+    "do_not_do_yet": [
+      "No live owner override",
+      "No answer-generation changes",
+      "No widening beyond the allowlisted family set"
+    ]
+  }
+}

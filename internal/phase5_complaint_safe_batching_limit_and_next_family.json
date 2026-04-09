@@ -1,0 +1,88 @@
+{
+  "phase": 5,
+  "current_family": "complaint_depth_mixed_intent_routing",
+  "decision": "pause_complaint_family_batching",
+  "reason": "The remaining unresolved complaint-routing surface no longer has a clean, low-theft lexical slice. The next repeated misses are split across record issues, referral routing, generic complaint procedure, and result/report problems.",
+  "evidence": {
+    "remaining_unresolved_examples": [
+      {
+        "message": "Եթե անալիզի պատասխանը չեն տալիս որտեղ բողոքեմ",
+        "runtime_owner": "complaint_missing_or_wrong_record_v1"
+      },
+      {
+        "message": "Եթե հետազոտության արդյունքը չեն տալիս որտեղ բողոքեմ",
+        "runtime_owner": "routing_referral_where_to_go_v2"
+      },
+      {
+        "message": "Եթե լաբորատոր պատասխանը ուշացնում են որտեղ բողոքեմ",
+        "runtime_owner": "complaint_missing_or_wrong_record_v1"
+      },
+      {
+        "message": "Արդյունքները ուշացնում են ուր դիմեմ բողոքով",
+        "runtime_owner": "routing_referral_where_to_go_v2"
+      },
+      {
+        "message": "Եթե արդյունքը սխալ են տվել որտեղ բողոքեմ",
+        "runtime_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1"
+      },
+      {
+        "message": "Եթե բժիշկը սխալ արդյունք է գրել որտեղ բողոքեմ",
+        "runtime_owner": "service_admission_type_root_v1"
+      }
+    ],
+    "broad_generic_procedure_examples": [
+      {
+        "message": "Ում դիմեմ գանգատով",
+        "runtime_owner": "routing_referral_where_to_go_v2"
+      },
+      {
+        "message": "Բողոքը որտեղ պետք է տամ",
+        "runtime_owner": "service_admission_type_root_v1"
+      },
+      {
+        "message": "Ինչպես ընթացք տամ բողոքին",
+        "runtime_owner": "routing_specialist_referral_confusion_v1"
+      }
+    ],
+    "conclusion": "A new complaint patch here would require reopening frozen guard scopes or broadening generic complaint-procedure handling, which violates the current safe-batching rule."
+  },
+  "next_phase5_family": {
+    "family_id": "faq_family_doctor_registration_transfer_rules_v1",
+    "reason_selected": "This is a cleaner next family inside the remaining FAQ-heavy informational surfaces. It already shows stable direct owners in the current repo, has clear lexical anchors, and is operationally important in the strategy page's immediate-priority queue.",
+    "scope": [
+      "How to register with a family doctor",
+      "How to change polyclinic / transfer attachment",
+      "When a family doctor may refuse registration",
+      "Complaint contact when family-doctor registration is refused"
+    ],
+    "root_candidates": [
+      "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ",
+      "faq_40_երբ_կարող_է_ընտանեկան_բժիշկը_հրաժարվել_գրանցելուց",
+      "complaint_refusal_denied_service_v2"
+    ],
+    "initial_probe_snapshot": [
+      {
+        "message": "Ինչպե՞ս գրանցվել ընտանեկան բժշկի մոտ",
+        "runtime_owner": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ"
+      },
+      {
+        "message": "Ինչպե՞ս փոխել պոլիկլինիկան",
+        "runtime_owner": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ"
+      },
+      {
+        "message": "Ե՞րբ կարող է ընտանեկան բժիշկը հրաժարվել գրանցելուց",
+        "runtime_owner": "faq_40_երբ_կարող_է_ընտանեկան_բժիշկը_հրաժարվել_գրանցելուց"
+      },
+      {
+        "message": "Եթե ընտանեկան բժիշկը չի գրանցում ուր դիմեմ",
+        "runtime_owner": "complaint_refusal_denied_service_v2"
+      }
+    ],
+    "protected_neighbors": [
+      "service_admission_type_root_v1",
+      "routing_referral_where_to_go_v2",
+      "eligibility_status_coverage_root_v1",
+      "complaint_2_official_complaint_channels"
+    ]
+  }
+}

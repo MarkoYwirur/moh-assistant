@@ -1,0 +1,121 @@
+{
+  "phase": 6,
+  "mode": "design_only",
+  "status": "implementation_ready_handoff",
+  "purpose": "Introduce bounded shadow inference and second-pass adjudication for unresolved overlap surfaces without changing live symbolic routing yet.",
+  "non_goals": [
+    "No live owner-selection replacement",
+    "No freeform policy answering",
+    "No router.py changes in the first Phase 6 implementation step",
+    "No reopening of deferred free/subsidized-care legal-basis runtime migration"
+  ],
+  "current_runtime_principles_to_preserve": [
+    "Strong root owners remain authoritative",
+    "Regression and validation stay mandatory release gates",
+    "Clarify-first behavior remains preferred over speculative answers",
+    "Grounded answers continue to come from existing bounded owners"
+  ],
+  "bounded_phase6_components": [
+    {
+      "component": "shadow_family_predictor",
+      "role": "Produce a non-binding ranked family prediction and confidence score for each user message.",
+      "input": [
+        "normalized user text",
+        "top runtime candidates",
+        "existing symbolic owner outcome"
+      ],
+      "output": [
+        "predicted family_id",
+        "confidence",
+        "top competing families",
+        "surface tags"
+      ],
+      "live_effect": "None in the first step; logging only."
+    },
+    {
+      "component": "disagreement_logger",
+      "role": "Record when runtime owner and shadow family disagree or when clarify/escalate outcomes cluster on known unresolved surfaces.",
+      "input": [
+        "runtime matched owner",
+        "shadow predicted family",
+        "clarify/escalate action",
+        "message cluster tags"
+      ],
+      "output": [
+        "disagreement event",
+        "surface bucket",
+        "review priority"
+      ],
+      "live_effect": "None; telemetry only."
+    },
+    {
+      "component": "bounded_second_pass_adjudicator",
+      "role": "Only after shadow logging proves value, arbitrate among a tiny allowlisted set of candidate families on selected unresolved surfaces.",
+      "input": [
+        "runtime winner",
+        "shadow family prediction",
+        "surface-specific feature vector"
+      ],
+      "output": [
+        "accept runtime owner",
+        "prefer alternate bounded owner",
+        "force clarify",
+        "force escalate"
+      ],
+      "live_effect": "Not enabled in this design pass."
+    }
+  ],
+  "recommended_rollout_sequence": [
+    {
+      "step": 1,
+      "name": "shadow_only_logging",
+      "description": "Add family prediction and disagreement logging with zero runtime effect."
+    },
+    {
+      "step": 2,
+      "name": "surface_review_loop",
+      "description": "Review logged disagreements only on the explicitly named unresolved surfaces."
+    },
+    {
+      "step": 3,
+      "name": "bounded_adjudication_trials",
+      "description": "Enable second-pass adjudication only for one unresolved surface at a time and only among an allowlisted family set."
+    },
+    {
+      "step": 4,
+      "name": "promotion_after_proof",
+      "description": "Promote adjudication-backed improvements only after parity, overlap safety, and regression proof."
+    }
+  ],
+  "implementation_entry_points_for_future_work": [
+    {
+      "file": "main.py",
+      "role": "Attach shadow logging after runtime owner selection without changing response behavior."
+    },
+    {
+      "file": "logging_utils.py",
+      "role": "Persist disagreement events and unresolved-surface tags."
+    },
+    {
+      "file": "decision_engine.py",
+      "role": "Potential future home for bounded second-pass adjudication logic, still behind a strict allowlist."
+    },
+    {
+      "file": "app/issue_family_classifier.py",
+      "role": "Potential family/surface classification utility for shadow-only prediction."
+    }
+  ],
+  "hard_guardrails": [
+    "Shadow inference must never generate answer text.",
+    "Phase 6 family predictions may only rank families, not invent policy.",
+    "Second-pass adjudication may only choose among allowlisted existing owners.",
+    "If runtime and shadow disagree without high confidence or without an allowlisted surface, keep the runtime owner or clarify.",
+    "Eligibility, complaint routing, admission policy, referral policy, medicine coverage, and legal-basis answers remain symbolic/bounded."
+  ],
+  "success_criteria": [
+    "Disagreement telemetry is available per unresolved surface",
+    "No regression to existing stable owners",
+    "No broadening of freeform reasoning",
+    "At least one unresolved surface becomes measurably easier to diagnose before any live routing change"
+  ]
+}

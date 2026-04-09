@@ -1,0 +1,98 @@
+{
+  "phase": 5,
+  "family_id": "service_admission_inpatient_breadth_v1",
+  "scope": {
+    "includes": [
+      "hospital admission wording",
+      "inpatient / hospitalization wording",
+      "planned vs urgent admission",
+      "preconditions / required steps for admission"
+    ],
+    "excludes": [
+      "where-to-go routing questions",
+      "specialist routing confusion",
+      "complaint routing",
+      "broad entitlement / status-based free-care questions",
+      "medicine coverage exact-name questions"
+    ]
+  },
+  "owner_map": {
+    "admission_type_policy": "service_admission_type_root_v1",
+    "where_to_go_routing": "routing_referral_where_to_go_v2",
+    "specialist_routing_confusion": "routing_specialist_referral_confusion_v1",
+    "eligibility_entitlement": "eligibility_status_coverage_root_v1",
+    "complaint_dispute_overlap": "complaint_unexpected_payment_dispute_v2"
+  },
+  "stable_surfaces": [
+    {
+      "message": "Հիվանդանոց ընդունվելու կարգը որն է",
+      "runtime_owner": "service_admission_type_root_v1"
+    },
+    {
+      "message": "ստացիոնար ընդունվելու համար ինչ է պետք",
+      "runtime_owner": "service_admission_type_root_v1"
+    },
+    {
+      "message": "պլանային ընդունում է թե անհետաձգելի",
+      "runtime_owner": "service_admission_type_root_v1"
+    },
+    {
+      "message": "հիվանդանոց պառկելու համար ինչ է պետք",
+      "runtime_owner": "service_admission_type_root_v1"
+    }
+  ],
+  "narrow_migration_completed": {
+    "name": "admission_requirements_documents_and_policy_wording",
+    "reason": "Two clean narrow slices were separable inside admission/inpatient breadth: requirement/document wording and admission-policy wording framed as conditions/cases for hospital/stationary acceptance.",
+    "examples_now_fixed": [
+      "հոսպիտալացման համար ինչ է պետք",
+      "պլանային հոսպիտալացման համար ինչ է պետք",
+      "վիրահատության համար ինչ է պետք",
+      "պլանային վիրահատության համար ինչ է պետք",
+      "ինչ փաստաթուղթ է պետք հոսպիտալացման համար",
+      "ինչ պայմաններով են ընդունում հիվանդանոց",
+      "ինչ դեպքերում են ընդունում հիվանդանոց",
+      "ինչ դեպքերում են հոսպիտալացնում",
+      "ինչ պայմաններով են ստացիոնար ընդունում",
+      "ինչպես են ընդունում հիվանդանոց"
+    ]
+  },
+  "protected_neighbors": [
+    "routing_referral_where_to_go_v2",
+    "routing_specialist_referral_confusion_v1",
+    "service_referral_status_root_v1",
+    "eligibility_status_coverage_root_v1",
+    "complaint_2_official_complaint_channels",
+    "complaint_refusal_denied_service_v2",
+    "faq_27",
+    "technical_armed_visibility_issue_v1",
+    "medicine_coverage_exact_name_dosage_form_v2"
+  ],
+  "remaining_watchpoints": [
+    {
+      "message": "երբ են ընդունում հիվանդանոց",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Still an odd overlap around bare ընդուն wording; not safe to broaden in this run."
+    },
+    {
+      "message": "երբ են պառկեցնում հիվանդանոց",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Still a broad phrasing pocket with unclear admission vs dispute overlap."
+    },
+    {
+      "message": "ինչպես հոսպիտալացվեմ",
+      "runtime_owner": "service_admission_type_root_v1",
+      "note": "Owned correctly, though still uses generic admission-type clarify."
+    },
+    {
+      "message": "ինչպես են պառկեցնում հիվանդանոց",
+      "runtime_owner": "complaint_unexpected_payment_dispute_v2",
+      "note": "Still left out because the bare պառկեցնում wording remains too noisy."
+    },
+    {
+      "message": "շտապ հոսպիտալացման համար ինչ է պետք",
+      "runtime_owner": "service_admission_type_root_v1",
+      "note": "Owned correctly, but current builder still asks admission-type clarify rather than inferring emergency from wording."
+    }
+  ]
+}

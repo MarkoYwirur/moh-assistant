@@ -1,0 +1,50 @@
+{
+  "family_target": "complaint_depth_mixed_intent_routing",
+  "reason_selected": "Provider-liability/accountability is now stable, while complaint-style harm phrasing remains misowned and belongs to complaint depth / mixed-intent routing backlog rather than legal-basis.",
+  "scope": "Complaint-intent phrasing where the citizen mentions provider fault or harm and asks where/how to complain.",
+  "belongs": [
+    "Where/how to complain when harm was allegedly caused by provider fault",
+    "Complaint-intent phrasing that contains provider-fault words like 'մեղքով' or 'վնաս' but is still fundamentally asking about complaint routing",
+    "Mixed-intent cases that need complaint-routing clarification rather than admission or legal-basis answers"
+  ],
+  "does_not_belong": [
+    "Pure provider-liability/accountability legal questions without complaint intent",
+    "Generic complaint contact questions already handled by official complaint channels",
+    "Admission or hospitalization process questions",
+    "Eligibility or payment-dispute questions"
+  ],
+  "observed_runtime_behavior": [
+    {
+      "text": "Որտեղ բողոքեմ եթե բուժաշխատողի մեղքով վնաս է եղել",
+      "action": "partial_answer_with_clarify",
+      "matched_card_id": "service_admission_type_root_v1",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "text": "Բուժաշխատողի մեղքով վնաս է եղել որտեղ բողոքեմ",
+      "action": "partial_answer_with_clarify",
+      "matched_card_id": "service_admission_type_root_v1",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "text": "Եթե բժշկի մեղքով վնաս է եղել, ուր դիմեմ բողոքով",
+      "action": "partial_answer_with_clarify",
+      "matched_card_id": "routing_referral_where_to_go_v2",
+      "follow_up_question": "Գրե՛ք՝ ինչի համար եք ուզում դիմել՝ նեղ մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության։"
+    },
+    {
+      "text": "Բժշկի մեղքով վնասի համար ինչպես բողոք ներկայացնել",
+      "action": "partial_answer_with_clarify",
+      "matched_card_id": null,
+      "follow_up_question": "Խոսքը բուժաշխատողի վարքագծի՞, հիվանդանոցի ծառայության կամ կազմակերպման մա՞սին է, թե պարզապես ուզում եք իմանալ որտեղ կամ ինչպես բողոք ներկայացնել։"
+    }
+  ],
+  "protected_neighbors": [
+    "faq_27_ի_նչ_պատասխանատվություն_են_կրում_բժշկական_օգնություն_իրականացնողները_իրենց_մեղքո",
+    "complaint_40_provider_misconduct",
+    "complaint_2_official_complaint_channels",
+    "service_admission_type_root_v1",
+    "routing_referral_where_to_go_v2"
+  ],
+  "recommended_next_step": "Diagnosis-first migration-planning pass for complaint harm routing, with explicit negative boundaries against provider-liability legal questions and admission process phrasing before any runtime move."
+}

@@ -1,0 +1,129 @@
+{
+  "phase": 6,
+  "mode": "shadow_only",
+  "status": "all_remaining_surfaces_in_telemetry_or_analysis",
+  "live_adjudication_active": false,
+  "stop_reason": "All documented unresolved surfaces now have bounded shadow telemetry, but evidence is still insufficient or too risky for any live second-pass adjudication pilot.",
+  "surfaces": [
+    {
+      "surface_id": "generic_specialist_process_residue",
+      "stage_reached": "designed",
+      "allowlisted_families": [
+        "service_referral_status_root_v1",
+        "routing_specialist_referral_confusion_v1",
+        "eligibility_status_coverage_root_v1"
+      ],
+      "telemetry_snapshot": {
+        "shadow_rows_observed": 8,
+        "runtime_shadow_disagreements": 2
+      },
+      "representative_disagreement_examples": [
+        {
+          "text": "նեղ մասնագետի ուղեգիր է պետք",
+          "runtime_winner": "routing_specialist_referral_confusion_v1",
+          "shadow_predicted_family": "service_referral_status_root_v1",
+          "confidence": 1.0
+        }
+      ],
+      "next_safe_stage": "offline_replay_only",
+      "why_not_live_yet": [
+        "The disagreement set is still small and sits close to stable routing behavior.",
+        "A live pilot here would need stricter evidence around generic-vs-routing phrasing before any owner override is safe."
+      ]
+    },
+    {
+      "surface_id": "noisy_admission_timing_residue",
+      "stage_reached": "analyzed",
+      "allowlisted_families": [
+        "service_admission_type_root_v1",
+        "complaint_unexpected_payment_dispute_v2"
+      ],
+      "telemetry_snapshot": {
+        "shadow_rows_observed": 3,
+        "runtime_shadow_disagreements": 3
+      },
+      "representative_disagreement_examples": [
+        {
+          "text": "երբ են ընդունում հիվանդանոց",
+          "runtime_winner": "complaint_unexpected_payment_dispute_v2",
+          "shadow_predicted_family": "service_admission_type_root_v1",
+          "confidence": 1.0
+        },
+        {
+          "text": "երբ են պառկեցնում հիվանդանոց",
+          "runtime_winner": "complaint_unexpected_payment_dispute_v2",
+          "shadow_predicted_family": "service_admission_type_root_v1",
+          "confidence": 1.0
+        }
+      ],
+      "next_safe_stage": "continued_shadow_collection_only",
+      "why_not_live_yet": [
+        "This surface still sits directly on the payment-dispute edge.",
+        "A mistaken live override here would weaken a protected payment owner."
+      ]
+    },
+    {
+      "surface_id": "complaint_generic_procedure_residue",
+      "stage_reached": "analyzed",
+      "allowlisted_families": [
+        "complaint_depth_mixed_intent_routing",
+        "routing_referral_where_to_go_v2",
+        "service_admission_type_root_v1",
+        "routing_specialist_referral_confusion_v1"
+      ],
+      "telemetry_snapshot": {
+        "shadow_rows_observed": 3,
+        "runtime_shadow_disagreements": 3
+      },
+      "representative_disagreement_examples": [
+        {
+          "text": "Ում դիմեմ գանգատով",
+          "runtime_winner": "routing_referral_where_to_go_v2",
+          "shadow_predicted_family": "complaint_depth_mixed_intent_routing",
+          "confidence": 1.0
+        },
+        {
+          "text": "Բողոքը որտեղ պետք է տամ",
+          "runtime_winner": "service_admission_type_root_v1",
+          "shadow_predicted_family": "complaint_depth_mixed_intent_routing",
+          "confidence": 0.5
+        }
+      ],
+      "next_safe_stage": "continued_shadow_collection_only",
+      "why_not_live_yet": [
+        "The complaint family is frozen and broad complaint-procedure behavior is still highly entangled.",
+        "A live pilot here would risk reopening protected complaint and routing boundaries."
+      ]
+    },
+    {
+      "surface_id": "deferred_legal_basis_vs_eligibility_overlap",
+      "stage_reached": "analyzed",
+      "allowlisted_families": [
+        "info_rights_governance_legal_basis_v1",
+        "eligibility_status_coverage_root_v1"
+      ],
+      "telemetry_snapshot": {
+        "shadow_rows_observed": 2,
+        "runtime_shadow_disagreements": 2
+      },
+      "representative_disagreement_examples": [
+        {
+          "text": "Անվճար բուժօգնության իրավական հիմքը որն է",
+          "runtime_winner": "eligibility_status_coverage_root_v1",
+          "shadow_predicted_family": "info_rights_governance_legal_basis_v1",
+          "confidence": 1.0
+        }
+      ],
+      "next_safe_stage": "shadow_only_hold",
+      "why_not_live_yet": [
+        "This strand is explicitly deferred for live runtime migration.",
+        "Eligibility and legal-basis policy must remain symbolic and must not be delegated to broad reasoning."
+      ]
+    }
+  ],
+  "recommended_next_step": {
+    "type": "offline_replay_only",
+    "surface_id": "generic_specialist_process_residue",
+    "reason": "It now has shadow telemetry plus a bounded offline adjudication design, so the next safe move is replay/review rather than any live pilot."
+  }
+}

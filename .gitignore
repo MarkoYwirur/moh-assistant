@@ -24,3 +24,8 @@ tmp_*
 # raw source and staging workdirs
 kb_raw_sources/
 kb_staging/
+venv/
+__pycache__/
+.codex/
+.env
+validate_kb_report_utf8.txt

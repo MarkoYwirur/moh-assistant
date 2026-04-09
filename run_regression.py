@@ -5,8 +5,15 @@ from main import app
 
 client = TestClient(app)
 
-gold_tests = json.loads(Path("tests_gold.json").read_text(encoding="utf-8-sig"))
-branch_tests = json.loads(Path("tests_branches.json").read_text(encoding="utf-8-sig"))
+def _load_fixture(name: str):
+    for path in (Path(name), Path("internal") / name):
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8-sig"))
+    raise FileNotFoundError(f"Missing regression fixture: {name}")
+
+
+gold_tests = _load_fixture("tests_gold.json")
+branch_tests = _load_fixture("tests_branches.json")
 
 print("=== FIRST TURN TESTS ===")
 for test in gold_tests:

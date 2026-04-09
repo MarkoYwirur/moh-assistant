@@ -1,0 +1,58 @@
+{
+  "phase": 6,
+  "surface_id": "generic_specialist_process_residue",
+  "stage": "offline_design_only",
+  "live_adjudication_enabled": false,
+  "allowlisted_families": [
+    "service_referral_status_root_v1",
+    "routing_specialist_referral_confusion_v1",
+    "eligibility_status_coverage_root_v1"
+  ],
+  "purpose": "Define a bounded offline replay and adjudication trial for generic specialist process wording without changing live owner selection.",
+  "why_this_surface": [
+    "It has the cleanest allowlisted family set among the currently instrumented unresolved surfaces.",
+    "It does not sit directly on the payment-dispute edge.",
+    "The telemetry already shows bounded disagreement examples without requiring complaint-family reopening."
+  ],
+  "proposed_feature_vector": [
+    "generic specialist noun present",
+    "named specialist absent",
+    "referral-needed wording present/absent",
+    "destination or arrangement wording present/absent",
+    "free-care or coverage wording present/absent",
+    "service/test disqualifier present/absent"
+  ],
+  "bounded_offline_rule": {
+    "prefer_runtime_owner_when": [
+      "coverage wording is present and runtime winner is eligibility_status_coverage_root_v1",
+      "destination or arrangement wording is present and runtime winner is routing_specialist_referral_confusion_v1"
+    ],
+    "candidate_override_to_referral_status_when": [
+      "free-care wording is absent",
+      "destination wording is absent",
+      "the message asks whether a referral is needed or whether a visit is possible without referral",
+      "shadow family is service_referral_status_root_v1 with a margin that would exceed the future live threshold"
+    ],
+    "fallback": "keep runtime winner on weak or mixed evidence"
+  },
+  "proposed_future_live_guardrails": [
+    "Pilot only this one surface",
+    "Do not change answer generation",
+    "Only arbitrate among allowlisted existing owners",
+    "Low confidence keeps the runtime winner",
+    "Any free-care wording keeps eligibility authoritative",
+    "Any destination or arrangement wording keeps routing authoritative unless replay data proves otherwise"
+  ],
+  "offline_replay_plan": [
+    "Collect a larger shadow sample for generic_specialist_process_residue",
+    "Bucket rows into referral-needed, routing/arrangement, and free-care subshapes",
+    "Measure false-positive risk against stable routing and eligibility neighbors",
+    "Only consider a live pilot if replay shows clear net improvement with no protected-neighbor theft"
+  ],
+  "not_allowed": [
+    "No owner override in production yet",
+    "No answer synthesis from shadow predictions",
+    "No expansion beyond the allowlisted family set",
+    "No delegation to broad free reasoning"
+  ]
+}

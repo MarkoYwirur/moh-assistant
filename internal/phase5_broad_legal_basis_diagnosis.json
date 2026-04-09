@@ -1,0 +1,52 @@
+{
+  "family_id": "info_rights_governance_legal_basis_v1",
+  "subset_id": "broad_healthcare_rights_legal_basis_residual",
+  "scope": "Remaining residual informational surface inside the rights/governance/legal-basis family after pharmacy oversight, confidentiality/data protection, and foreign-citizen legal-basis migration.",
+  "positive_strands": {
+    "free_subsidized_legal_basis": [
+      "Ի՞նչ իրավական ակտերով է ամրագրված քաղաքացիների իրավունքները ստանալ անվճար և արտոնյալ բժշկական օգնություն",
+      "Անվճար և արտոնյալ բուժօգնության իրավական հիմքը որն է",
+      "Անվճար բուժօգնության իրավական հիմքը որն է",
+      "Արտոնյալ բուժօգնության իրավական հիմքը որն է",
+      "Քաղաքացիների առողջապահական իրավունքները ինչ ակտերով են ամրագրված"
+    ],
+    "provider_liability_accountability": [
+      "Ի՞նչ պատասխանատվություն են կրում բժշկական օգնություն իրականացնողները իրենց մեղքով վնաս պատճառելու դեպքում",
+      "Եթե բուժաշխատողի մեղքով վնաս լինի, ինչ պատասխանատվություն է լինում",
+      "Բժիշկների պատասխանատվությունը ինչ օրենքով է սահմանվում"
+    ]
+  },
+  "negative_boundary_probes": {
+    "eligibility_by_status": [
+      "Ովքեր կարող են օգտվել պետպատվերից",
+      "Ես նպաստառու եմ ինչ է հասնում",
+      "Հղիության դեպքում ինչ է անվճար"
+    ],
+    "payment_dispute": [
+      "Ասում են պետպատվերով չի անցնում",
+      "Վճարել եմ բայց համակարգում չի երևում"
+    ],
+    "admission_process": [
+      "Հիվանդանոց ընդունվելու կարգը որն է",
+      "Պլանային ընդունում է թե անհետաձգելի"
+    ]
+  },
+  "current_runtime_behavior_summary": {
+    "free_subsidized_legal_basis": "All reviewed examples currently route to eligibility_status_coverage_root_v1 with a status-clarify follow-up.",
+    "provider_liability_accountability": "All reviewed examples currently route to eligibility_status_coverage_root_v1 with the same status-clarify follow-up, despite being legal/accountability questions."
+  },
+  "main_competing_owners": [
+    "eligibility_status_coverage_root_v1",
+    "service_admission_type_root_v1",
+    "complaint_unexpected_payment_dispute_v2"
+  ],
+  "main_overlap_risks": [
+    "The words 'անվճար', 'արտոնյալ', 'իրավունք', and 'բուժօգնություն' strongly attract eligibility_status_coverage_root_v1 even when the citizen is asking about legal basis rather than status.",
+    "The words 'բժշկական օգնություն' and general service wording can still attract admission/service owners if legal-basis anchors are weak.",
+    "State-order or payment-friction phrasing remains a boundary risk for complaint_unexpected_payment_dispute_v2, especially when legal-basis wording drifts into coverage/payment territory."
+  ],
+  "conclusion": {
+    "broad_free_subsidized_legal_basis": "Too entangled for immediate migration. It needs a more careful migration plan against eligibility_status_coverage_root_v1 before any runtime move.",
+    "provider_liability_accountability": "A narrower sub-subset appears to exist and is safer than the free/subsidized-care legal-basis strand because it has distinctive anchors like 'պատասխանատվություն', 'մեղքով', and 'վնաս'. It should be diagnosed next as a separate candidate subset rather than migrating the entire residual surface."
+  }
+}

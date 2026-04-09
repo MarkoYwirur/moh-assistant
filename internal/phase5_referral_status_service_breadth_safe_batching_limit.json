@@ -1,0 +1,58 @@
+{
+  "phase": 5,
+  "family_id": "service_referral_status_service_breadth_v1",
+  "decision": "safe_batching_limit_reached_for_now",
+  "reason": "The remaining generic specialist process surface is split across real owner boundaries rather than one clean leak.",
+  "remaining_generic_specialist_probe_results": [
+    {
+      "message": "մասնագետի համար նախ բժիշկ պիտի տեսնե՞մ",
+      "runtime_owner": "routing_specialist_referral_confusion_v1",
+      "note": "Still routing-shaped and asks for specialist-direction logic."
+    },
+    {
+      "message": "մասնագետի մոտ գնալու համար ինչ է պետք",
+      "runtime_owner": "routing_specialist_referral_confusion_v1",
+      "note": "Broad process wording remains routing/confusion-shaped."
+    },
+    {
+      "message": "նեղ մասնագետի մոտ առանց ուղեգրի կարո՞ղ եմ գնալ",
+      "runtime_owner": "service_referral_status_root_v1",
+      "note": "Already stable on referral-status policy."
+    },
+    {
+      "message": "մասնագետի համար ուղեգիր է պետք",
+      "runtime_owner": "service_referral_status_root_v1",
+      "note": "Already stable on referral-status policy."
+    },
+    {
+      "message": "մասնագետի մոտ ինչպես գրանցվեմ",
+      "runtime_owner": "routing_specialist_referral_confusion_v1",
+      "note": "Arrangement wording still belongs with routing/confusion."
+    },
+    {
+      "message": "մասնագետի մոտ անվճար կարո՞ղ եմ գնալ",
+      "runtime_owner": "eligibility_status_coverage_root_v1",
+      "note": "Entitlement overlap remains intentionally out of scope."
+    }
+  ],
+  "safe_to_move_now": false,
+  "why_not": [
+    "No remaining narrow slice separates cleanly from routing_specialist_referral_confusion_v1.",
+    "Arrangement wording overlaps with routing_referral_where_to_go_v2 behavior.",
+    "Free-care wording overlaps with eligibility_status_coverage_root_v1 and is intentionally excluded.",
+    "Forcing another guard here would likely widen theft instead of improving family ownership."
+  ],
+  "protected_neighbors_checked": [
+    "service_referral_status_root_v1",
+    "routing_referral_where_to_go_v2",
+    "routing_specialist_referral_confusion_v1",
+    "eligibility_status_coverage_root_v1",
+    "service_admission_type_root_v1",
+    "complaint_2_official_complaint_channels",
+    "complaint_refusal_denied_service_v2",
+    "medicine_coverage_exact_name_dosage_form_v2",
+    "faq_27",
+    "technical_armed_visibility_issue_v1"
+  ],
+  "next_recommended_step": "Pause further referral-status breadth patching and move to the next Phase 5 family with a cleaner unresolved surface."
+}

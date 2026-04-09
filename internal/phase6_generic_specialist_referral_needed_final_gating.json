@@ -1,0 +1,61 @@
+{
+  "phase": 6,
+  "surface_id": "generic_specialist_process_residue",
+  "review_focus": "referral_needed_bucket_only",
+  "decision": "not_live_ready",
+  "live_adjudication_enabled": false,
+  "allowlisted_families_considered": [
+    "service_referral_status_root_v1",
+    "routing_specialist_referral_confusion_v1"
+  ],
+  "why_not_live_ready": [
+    "The referral-needed bucket is mostly stable already, with runtime on service_referral_status_root_v1 for most tested prompts.",
+    "The remaining disagreement is concentrated in one narrow wording family around 'նեղ մասնագետի ուղեգիր է պետք'.",
+    "Closely adjacent phrasings already split differently at runtime: 'նեղ մասնագետի ուղեգիր է պետք' routes to routing_specialist_referral_confusion_v1, while 'նեղ մասնագետի մոտ ուղեգիր է պե՞տք' routes to service_referral_status_root_v1.",
+    "That near-minimal phrasing difference means a live override rule is still too brittle and could steal stable routing behavior."
+  ],
+  "targeted_referral_needed_probe_summary": {
+    "count": 6,
+    "runtime_winner_patterns": {
+      "service_referral_status_root_v1": 5,
+      "routing_specialist_referral_confusion_v1": 1
+    },
+    "shadow_predicted_patterns": {
+      "service_referral_status_root_v1": 5
+    },
+    "repeated_disagreement_examples": [
+      {
+        "text": "նեղ մասնագետի ուղեգիր է պետք",
+        "runtime_winner": "routing_specialist_referral_confusion_v1",
+        "shadow_predicted_family": "service_referral_status_root_v1",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "protected_neighbor_check": {
+    "routing_arrangement_examples": [
+      "մասնագետի մոտ ինչպես գրանցվեմ",
+      "մասնագետի մոտ ինչպես հերթագրվեմ",
+      "մասնագետի համար նախ բժիշկ պիտի տեսնե՞մ"
+    ],
+    "eligibility_examples": [
+      "մասնագետի մոտ անվճար կարո՞ղ եմ գնալ",
+      "մասնագետի այցը ծածկվո՞ւմ է"
+    ],
+    "result": "Neighbors remained stable and therefore must remain excluded from any future pilot rule."
+  },
+  "future_rule_requirements_before_reconsideration": [
+    "A referral-needed-only rule must explain the 'նեղ մասնագետ' wording split without stealing routing/arrangement prompts.",
+    "The rule must remain fully inactive on any free-care or coverage phrasing.",
+    "Replay evidence must show improvement on more than one repeated disagreement family."
+  ],
+  "recommendation": {
+    "next_stage": "stop_phase6_implementation_here_for_this_surface",
+    "reason": "No narrower referral-needed-only override can be stated confidently enough from current evidence.",
+    "do_not_do_yet": [
+      "No live pilot",
+      "No owner override",
+      "No answer-generation changes"
+    ]
+  }
+}

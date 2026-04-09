@@ -1,0 +1,94 @@
+{
+  "phase": 5,
+  "family_id": "service_referral_status_service_breadth_v1",
+  "scope": {
+    "includes": [
+      "MRI / CT / lab / specialist visit referral requirement questions",
+      "with-referral vs no-referral service access questions",
+      "service access preconditions for scheduled specialist/tests services"
+    ],
+    "excludes": [
+      "where-to-go routing questions",
+      "generic specialist routing confusion",
+      "hospital admission/process",
+      "complaint routing",
+      "broad entitlement / status-based free-care questions",
+      "medicine coverage exact-name questions"
+    ]
+  },
+  "owner_map": {
+    "referral_status_policy": "service_referral_status_root_v1",
+    "where_to_go_routing": "routing_referral_where_to_go_v2",
+    "specialist_routing_confusion": "routing_specialist_referral_confusion_v1",
+    "eligibility_entitlement": "eligibility_status_coverage_root_v1"
+  },
+  "stable_surfaces": [
+    {
+      "message": "մռտ անվճար է",
+      "runtime_owner": "service_referral_status_root_v1"
+    },
+    {
+      "message": "կտ-ի համար ուղեգիր է պետք",
+      "runtime_owner": "service_referral_status_root_v1"
+    },
+    {
+      "message": "անալիզի համար ուղեգիր է պետք",
+      "runtime_owner": "service_referral_status_root_v1"
+    },
+    {
+      "message": "կտ-ի համար ուր դիմեմ",
+      "runtime_owner": "routing_referral_where_to_go_v2"
+    },
+    {
+      "message": "նեղ մասնագետի համար ուր դիմեմ",
+      "runtime_owner": "routing_specialist_referral_confusion_v1"
+    }
+  ],
+  "narrow_migration_completed": {
+    "name": "named_specialist_referral_status_process_and_mri_ct_requirements",
+    "reason": "Two clean narrow slices were separable inside referral-status service breadth: named-specialist referral/process questions and MRI/CT prerequisite/requirements wording.",
+    "examples_now_fixed": [
+      "սրտաբանի համար ուղեգիր է պետք",
+      "եթե ուղեգիր չունեմ սրտաբանի մոտ կընդունեն",
+      "մռտ-ի համար ինչ պետք է ունենամ",
+      "մռտ-ի համար ինչ փաստաթուղթ է պետք",
+      "կտ-ի համար ինչ է պետք"
+    ]
+  },
+  "protected_neighbors": [
+    "routing_referral_where_to_go_v2",
+    "routing_specialist_referral_confusion_v1",
+    "eligibility_status_coverage_root_v1",
+    "service_admission_type_root_v1",
+    "complaint_2_official_complaint_channels",
+    "complaint_refusal_denied_service_v2",
+    "medicine_coverage_exact_name_dosage_form_v2"
+  ],
+  "remaining_watchpoints": [
+    {
+      "message": "սրտաբանի մոտ անվճար կարո՞ղ եմ գնալ",
+      "runtime_owner": "eligibility_status_coverage_root_v1",
+      "note": "Left out intentionally because the 'անվճար' surface still overlaps with entitlement logic."
+    },
+    {
+      "message": "մասնագետի համար նախ բժիշկ պիտի տեսնե՞մ",
+      "runtime_owner": "routing_specialist_referral_confusion_v1",
+      "note": "Still broad/generic enough to leave with routing-specialist confusion for now."
+    },
+    {
+      "message": "մռտ անելու համար նախ ինչ անեմ",
+      "runtime_owner": "escalate_safety",
+      "note": "Still intentionally left out because open-ended 'what should I do' phrasing is safety-shaped."
+    },
+    {
+      "message": "մռտ-ի համար ինչպես գրանցվեմ",
+      "runtime_owner": "routing_referral_where_to_go_v2",
+      "note": "Still belongs to arrangement/routing rather than prerequisite status."
+    },
+    {
+      "message": "սրտաբանի մոտ անվճար կարո՞ղ եմ գնալ",
+      "runtime_owner": "eligibility_status_coverage_root_v1",
+      "note": "Still intentionally left out because the 'անվճար' surface overlaps with entitlement logic."
+    }
+  ]
+}
