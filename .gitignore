@@ -29,3 +29,5 @@ __pycache__/
 .codex/
 .env
 validate_kb_report_utf8.txt
+internal/live_like_scenarios_report.json
+internal/kb_before_step1/
