@@ -1,0 +1,76 @@
+{
+  "artifact_type": "phase6_pilot_readiness_assessment",
+  "mode": "shadow_only_benchmark_gate",
+  "live_phase6_enabled": false,
+  "source_artifacts": [
+    "internal/phase6_status_handoff.json",
+    "internal/phase6_generic_specialist_gating_review.json",
+    "internal/phase6_generic_specialist_replay_buckets.json",
+    "internal/phase6_generic_specialist_referral_needed_final_gating.json",
+    "internal/phase6_pilot_benchmark_report.json"
+  ],
+  "benchmark_summary": {
+    "suite_name": "phase6_pilot_readiness_benchmark",
+    "case_count": 101,
+    "passed": 82,
+    "failed": 19,
+    "accuracy": 0.8119,
+    "rating": "needs_more_work_before_pilot_review"
+  },
+  "why_not_live_ready": [
+    "The broad benchmark still shows too many misses across protected stable owners to enable a live pilot safely.",
+    "Some misses are known boundary/no-go surfaces, but several others look like concrete regressions or weak spots on protected owners.",
+    "That means the correct next step is targeted regression triage, not enabling Phase 6 live adjudication."
+  ],
+  "failure_clusters": {
+    "known_boundary_noise": [
+      {
+        "surface": "complaint_generic_procedure_residue",
+        "examples": [
+          "Որտեղ բողոք ներկայացնեմ",
+          "Ում դիմեմ գանգատով",
+          "Որտեղ պետք է դիմեմ բողոքով"
+        ],
+        "note": "These prompts sit on the already-frozen complaint generic-procedure residue and should not be used to justify a broad live pilot."
+      }
+    ],
+    "protected_owner_regression_candidates": [
+      {
+        "owner": "eligibility_status_coverage_root_v1",
+        "examples": [
+          "Ովքեր կարող են օգտվել պետպատվերից",
+          "զինվորական ընտանիքը պետպատվեր ունի՞"
+        ]
+      },
+      {
+        "owner": "medicine_coverage_exact_name_dosage_form_v2",
+        "examples": [
+          "պարացետամոլ 500 մգ հաբը ծածկվո՞ւմ է",
+          "ինսուլինը պետպատվերով տալի՞ս են",
+          "այս դեղը անվճա՞ր է"
+        ]
+      },
+      {
+        "owner": "technical_armed_visibility_issue_v1",
+        "examples": [
+          "Արմեդում գրառումը բացակայում է",
+          "Արմեդը ցույց չի տալիս տվյալները"
+        ]
+      },
+      {
+        "owner": "faq_27",
+        "examples": [
+          "Բժշկի մեղքով վնասի դեպքում ինչ պատասխանատվություն կա"
+        ]
+      }
+    ]
+  },
+  "pilot_decision": {
+    "decision": "no_go",
+    "reason": "Benchmark evidence is not strong enough, and there are still regression-like misses on protected owners."
+  },
+  "recommended_next_step": {
+    "type": "targeted_regression_triage_only",
+    "note": "Do not set Phase 6 live. If work continues, it should focus on a small number of concrete protected-owner misses surfaced by the benchmark, with regression-safe fixes only."
+  }
+}

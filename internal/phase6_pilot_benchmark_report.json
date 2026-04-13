@@ -1,0 +1,956 @@
+{
+  "suite_name": "phase6_pilot_readiness_benchmark",
+  "case_count": 101,
+  "passed": 82,
+  "failed": 19,
+  "accuracy": 0.8119,
+  "rating": "needs_more_work_before_pilot_review",
+  "per_owner": [
+    {
+      "owner": "complaint_29_inspection",
+      "passed": 6,
+      "total": 6,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "complaint_2_official_complaint_channels",
+      "passed": 1,
+      "total": 6,
+      "accuracy": 0.1667
+    },
+    {
+      "owner": "complaint_40_provider_misconduct",
+      "passed": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    {
+      "owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "passed": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    {
+      "owner": "complaint_medicine_not_provided_v1",
+      "passed": 5,
+      "total": 5,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "complaint_missing_or_wrong_record_v1",
+      "passed": 3,
+      "total": 5,
+      "accuracy": 0.6
+    },
+    {
+      "owner": "complaint_refusal_denied_service_v2",
+      "passed": 8,
+      "total": 8,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "eligibility_status_coverage_root_v1",
+      "passed": 6,
+      "total": 8,
+      "accuracy": 0.75
+    },
+    {
+      "owner": "faq_27",
+      "passed": 1,
+      "total": 2,
+      "accuracy": 0.5
+    },
+    {
+      "owner": "faq_39",
+      "passed": 3,
+      "total": 3,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "faq_40",
+      "passed": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "passed": 1,
+      "total": 5,
+      "accuracy": 0.2
+    },
+    {
+      "owner": "routing_referral_where_to_go_v2",
+      "passed": 7,
+      "total": 8,
+      "accuracy": 0.875
+    },
+    {
+      "owner": "routing_specialist_referral_confusion_v1",
+      "passed": 8,
+      "total": 8,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "service_admission_type_root_v1",
+      "passed": 10,
+      "total": 10,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "service_referral_status_root_v1",
+      "passed": 10,
+      "total": 10,
+      "accuracy": 1.0
+    },
+    {
+      "owner": "technical_armed_visibility_issue_v1",
+      "passed": 3,
+      "total": 5,
+      "accuracy": 0.6
+    }
+  ],
+  "failures": [
+    {
+      "message": "կտ-ի համար ինչպես գրանցվեմ",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Ուղեգիր կամ բժշկի նշանակո՞ւմ ունեք։"
+    },
+    {
+      "message": "պետպատվերից ո՞վ կարող է օգտվել",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "message": "զինվորական ընտանիքը պետպատվեր ունի՞",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Ո՞ր ծառայության մասին է խոսքը՝ ՄՌՏ, ԿՏ, լաբորատոր քննություն, թե մասնագետի այց։"
+    },
+    {
+      "message": "Որտեղ բողոք ներկայացնեմ",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "follow_up_question": null
+    },
+    {
+      "message": "Ինչպես կապվել բողոքի համար",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Գրե՛ք՝ որ մասնագետի մոտ եք ուզում գնալ կամ ինչ հարցով է պետք ուղղորդումը։"
+    },
+    {
+      "message": "Բողոքով ում պետք է դիմեմ",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "message": "Ում դիմեմ գանգատով",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Գրե՛ք՝ ինչի համար եք ուզում դիմել՝ նեղ մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության։"
+    },
+    {
+      "message": "Որտեղ պետք է դիմեմ բողոքով",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Գրե՛ք՝ ինչի համար եք ուզում դիմել՝ նեղ մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության։"
+    },
+    {
+      "message": "Մեդաշխատողի ոչ պատշաճ վարքի մասին որտեղ բողոքեմ",
+      "expected_owner": "complaint_40_provider_misconduct",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Գրե՛ք՝ ինչի համար եք ուզում դիմել՝ նեղ մասնագետի, հետազոտության, թե ընդհանուր բուժօգնության։"
+    },
+    {
+      "message": "երկու անգամ վճար եմ արել",
+      "expected_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Ո՞ր կարգավիճակի մասին է խոսքը՝ 65+, թոշակառու, հաշմանդամություն, հղիություն, երեխա, սոցիալապես անապահով, թե աշխատող/ապահովագրված։"
+    },
+    {
+      "message": "էլեկտրոնային գրառումը բացակայում է",
+      "expected_owner": "complaint_missing_or_wrong_record_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "message": "բժշկական գրառումս սխալ է",
+      "expected_owner": "complaint_missing_or_wrong_record_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "message": "պարացետամոլ 500 մգ հաբը ծածկվո՞ւմ է",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "message": "ինսուլինը պետպատվերով տալի՞ս են",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "complaint_unexpected_payment_dispute_v2",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Գրե՛ք՝ որ ծառայության համար են գումար պահանջել և որ հաստատությունում։"
+    },
+    {
+      "message": "այս դեղը անվճա՞ր է",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Խոսքը հոսպիտալացմա՞ն մասին է, թե վիրահատության։"
+    },
+    {
+      "message": "դեղի ծածկույթը ուզում եմ ճշտել",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Ո՞ր կարգավիճակի մասին է խոսքը՝ 65+, թոշակառու, հաշմանդամություն, հղիություն, երեխա, սոցիալապես անապահով, թե աշխատող/ապահովագրված։"
+    },
+    {
+      "message": "Արմեդում գրառումը բացակայում է",
+      "expected_owner": "technical_armed_visibility_issue_v1",
+      "actual_owner": "complaint_missing_or_wrong_record_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Նշե՛ք՝ տվյալը բացակայում է, թե սխալ է երևում։"
+    },
+    {
+      "message": "Արմեդը ցույց չի տալիս տվյալները",
+      "expected_owner": "technical_armed_visibility_issue_v1",
+      "actual_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Գրե՛ք՝ խոսքը կրկնակի գանձմա՞ն մասին է, թե վճարման տվյալներն են սխալ երևում։"
+    },
+    {
+      "message": "Բժշկի մեղքով վնասի դեպքում ինչ պատասխանատվություն կա",
+      "expected_owner": "faq_27",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "follow_up_question": "Ո՞ր կարգավիճակի մասին է խոսքը՝ 65+, թոշակառու, հաշմանդամություն, հղիություն, երեխա, սոցիալապես անապահով, թե աշխատող/ապահովագրված։"
+    }
+  ],
+  "results": [
+    {
+      "message": "մռտ անվճա՞ր է",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "կտ անվճա՞ր է",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "անալիզի համար ուղեգիր է պետք",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "կտ-ի համար ուղեգիր է պետք",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մռտ-ի համար ուղեգիր է պետք",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "սրտաբանի համար ուղեգիր է պետք",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "եթե ուղեգիր չունեմ սրտաբանի մոտ կընդունեն",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "մռտ-ի համար ինչ փաստաթուղթ է պետք",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "համակարգչային տոմոգրաֆիայի համար ինչ է պետք",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "առանց ուղեգրի մասնագետի մոտ կարո՞ղ եմ գնալ",
+      "expected_owner": "service_referral_status_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ուր դիմեմ ուղեգիր ստանալու համար",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մռտ-ի համար ուր դիմեմ",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "կտ-ի համար ուր դիմեմ",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "անալիզի համար ուր դիմեմ",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "հետազոտության համար ուր դիմեմ",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մռտ-ի համար ինչպես գրանցվեմ",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "կտ-ի համար ինչպես գրանցվեմ",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "որտեղ դիմեմ մռտ անելու համար",
+      "expected_owner": "routing_referral_where_to_go_v2",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "նեղ մասնագետի ուղեգիր է պետք",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մասնագետի մոտ ինչպես գնամ",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մասնագետի համար նախ բժիշկ պիտի տեսնե՞մ",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մասնագետի մոտ ինչպես գրանցվեմ",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մասնագետի մոտ ինչպես հերթագրվեմ",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "նեղ մասնագետի համար ուր դիմեմ",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ինչպես են ընդունում մասնագետի մոտ",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մասնագետի մոտ գնալու համար ինչ է պետք",
+      "expected_owner": "routing_specialist_referral_confusion_v1",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Հիվանդանոց ընդունվելու կարգը որն է",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ստացիոնար ընդունվելու համար ինչ է պետք",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "պլանային ընդունում է թե անհետաձգելի",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "հիվանդանոց պառկելու համար ինչ է պետք",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ինչպես հոսպիտալացվեմ",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ինչպես պառկեմ հիվանդանոց",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "հոսպիտալացման համար ինչ է պետք",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "պլանային հոսպիտալացման համար ինչ է պետք",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "վիրահատության համար ինչ է պետք",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ինչ դեպքերում են հոսպիտալացնում",
+      "expected_owner": "service_admission_type_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ովքեր կարող են օգտվել պետպատվերից",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ովքեր ունեն անվճար բուժօգնության իրավունք",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ո՞վ կարող է օգտվել արտոնյալ բուժօգնությունից",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "մասնագետի մոտ անվճար կարո՞ղ եմ գնալ",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ես շահառու եմ թե ոչ",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "պետպատվերից ո՞վ կարող է օգտվել",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "հղիներին անվճար բուժօգնություն հասնու՞մ է",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "զինվորական ընտանիքը պետպատվեր ունի՞",
+      "expected_owner": "eligibility_status_coverage_root_v1",
+      "actual_owner": "service_referral_status_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "ինձ մերժել են ու չեն սպասարկել",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Եթե ծառայությունը մերժել են ուր դիմեմ բողոքով",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Եթե ուղեգիր չեն տալիս որտեղ բողոքեմ",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Եթե անալիզ չեն արել որտեղ բողոքեմ",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Եթե չեմ կարող կցագրվել ընտանեկան բժշկի մոտ ուր դիմեմ",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Եթե ուրիշ պոլիկլինիկա չեմ կարող գրանցվել ուր դիմեմ",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Հետազոտությունը չեն արել ուր դիմեմ բողոքով",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Եթե մռտ-ի համար չեն ընդունել ուր դիմեմ բողոքով",
+      "expected_owner": "complaint_refusal_denied_service_v2",
+      "actual_owner": "complaint_refusal_denied_service_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Ուր զանգեմ բողոքի համար",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "complaint_2_official_complaint_channels",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Որտեղ բողոք ներկայացնեմ",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "passed": false
+    },
+    {
+      "message": "Ինչպես կապվել բողոքի համար",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "routing_specialist_referral_confusion_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "Բողոքով ում պետք է դիմեմ",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "Ում դիմեմ գանգատով",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "Որտեղ պետք է դիմեմ բողոքով",
+      "expected_owner": "complaint_2_official_complaint_channels",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "Եթե երկար հերթ է եղել որտեղ բողոքեմ",
+      "expected_owner": "complaint_29_inspection",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Սպասման ժամից դժգոհ եմ ուր դիմեմ բողոքով",
+      "expected_owner": "complaint_29_inspection",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Եթե դեղատնից դժգոհ եմ որտեղ բողոքեմ",
+      "expected_owner": "complaint_29_inspection",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Դեղատան սպասարկման համար ուր դիմեմ բողոքով",
+      "expected_owner": "complaint_29_inspection",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Հիվանդանոցի ծառայության համար ուր դիմեմ բողոքով",
+      "expected_owner": "complaint_29_inspection",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Հերթից բողոք ունեմ որտեղ դիմեմ",
+      "expected_owner": "complaint_29_inspection",
+      "actual_owner": "complaint_29_inspection",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Բուժաշխատողի վարքից բողոք ունեմ",
+      "expected_owner": "complaint_40_provider_misconduct",
+      "actual_owner": "complaint_40_provider_misconduct",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Բժշկի վարքագծից ուր բողոքեմ",
+      "expected_owner": "complaint_40_provider_misconduct",
+      "actual_owner": "complaint_40_provider_misconduct",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Բժիշկը կոպիտ է եղել որտեղ բողոքեմ",
+      "expected_owner": "complaint_40_provider_misconduct",
+      "actual_owner": "complaint_40_provider_misconduct",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Բուժաշխատողի էթիկայի խախտման համար ուր դիմեմ",
+      "expected_owner": "complaint_40_provider_misconduct",
+      "actual_owner": "complaint_40_provider_misconduct",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Մեդաշխատողի ոչ պատշաճ վարքի մասին որտեղ բողոքեմ",
+      "expected_owner": "complaint_40_provider_misconduct",
+      "actual_owner": "routing_referral_where_to_go_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "երկու անգամ են գանձել",
+      "expected_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "actual_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "վճարման կարգավիճակը սխալ է",
+      "expected_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "actual_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "երկու անգամ վճար եմ արել",
+      "expected_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "վճարել եմ բայց համակարգում չի նստել",
+      "expected_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "actual_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "սխալ վճարման կարգավիճակ է երևում",
+      "expected_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "actual_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "գրառում չկա",
+      "expected_owner": "complaint_missing_or_wrong_record_v1",
+      "actual_owner": "complaint_missing_or_wrong_record_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "տվյալը սխալ է երևում",
+      "expected_owner": "complaint_missing_or_wrong_record_v1",
+      "actual_owner": "complaint_missing_or_wrong_record_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "էլեկտրոնային գրառումը բացակայում է",
+      "expected_owner": "complaint_missing_or_wrong_record_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "իմ տվյալները սխալ են լրացրել",
+      "expected_owner": "complaint_missing_or_wrong_record_v1",
+      "actual_owner": "complaint_missing_or_wrong_record_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "բժշկական գրառումս սխալ է",
+      "expected_owner": "complaint_missing_or_wrong_record_v1",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "դեղը չեն տվել",
+      "expected_owner": "complaint_medicine_not_provided_v1",
+      "actual_owner": "complaint_medicine_not_provided_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "անվճար դեղը չեն տրամադրել",
+      "expected_owner": "complaint_medicine_not_provided_v1",
+      "actual_owner": "complaint_medicine_not_provided_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "դեղատանը դեղը չեն տվել",
+      "expected_owner": "complaint_medicine_not_provided_v1",
+      "actual_owner": "complaint_medicine_not_provided_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "ասացին դեղը չկա ու չեն տալիս",
+      "expected_owner": "complaint_medicine_not_provided_v1",
+      "actual_owner": "complaint_medicine_not_provided_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "պետական ծրագրով դեղը չեն տվել",
+      "expected_owner": "complaint_medicine_not_provided_v1",
+      "actual_owner": "complaint_medicine_not_provided_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "էս դեղը պետությունը տալիս ա՞",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "պարացետամոլ 500 մգ հաբը ծածկվո՞ւմ է",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "ինսուլինը պետպատվերով տալի՞ս են",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "complaint_unexpected_payment_dispute_v2",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "այս դեղը անվճա՞ր է",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "service_admission_type_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "դեղի ծածկույթը ուզում եմ ճշտել",
+      "expected_owner": "medicine_coverage_exact_name_dosage_form_v2",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "արմեդում չի երևում",
+      "expected_owner": "technical_armed_visibility_issue_v1",
+      "actual_owner": "technical_armed_visibility_issue_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Եթե ԱՐՄԵԴ-ում չի երևում որտեղ բողոքեմ",
+      "expected_owner": "technical_armed_visibility_issue_v1",
+      "actual_owner": "technical_armed_visibility_issue_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Արմեդում դեղատոմսը չի երևում",
+      "expected_owner": "technical_armed_visibility_issue_v1",
+      "actual_owner": "technical_armed_visibility_issue_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": true
+    },
+    {
+      "message": "Արմեդում գրառումը բացակայում է",
+      "expected_owner": "technical_armed_visibility_issue_v1",
+      "actual_owner": "complaint_missing_or_wrong_record_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "Արմեդը ցույց չի տալիս տվյալները",
+      "expected_owner": "technical_armed_visibility_issue_v1",
+      "actual_owner": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "Ի՞նչ պատասխանատվություն են կրում բժշկական օգնություն իրականացնողները իրենց մեղքով վնաս պատճառելու դեպքում",
+      "expected_owner": "faq_27",
+      "actual_owner": "faq_27_ի_նչ_պատասխանատվություն_են_կրում_բժշկական_օգնություն_իրականացնողները_իրենց_մեղքո",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Բժշկի մեղքով վնասի դեպքում ինչ պատասխանատվություն կա",
+      "expected_owner": "faq_27",
+      "actual_owner": "eligibility_status_coverage_root_v1",
+      "action": "partial_answer_with_clarify",
+      "passed": false
+    },
+    {
+      "message": "Ինչպե՞ս գրանցվել ընտանեկան բժշկի մոտ",
+      "expected_owner": "faq_39",
+      "actual_owner": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Պոլիկլինիկա փոխելու կարգը որն է",
+      "expected_owner": "faq_39",
+      "actual_owner": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Կարո՞ղ եմ փոխել իմ ընտանեկան բժշկին",
+      "expected_owner": "faq_39",
+      "actual_owner": "faq_39_ինչպե_ս_քաղաքացիները_կարող_են_գրանցվել_ընտանեկան_բժշկի_մոտ",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Ե՞րբ կարող է ընտանեկան բժիշկը հրաժարվել գրանցելուց",
+      "expected_owner": "faq_40",
+      "actual_owner": "faq_40_երբ_կարող_է_ընտանեկան_բժիշկը_հրաժարվել_գրանցելուց",
+      "action": "direct_answer",
+      "passed": true
+    },
+    {
+      "message": "Ինչ պատճառներով կարող են հրաժարվել կցագրելուց",
+      "expected_owner": "faq_40",
+      "actual_owner": "faq_40_երբ_կարող_է_ընտանեկան_բժիշկը_հրաժարվել_գրանցելուց",
+      "action": "direct_answer",
+      "passed": true
+    }
+  ]
+}

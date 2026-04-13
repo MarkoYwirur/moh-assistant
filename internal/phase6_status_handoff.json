@@ -18,6 +18,12 @@
       ],
       "runtime_hook_file": "logging_utils.py",
       "log_file": "logs/phase6_shadow_disagreements.jsonl",
+      "surfaces_enabled": [
+        "generic_specialist_process_residue",
+        "noisy_admission_timing_residue",
+        "complaint_generic_procedure_residue",
+        "deferred_legal_basis_vs_eligibility_overlap"
+      ],
       "properties": [
         "No owner override",
         "No answer-generation changes",
@@ -33,7 +39,8 @@
         "internal/phase6_generic_specialist_referral_needed_final_gating.json"
       ],
       "global_status": [
-        "internal/phase6_shadow_surface_status.json"
+        "internal/phase6_shadow_surface_status.json",
+        "internal/phase6_status_handoff.json"
       ]
     }
   },
@@ -74,6 +81,7 @@
       "decision": "no_go_for_live_pilot",
       "artifacts": [
         "internal/phase6_generic_specialist_gating_review.json",
+        "internal/phase6_generic_specialist_replay_buckets.json",
         "internal/phase6_generic_specialist_referral_needed_final_gating.json"
       ]
     }
