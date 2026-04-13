@@ -3,55 +3,55 @@
   "surface_id": "generic_specialist_process_residue",
   "mode": "offline_reviewed_replay_only",
   "shadow_history": {
-    "rows_reviewed": 156,
+    "rows_reviewed": 220,
     "bucket_summary": {
       "free_care_coverage": {
-        "shadow_rows": 24,
-        "runtime_shadow_disagreements": 10
+        "shadow_rows": 42,
+        "runtime_shadow_disagreements": 23
       },
       "referral_needed": {
-        "shadow_rows": 70,
-        "runtime_shadow_disagreements": 44
+        "shadow_rows": 92,
+        "runtime_shadow_disagreements": 53
       },
       "routing_arrangement": {
-        "shadow_rows": 62,
+        "shadow_rows": 86,
         "runtime_shadow_disagreements": 0
       }
     }
   },
   "reviewed_dataset": {
     "path": "C:/Users/Asus/Desktop/moh-assistant/internal/phase6_generic_specialist_reviewed_dataset.json",
-    "reviewed_rows": 15,
+    "reviewed_rows": 32,
     "bucket_breakdown": {
       "free_care_coverage": {
-        "reviewed_rows": 4,
+        "reviewed_rows": 10,
         "runtime_correct": 2,
-        "runtime_accuracy": 0.5,
-        "shadow_correct": 3,
-        "shadow_accuracy": 0.75,
-        "disagreement_rate": 0.75,
+        "runtime_accuracy": 0.2,
+        "shadow_correct": 9,
+        "shadow_accuracy": 0.9,
+        "disagreement_rate": 0.9,
         "override_count": 0,
         "false_override_count": 0,
         "neighbor_theft_count": 0
       },
       "referral_needed": {
-        "reviewed_rows": 6,
-        "runtime_correct": 6,
+        "reviewed_rows": 12,
+        "runtime_correct": 12,
         "runtime_accuracy": 1.0,
-        "shadow_correct": 3,
-        "shadow_accuracy": 0.5,
-        "disagreement_rate": 0.5,
+        "shadow_correct": 7,
+        "shadow_accuracy": 0.5833,
+        "disagreement_rate": 0.4167,
         "override_count": 1,
         "false_override_count": 1,
         "neighbor_theft_count": 0
       },
       "routing_arrangement": {
-        "reviewed_rows": 5,
-        "runtime_correct": 5,
+        "reviewed_rows": 10,
+        "runtime_correct": 10,
         "runtime_accuracy": 1.0,
-        "shadow_correct": 5,
-        "shadow_accuracy": 1.0,
-        "disagreement_rate": 0.0,
+        "shadow_correct": 7,
+        "shadow_accuracy": 0.7,
+        "disagreement_rate": 0.3,
         "override_count": 0,
         "false_override_count": 0,
         "neighbor_theft_count": 0
@@ -59,14 +59,20 @@
     }
   },
   "candidate_override_metrics": {
-    "total_reviewed_rows": 15,
-    "disagreement_rate": 0.4,
+    "total_reviewed_rows": 32,
+    "disagreement_rate": 0.5312,
     "precision": 0.0,
     "recall": 0.0,
     "override_count": 1,
     "false_override_count": 1,
     "neighbor_theft_count": 0
   },
+  "recommendation": "remain_shadow_only",
+  "recommendation_reasons": [
+    "Referral-needed runtime accuracy is already perfect and the candidate rule still produces a false override.",
+    "Referral-needed candidate precision remains below the minimum live-pilot threshold of 0.9.",
+    "The candidate improvement is still concentrated in the narrow 'նեղ մասնագետ' wording split."
+  ],
   "reviewed_results": [
     {
       "bucket": "referral_needed",
@@ -114,6 +120,50 @@
     },
     {
       "bucket": "referral_needed",
+      "message": "ուղեգիր չունեմ, մասնագետի մոտ կարո՞ղ եմ մտնել",
+      "gold_family": "service_referral_status_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "service_referral_status_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "no_disagreement"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "մասնագետ տեսնելու համար ուղեգիր պե՞տք է",
+      "gold_family": "service_referral_status_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": null,
+      "shadow_confidence": null,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": null
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "մասնագետի ընդունելության համար ուղեգիր ուզո՞ւմ են",
+      "gold_family": "service_referral_status_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": null,
+      "shadow_confidence": null,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": null
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "առանց ուղեգրի մասնագետը կընդունի՞",
+      "gold_family": "service_referral_status_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "service_referral_status_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "no_disagreement"
+    },
+    {
+      "bucket": "referral_needed",
       "message": "նեղ մասնագետի ուղեգիր է պետք",
       "gold_family": "routing_specialist_referral_confusion_v1",
       "runtime_winner": "routing_specialist_referral_confusion_v1",
@@ -133,6 +183,28 @@
       "override_eligible": false,
       "candidate_override_family": null,
       "block_reason": null
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "առանց ուղեգրի նեղ մասնագետի մոտ կարո՞ղ եմ գնալ",
+      "gold_family": "service_referral_status_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "service_referral_status_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "no_disagreement"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "նեղ մասնագետի մոտ առանց ուղեգրի կընդունեն",
+      "gold_family": "service_referral_status_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "service_referral_status_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "no_disagreement"
     },
     {
       "bucket": "routing_arrangement",
@@ -190,6 +262,61 @@
       "block_reason": "bucket_not_eligible"
     },
     {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ որտեղ դիմեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1",
+      "runtime_winner": "routing_specialist_referral_confusion_v1",
+      "shadow_predicted_family": "routing_specialist_referral_confusion_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ որտեղ հերթագրվեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1",
+      "runtime_winner": "routing_specialist_referral_confusion_v1",
+      "shadow_predicted_family": null,
+      "shadow_confidence": null,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": null
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ ոնց հասնեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1",
+      "runtime_winner": "routing_specialist_referral_confusion_v1",
+      "shadow_predicted_family": null,
+      "shadow_confidence": null,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": null
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "նեղ մասնագետի մոտ ինչպես ընկնեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1",
+      "runtime_winner": "routing_specialist_referral_confusion_v1",
+      "shadow_predicted_family": null,
+      "shadow_confidence": null,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": null
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ գնալու համար նախ ում դիմեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1",
+      "runtime_winner": "routing_specialist_referral_confusion_v1",
+      "shadow_predicted_family": "routing_specialist_referral_confusion_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
       "bucket": "free_care_coverage",
       "message": "մասնագետի մոտ անվճար կարո՞ղ եմ գնալ",
       "gold_family": "eligibility_status_coverage_root_v1",
@@ -226,6 +353,72 @@
       "bucket": "free_care_coverage",
       "message": "մասնագետի այցը ծածկվո՞ւմ է",
       "gold_family": "service_referral_status_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "eligibility_status_coverage_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի այցը պետպատվերով է՞",
+      "gold_family": "eligibility_status_coverage_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "eligibility_status_coverage_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի այցը արտոնյալ է՞",
+      "gold_family": "eligibility_status_coverage_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "eligibility_status_coverage_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի մոտ պետպատվերով կարո՞ղ եմ գնալ",
+      "gold_family": "eligibility_status_coverage_root_v1",
+      "runtime_winner": "routing_specialist_referral_confusion_v1",
+      "shadow_predicted_family": "eligibility_status_coverage_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի ընդունելությունը ծածկվու՞մ է պետության կողմից",
+      "gold_family": "eligibility_status_coverage_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "eligibility_status_coverage_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի այցը անվճար է բոլորի՞ համար",
+      "gold_family": "eligibility_status_coverage_root_v1",
+      "runtime_winner": "service_referral_status_root_v1",
+      "shadow_predicted_family": "eligibility_status_coverage_root_v1",
+      "shadow_confidence": 1.0,
+      "override_eligible": false,
+      "candidate_override_family": null,
+      "block_reason": "bucket_not_eligible"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի մոտ գնալը ինձ համար ծածկվո՞ւմ է",
+      "gold_family": "eligibility_status_coverage_root_v1",
       "runtime_winner": "service_referral_status_root_v1",
       "shadow_predicted_family": "eligibility_status_coverage_root_v1",
       "shadow_confidence": 1.0,

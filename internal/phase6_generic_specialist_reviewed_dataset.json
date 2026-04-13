@@ -5,7 +5,7 @@
   "mode": "reviewed_gold_labels_for_offline_replay_only",
   "notes": [
     "This dataset is intentionally bucketed so replay can prove whether a referral-needed-only pilot helps without stealing routing/arrangement or free-care/coverage behavior.",
-    "The narrow 'նեղ մասնագետի ուղեգիր է պետք' wording remains labeled with the protected routing owner to reflect the final no-go decision."
+    "The narrow 'նեղ մասնագետի ուղեգիր է պետք' wording remains labeled with the protected routing owner to reflect the current no-go decision boundary."
   ],
   "cases": [
     {
@@ -30,12 +30,42 @@
     },
     {
       "bucket": "referral_needed",
+      "message": "ուղեգիր չունեմ, մասնագետի մոտ կարո՞ղ եմ մտնել",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "մասնագետ տեսնելու համար ուղեգիր պե՞տք է",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "մասնագետի ընդունելության համար ուղեգիր ուզո՞ւմ են",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "առանց ուղեգրի մասնագետը կընդունի՞",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
       "message": "նեղ մասնագետի ուղեգիր է պետք",
       "gold_family": "routing_specialist_referral_confusion_v1"
     },
     {
       "bucket": "referral_needed",
       "message": "նեղ մասնագետի մոտ ուղեգիր է պե՞տք",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "առանց ուղեգրի նեղ մասնագետի մոտ կարո՞ղ եմ գնալ",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "նեղ մասնագետի մոտ առանց ուղեգրի կընդունեն",
       "gold_family": "service_referral_status_root_v1"
     },
     {
@@ -64,6 +94,31 @@
       "gold_family": "routing_specialist_referral_confusion_v1"
     },
     {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ որտեղ դիմեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ որտեղ հերթագրվեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ ոնց հասնեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "նեղ մասնագետի մոտ ինչպես ընկնեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ գնալու համար նախ ում դիմեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
       "bucket": "free_care_coverage",
       "message": "մասնագետի մոտ անվճար կարո՞ղ եմ գնալ",
       "gold_family": "eligibility_status_coverage_root_v1"
@@ -82,6 +137,36 @@
       "bucket": "free_care_coverage",
       "message": "մասնագետի այցը ծածկվո՞ւմ է",
       "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի այցը պետպատվերով է՞",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի այցը արտոնյալ է՞",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի մոտ պետպատվերով կարո՞ղ եմ գնալ",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի ընդունելությունը ծածկվու՞մ է պետության կողմից",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի այցը անվճար է բոլորի՞ համար",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի մոտ գնալը ինձ համար ծածկվո՞ւմ է",
+      "gold_family": "eligibility_status_coverage_root_v1"
     }
   ]
 }

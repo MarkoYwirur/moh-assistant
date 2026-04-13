@@ -8,20 +8,37 @@
     "service_referral_status_root_v1",
     "routing_specialist_referral_confusion_v1"
   ],
+  "excluded_buckets": [
+    "routing_arrangement",
+    "free_care_coverage"
+  ],
+  "reviewed_replay_summary": {
+    "reviewed_rows_total": 32,
+    "referral_needed_rows": 12,
+    "routing_arrangement_rows": 10,
+    "free_care_coverage_rows": 10,
+    "candidate_override_metrics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "override_count": 1,
+      "false_override_count": 1,
+      "neighbor_theft_count": 0
+    }
+  },
   "why_not_live_ready": [
-    "The referral-needed bucket is mostly stable already, with runtime on service_referral_status_root_v1 for most tested prompts.",
-    "The remaining disagreement is concentrated in one narrow wording family around 'նեղ մասնագետի ուղեգիր է պետք'.",
-    "Closely adjacent phrasings already split differently at runtime: 'նեղ մասնագետի ուղեգիր է պետք' routes to routing_specialist_referral_confusion_v1, while 'նեղ մասնագետի մոտ ուղեգիր է պե՞տք' routes to service_referral_status_root_v1.",
-    "That near-minimal phrasing difference means a live override rule is still too brittle and could steal stable routing behavior."
+    "The strengthened replay set still shows referral_needed runtime accuracy at 1.0.",
+    "The candidate referral-needed-only override still produces a false override.",
+    "The only improvement signal remains concentrated in the narrow 'narrow specialist' wording split.",
+    "That means the rule is still too brittle to promote without risking theft from stable routing behavior."
   ],
   "targeted_referral_needed_probe_summary": {
-    "count": 6,
+    "count": 12,
     "runtime_winner_patterns": {
-      "service_referral_status_root_v1": 5,
+      "service_referral_status_root_v1": 11,
       "routing_specialist_referral_confusion_v1": 1
     },
     "shadow_predicted_patterns": {
-      "service_referral_status_root_v1": 5
+      "service_referral_status_root_v1": 12
     },
     "repeated_disagreement_examples": [
       {
@@ -45,13 +62,14 @@
     "result": "Neighbors remained stable and therefore must remain excluded from any future pilot rule."
   },
   "future_rule_requirements_before_reconsideration": [
-    "A referral-needed-only rule must explain the 'նեղ մասնագետ' wording split without stealing routing/arrangement prompts.",
+    "A referral-needed-only rule must explain the 'narrow specialist' wording split without stealing routing/arrangement prompts.",
     "The rule must remain fully inactive on any free-care or coverage phrasing.",
-    "Replay evidence must show improvement on more than one repeated disagreement family."
+    "Replay evidence must show improvement on more than one repeated disagreement family.",
+    "Any future pilot candidate must keep low-confidence and mixed cases on the runtime winner."
   ],
   "recommendation": {
-    "next_stage": "stop_phase6_implementation_here_for_this_surface",
-    "reason": "No narrower referral-needed-only override can be stated confidently enough from current evidence.",
+    "next_stage": "remain_shadow_only",
+    "reason": "The strengthened replay is more decision-grade but still not live-ready.",
     "do_not_do_yet": [
       "No live pilot",
       "No owner override",

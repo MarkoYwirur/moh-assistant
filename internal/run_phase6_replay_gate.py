@@ -16,6 +16,8 @@ from logging_utils import (
 DATASET_PATH = ROOT / "phase6_generic_specialist_reviewed_dataset.json"
 LOG_PATH = ROOT.parent / "logs" / "phase6_shadow_disagreements.jsonl"
 REPORT_PATH = ROOT / "phase6_generic_specialist_replay_gate_report.json"
+REMAIN_SHADOW_ONLY = "remain_shadow_only"
+PILOT_CANDIDATE = "pilot_candidate_but_not_enabled"
 
 
 def load_dataset() -> dict:
@@ -179,6 +181,43 @@ def main() -> None:
             "neighbor_theft_count": neighbor_theft_count,
         }
 
+    recommendation = REMAIN_SHADOW_ONLY
+    recommendation_reasons = []
+
+    referral_bucket = bucket_breakdown.get("referral_needed", {})
+    routing_bucket = bucket_breakdown.get("routing_arrangement", {})
+    free_care_bucket = bucket_breakdown.get("free_care_coverage", {})
+
+    if routing_bucket.get("neighbor_theft_count", 0) > 0 or free_care_bucket.get("neighbor_theft_count", 0) > 0:
+        recommendation_reasons.append("Excluded buckets showed neighbor theft under the candidate rule.")
+    if referral_bucket.get("runtime_accuracy") == 1.0 and referral_bucket.get("false_override_count", 0) > 0:
+        recommendation_reasons.append("Referral-needed runtime accuracy is already perfect and the candidate rule still produces a false override.")
+    if precision < 0.9:
+        recommendation_reasons.append("Referral-needed candidate precision remains below the minimum live-pilot threshold of 0.9.")
+
+    repeated_false_overrides = [
+        row for row in reviewed_results
+        if row["bucket"] == "referral_needed"
+        and row["override_eligible"]
+        and row["candidate_override_family"] != row["gold_family"]
+    ]
+    if repeated_false_overrides and all("նեղ մասնագետ" in row["message"] for row in repeated_false_overrides):
+        recommendation_reasons.append("The candidate improvement is still concentrated in the narrow 'նեղ մասնագետ' wording split.")
+
+    if (
+        not recommendation_reasons
+        and precision >= 0.9
+        and recall > 0.0
+        and routing_bucket.get("neighbor_theft_count", 0) == 0
+        and free_care_bucket.get("neighbor_theft_count", 0) == 0
+    ):
+        recommendation = PILOT_CANDIDATE
+        recommendation_reasons.append("The reviewed replay set shows bucket-local improvement without excluded-bucket theft, but the pilot should still stay disabled pending explicit approval.")
+    else:
+        recommendation = REMAIN_SHADOW_ONLY
+        if not recommendation_reasons:
+            recommendation_reasons.append("The replay evidence does not yet support a live pilot.")
+
     report = {
         "artifact_type": "phase6_replay_gate_report",
         "surface_id": GENERIC_SPECIALIST_PROCESS_SURFACE_ID,
@@ -204,6 +243,8 @@ def main() -> None:
             "false_override_count": false_overrides,
             "neighbor_theft_count": sum(bucket_neighbor_theft_count.values()),
         },
+        "recommendation": recommendation,
+        "recommendation_reasons": recommendation_reasons,
         "reviewed_results": reviewed_results,
         "go_live_pilot": False,
         "why_not": [
@@ -223,6 +264,7 @@ def main() -> None:
                 "override_count": report["candidate_override_metrics"]["override_count"],
                 "false_override_count": report["candidate_override_metrics"]["false_override_count"],
                 "neighbor_theft_count": report["candidate_override_metrics"]["neighbor_theft_count"],
+                "recommendation": report["recommendation"],
                 "go_live_pilot": report["go_live_pilot"],
             },
             ensure_ascii=False,

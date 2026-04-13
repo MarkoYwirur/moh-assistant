@@ -6,7 +6,7 @@
   "current_launch_decision": "go_live_internal_shadow_only",
   "why_live_phase6_adjudication_is_not_enabled": [
     "All currently documented unresolved surfaces are either still too risky for live second-pass adjudication or have not accumulated enough replay evidence.",
-    "Generic specialist process wording remains the cleanest candidate, but even there the final referral-needed-only gating pass ended in a no-go decision.",
+    "Generic specialist process wording remains the cleanest candidate, but the strengthened 32-row reviewed replay still ends in remain_shadow_only.",
     "No other unresolved surface has a lower-risk live path than the already-rejected generic-specialist pilot."
   ],
   "implemented_phase6_work": {
@@ -67,7 +67,7 @@
     "enabled": false,
     "status_artifact": "internal/phase6_live_pilot_status.json",
     "why": [
-      "The control plane is now present, but no unresolved surface has yet met the replay and neighbor-theft bar required for a live override."
+      "The control plane is present, but no unresolved surface has yet met the replay and neighbor-theft bar required for a live override."
     ]
   },
   "surfaces_remaining_shadow_only": [
@@ -75,7 +75,8 @@
       "surface_id": "generic_specialist_process_residue",
       "state": "shadow_only_with_offline_design_and_final_no_go",
       "why": [
-        "Referral-needed-only live pilot is still too brittle at the wording boundary.",
+        "The strengthened 32-row reviewed replay still keeps this surface below the promotion bar.",
+        "Referral-needed remains the only future candidate bucket.",
         "Routing/arrangement and free-care/coverage buckets must remain excluded."
       ]
     },
@@ -104,11 +105,18 @@
   "explicit_no_go_decisions": [
     {
       "surface_id": "generic_specialist_process_residue",
-      "decision": "no_go_for_live_pilot",
+      "decision": "remain_shadow_only",
       "artifacts": [
         "internal/phase6_generic_specialist_gating_review.json",
         "internal/phase6_generic_specialist_replay_buckets.json",
-        "internal/phase6_generic_specialist_referral_needed_final_gating.json"
+        "internal/phase6_generic_specialist_referral_needed_final_gating.json",
+        "internal/phase6_generic_specialist_replay_gate_report.json"
+      ],
+      "why": [
+        "Reviewed replay rows: 32",
+        "Referral-needed runtime accuracy is already 1.0",
+        "Candidate override still produces a false override",
+        "The only improvement signal remains concentrated in the narrow 'narrow specialist' wording split"
       ]
     }
   ],
@@ -139,7 +147,7 @@
   ],
   "recommended_future_path": {
     "principle": "telemetry_first_replay_first_no_live_override_until_stronger_evidence_exists",
-    "next_step": "Run an internal staff pilot with shadow telemetry on, keep live adjudication disabled, and only revisit one documented unresolved surface if reviewed replay plus the disabled control-plane gate show a safe bounded override path.",
+    "next_step": "No more code on generic_specialist_process_residue in this pass. Keep shadow-only telemetry active, collect more reviewed examples only if materially new phrasing appears, and do not revisit a live pilot until replay evidence improves beyond the current 32-row no-go.",
     "do_not_do_yet": [
       "No live adjudication",
       "No owner override",

@@ -5,15 +5,19 @@
   "enabled_surface": null,
   "configured_candidate_surface": "generic_specialist_process_residue",
   "last_reviewed_dataset": "internal/phase6_generic_specialist_reviewed_dataset.json",
+  "last_reviewed_row_count": 32,
   "last_replay_gate_report": "internal/phase6_generic_specialist_replay_gate_report.json",
-  "current_replay_decision": "no_go_for_live_pilot",
+  "last_recommendation": "remain_shadow_only",
+  "current_replay_decision": "improved_but_not_live_ready",
   "threshold_used": 0.45,
   "override_count": 0,
-  "rollback_reason_if_disabled": "No live pilot is enabled. The current generic-specialist candidate remains below the evidence bar and the kill switch stays active.",
+  "rollback_reason_if_disabled": "No live pilot is enabled. The strengthened 32-row generic-specialist replay still fails the promotion bar because referral_needed runtime accuracy is already perfect, the candidate override still produces a false override, and the only remaining improvement signal is concentrated in the narrow 'narrow specialist' wording split.",
   "guardrails": [
     "No owner override while enabled=false or kill_switch=true",
     "No answer-generation changes",
     "Only one surface may ever be configured for live pilot evaluation at a time",
-    "Protected-neighbor theft immediately blocks promotion"
+    "Protected-neighbor theft immediately blocks promotion",
+    "Low confidence must keep the runtime winner",
+    "Excluded buckets must remain override-ineligible"
   ]
 }
