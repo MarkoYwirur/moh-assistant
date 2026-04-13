@@ -28,6 +28,13 @@
     "expected_second_card": "service_referral_status_root_v1"
   },
   {
+    "name": "ct_yes_branch_latin",
+    "first_message": "ct anvjar e",
+    "second_message": "այո",
+    "expected_second_action": "direct_answer",
+    "expected_second_card": "service_referral_status_root_v1"
+  },
+  {
     "name": "medicine_not_provided_resolution",
     "first_message": "դեղը չեն տվել",
     "second_message": "Պարացետամոլ 500 մգ հաբ",
@@ -64,6 +71,27 @@
     "first_message": "նեղ մասնագետի ուղեգիր է պետք",
     "second_message": "սրտաբանի համար",
     "expected_second_action": "direct_answer",
+    "expected_second_card": "routing_specialist_referral_confusion_v1"
+  },
+  {
+    "name": "state_reset_to_complaint_contact",
+    "first_message": "մռտ անվճա՞ր է",
+    "second_message": "Ուր զանգեմ բողոքի համար",
+    "expected_second_action": "direct_answer",
+    "expected_second_card": "complaint_2_official_complaint_channels"
+  },
+  {
+    "name": "state_reset_to_admission",
+    "first_message": "դեղը չեն տվել",
+    "second_message": "Հիվանդանոց ընդունվելու կարգը որն է",
+    "expected_second_action": "partial_answer_with_clarify",
+    "expected_second_card": "service_admission_type_root_v1"
+  },
+  {
+    "name": "state_reset_to_specialist_routing",
+    "first_message": "գրառում չկա",
+    "second_message": "մասնագետի մոտ ինչպես գրանցվեմ",
+    "expected_second_action": "partial_answer_with_clarify",
     "expected_second_card": "routing_specialist_referral_confusion_v1"
   }
 ]

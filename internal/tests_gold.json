@@ -12,6 +12,18 @@
     "expected_matched_card_id": "service_referral_status_root_v1"
   },
   {
+    "name": "ct_initial_latin",
+    "message": "ct anvjar e",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "service_referral_status_root_v1"
+  },
+  {
+    "name": "ct_routing_latin",
+    "message": "kt-i hamar ur dimem",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "routing_referral_where_to_go_v2"
+  },
+  {
     "name": "medicine_initial",
     "message": "էս դեղը պետությունը տալիս ա՞",
     "expected_action": "partial_answer_with_clarify",
@@ -82,5 +94,17 @@
     "message": "մասնագետի մոտ ինչպես գնամ",
     "expected_action": "partial_answer_with_clarify",
     "expected_matched_card_id": "routing_specialist_referral_confusion_v1"
+  },
+  {
+    "name": "child_eligibility_specific",
+    "message": "երեխայի համար ինչ ծածկույթ կա",
+    "expected_action": "direct_answer",
+    "expected_matched_card_id": "eligibility_status_coverage_root_v1"
+  },
+  {
+    "name": "child_eligibility_short",
+    "message": "երեխա",
+    "expected_action": "partial_answer_with_clarify",
+    "expected_matched_card_id": "eligibility_status_coverage_root_v1"
   }
 ]

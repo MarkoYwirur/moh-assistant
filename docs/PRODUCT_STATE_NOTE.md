@@ -1,43 +1,47 @@
 # Product State Note
 
-This system is now best described as a structured Armenian healthcare guidance assistant with frozen routing architecture and source-grounded KB expansion.
+This system is currently best described as a structured Armenian healthcare guidance assistant with a stable controlled engine, lightweight follow-up state, and Phase 6 shadow telemetry.
 
-## What is live and reliable
+## What is stable
 
-- eligibility clarification by status group
-- referral-dependent service access for MRI, CT, lab, specialist, and child hospital referral facts
-- hospitalization vs surgery admission clarification
-- complaints, payment issues, ArMed visibility issues, and routing to the right next step
-- official hotline/contact facts already ingested into runtime
+- eligibility clarification by status group and benefit scope
+- referral-dependent service access guidance for MRI, CT, lab, and specialist flows
+- hospitalization and admission clarification
+- complaint routing for denial, payment issues, duplicate charge, missing record, ArMed visibility, and official complaint-contact questions
+- bounded medicine coverage handling that asks for exact medicine details when needed
+- family doctor registration and transfer FAQ coverage
 
-## What it handles well
+## What changed in the latest cleanup sprint
 
-- telling the user what category their problem belongs to
-- asking the next useful clarification question
-- distinguishing eligibility vs referral vs admission vs complaint vs routing
-- giving source-grounded contact/help information
+- pending follow-up state now resets on clear topic switch instead of incorrectly consuming the next full question
+- the validator-exposed broad child trigger in the eligibility root was narrowed
+- regression coverage now includes topic-switch reset checks and CT canonicalization checks
+- structured live-like scenarios now exercise real multi-turn `/chat` behavior with persisted state
 
-## What should not be overclaimed
+## What remains intentionally bounded
 
-- exact personalized entitlement decisions
-- generic medicine coverage without an exact medicine name, dosage, and form
-- provider-specific final coverage guarantees
+- live Phase 6 adjudication override is still off
+- exploratory/no-go surfaces remain shadow-only
+- broad autonomous reasoning is not part of the live runtime
 
-## Demo strengths
+## What should be claimed externally
 
-- clear category routing
-- clean follow-up questions
-- stable migrated root architecture
-- official hotline/contact answers
+- strong routing and bounded follow-up questions
+- controlled action outputs
+- grounded healthcare guidance for supported policy areas
+- internal shadow-live readiness with benchmarked protected owners
 
-## Demo avoidances
+## What should not be claimed
 
-- do not use the generic phrase `այս դեղը ծածկվո՞ւմ է`
-- prefer concrete medicine examples
+- fully autonomous healthcare policy adjudication
+- generic medicine coverage answers without exact medicine information
+- personalized entitlement guarantees
+- live semantic override across unresolved Phase 6 surfaces
 
-## What growth depends on next
+## Recommended demo framing
 
-- more narrow source-grounded facts inside the existing live roots
-- better official contact / complaint procedure coverage
-- more child-health and referral detail from official MOH materials
-- continued discipline against reintroducing overlap or broad generic patterns
+- show category routing
+- show one-step clarification
+- show topic-switch reset working correctly
+- show CT canonicalization behaving consistently
+- avoid claiming that unresolved exploratory surfaces are already solved live

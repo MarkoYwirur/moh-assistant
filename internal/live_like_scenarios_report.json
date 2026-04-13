@@ -1,0 +1,215 @@
+{
+  "scenario_count": 12,
+  "passed": 12,
+  "failed": 0,
+  "results": [
+    {
+      "name": "continue_referral_clarify",
+      "pass": true,
+      "turns": [
+        {
+          "message": "մռտ անվճա՞ր է",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "service_referral_status_root_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "service_referral_status_root_v1",
+          "pass": true
+        },
+        {
+          "message": "այո",
+          "expected_action": "direct_answer",
+          "expected_matched_card_id": "service_referral_status_root_v1",
+          "actual_action": "direct_answer",
+          "actual_matched_card_id": "service_referral_status_root_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "topic_switch_from_referral_to_complaint_contact",
+      "pass": true,
+      "turns": [
+        {
+          "message": "մռտ անվճա՞ր է",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "service_referral_status_root_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "service_referral_status_root_v1",
+          "pass": true
+        },
+        {
+          "message": "Ուր զանգեմ բողոքի համար",
+          "expected_action": "direct_answer",
+          "expected_matched_card_id": "complaint_2_official_complaint_channels",
+          "actual_action": "direct_answer",
+          "actual_matched_card_id": "complaint_2_official_complaint_channels",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "topic_switch_from_medicine_complaint_to_admission",
+      "pass": true,
+      "turns": [
+        {
+          "message": "դեղը չեն տվել",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "complaint_medicine_not_provided_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "complaint_medicine_not_provided_v1",
+          "pass": true
+        },
+        {
+          "message": "Հիվանդանոց ընդունվելու կարգը որն է",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "service_admission_type_root_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "service_admission_type_root_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "topic_switch_from_record_issue_to_specialist_routing",
+      "pass": true,
+      "turns": [
+        {
+          "message": "գրառում չկա",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "complaint_missing_or_wrong_record_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "complaint_missing_or_wrong_record_v1",
+          "pass": true
+        },
+        {
+          "message": "մասնագետի մոտ ինչպես գրանցվեմ",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "routing_specialist_referral_confusion_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "routing_specialist_referral_confusion_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "ct_canonicalization_first_turn",
+      "pass": true,
+      "turns": [
+        {
+          "message": "ct anvjar e",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "service_referral_status_root_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "service_referral_status_root_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "ct_canonicalization_branch",
+      "pass": true,
+      "turns": [
+        {
+          "message": "ct anvjar e",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "service_referral_status_root_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "service_referral_status_root_v1",
+          "pass": true
+        },
+        {
+          "message": "այո",
+          "expected_action": "direct_answer",
+          "expected_matched_card_id": "service_referral_status_root_v1",
+          "actual_action": "direct_answer",
+          "actual_matched_card_id": "service_referral_status_root_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "ct_routing_canonicalization",
+      "pass": true,
+      "turns": [
+        {
+          "message": "kt-i hamar ur dimem",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "routing_referral_where_to_go_v2",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "routing_referral_where_to_go_v2",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "medicine_coverage_neighbor",
+      "pass": true,
+      "turns": [
+        {
+          "message": "էս դեղը պետությունը տալիս ա՞",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "medicine_coverage_exact_name_dosage_form_v2",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "medicine_coverage_exact_name_dosage_form_v2",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "armed_visibility_neighbor",
+      "pass": true,
+      "turns": [
+        {
+          "message": "արմեդում չի երևում",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "technical_armed_visibility_issue_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "technical_armed_visibility_issue_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "duplicate_charge_neighbor",
+      "pass": true,
+      "turns": [
+        {
+          "message": "երկու անգամ են գանձել",
+          "expected_action": "partial_answer_with_clarify",
+          "expected_matched_card_id": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+          "actual_action": "partial_answer_with_clarify",
+          "actual_matched_card_id": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "eligibility_child_neighbor",
+      "pass": true,
+      "turns": [
+        {
+          "message": "երեխայի համար ինչ ծածկույթ կա",
+          "expected_action": "direct_answer",
+          "expected_matched_card_id": "eligibility_status_coverage_root_v1",
+          "actual_action": "direct_answer",
+          "actual_matched_card_id": "eligibility_status_coverage_root_v1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "provider_liability_neighbor",
+      "pass": true,
+      "turns": [
+        {
+          "message": "Բժշկի մեղքով վնասի դեպքում ինչ պատասխանատվություն կա",
+          "expected_action": "direct_answer",
+          "expected_matched_card_id": "faq_27",
+          "actual_action": "direct_answer",
+          "actual_matched_card_id": "faq_27_ի_նչ_պատասխանատվություն_են_կրում_բժշկական_օգնություն_իրականացնողները_իրենց_մեղքո",
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

@@ -2499,6 +2499,196 @@ def _infer_child_benefit_scope(user_text: str) -> str | None:
     return None
 
 
+TOPIC_SWITCH_QUESTION_MARKERS = (
+    "ինչ",
+    "ինչպես",
+    "ուր",
+    "որտեղ",
+    "ով",
+    "որն",
+    "ոնց",
+    "կարող",
+    "պետք",
+)
+
+SHORT_FREE_TEXT_PENDING_FIELDS = {
+    "medicine_name_details",
+    "refusal_context",
+    "record_problem_type",
+    "armed_missing_item",
+}
+
+ENUM_STYLE_PENDING_FIELDS = {
+    "problem_type",
+    "service_type",
+    "admission_type",
+    "status_group",
+    "benefit_scope",
+    "verification_state",
+}
+
+SPECIALIST_ROUTING_SWITCH_ANCHORS = (
+    "մասնագետ",
+    "նեղ մասնագետ",
+)
+
+SPECIALIST_ROUTING_SWITCH_QUESTION_ANCHORS = (
+    "ինչպես գրանց",
+    "ինչպես հերթագրվ",
+    "ուր դիմեմ",
+    "որտեղ դիմեմ",
+    "նախ բժիշկ",
+    "գնալու համար",
+)
+
+
+def _pending_flow_domain(pending_card_id: str | None, pending_field: str | None) -> str | None:
+    if pending_card_id == "service_referral_status_root_v1" or pending_field == "referral_status":
+        return "referral_routing"
+    if pending_card_id == "service_admission_type_root_v1" or pending_field in {"service_type", "admission_type"}:
+        return "admission"
+    if pending_card_id == "eligibility_status_coverage_root_v1" or pending_field in {"status_group", "benefit_scope", "verification_state"}:
+        return "eligibility"
+    if pending_card_id == "complaint_medicine_not_provided_v1" or pending_field == "medicine_name_details":
+        return "medicine_complaint"
+    if pending_card_id == "technical_armed_visibility_issue_v1" or pending_field == "armed_missing_item":
+        return "armed_visibility"
+    if pending_card_id == "complaint_missing_or_wrong_record_v1" or pending_field == "record_problem_type":
+        return "record_issue"
+    if pending_card_id == "complaint_duplicate_charge_or_wrong_payment_status_v1" or pending_field == "problem_type":
+        return "payment_status"
+    if pending_card_id == "complaint_refusal_denied_service_v2" or pending_field == "refusal_context":
+        return "denied_service"
+    return None
+
+
+def _looks_like_fresh_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    if any(mark in user_text for mark in ("?", "՞")):
+        return True
+
+    tokens = normalized.split()
+    if any(marker in tokens for marker in TOPIC_SWITCH_QUESTION_MARKERS):
+        return True
+
+    return normalized.startswith(("ինչ", "ինչպես", "ուր", "որտեղ", "ով", "որն", "ոնց"))
+
+
+def _is_specialist_routing_switch_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    has_specialist_anchor = any(term in normalized for term in SPECIALIST_ROUTING_SWITCH_ANCHORS)
+    has_routing_anchor = any(term in normalized for term in SPECIALIST_ROUTING_SWITCH_QUESTION_ANCHORS)
+    return has_specialist_anchor and has_routing_anchor
+
+
+def _detect_topic_switch_domain(user_text: str) -> str | None:
+    if _is_explicit_complaint_contact_question(user_text):
+        return "complaint_contact"
+    if _is_armed_visibility_issue_question(user_text):
+        return "armed_visibility"
+    if _is_record_issue_question(user_text):
+        return "record_issue"
+    if _is_duplicate_status_issue_question(user_text):
+        return "payment_status"
+    if _is_general_medicine_coverage_question(user_text) or _is_medicine_state_list_question(user_text) or _is_pharmacy_oversight_question(user_text):
+        return "medicine"
+    if _is_provider_liability_question(user_text):
+        return "provider_liability"
+    if _is_explicit_eligibility_question(user_text):
+        return "eligibility"
+    if (
+        _is_mri_ct_routing_question(user_text)
+        or _is_mri_ct_requirements_question(user_text)
+        or _is_specialist_referral_status_question(user_text)
+        or _is_specialist_routing_switch_question(user_text)
+    ):
+        return "referral_routing"
+    if (
+        _is_admission_policy_question(user_text)
+        or _is_admission_requirements_question(user_text)
+        or _is_explicit_admission_process_question(user_text)
+    ):
+        return "admission"
+    if (
+        _is_polyclinic_transfer_question(user_text)
+        or _is_family_doctor_refusal_rule_question(user_text)
+        or _is_family_doctor_registration_refusal_question(user_text)
+        or _is_family_doctor_transfer_refusal_contact_question(user_text)
+    ):
+        return "family_doctor"
+
+    complaint_subtype = _infer_complaint_subtype(user_text)
+    if complaint_subtype is not None:
+        return f"complaint_{complaint_subtype}"
+
+    service_access_subtype = _infer_service_access_subtype(user_text)
+    if service_access_subtype == "referral_status":
+        return "referral_routing"
+
+    return None
+
+
+def _is_plausible_pending_answer(
+    user_text: str,
+    pending_field: str | None,
+    pending_card: dict | None,
+) -> bool:
+    if not pending_field:
+        return False
+
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    tokens = normalized.split()
+    matched_from_card = _match_field_values_from_card(pending_field, user_text, pending_card)
+    coerced_value = coerce_field_value(pending_field, user_text, pending_card)
+
+    if pending_field == "referral_status":
+        return coerced_value in {"has_referral", "no_referral"}
+
+    if pending_field in ENUM_STYLE_PENDING_FIELDS:
+        return matched_from_card is not None or (len(tokens) <= 3 and not _looks_like_fresh_question(user_text))
+
+    if pending_field in SHORT_FREE_TEXT_PENDING_FIELDS:
+        return len(tokens) <= 8 and not _looks_like_fresh_question(user_text)
+
+    return len(tokens) <= 5 and not _looks_like_fresh_question(user_text)
+
+
+def _should_reuse_pending_state(
+    user_text: str,
+    pending_card_id: str | None,
+    pending_field: str | None,
+    pending_card: dict | None,
+) -> bool:
+    if not pending_card or not pending_field:
+        return False
+
+    if not should_continue_pending_flow(user_text, pending_field):
+        return False
+
+    if _is_plausible_pending_answer(user_text, pending_field, pending_card):
+        return True
+
+    pending_domain = _pending_flow_domain(pending_card_id, pending_field)
+    switch_domain = _detect_topic_switch_domain(user_text)
+
+    if switch_domain is not None and switch_domain != pending_domain:
+        return False
+
+    if _looks_like_fresh_question(user_text):
+        return False
+
+    return True
+
+
 def _seed_inferable_required_fields(card: dict | None, user_text: str, collected_fields: dict[str, Any]) -> dict[str, Any]:
     if not card:
         return collected_fields
@@ -2554,9 +2744,12 @@ def chat(request: ChatRequest):
     pending_field = incoming_state.get("pending_field")
     pending_card = get_card_by_id(pending_card_id) if pending_card_id else None
 
-    use_pending_flow = False
-    if pending_card and pending_field:
-        use_pending_flow = should_continue_pending_flow(request.message, pending_field)
+    use_pending_flow = _should_reuse_pending_state(
+        request.message,
+        pending_card_id,
+        pending_field,
+        pending_card,
+    )
 
     if use_pending_flow:
         coerced_value = coerce_field_value(pending_field, request.message, pending_card)
