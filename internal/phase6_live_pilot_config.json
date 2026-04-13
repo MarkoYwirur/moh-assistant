@@ -1,0 +1,35 @@
+{
+  "artifact_type": "phase6_live_pilot_config",
+  "mode": "bounded_live_pilot_control_plane",
+  "surface_id": "generic_specialist_process_residue",
+  "enabled": false,
+  "allowlisted_families": [
+    "service_referral_status_root_v1",
+    "routing_specialist_referral_confusion_v1"
+  ],
+  "excluded_families": [
+    "eligibility_status_coverage_root_v1"
+  ],
+  "eligible_buckets": [
+    "referral_needed"
+  ],
+  "confidence_threshold": 0.45,
+  "fallback_policy": "keep_runtime_winner",
+  "kill_switch": true,
+  "protected_neighbors": [
+    "routing_specialist_referral_confusion_v1",
+    "routing_referral_where_to_go_v2",
+    "eligibility_status_coverage_root_v1"
+  ],
+  "rollback_thresholds": {
+    "protected_neighbor_theft": 0,
+    "regression_failures": 0,
+    "release_blocking_benchmark_failures": 0,
+    "reviewed_false_overrides": 0
+  },
+  "notes": [
+    "This control plane is intentionally disabled by default.",
+    "A future live pilot may only target the referral_needed bucket for generic_specialist_process_residue.",
+    "No answer-generation changes are allowed through this config."
+  ]
+}

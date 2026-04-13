@@ -1,0 +1,19 @@
+{
+  "artifact_type": "phase6_live_pilot_status",
+  "mode": "control_plane_present_no_live_override",
+  "active_pilot": false,
+  "enabled_surface": null,
+  "configured_candidate_surface": "generic_specialist_process_residue",
+  "last_reviewed_dataset": "internal/phase6_generic_specialist_reviewed_dataset.json",
+  "last_replay_gate_report": "internal/phase6_generic_specialist_replay_gate_report.json",
+  "current_replay_decision": "no_go_for_live_pilot",
+  "threshold_used": 0.45,
+  "override_count": 0,
+  "rollback_reason_if_disabled": "No live pilot is enabled. The current generic-specialist candidate remains below the evidence bar and the kill switch stays active.",
+  "guardrails": [
+    "No owner override while enabled=false or kill_switch=true",
+    "No answer-generation changes",
+    "Only one surface may ever be configured for live pilot evaluation at a time",
+    "Protected-neighbor theft immediately blocks promotion"
+  ]
+}

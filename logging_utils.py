@@ -6,14 +6,22 @@ from app.issue_family_classifier import classify_issue_family, normalize_text_v2
 
 LOG_DIR = Path(r"C:\Users\Asus\Desktop\moh-assistant\logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
+INTERNAL_DIR = Path(r"C:\Users\Asus\Desktop\moh-assistant\internal")
 
 LOG_FILE = LOG_DIR / "requests.jsonl"
 PHASE6_SHADOW_LOG_FILE = LOG_DIR / "phase6_shadow_disagreements.jsonl"
+PHASE6_LIVE_PILOT_LOG_FILE = LOG_DIR / "phase6_live_pilot_events.jsonl"
+PHASE6_LIVE_PILOT_CONFIG_FILE = INTERNAL_DIR / "phase6_live_pilot_config.json"
 
 GENERIC_SPECIALIST_PROCESS_SURFACE_ID = "generic_specialist_process_residue"
 NOISY_ADMISSION_TIMING_SURFACE_ID = "noisy_admission_timing_residue"
 COMPLAINT_GENERIC_PROCEDURE_SURFACE_ID = "complaint_generic_procedure_residue"
 DEFERRED_LEGAL_BASIS_SURFACE_ID = "deferred_legal_basis_vs_eligibility_overlap"
+
+GENERIC_SPECIALIST_REFERRAL_NEEDED_BUCKET = "referral_needed"
+GENERIC_SPECIALIST_ROUTING_ARRANGEMENT_BUCKET = "routing_arrangement"
+GENERIC_SPECIALIST_FREE_CARE_COVERAGE_BUCKET = "free_care_coverage"
+GENERIC_SPECIALIST_OTHER_BUCKET = "other"
 
 GENERIC_SPECIALIST_NOUN_MARKERS = (
     "մասնագետ",
@@ -239,6 +247,47 @@ def _map_runtime_card_to_shadow_family(matched_card_id: str | None) -> str | Non
     return None
 
 
+def _load_json_file(path: Path, default: dict) -> dict:
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return default
+
+
+def load_phase6_live_pilot_config() -> dict:
+    default = {
+        "artifact_type": "phase6_live_pilot_config",
+        "mode": "bounded_live_pilot_control_plane",
+        "surface_id": GENERIC_SPECIALIST_PROCESS_SURFACE_ID,
+        "enabled": False,
+        "allowlisted_families": [
+            "service_referral_status_root_v1",
+            "routing_specialist_referral_confusion_v1",
+        ],
+        "excluded_families": [
+            "eligibility_status_coverage_root_v1",
+        ],
+        "eligible_buckets": [
+            GENERIC_SPECIALIST_REFERRAL_NEEDED_BUCKET,
+        ],
+        "confidence_threshold": 0.45,
+        "fallback_policy": "keep_runtime_winner",
+        "kill_switch": True,
+        "protected_neighbors": [
+            "routing_specialist_referral_confusion_v1",
+            "routing_referral_where_to_go_v2",
+            "eligibility_status_coverage_root_v1",
+        ],
+        "rollback_thresholds": {
+            "protected_neighbor_theft": 0,
+            "regression_failures": 0,
+            "release_blocking_benchmark_failures": 0,
+            "reviewed_false_overrides": 0,
+        },
+    }
+    return _load_json_file(PHASE6_LIVE_PILOT_CONFIG_FILE, default)
+
+
 def append_request_log(payload: dict):
     message = str(payload.get("message", "") or "")
     matched_card_id = payload.get("matched_card_id")
@@ -275,6 +324,17 @@ def append_request_log(payload: dict):
     for shadow_row in shadow_rows:
         with PHASE6_SHADOW_LOG_FILE.open("a", encoding="utf-8") as f:
             f.write(json.dumps(shadow_row, ensure_ascii=False) + "\n")
+
+    pilot_event = evaluate_phase6_live_pilot(
+        message=message,
+        runtime_winner=payload.get("matched_card_id") or payload.get("matched_family"),
+        runtime_family_proxy=runtime_family_proxy,
+        action=payload.get("action"),
+        follow_up_question=payload.get("follow_up_question"),
+    )
+    if pilot_event is not None:
+        with PHASE6_LIVE_PILOT_LOG_FILE.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(pilot_event, ensure_ascii=False) + "\n")
 
 
 def _build_phase6_shadow_rows(payload: dict, runtime_family_proxy: str | None) -> list[dict]:
@@ -321,6 +381,105 @@ def _build_phase6_shadow_rows(payload: dict, runtime_family_proxy: str | None) -
         )
 
     return rows
+
+
+def _bucket_generic_specialist_process(normalized: str) -> str:
+    if any(marker in normalized for marker in GENERIC_SPECIALIST_ELIGIBILITY_MARKERS):
+        return GENERIC_SPECIALIST_FREE_CARE_COVERAGE_BUCKET
+    if any(marker in normalized for marker in GENERIC_SPECIALIST_ROUTING_MARKERS):
+        return GENERIC_SPECIALIST_ROUTING_ARRANGEMENT_BUCKET
+    if any(marker in normalized for marker in GENERIC_SPECIALIST_REFERRAL_STATUS_MARKERS):
+        return GENERIC_SPECIALIST_REFERRAL_NEEDED_BUCKET
+    return GENERIC_SPECIALIST_OTHER_BUCKET
+
+
+def evaluate_phase6_live_pilot(
+    message: str,
+    runtime_winner: str | None,
+    runtime_family_proxy: str | None,
+    action: str | None,
+    follow_up_question: str | None,
+    force_enabled: bool = False,
+    ignore_kill_switch: bool = False,
+) -> dict | None:
+    normalized = normalize_text_v2(message)
+    if not normalized:
+        return None
+
+    config = load_phase6_live_pilot_config()
+    surface_id = str(config.get("surface_id") or "")
+    if surface_id != GENERIC_SPECIALIST_PROCESS_SURFACE_ID:
+        return None
+
+    if _detect_generic_specialist_process_surface(normalized) is None:
+        return None
+
+    ranking = _rank_generic_specialist_process_families(normalized)
+    if not ranking:
+        return None
+
+    total_score = sum(item["score"] for item in ranking)
+    top_score = ranking[0]["score"]
+    second_score = ranking[1]["score"] if len(ranking) > 1 else 0.0
+    confidence = round((top_score - second_score) / total_score, 4) if total_score else 0.0
+    shadow_family = ranking[0]["family_id"]
+    bucket = _bucket_generic_specialist_process(normalized)
+
+    allowlisted_families = list(config.get("allowlisted_families") or [])
+    excluded_families = list(config.get("excluded_families") or [])
+    eligible_buckets = list(config.get("eligible_buckets") or [])
+    threshold = float(config.get("confidence_threshold") or 0.0)
+    enabled = bool(config.get("enabled")) or force_enabled
+    kill_switch = bool(config.get("kill_switch")) and not ignore_kill_switch
+
+    override_eligible = False
+    block_reason = "inactive_config"
+    candidate_override_family = None
+
+    if not enabled:
+        block_reason = "pilot_disabled"
+    elif kill_switch:
+        block_reason = "kill_switch_active"
+    elif bucket not in eligible_buckets:
+        block_reason = "bucket_not_eligible"
+    elif runtime_winner not in allowlisted_families:
+        block_reason = "runtime_outside_allowlist"
+    elif shadow_family not in allowlisted_families:
+        block_reason = "shadow_outside_allowlist"
+    elif shadow_family in excluded_families:
+        block_reason = "shadow_family_excluded"
+    elif confidence < threshold:
+        block_reason = "low_confidence"
+    elif runtime_winner == shadow_family:
+        block_reason = "no_disagreement"
+    else:
+        override_eligible = True
+        candidate_override_family = shadow_family
+        block_reason = "eligible_but_not_applied"
+
+    return {
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "surface_id": surface_id,
+        "original_user_text": message,
+        "runtime_winner": runtime_winner,
+        "runtime_family_proxy": runtime_family_proxy,
+        "shadow_predicted_family": shadow_family,
+        "confidence": confidence,
+        "bucket": bucket,
+        "allowlisted_families": allowlisted_families,
+        "excluded_families": excluded_families,
+        "eligible_buckets": eligible_buckets,
+        "fallback_policy": config.get("fallback_policy"),
+        "pilot_enabled": enabled,
+        "kill_switch": kill_switch,
+        "override_eligible": override_eligible,
+        "override_applied": False,
+        "candidate_override_family": candidate_override_family,
+        "block_reason": block_reason,
+        "action": action,
+        "follow_up_question": follow_up_question,
+        "competing_families": ranking,
+    }
 
 
 def _detect_generic_specialist_process_surface(normalized: str) -> str | None:

@@ -10,6 +10,20 @@
     "No other unresolved surface has a lower-risk live path than the already-rejected generic-specialist pilot."
   ],
   "implemented_phase6_work": {
+    "pilot_control_plane": {
+      "status": "implemented_disabled_by_default",
+      "artifacts": [
+        "internal/phase6_live_pilot_config.json",
+        "internal/phase6_live_pilot_status.json",
+        "internal/phase6_live_pilot_log_schema.json"
+      ],
+      "properties": [
+        "Only one configured surface may be considered at a time",
+        "Control plane is disabled by default",
+        "Kill switch remains active by default",
+        "No answer-generation changes are permitted through the control plane"
+      ]
+    },
     "shadow_only_telemetry": {
       "status": "implemented",
       "artifacts": [
@@ -37,13 +51,24 @@
         "internal/phase6_generic_specialist_offline_adjudication_trial.json",
         "internal/phase6_generic_specialist_gating_review.json",
         "internal/phase6_generic_specialist_replay_buckets.json",
-        "internal/phase6_generic_specialist_referral_needed_final_gating.json"
+        "internal/phase6_generic_specialist_referral_needed_final_gating.json",
+        "internal/phase6_generic_specialist_reviewed_dataset.json",
+        "internal/phase6_generic_specialist_replay_gate_report.json",
+        "internal/phase6_live_pilot_status.json"
       ],
       "global_status": [
         "internal/phase6_shadow_surface_status.json",
-        "internal/phase6_status_handoff.json"
+        "internal/phase6_status_handoff.json",
+        "internal/phase6_family_autonomy_boundaries.json"
       ]
     }
+  },
+  "active_live_pilot": {
+    "enabled": false,
+    "status_artifact": "internal/phase6_live_pilot_status.json",
+    "why": [
+      "The control plane is now present, but no unresolved surface has yet met the replay and neighbor-theft bar required for a live override."
+    ]
   },
   "surfaces_remaining_shadow_only": [
     {
@@ -114,7 +139,7 @@
   ],
   "recommended_future_path": {
     "principle": "telemetry_first_replay_first_no_live_override_until_stronger_evidence_exists",
-    "next_step": "Run an internal staff pilot with shadow telemetry on, keep live adjudication disabled, and only revisit one documented unresolved surface if materially stronger replay evidence appears.",
+    "next_step": "Run an internal staff pilot with shadow telemetry on, keep live adjudication disabled, and only revisit one documented unresolved surface if reviewed replay plus the disabled control-plane gate show a safe bounded override path.",
     "do_not_do_yet": [
       "No live adjudication",
       "No owner override",

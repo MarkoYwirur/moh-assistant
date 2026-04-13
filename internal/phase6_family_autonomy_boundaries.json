@@ -1,0 +1,102 @@
+{
+  "artifact_type": "phase6_family_autonomy_boundaries",
+  "phase": 6,
+  "principle": "bounded_live_autonomy_with_symbolic_fallback",
+  "classifications": [
+    {
+      "family_or_surface_id": "generic_specialist_process_residue",
+      "classification": "autonomy_candidate",
+      "why": "This is the only surface with enough bounded structure to justify a future allowlisted pilot, but only after stronger replay evidence."
+    },
+    {
+      "family_or_surface_id": "noisy_admission_timing_residue",
+      "classification": "shadow_only_research",
+      "why": "Too close to complaint_unexpected_payment_dispute_v2 for a safe live pilot today."
+    },
+    {
+      "family_or_surface_id": "complaint_generic_procedure_residue",
+      "classification": "shadow_only_research",
+      "why": "Any live move would reopen frozen complaint-family routing boundaries."
+    },
+    {
+      "family_or_surface_id": "deferred_legal_basis_vs_eligibility_overlap",
+      "classification": "shadow_only_research",
+      "why": "Still explicitly deferred and too risky for live semantic arbitration."
+    },
+    {
+      "family_or_surface_id": "eligibility_status_coverage_root_v1",
+      "classification": "symbolic_default",
+      "why": "Personalized eligibility and status-based free-care answers must remain bounded."
+    },
+    {
+      "family_or_surface_id": "service_admission_type_root_v1",
+      "classification": "symbolic_default",
+      "why": "Admission, inpatient, and surgery access policy should remain symbolic unless phrasing is highly controlled."
+    },
+    {
+      "family_or_surface_id": "medicine_coverage_exact_name_dosage_form_v2",
+      "classification": "symbolic_default",
+      "why": "Exact-name medicine coverage decisions should not be delegated to broad live reasoning."
+    },
+    {
+      "family_or_surface_id": "faq_27",
+      "classification": "symbolic_default",
+      "why": "Provider liability and accountability policy remains grounded and bounded."
+    },
+    {
+      "family_or_surface_id": "info_rights_governance_legal_basis_v1",
+      "classification": "symbolic_default",
+      "why": "Legal-basis answers must stay grounded and should not be produced by free semantic arbitration."
+    },
+    {
+      "family_or_surface_id": "complaint_refusal_denied_service_v2",
+      "classification": "frozen_owner",
+      "why": "Protected complaint owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "complaint_2_official_complaint_channels",
+      "classification": "frozen_owner",
+      "why": "Protected complaint contact owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "complaint_29_inspection",
+      "classification": "frozen_owner",
+      "why": "Protected complaint oversight owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "complaint_40_provider_misconduct",
+      "classification": "frozen_owner",
+      "why": "Protected provider-misconduct complaint owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "complaint_duplicate_charge_or_wrong_payment_status_v1",
+      "classification": "frozen_owner",
+      "why": "Protected duplicate-charge owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "complaint_missing_or_wrong_record_v1",
+      "classification": "frozen_owner",
+      "why": "Protected missing-record owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "complaint_medicine_not_provided_v1",
+      "classification": "frozen_owner",
+      "why": "Protected medicine-not-provided complaint owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "technical_armed_visibility_issue_v1",
+      "classification": "frozen_owner",
+      "why": "Protected ArMed visibility owner from the completed Phase 5 batch."
+    },
+    {
+      "family_or_surface_id": "faq_39",
+      "classification": "frozen_owner",
+      "why": "Family-doctor registration/transfer informational owner is already stable enough."
+    },
+    {
+      "family_or_surface_id": "faq_40",
+      "classification": "frozen_owner",
+      "why": "Family-doctor refusal-rules informational owner is already stable enough."
+    }
+  ]
+}

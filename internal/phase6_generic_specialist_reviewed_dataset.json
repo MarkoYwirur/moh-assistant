@@ -1,0 +1,87 @@
+{
+  "artifact_type": "phase6_reviewed_replay_dataset",
+  "surface_id": "generic_specialist_process_residue",
+  "review_date": "2026-04-13",
+  "mode": "reviewed_gold_labels_for_offline_replay_only",
+  "notes": [
+    "This dataset is intentionally bucketed so replay can prove whether a referral-needed-only pilot helps without stealing routing/arrangement or free-care/coverage behavior.",
+    "The narrow 'նեղ մասնագետի ուղեգիր է պետք' wording remains labeled with the protected routing owner to reflect the final no-go decision."
+  ],
+  "cases": [
+    {
+      "bucket": "referral_needed",
+      "message": "մասնագետի համար ուղեգիր է պետք",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "մասնագետի մոտ ուղեգիր է պե՞տք",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "առանց ուղեգրի մասնագետի մոտ կարո՞ղ եմ գնալ",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "մասնագետի մոտ առանց ուղեգրի կընդունեն",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "նեղ մասնագետի ուղեգիր է պետք",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "referral_needed",
+      "message": "նեղ մասնագետի մոտ ուղեգիր է պե՞տք",
+      "gold_family": "service_referral_status_root_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ ինչպես գրանցվեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ ինչպես հերթագրվեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "նեղ մասնագետի համար ուր դիմեմ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի համար նախ բժիշկ պիտի տեսնե՞մ",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "routing_arrangement",
+      "message": "մասնագետի մոտ գնալու համար ինչ է պետք",
+      "gold_family": "routing_specialist_referral_confusion_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի մոտ անվճար կարո՞ղ եմ գնալ",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "ով կարող է անվճար գնալ մասնագետի մոտ",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի ընդունելությունը անվճար է՞",
+      "gold_family": "eligibility_status_coverage_root_v1"
+    },
+    {
+      "bucket": "free_care_coverage",
+      "message": "մասնագետի այցը ծածկվո՞ւմ է",
+      "gold_family": "service_referral_status_root_v1"
+    }
+  ]
+}

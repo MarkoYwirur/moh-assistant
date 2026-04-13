@@ -1,0 +1,25 @@
+{
+  "artifact_type": "phase6_live_pilot_log_schema",
+  "log_file": "logs/phase6_live_pilot_events.jsonl",
+  "mode": "control_plane_telemetry_only",
+  "fields": {
+    "surface_id": "configured pilot surface identifier",
+    "original_user_text": "raw user message",
+    "runtime_winner": "live symbolic owner chosen by the current engine",
+    "runtime_family_proxy": "shadow-family proxy mapped from the runtime winner",
+    "shadow_predicted_family": "top allowlisted family from the shadow ranker",
+    "confidence": "margin-based confidence score from the bounded ranker",
+    "bucket": "surface-local bucket such as referral_needed",
+    "pilot_enabled": "whether a live pilot is configured on",
+    "kill_switch": "whether the pilot is force-disabled regardless of enabled flag",
+    "override_eligible": "whether the candidate would qualify for override under current guardrails",
+    "override_applied": "always false until a reviewed live pilot is explicitly enabled",
+    "candidate_override_family": "family that would be chosen if a future pilot were live",
+    "block_reason": "why the runtime winner was preserved"
+  },
+  "guardrails": [
+    "This log does not imply any live owner override.",
+    "No answer-generation changes are driven by these events.",
+    "The control plane is scoped to one configured surface at a time."
+  ]
+}
