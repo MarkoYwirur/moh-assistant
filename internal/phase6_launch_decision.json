@@ -1,0 +1,30 @@
+{
+  "artifact_type": "phase6_launch_decision",
+  "date": "2026-04-13",
+  "decision": "go_live_internal_shadow_only",
+  "audience": "internal_staff_only",
+  "live_components": {
+    "controlled_engine": true,
+    "shadow_telemetry": true,
+    "live_second_pass_adjudication": false,
+    "answer_generation_override": false
+  },
+  "hard_gate": {
+    "release_blocking_benchmark_accuracy": 1.0,
+    "release_blocking_benchmark_failed": 0,
+    "regression_green": true,
+    "validation_baseline_unchanged": true
+  },
+  "guardrails": [
+    "No owner override outside existing symbolic engine",
+    "No answer-generation changes from Phase 6 logic",
+    "No reopening of frozen Phase 5 families",
+    "Exploratory/no-go surfaces remain shadow-only"
+  ],
+  "blocked_live_surfaces": [
+    "generic_specialist_process_residue",
+    "noisy_admission_timing_residue",
+    "complaint_generic_procedure_residue",
+    "deferred_legal_basis_vs_eligibility_overlap"
+  ]
+}

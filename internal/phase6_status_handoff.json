@@ -1,9 +1,10 @@
 {
   "phase": 6,
-  "mode": "status_handoff_only",
-  "status": "shadow_only_complete_for_current_safe_scope",
+  "mode": "internal_shadow_live",
+  "status": "release_blocking_green_exploratory_shadow_only",
   "live_adjudication_active": false,
-  "why_live_phase6_is_not_enabled": [
+  "current_launch_decision": "go_live_internal_shadow_only",
+  "why_live_phase6_adjudication_is_not_enabled": [
     "All currently documented unresolved surfaces are either still too risky for live second-pass adjudication or have not accumulated enough replay evidence.",
     "Generic specialist process wording remains the cleanest candidate, but even there the final referral-needed-only gating pass ended in a no-go decision.",
     "No other unresolved surface has a lower-risk live path than the already-rejected generic-specialist pilot."
@@ -113,7 +114,7 @@
   ],
   "recommended_future_path": {
     "principle": "telemetry_first_replay_first_no_live_override_until_stronger_evidence_exists",
-    "next_step": "Remain in status/handoff mode unless a future run gathers materially stronger replay evidence for one already-documented surface.",
+    "next_step": "Run an internal staff pilot with shadow telemetry on, keep live adjudication disabled, and only revisit one documented unresolved surface if materially stronger replay evidence appears.",
     "do_not_do_yet": [
       "No live adjudication",
       "No owner override",

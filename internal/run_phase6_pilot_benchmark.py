@@ -116,6 +116,15 @@ CASES = [
     {"owner": "faq_40", "message": "Ինչ պատճառներով կարող են հրաժարվել կցագրելուց"},
 ]
 
+EXPLORATORY_MESSAGES = {
+    "Որտեղ բողոք ներկայացնեմ",
+    "Ինչպես կապվել բողոքի համար",
+    "Բողոքով ում պետք է դիմեմ",
+    "Ում դիմեմ գանգատով",
+    "Որտեղ պետք է դիմեմ բողոքով",
+    "նեղ մասնագետի ուղեգիր է պետք",
+}
+
 
 def run_case(message: str) -> dict:
     response = chat(ChatRequest(message=message, state=None))
@@ -141,23 +150,30 @@ def main() -> None:
     owner_passes = Counter()
     failures = []
     results = []
+    suite_totals = Counter()
+    suite_passes = Counter()
+    suite_failures = defaultdict(list)
 
     for case in CASES:
+        suite = "exploratory" if case["message"] in EXPLORATORY_MESSAGES else "release_blocking"
         outcome = run_case(case["message"])
         passed = owner_matches(case["owner"], outcome["matched_card_id"])
         owner_counts[case["owner"]] += 1
+        suite_totals[suite] += 1
         if passed:
             owner_passes[case["owner"]] += 1
+            suite_passes[suite] += 1
         else:
-            failures.append(
-                {
-                    "message": case["message"],
-                    "expected_owner": case["owner"],
-                    "actual_owner": outcome["matched_card_id"],
-                    "action": outcome["action"],
-                    "follow_up_question": outcome["follow_up_question"],
-                }
-            )
+            failure = {
+                "message": case["message"],
+                "expected_owner": case["owner"],
+                "actual_owner": outcome["matched_card_id"],
+                "action": outcome["action"],
+                "follow_up_question": outcome["follow_up_question"],
+                "suite": suite,
+            }
+            failures.append(failure)
+            suite_failures[suite].append(failure)
         results.append(
             {
                 "message": case["message"],
@@ -165,6 +181,7 @@ def main() -> None:
                 "actual_owner": outcome["matched_card_id"],
                 "action": outcome["action"],
                 "passed": passed,
+                "suite": suite,
             }
         )
 
@@ -180,18 +197,38 @@ def main() -> None:
             }
         )
 
-    score = round((len(CASES) - len(failures)) / len(CASES), 4)
+    overall_score = round((len(CASES) - len(failures)) / len(CASES), 4)
+    release_total = suite_totals["release_blocking"]
+    release_passed = suite_passes["release_blocking"]
+    release_score = round(release_passed / release_total, 4) if release_total else 0.0
+    exploratory_total = suite_totals["exploratory"]
+    exploratory_passed = suite_passes["exploratory"]
+    exploratory_score = round(exploratory_passed / exploratory_total, 4) if exploratory_total else 0.0
     report = {
         "suite_name": "phase6_pilot_readiness_benchmark",
         "case_count": len(CASES),
         "passed": len(CASES) - len(failures),
         "failed": len(failures),
-        "accuracy": score,
+        "accuracy": overall_score,
         "rating": (
-            "ready_for_shadow_pilot_review"
-            if score >= 0.95
+            "ready_for_internal_shadow_live"
+            if release_score == 1.0
             else "needs_more_work_before_pilot_review"
         ),
+        "release_blocking": {
+            "case_count": release_total,
+            "passed": release_passed,
+            "failed": release_total - release_passed,
+            "accuracy": release_score,
+            "failures": suite_failures["release_blocking"],
+        },
+        "exploratory": {
+            "case_count": exploratory_total,
+            "passed": exploratory_passed,
+            "failed": exploratory_total - exploratory_passed,
+            "accuracy": exploratory_score,
+            "failures": suite_failures["exploratory"],
+        },
         "per_owner": per_owner,
         "failures": failures,
         "results": results,
@@ -202,6 +239,8 @@ def main() -> None:
         "passed": report["passed"],
         "failed": report["failed"],
         "accuracy": report["accuracy"],
+        "release_blocking_accuracy": report["release_blocking"]["accuracy"],
+        "exploratory_accuracy": report["exploratory"]["accuracy"],
         "rating": report["rating"],
     }, ensure_ascii=False))
 

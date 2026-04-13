@@ -203,6 +203,7 @@ COMPLAINT_MISCONDUCT_CONTACT_INTENT_ANCHORS = (
 
 COMPLAINT_MISCONDUCT_PROVIDER_ANCHORS = (
     "բուժաշխատող",
+    "մեդաշխատող",
     "բժիշկ",
     "բժշկ",
 )
@@ -214,6 +215,7 @@ COMPLAINT_MISCONDUCT_BEHAVIOR_ANCHORS = (
     "վատ վարվել",
     "վարք",
     "էթիկ",
+    "ոչ պատշաճ",
 )
 
 COMPLAINT_MISCONDUCT_CONTACT_DISQUALIFIERS = (
@@ -913,6 +915,25 @@ MRI_CT_REQUIREMENTS_QUERY_ANCHORS = (
     "հերթագրվ",
 )
 
+MRI_CT_ROUTING_QUERY_ANCHORS = (
+    "ինչպես գրանցվեմ",
+    "ինչպես հերթագրվեմ",
+    "ուր դիմեմ",
+    "որտեղ դիմեմ",
+    "որտեղ գնամ",
+)
+
+MRI_CT_ROUTING_DISQUALIFIERS = (
+    "ուղեգ",
+    "պետք է",
+    "ինչ է պետք",
+    "ինչ փաստաթուղթ",
+    "անվճա",
+    "ծածկ",
+    "պետպատվ",
+    "բողոք",
+)
+
 MRI_CT_REQUIREMENTS_DISQUALIFIERS = (
     "ուր դիմեմ",
     "որտեղ գնամ",
@@ -1079,6 +1100,7 @@ PROVIDER_LIABILITY_CORE_ANCHORS = (
 PROVIDER_LIABILITY_PROVIDER_ANCHORS = (
     "բուժաշխատող",
     "բժիշկ",
+    "բժշկ",
     "բժշկական օգնություն իրականացնող",
 )
 
@@ -1103,6 +1125,153 @@ PROVIDER_LIABILITY_DISQUALIFIERS = (
     "արյուն",
     "ախտանիշ",
     "դեղ",
+)
+
+EXPLICIT_ELIGIBILITY_QUERY_ANCHORS = (
+    "ովքեր կարող են օգտվել",
+    "ով կարող է օգտվել",
+    "ով իրավունք ունի",
+    "ինչ իրավունք ունի",
+    "շահառու",
+    "պետպատվերից",
+    "պետպատվեր ունի",
+    "անվճար բուժօգն",
+    "արտոնյալ բուժօգն",
+)
+
+EXPLICIT_ELIGIBILITY_DISQUALIFIERS = (
+    "իրավական",
+    "օրենք",
+    "օրենսդր",
+    "ակտ",
+    "դեղ",
+    "դեղատ",
+    "ուղեգ",
+    "մռտ",
+    "կտ",
+    "հետազոտ",
+    "անալիզ",
+    "մասնագետ",
+    "հիվանդանոց",
+    "վիրահատ",
+    "բողոք",
+    "ուր դիմեմ",
+    "որտեղ դիմեմ",
+)
+
+GENERAL_MEDICINE_COVERAGE_ANCHORS = (
+    "դեղ",
+    "հաբ",
+    "դեղահատ",
+    "պարկուճ",
+    "օշարակ",
+    "ներարկ",
+    "ինսուլին",
+)
+
+GENERAL_MEDICINE_COVERAGE_QUERY_ANCHORS = (
+    "ծածկ",
+    "անվճա",
+    "պետպատվերով",
+    "ցանկ",
+    "ծածկույթ",
+)
+
+GENERAL_MEDICINE_COVERAGE_DISQUALIFIERS = (
+    "չեն տվել",
+    "չեն տալիս",
+    "չեն տրամադրել",
+    "բողոք",
+    "ուր դիմեմ",
+    "որտեղ դիմեմ",
+    "վճար",
+    "գումար",
+    "երկու անգամ",
+    "կրկնակի",
+    "հիվանդանոց",
+    "վիրահատ",
+    "արմեդ",
+    "armed",
+)
+
+ARMED_VISIBILITY_ISSUE_MARKERS = (
+    "չի երևում",
+    "բացակայում",
+    "ցույց չի տալիս",
+    "չի ցույց տալիս",
+    "սխալ է երևում",
+)
+
+ARMED_VISIBILITY_TARGET_MARKERS = (
+    "գրառում",
+    "տվյալ",
+    "դեղատոմս",
+    "ծառայություն",
+    "ցույց",
+)
+
+ARMED_VISIBILITY_ISSUE_DISQUALIFIERS = (
+    "բողոք",
+    "ուր դիմեմ",
+    "որտեղ դիմեմ",
+    "վճար",
+    "գումար",
+    "երկու անգամ",
+    "կրկնակի",
+)
+
+RECORD_ISSUE_MARKERS = (
+    "գրառում",
+    "բուժման պատմ",
+    "էլեկտրոնային գրառում",
+    "բժշկական գրառում",
+    "տվյալ",
+)
+
+RECORD_ISSUE_QUERY_MARKERS = (
+    "բացակայում",
+    "չի երևում",
+    "սխալ է",
+    "սխալ են",
+    "սխալ տվյալ",
+)
+
+RECORD_ISSUE_DISQUALIFIERS = (
+    "արմեդ",
+    "armed",
+    "բողոք",
+    "ուր դիմեմ",
+    "որտեղ դիմեմ",
+    "վճար",
+    "գումար",
+    "երկու անգամ",
+    "կրկնակի",
+    "հիվանդանոց",
+    "վիրահատ",
+)
+
+DUPLICATE_STATUS_ISSUE_MARKERS = (
+    "վճարման կարգավիճակ",
+    "կարգավիճակը սխալ",
+    "վճար եմ արել",
+    "վճարել եմ բայց",
+    "չի նստել",
+)
+
+DUPLICATE_STATUS_ISSUE_DISQUALIFIERS = (
+    "բողոք",
+    "ուր դիմեմ",
+    "որտեղ դիմեմ",
+    "արմեդ",
+    "armed",
+    "գրառում",
+    "տվյալ",
+    "պետպատվ",
+    "արտոնյալ",
+    "հղի",
+    "երեխա",
+    "թոշակառու",
+    "հաշմանդամ",
 )
 
 
@@ -1795,6 +1964,106 @@ def _build_provider_liability_response() -> dict[str, Any]:
     })
 
 
+def _build_card_decision_response(card_id: str, user_text: str, collected_fields: dict[str, Any] | None = None) -> dict[str, Any]:
+    card = get_card_by_id(card_id)
+    if not card:
+        return validate_response({
+            "status": "ok",
+            "action": "escalate_true_gap",
+            "answer": "Այս պահին հստակ պատասխանը չի գտնվել։",
+            "follow_up_question": None,
+            "matched_card_id": None,
+            "escalation_reason": "true_kb_gap",
+            "state": {
+                "pending_card_id": None,
+                "pending_field": None,
+                "collected_fields": {},
+            },
+        })
+
+    seeded_fields = _seed_inferable_required_fields(card, user_text, collected_fields or {})
+    decision = decide(
+        user_text=user_text,
+        candidates=[{"card": card, "score": 10.0}],
+        collected_fields=seeded_fields,
+    )
+    response = build_response(
+        decision=decision,
+        collected_fields=seeded_fields,
+        user_text=user_text,
+    )
+    return validate_response(response)
+
+
+def _is_explicit_eligibility_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    has_query_anchor = any(term in normalized for term in EXPLICIT_ELIGIBILITY_QUERY_ANCHORS)
+    has_disqualifier = any(term in normalized for term in EXPLICIT_ELIGIBILITY_DISQUALIFIERS)
+    return has_query_anchor and not has_disqualifier
+
+
+def _build_explicit_eligibility_response(user_text: str) -> dict[str, Any]:
+    normalized = normalize_text(user_text)
+    seeded_fields: dict[str, Any] = {}
+    if any(term in normalized for term in ("պետպատվ", "անվճար բուժօգն", "արտոնյալ բուժօգն", "շահառ")):
+        seeded_fields["benefit_scope"] = "general_coverage"
+    return _build_card_decision_response("eligibility_status_coverage_root_v1", user_text, seeded_fields)
+
+
+def _is_general_medicine_coverage_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    has_medicine_anchor = any(term in normalized for term in GENERAL_MEDICINE_COVERAGE_ANCHORS)
+    has_query_anchor = any(term in normalized for term in GENERAL_MEDICINE_COVERAGE_QUERY_ANCHORS)
+    has_disqualifier = any(term in normalized for term in GENERAL_MEDICINE_COVERAGE_DISQUALIFIERS)
+    return has_medicine_anchor and has_query_anchor and not has_disqualifier
+
+
+def _build_general_medicine_coverage_response(user_text: str) -> dict[str, Any]:
+    return _build_card_decision_response(
+        "medicine_coverage_exact_name_dosage_form_v2",
+        user_text,
+    )
+
+
+def _is_armed_visibility_issue_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    has_armed_anchor = any(term in normalized for term in COMPLAINT_ARMED_VISIBILITY_MARKERS)
+    has_issue_marker = any(term in normalized for term in ARMED_VISIBILITY_ISSUE_MARKERS)
+    has_target_marker = any(term in normalized for term in ARMED_VISIBILITY_TARGET_MARKERS)
+    has_disqualifier = any(term in normalized for term in ARMED_VISIBILITY_ISSUE_DISQUALIFIERS)
+    return has_armed_anchor and has_issue_marker and has_target_marker and not has_disqualifier
+
+
+def _is_record_issue_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    has_record_marker = any(term in normalized for term in RECORD_ISSUE_MARKERS)
+    has_issue_marker = any(term in normalized for term in RECORD_ISSUE_QUERY_MARKERS)
+    has_disqualifier = any(term in normalized for term in RECORD_ISSUE_DISQUALIFIERS)
+    return has_record_marker and has_issue_marker and not has_disqualifier
+
+
+def _is_duplicate_status_issue_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    has_issue_marker = any(term in normalized for term in DUPLICATE_STATUS_ISSUE_MARKERS)
+    has_disqualifier = any(term in normalized for term in DUPLICATE_STATUS_ISSUE_DISQUALIFIERS)
+    return has_issue_marker and not has_disqualifier
+
+
 def _is_specialist_referral_status_question(user_text: str) -> bool:
     normalized = normalize_text(user_text)
     if not normalized:
@@ -1886,6 +2155,21 @@ def _build_mri_ct_requirements_response(user_text: str) -> dict[str, Any]:
         user_text=user_text,
     )
     return validate_response(response)
+
+
+def _is_mri_ct_routing_question(user_text: str) -> bool:
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return False
+
+    has_service_anchor = any(term in normalized for term in MRI_CT_REQUIREMENTS_ANCHORS)
+    has_query_anchor = any(term in normalized for term in MRI_CT_ROUTING_QUERY_ANCHORS)
+    has_disqualifier = any(term in normalized for term in MRI_CT_ROUTING_DISQUALIFIERS)
+    return has_service_anchor and has_query_anchor and not has_disqualifier
+
+
+def _build_mri_ct_routing_response(user_text: str) -> dict[str, Any]:
+    return _build_card_decision_response("routing_referral_where_to_go_v2", user_text)
 
 
 def _is_explicit_admission_process_question(user_text: str) -> bool:
@@ -2233,9 +2517,9 @@ def _seed_inferable_required_fields(card: dict | None, user_text: str, collected
     if card.get("id") == "eligibility_status_coverage_root_v1":
         if seeded.get("status_group") in (None, ""):
             matched_status = _match_field_values_from_card("status_group", user_text, card)
-            if matched_status == "worker_insured":
+            if matched_status is not None:
                 seeded["status_group"] = matched_status
-            elif matched_status == "child" or _has_child_status_signal(user_text):
+            elif _has_child_status_signal(user_text):
                 seeded["status_group"] = "child"
 
         if seeded.get("status_group") == "worker_insured" and seeded.get("benefit_scope") in (None, ""):
@@ -2683,6 +2967,82 @@ def chat(request: ChatRequest):
                 "state": response.get("state")
             })
             return response
+        if _is_armed_visibility_issue_question(request.message):
+            response = _build_armed_visibility_complaint_response()
+            append_request_log({
+                "message": request.message,
+                "top_candidates": [
+                    {
+                        "id": c["card"].get("id"),
+                        "category": c["card"].get("category"),
+                        "score": c["score"]
+                    }
+                    for c in candidates
+                ],
+                "action": response.get("action"),
+                "matched_card_id": response.get("matched_card_id"),
+                "follow_up_question": response.get("follow_up_question"),
+                "escalation_reason": response.get("escalation_reason"),
+                "state": response.get("state")
+            })
+            return response
+        if _is_record_issue_question(request.message):
+            response = _build_record_complaint_response()
+            append_request_log({
+                "message": request.message,
+                "top_candidates": [
+                    {
+                        "id": c["card"].get("id"),
+                        "category": c["card"].get("category"),
+                        "score": c["score"]
+                    }
+                    for c in candidates
+                ],
+                "action": response.get("action"),
+                "matched_card_id": response.get("matched_card_id"),
+                "follow_up_question": response.get("follow_up_question"),
+                "escalation_reason": response.get("escalation_reason"),
+                "state": response.get("state")
+            })
+            return response
+        if _is_duplicate_status_issue_question(request.message):
+            response = _build_duplicate_status_complaint_response()
+            append_request_log({
+                "message": request.message,
+                "top_candidates": [
+                    {
+                        "id": c["card"].get("id"),
+                        "category": c["card"].get("category"),
+                        "score": c["score"]
+                    }
+                    for c in candidates
+                ],
+                "action": response.get("action"),
+                "matched_card_id": response.get("matched_card_id"),
+                "follow_up_question": response.get("follow_up_question"),
+                "escalation_reason": response.get("escalation_reason"),
+                "state": response.get("state")
+            })
+            return response
+        if _is_general_medicine_coverage_question(request.message):
+            response = _build_general_medicine_coverage_response(request.message)
+            append_request_log({
+                "message": request.message,
+                "top_candidates": [
+                    {
+                        "id": c["card"].get("id"),
+                        "category": c["card"].get("category"),
+                        "score": c["score"]
+                    }
+                    for c in candidates
+                ],
+                "action": response.get("action"),
+                "matched_card_id": response.get("matched_card_id"),
+                "follow_up_question": response.get("follow_up_question"),
+                "escalation_reason": response.get("escalation_reason"),
+                "state": response.get("state")
+            })
+            return response
         if _is_medicine_state_list_question(request.message):
             response = _build_medicine_state_list_response()
             append_request_log({
@@ -2761,6 +3121,44 @@ def chat(request: ChatRequest):
             return response
         if _is_provider_liability_question(request.message):
             response = _build_provider_liability_response()
+            append_request_log({
+                "message": request.message,
+                "top_candidates": [
+                    {
+                        "id": c["card"].get("id"),
+                        "category": c["card"].get("category"),
+                        "score": c["score"]
+                    }
+                    for c in candidates
+                ],
+                "action": response.get("action"),
+                "matched_card_id": response.get("matched_card_id"),
+                "follow_up_question": response.get("follow_up_question"),
+                "escalation_reason": response.get("escalation_reason"),
+                "state": response.get("state")
+            })
+            return response
+        if _is_explicit_eligibility_question(request.message):
+            response = _build_explicit_eligibility_response(request.message)
+            append_request_log({
+                "message": request.message,
+                "top_candidates": [
+                    {
+                        "id": c["card"].get("id"),
+                        "category": c["card"].get("category"),
+                        "score": c["score"]
+                    }
+                    for c in candidates
+                ],
+                "action": response.get("action"),
+                "matched_card_id": response.get("matched_card_id"),
+                "follow_up_question": response.get("follow_up_question"),
+                "escalation_reason": response.get("escalation_reason"),
+                "state": response.get("state")
+            })
+            return response
+        if _is_mri_ct_routing_question(request.message):
+            response = _build_mri_ct_routing_response(request.message)
             append_request_log({
                 "message": request.message,
                 "top_candidates": [
